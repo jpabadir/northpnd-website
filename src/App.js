@@ -1,45 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a> */}
-        <Container>
-          {/* Stack the columns on mobile by making one full-width and the other half-width */}
-          <Row>
-            <Col xs={12} md={6}>xs=12 md=8</Col>
-            <Col xs={12} md={6}>
-              xs=6 md=4
-            </Col>
-          </Row>
+      <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top">
+        <Navbar.Brand href="/">North P&D</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ml-auto">
+            <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link href="#work">Past Work</Nav.Link>
+            <Nav.Link href="#services">Services</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
 
-          {/* <Row>
-            <Col xs={6} md={4}>
-              xs=6 md=4
-            </Col>
-            <Col xs={6} md={4}>
-              xs=6 md=4
-            </Col>
-            <Col xs={6} md={4}>
-              xs=6 md=4
-            </Col>
-          </Row>
-
-          <Row>
-            <Col xs={6}>xs=6</Col>
-            <Col xs={6}>xs=6</Col>
-          </Row> */}
-        </Container>
-      </header>
+      <div className="Component" id="/">
+        <div className="MainTitle">High-quality Software Solutions</div>
+      </div>
+      <div className="Component" id="about">
+        <div className="MainTitle">About</div>
+      </div>
+      <div className="Component" id="work">
+        <div className="MainTitle">Work</div>
+      </div>
+      <div className="Component" id="services">
+        <div className="MainTitle">Services</div>
+      </div>
+      <div className="Component" id="contact">
+        <div className="MainTitle">Contact</div>
+      </div>
     </div>
   );
 }

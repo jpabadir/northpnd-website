@@ -2,6 +2,7 @@ import './App.css';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link, Element, Events } from 'react-scroll';
 import { useEffect } from 'react';
+import Unit from './components/Unit/Unit';
 
 function App() {
   // useEffect(() => {
@@ -80,18 +81,21 @@ function App() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-
-      <Element style={{ height: '500px' }} name="about" className="element">
-        About
+      <Element name="about" className="element" style={{ height: '500px', paddingTop: '100px' }}>
+        {/* <Unit /> */}
+        about
       </Element>
-      <Element style={{ height: '500px' }} name="pastWork" className="element">
-        Past Work
+      <Element name="pastWork" className="element" style={{ height: '500px', paddingTop: '100px' }}>
+        {/* <Unit /> */}
+        past
       </Element>
-      <Element style={{ height: '500px' }} name="services" className="element">
-        Services
+      <Element name="services" className="element" style={{ height: '500px', paddingTop: '100px' }}>
+        {/* <Unit /> */}
+        services
       </Element>
-      <Element style={{ height: '500px' }} name="contactUs" className="element">
-        Contact Us
+      <Element name="contactUs" className="element" style={{ height: '500px', paddingTop: '100px' }}>
+        {/* <Unit /> */}
+        contact
       </Element>
     </div>
   );

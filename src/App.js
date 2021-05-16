@@ -1,40 +1,48 @@
-import './App.css';
 import { Navbar, Nav } from 'react-bootstrap';
+import './App.css';
 import { Link, Element, Events } from 'react-scroll';
-import { useEffect } from 'react';
-import Unit from './components/Unit/Unit';
+import { useEffect, useRef, useState } from 'react';
+import About from './components/About/About';
+import Home from './components/Home/Home';
+const bodyScrollLock = require('body-scroll-lock');
+const disableBodyScroll = bodyScrollLock.disableBodyScroll;
+const enableBodyScroll = bodyScrollLock.enableBodyScroll;
 
 function App() {
-  // useEffect(() => {
-  //   Events.scrollEvent.register('begin', function () {
-  //     console.log('begin', arguments);
-  //   });
-  //   Events.scrollEvent.register('end', function () {
-  //     console.log('end', arguments);
-  //   });
+  const refContainer = useRef(null);
+  const [isToggleOpen, setIsToggleOpen] = useState(false);
 
-  //   return function cleanup() {
-  //     Events.scrollEvent.remove('begin');
-  //     Events.scrollEvent.remove('end');
-  //   };
-  // }, []);
+  useEffect(() => {
+    // Use of RefContainer below is just a way to pass the body scroll functions something, I don't really need it.
+    if (isToggleOpen) disableBodyScroll(refContainer.current);
+    else enableBodyScroll(refContainer.current);
+  }, [isToggleOpen]);
+
+  function closeToggle() {
+    if (isToggleOpen) refContainer.current.click();
+  }
+
+  function toggleIsToggleOpen() {
+    setIsToggleOpen(!isToggleOpen);
+  }
 
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top">
-        <Navbar.Brand href="#home">North P&D, Inc.</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Brand href="/">North P&D, Inc.</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" ref={refContainer} onClick={toggleIsToggleOpen} className="Toggle" id="toggler"/>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
             <li>
               <Link
                 activeClass="active"
-                className="test1 nav-link"
+                className="Link nav-link"
                 to="about"
                 spy={true}
                 smooth={true}
-                duration={500}
+                duration={300}
                 style={{ display: 'inline-block', margin: '20px' }}
+                onClick={closeToggle}
               >
                 About
               </Link>
@@ -42,12 +50,13 @@ function App() {
             <li>
               <Link
                 activeClass="active"
-                className="test2 nav-link"
+                className="Link nav-link"
                 to="pastWork"
                 spy={true}
                 smooth={true}
-                duration={500}
+                duration={300}
                 style={{ display: 'inline-block', margin: '20px' }}
+                onClick={closeToggle}
               >
                 Past Work
               </Link>
@@ -55,12 +64,13 @@ function App() {
             <li>
               <Link
                 activeClass="active"
-                className="test2 nav-link"
+                className="Link nav-link"
                 to="services"
                 spy={true}
                 smooth={true}
-                duration={500}
+                duration={300}
                 style={{ display: 'inline-block', margin: '20px' }}
+                onClick={closeToggle}
               >
                 Services
               </Link>
@@ -68,12 +78,13 @@ function App() {
             <li>
               <Link
                 activeClass="active"
-                className="test2 nav-link"
+                className="Link nav-link"
                 to="contactUs"
                 spy={true}
                 smooth={true}
-                duration={500}
+                duration={300}
                 style={{ display: 'inline-block', margin: '20px' }}
+                onClick={closeToggle}
               >
                 Contact Us
               </Link>
@@ -81,22 +92,25 @@ function App() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <Element name="about" className="element" style={{ height: '500px', paddingTop: '100px' }}>
-        {/* <Unit /> */}
-        about
-      </Element>
-      <Element name="pastWork" className="element" style={{ height: '500px', paddingTop: '100px' }}>
-        {/* <Unit /> */}
-        past
-      </Element>
-      <Element name="services" className="element" style={{ height: '500px', paddingTop: '100px' }}>
-        {/* <Unit /> */}
-        services
-      </Element>
-      <Element name="contactUs" className="element" style={{ height: '500px', paddingTop: '100px' }}>
-        {/* <Unit /> */}
-        contact
-      </Element>
+      <div onClick={closeToggle}>
+        <div>
+          <Element name="home" className="element" style={{ height: '100vh', paddingTop: '100px' }}>
+            <Home />
+          </Element>
+          <Element name="about" className="element" style={{ height: '100vh', paddingTop: '100px' }}>
+            <About />
+          </Element>
+          <Element name="pastWork" className="element" style={{ height: '100vh', paddingTop: '100px' }}>
+            past
+          </Element>
+          <Element name="services" className="element" style={{ height: '100vh', paddingTop: '96px' }}>
+            services
+          </Element>
+          <Element name="contactUs" className="element" style={{ height: '100vh', paddingTop: '100px' }}>
+            contact
+          </Element>
+        </div>
+      </div>
     </div>
   );
 }

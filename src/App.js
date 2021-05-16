@@ -1,9 +1,11 @@
 import { Navbar, Nav } from 'react-bootstrap';
 import './App.css';
-import { Link, Element, Events } from 'react-scroll';
+import { Link, Element } from 'react-scroll';
 import { useEffect, useRef, useState } from 'react';
 import About from './components/About/About';
 import Home from './components/Home/Home';
+import menu from './menu.svg';
+
 const bodyScrollLock = require('body-scroll-lock');
 const disableBodyScroll = bodyScrollLock.disableBodyScroll;
 const enableBodyScroll = bodyScrollLock.enableBodyScroll;
@@ -28,9 +30,19 @@ function App() {
 
   return (
     <div>
-      <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top">
-        <Navbar.Brand href="/">North P&D, Inc.</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" ref={refContainer} onClick={toggleIsToggleOpen} className="Toggle" id="toggler"/>
+      <Navbar collapseOnSelect expand="lg" bg="" variant="light" fixed="top">
+        <Navbar.Brand href="/" style={{ fontSize: '25px' }}>
+          North P&amp;D, Inc.
+        </Navbar.Brand>
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          ref={refContainer}
+          onClick={toggleIsToggleOpen}
+          className="Toggle"
+          id="toggler"
+        >
+          <img src={menu} alt="menu" style={{ height: '40px', stroke: 'red' }}></img>
+        </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
             <li>

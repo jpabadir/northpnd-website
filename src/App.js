@@ -46,7 +46,7 @@ function App() {
           <img src={menu} alt="menu" style={{ height: '40px', stroke: 'red' }}></img>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto">
+          <Nav className="ml-auto text-center">
             <li>
               <Link
                 activeClass="active"

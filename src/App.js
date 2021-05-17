@@ -11,6 +11,8 @@ const disableBodyScroll = bodyScrollLock.disableBodyScroll;
 const enableBodyScroll = bodyScrollLock.enableBodyScroll;
 
 function App() {
+  // useEffect()
+
   const refContainer = useRef(null);
   const [isToggleOpen, setIsToggleOpen] = useState(false);
 
@@ -104,21 +106,21 @@ function App() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <div onClick={closeToggle}>
+      <div onClick={closeToggle} style={{ position: 'relative' }}>
         <div>
-          <Element name="home" className="element" style={{ height: '100vh', paddingTop: '100px' }}>
+          <Element name="home" className="element" style={{ height: '100vh', paddingTop: '0px' }}>
             <Home />
           </Element>
-          <Element name="about" className="element" style={{ height: '100vh', paddingTop: '100px' }}>
+          <Element name="about" className="element" style={{ height: '100vh', paddingTop: '0px' }}>
             <About />
           </Element>
-          <Element name="pastWork" className="element" style={{ height: '100vh', paddingTop: '100px' }}>
+          <Element name="pastWork" className="element" style={{ height: '100vh', paddingTop: '0px' }}>
             past
           </Element>
           <Element name="services" className="element" style={{ height: '100vh', paddingTop: '96px' }}>
             services
           </Element>
-          <Element name="contactUs" className="element" style={{ height: '100vh', paddingTop: '100px' }}>
+          <Element name="contactUs" className="element" style={{ height: '100vh', paddingTop: '0px' }}>
             contact
           </Element>
         </div>

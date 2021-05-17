@@ -7,11 +7,6 @@
   scroll-behavior: smooth;
 }
 
-.Component {
-  height: 100vh;
-  color: red;
-}
-
 .MainTitle {
   display: inline-block;
   margin: 15% 20px 0px 20px;
@@ -24,4 +19,8 @@
 
 #toggler {
   border: 0ch;
+}
+
+.Content {
+  position: 'relative';
 }

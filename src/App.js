@@ -106,7 +106,7 @@ function App() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <div onClick={closeToggle} style={{ position: 'relative' }}>
+      <div onClick={closeToggle} style={{ position: 'relative', filter: isToggleOpen ? 'blur(20px)' : '' }}>
         <div>
           <Element name="home" className="element" style={{ height: '100vh', paddingTop: '0px' }}>
             <Home />

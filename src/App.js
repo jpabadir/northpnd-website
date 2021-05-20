@@ -6,12 +6,17 @@ import About from './components/About/About';
 import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
 import menu from './menu.svg';
+import anime from 'animejs/lib/anime.es.js';
 
 const bodyScrollLock = require('body-scroll-lock');
 const disableBodyScroll = bodyScrollLock.disableBodyScroll;
 const enableBodyScroll = bodyScrollLock.enableBodyScroll;
 
+const scrollAnimationTrigger = 50;
+
 function App() {
+  const navbar = document.getElementById('myNavbar');
+
   useEffect(() => {
     document.addEventListener('scroll', () => {
       setMyScrollY(window.scrollY);
@@ -23,13 +28,28 @@ function App() {
   const refContainer = useRef(null);
   const [isToggleOpen, setIsToggleOpen] = useState(false);
   const [myScrollY, setMyScrollY] = useState(0);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const [navbarHeight, setNavbarHeight] = useState(0);
+  const [notDoneYet, setNotDoneYet] = useState(true);
 
   useEffect(() => {
     // Use of RefContainer below is just a way to pass the body scroll functions something, I don't really need it.
     if (isToggleOpen) disableBodyScroll(refContainer.current);
     else enableBodyScroll(refContainer.current);
   }, [isToggleOpen]);
+
+  useEffect(() => {
+    if (myScrollY > scrollAnimationTrigger && lastScrollY <= scrollAnimationTrigger && notDoneYet) {
+      setNotDoneYet(false);
+      anime({
+        targets: navbar,
+        boxShadow: '0px 10px 30px 0px rgba(0,0,0,0.2)',
+        duration: 200,
+        easing: 'linear',
+      });
+    }
+    setLastScrollY(myScrollY);
+  }, [myScrollY, navbar, lastScrollY, notDoneYet]);
 
   function closeToggle() {
     if (isToggleOpen) refContainer.current.click();
@@ -41,16 +61,7 @@ function App() {
 
   return (
     <div>
-      <Navbar
-        id="myNavbar"
-        collapseOnSelect
-        expand="lg"
-        bg={`${myScrollY > 50 ? 'light' : ''}`}
-        variant="light"
-        fixed="top"
-        // style={{ backdropFilter: 'blur(20px)', boxShadow: `${myScrollY > 50 ? '0 2px 2px -2px rgba(0,0,0,.2)' : ''}` }}
-        // style={{ backdropFilter: 'blur(20px)' }}
-      >
+      <Navbar id="myNavbar" collapseOnSelect expand="lg" variant="light" fixed="top" bg="light">
         <Navbar.Brand href="/" style={{ fontSize: '25px' }}>
           North P&amp;D, Inc.
         </Navbar.Brand>

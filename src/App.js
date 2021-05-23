@@ -1,6 +1,6 @@
-import { Navbar, Nav, Form, Button } from 'react-bootstrap';
 import './App.css';
 import { Link, Element } from 'react-scroll';
+import { Navbar, Nav, Form, Button } from 'react-bootstrap';
 import { useEffect, useRef, useState } from 'react';
 import About from './components/About/About';
 import Home from './components/Home/Home';
@@ -43,7 +43,7 @@ function App() {
       setNotDoneYet(false);
       anime({
         targets: navbar,
-        boxShadow: '0px 10px 30px 0px rgba(0,0,0,0.2)',
+        boxShadow: '0px 5px 20px 0px rgba(0,0,0,0.2)',
         duration: 200,
         easing: 'linear',
       });
@@ -135,24 +135,24 @@ function App() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <div onClick={closeToggle} style={{ position: 'relative', filter: isToggleOpen ? 'blur(20px)' : '' }}>
-        <div>
-          <Element name="home" className="element" style={{ height: '100vh', paddingTop: `${navbarHeight}px` }}>
-            <Home />
-          </Element>
-          <Element name="about" className="element" style={{ height: '100vh', paddingTop: `${navbarHeight}px` }}>
-            <About />
-          </Element>
-          <Element name="pastWork" className="element" style={{ height: '100vh', paddingTop: `${navbarHeight}px` }}>
-            past
-          </Element>
-          <Element name="services" className="element" style={{ height: '100vh', paddingTop: `${navbarHeight}px` }}>
-            services
-          </Element>
-          <Element name="contactUs" className="element" style={{ height: '100vh', paddingTop: `${navbarHeight}px` }}>
+      <div onClick={closeToggle} style={{ position: 'relative', filter: isToggleOpen ? 'blur(20px)' : '', backgroundColor: '#f5f5f5' }}>
+        <Element name="home" className="element" style={{ height: '100vh', paddingTop: `${navbarHeight}` }}>
+          <Home />
+        </Element>
+        <Element name="about" className="element" style={{ height: '100vh', paddingTop: `${navbarHeight}` }}>
+          <About />
+        </Element>
+        <Element name="pastWork" className="element" style={{ height: '100vh', paddingTop: `${navbarHeight}` }}>
+          past
+        </Element>
+        <Element name="services" className="element" style={{ height: '100vh' }}>
+          <div style={{ paddingTop: `${navbarHeight}px` }}>services</div>
+        </Element>
+        <Element name="contactUs" className="element ContactElement" style={{ paddingTop: `${navbarHeight}`, height: '100vh' }}>
+          <div style={{ paddingTop: `${navbarHeight}px`, height: '100%' }}>
             <Contact />
-          </Element>
-        </div>
+          </div>
+        </Element>
       </div>
     </div>
   );

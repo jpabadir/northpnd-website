@@ -1,8 +1,69 @@
 .ContactMain {
-  /* background-color: red; */
-  margin: 0px 20px 0px 20px;
+  /* padding-top: 50px; */
+  height: 100%;
+  flex-direction: row;
+  /* padding-top: 100px; */
+  padding: 100px 50px 0px 50px;
+  /* min-height: 1000px; */
+  /* display: flex; */
+  /* justify-content: stretch; */
+  /* background-color: orange; */
 }
 
-.ContactContent {
-    margin-top: 20px;
+.ContactCol {
+  padding-bottom: 100px;
+}
+
+.Subtitle {
+  font-size: 40px;
+  /* padding-top: 10px; */
+  /* padding-bottom: 10px; */
+  /* text-align: center; */
+  /* background-color: blue; */
+  /* height: 100%; */
+}
+
+.FormParent {
+  background-color: white;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+  padding: 50px 50px 50px 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .ContactMain {
+    padding: 40px 40px 0px 40px;
+  }
+
+  .ContactCol {
+    margin-bottom: 40px;
+    padding-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .Subtitle {
+    font-size: 30px;
+  }
+
+  .FormParent {
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 100px;
+  }
+
+  .ContactMain {
+    padding: 20px 20px 0px 20px;
+  }
+
+  .ContactCol {
+    margin-bottom: 40px;
+  }
+}
+
+.form-control {
+  -webkit-box-shadow: none !important;
+  -webkit-appearance: none;
+  box-shadow: none;
+  border-width: 0 0 2px;
+  border-radius: 0%;
+  font-size: 15px;
 }

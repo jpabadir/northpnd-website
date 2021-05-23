@@ -38,18 +38,18 @@ function App() {
     else enableBodyScroll(refContainer.current);
   }, [isToggleOpen]);
 
-  useEffect(() => {
-    if (myScrollY > scrollAnimationTrigger && lastScrollY <= scrollAnimationTrigger && notDoneYet) {
-      setNotDoneYet(false);
-      anime({
-        targets: navbar,
-        boxShadow: '0px 5px 20px 0px rgba(0,0,0,0.2)',
-        duration: 200,
-        easing: 'linear',
-      });
-    }
-    setLastScrollY(myScrollY);
-  }, [myScrollY, navbar, lastScrollY, notDoneYet]);
+  // useEffect(() => {
+  //   if (myScrollY > scrollAnimationTrigger && lastScrollY <= scrollAnimationTrigger && notDoneYet) {
+  //     setNotDoneYet(false);
+  //     anime({
+  //       targets: navbar,
+  //       boxShadow: '0px 5px 20px 0px rgba(0,0,0,0.2)',
+  //       duration: 200,
+  //       easing: 'linear',
+  //     });
+  //   }
+  //   setLastScrollY(myScrollY);
+  // }, [myScrollY, navbar, lastScrollY, notDoneYet]);
 
   function closeToggle() {
     if (isToggleOpen) refContainer.current.click();
@@ -61,7 +61,15 @@ function App() {
 
   return (
     <div>
-      <Navbar id="myNavbar" collapseOnSelect expand="lg" variant="light" fixed="top" bg="light">
+      <Navbar
+        id="myNavbar"
+        collapseOnSelect
+        expand="lg"
+        variant="light"
+        fixed="top"
+        bg="light"
+        style={{ boxShadow: '0px 5px 20px 0px rgba(0,0,0,0.2)' }}
+      >
         <Navbar.Brand href="/" style={{ fontSize: '25px' }}>
           North P&amp;D, Inc.
         </Navbar.Brand>
@@ -139,8 +147,10 @@ function App() {
         <Element name="home" className="element" style={{ height: '100vh', paddingTop: `${navbarHeight}` }}>
           <Home />
         </Element>
-        <Element name="about" className="element" style={{ height: '100vh', paddingTop: `${navbarHeight}` }}>
-          <About />
+        <Element name="about" className="element" style={{ paddingTop: `${navbarHeight}`, height: '100vh' }}>
+          <div style={{ paddingTop: `${navbarHeight}px`, height: '100%' }}>
+            <About />
+          </div>
         </Element>
         <Element name="pastWork" className="element" style={{ height: '100vh', paddingTop: `${navbarHeight}` }}>
           past

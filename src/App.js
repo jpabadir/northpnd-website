@@ -156,7 +156,7 @@ function App() {
         </Element>
         <Element name="pastWork" className="element" style={{ height: '100vh' }}>
           <div style={{ paddingTop: `${navbarHeight}px` }}>
-            <PastWork />
+            {/* <PastWork /> */}
           </div>
         </Element>
         <Element name="services" className="element">

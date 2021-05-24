@@ -6,6 +6,7 @@ import About from './components/About/About';
 import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
 import Services from './components/Services/Services';
+import PastWork from './components/PastWork/PastWork';
 import menu from './assets/menu.svg';
 import anime from 'animejs/lib/anime.es.js';
 
@@ -155,7 +156,7 @@ function App() {
         </Element>
         <Element name="pastWork" className="element" style={{ height: '100vh' }}>
           <div style={{ paddingTop: `${navbarHeight}px` }}>
-            past
+            <PastWork />
           </div>
         </Element>
         <Element name="services" className="element">

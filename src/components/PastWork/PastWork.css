@@ -1,0 +1,60 @@
+.PastWorkMain {
+  padding: 40px 50px 0px 50px;
+}
+
+.PastWorkCol {
+  padding-bottom: 100px;
+}
+
+.Subtitle {
+  font-size: 40px;
+}
+
+.PastWorkCardsRow {
+  margin-top: 30px;
+}
+
+.PastWorkCardCol {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.WorkCard {
+  height: 500%;
+  background-color: #f5f5f5;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.WorkCard:hover {
+  cursor: pointer;
+}
+
+.PastWorkFirst {
+  background-image: url('../../assets/habitone.png');
+  background-position-x: center;
+  background-position-y: 30px;
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
+.CardTitle {
+  background-color: #f5f5f5;
+  font-size: 25px;
+}
+
+.Overlay {
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 3.5%;
+  opacity: 0.3;
+  height: 400%;
+  width: 93%;
+  background-color: black;
+  border-radius: 10px 10px 0px 0px;
+}

@@ -63,7 +63,7 @@ function Services() {
               <p>We'll deal with your hosting needs so you only have one tech bill to pay - ours.</p>
             </Card>
             <Card className="MyCard" cover={<img alt="example" src={information} height="80" />} onClick={() => flip(1)}>
-              Already have a hosting solution? No problem, we'll deliver the code and let you handle the rest.
+              Already have a hosting solution? No problem, we'll deliver the application's code and let you handle the rest.
             </Card>
           </ReactCardFlip>
         </Col>

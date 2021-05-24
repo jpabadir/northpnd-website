@@ -1,3 +1,4 @@
 - Add floating labels to my form
 - Use react reveal
 - Test on iPad pro portrait mode (especially the contact form)
+- Put minheight 100 vh on components

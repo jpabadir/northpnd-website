@@ -5,7 +5,8 @@ import { useEffect, useRef, useState } from 'react';
 import About from './components/About/About';
 import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
-import menu from './menu.svg';
+import Services from './components/Services/Services';
+import menu from './assets/menu.svg';
 import anime from 'animejs/lib/anime.es.js';
 
 const bodyScrollLock = require('body-scroll-lock');
@@ -155,8 +156,10 @@ function App() {
         <Element name="pastWork" className="element" style={{ height: '100vh', paddingTop: `${navbarHeight}` }}>
           past
         </Element>
-        <Element name="services" className="element" style={{ height: '100vh' }}>
-          <div style={{ paddingTop: `${navbarHeight}px` }}>services</div>
+        <Element name="services" className="element" style={{ paddingTop: `${navbarHeight}` }}>
+          <div style={{ paddingTop: `${navbarHeight}px` }}>
+            <Services />
+          </div>
         </Element>
         <Element name="contactUs" className="element ContactElement" style={{ paddingTop: `${navbarHeight}`, height: '100vh' }}>
           <div style={{ paddingTop: `${navbarHeight}px`, height: '100%' }}>

@@ -1,13 +1,7 @@
 .ContactMain {
-  /* padding-top: 50px; */
   height: 100%;
   flex-direction: row;
-  /* padding-top: 100px; */
   padding: 70px 50px 0px 50px;
-  /* min-height: 1000px; */
-  /* display: flex; */
-  /* justify-content: stretch; */
-  /* background-color: orange; */
 }
 
 .ContactCol {
@@ -16,11 +10,6 @@
 
 .Subtitle {
   font-size: 40px;
-  /* padding-top: 10px; */
-  /* padding-bottom: 10px; */
-  /* text-align: center; */
-  /* background-color: blue; */
-  /* height: 100%; */
 }
 
 .FormParent {

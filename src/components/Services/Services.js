@@ -40,9 +40,7 @@ function Services() {
   return (
     <div className="ServicesMain">
       <div className="Subtitle">How we can help you</div>
-      <div className="Subtitle" style={{ fontSize: '25px' }}>
-        We're not (just) a web dev company.
-      </div>
+      <div style={{ fontSize: '25px' }}>We're not (just) a web dev company.</div>
       <div style={{ fontSize: '20px' }}>We take care of your technical needs so you can focus on your business.</div>
       <Row className="ServicesCardsRow">
         <Col className="ServicesCardCol">

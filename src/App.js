@@ -145,23 +145,25 @@ function App() {
         </Navbar.Collapse>
       </Navbar>
       <div onClick={closeToggle} style={{ position: 'relative', filter: isToggleOpen ? 'blur(20px)' : '', backgroundColor: '#f5f5f5' }}>
-        <Element name="home" className="element" style={{ height: '100vh', paddingTop: `${navbarHeight}` }}>
+        <Element name="home" className="element" style={{ height: '100vh' }}>
           <Home />
         </Element>
-        <Element name="about" className="element" style={{ paddingTop: `${navbarHeight}`, height: '100vh' }}>
+        <Element name="about" className="element" style={{ paddingTop: `${navbarHeight}` }}>
           <div style={{ paddingTop: `${navbarHeight}px`, height: '100%' }}>
             <About />
           </div>
         </Element>
-        <Element name="pastWork" className="element" style={{ height: '100vh', paddingTop: `${navbarHeight}` }}>
-          past
+        <Element name="pastWork" className="element" style={{ height: '100vh' }}>
+          <div style={{ paddingTop: `${navbarHeight}px` }}>
+            past
+          </div>
         </Element>
-        <Element name="services" className="element" style={{ paddingTop: `${navbarHeight}` }}>
+        <Element name="services" className="element">
           <div style={{ paddingTop: `${navbarHeight}px` }}>
             <Services />
           </div>
         </Element>
-        <Element name="contactUs" className="element ContactElement" style={{ paddingTop: `${navbarHeight}`, height: '100vh' }}>
+        <Element name="contactUs" className="element ContactElement" style={{ height: '100vh' }}>
           <div style={{ paddingTop: `${navbarHeight}px`, height: '100%' }}>
             <Contact />
           </div>

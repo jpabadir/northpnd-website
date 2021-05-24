@@ -2,3 +2,5 @@
 - Use react reveal
 - Test on iPad pro portrait mode (especially the contact form)
 - Put minheight 100 vh on components
+- Services component: make the total width of the cards smaller,
+currently it's too wide.

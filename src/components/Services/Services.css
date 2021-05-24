@@ -17,6 +17,8 @@
 .ServicesCardCol {
   display: flex;
   justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .MyCard {
@@ -41,20 +43,11 @@
     width: 300px;
     box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
     padding-top: 40px;
-    margin: 10px 10px 10px 10px;
   }
 }
 
 @media only screen and (max-width: 576px) {
   .ServicesMain {
     padding: 10px 20px 0px 20px;
-  }
-
-  .MyCard {
-    text-align: center;
-    width: 300px;
-    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
-    padding-top: 40px;
-    margin: 20px 10px 10px 10px;
   }
 }

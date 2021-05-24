@@ -10,7 +10,7 @@ function PastWork() {
       <div className="Subtitle">Our Work</div>
       <Row>
         {/* <Col /> */}
-        <Col xl={4} style={{ padding: '0px 0px 0px 0px', margin: '10px 10px 10px 10px' }}>
+        <Col style={{ padding: '0px 0px 0px 0px', margin: '10px 10px 10px 10px' }}>
           <a href="https://apps.apple.com/us/app/habit-one/id1564317049#?platform=iphone" target="_blank" rel="noreferrer">
             <Card className="WorkCard PastWorkFirst">
               <div className="CardTitle">Habit One</div>
@@ -18,7 +18,7 @@ function PastWork() {
             <div className="Overlay"></div>
           </a>
         </Col>
-        <Col xl={4} style={{ padding: '0px 0px 0px 0px', margin: '10px 10px 10px 10px' }}>
+        <Col style={{ padding: '0px 0px 0px 0px', margin: '10px 10px 10px 10px' }}>
           <a href="https://apps.apple.com/us/app/habit-one/id1564317049#?platform=iphone" target="_blank" rel="noreferrer">
             <Card className="WorkCard PastWorkFirst">
               <div className="CardTitle">Habit One</div>
@@ -26,7 +26,7 @@ function PastWork() {
             <div className="Overlay"></div>
           </a>
         </Col>
-        <Col xl={4} style={{ padding: '0px 0px 0px 0px', margin: '10px 10px 10px 10px' }}>
+        <Col style={{ padding: '0px 0px 0px 0px', margin: '10px 10px 10px 10px' }}>
           <a href="https://apps.apple.com/us/app/habit-one/id1564317049#?platform=iphone" target="_blank" rel="noreferrer">
             <Card className="WorkCard PastWorkFirst">
               <div className="CardTitle">Habit One</div>

@@ -154,9 +154,9 @@ function App() {
             <About />
           </div>
         </Element>
-        <Element name="pastWork" className="element" style={{ height: '100vh' }}>
+        <Element name="pastWork" className="element">
           <div style={{ paddingTop: `${navbarHeight}px` }}>
-            {/* <PastWork /> */}
+            <PastWork />
           </div>
         </Element>
         <Element name="services" className="element">

@@ -147,10 +147,12 @@ function App() {
       </Navbar>
       <div onClick={closeToggle} style={{ position: 'relative', filter: isToggleOpen ? 'blur(20px)' : '', backgroundColor: '#f5f5f5' }}>
         <Element name="home" className="element" style={{ height: '100vh' }}>
-          <Home />
+          <div style={{ paddingTop: `${navbarHeight}px` }}>
+            <Home />
+          </div>
         </Element>
         <Element name="about" className="element" style={{ paddingTop: `${navbarHeight}` }}>
-          <div style={{ paddingTop: `${navbarHeight}px`, height: '100%' }}>
+          <div style={{ paddingTop: `${navbarHeight}px`, height: '90vh' }}>
             <About />
           </div>
         </Element>

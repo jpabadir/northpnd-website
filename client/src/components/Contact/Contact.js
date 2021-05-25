@@ -1,6 +1,5 @@
 import { Form, Button, Row, Col, Container } from 'react-bootstrap';
 import './Contact.css';
-import '../global.css';
 
 function Contact() {
   return (

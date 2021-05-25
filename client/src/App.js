@@ -145,32 +145,34 @@ function App() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <div onClick={closeToggle} style={{ position: 'relative', filter: isToggleOpen ? 'blur(20px)' : '', backgroundColor: '#f5f5f5' }}>
-        <Element name="home" className="element" style={{ height: '100vh' }}>
-          <div style={{ paddingTop: `${navbarHeight}px` }}>
-            <Home />
-          </div>
-        </Element>
-        <Element name="about" className="element" style={{ paddingTop: `${navbarHeight}` }}>
-          <div style={{ paddingTop: `${navbarHeight}px`, height: '90vh' }}>
-            <About />
-          </div>
-        </Element>
-        <Element name="pastWork" className="element">
-          <div style={{ paddingTop: `${navbarHeight}px` }}>
-            <PastWork />
-          </div>
-        </Element>
-        <Element name="services" className="element">
-          <div style={{ paddingTop: `${navbarHeight}px` }}>
-            <Services />
-          </div>
-        </Element>
-        <Element name="contactUs" className="element ContactElement" style={{ height: '100vh' }}>
-          <div style={{ paddingTop: `${navbarHeight}px`, height: '100%' }}>
-            <Contact />
-          </div>
-        </Element>
+      <div className="ContentParent">
+        <div onClick={closeToggle} style={{ position: 'relative', filter: isToggleOpen ? 'blur(20px)' : '' }} className="Content">
+          <Element name="home" className="element" style={{ height: '100vh' }}>
+            <div style={{ paddingTop: `${navbarHeight}px` }}>
+              <Home />
+            </div>
+          </Element>
+          <Element name="about" className="element" style={{ paddingTop: `${navbarHeight}` }}>
+            <div style={{ paddingTop: `${navbarHeight}px`, height: '90vh' }}>
+              <About />
+            </div>
+          </Element>
+          <Element name="pastWork" className="element">
+            <div style={{ paddingTop: `${navbarHeight}px` }}>
+              <PastWork />
+            </div>
+          </Element>
+          <Element name="services" className="element">
+            <div style={{ paddingTop: `${navbarHeight}px` }}>
+              <Services />
+            </div>
+          </Element>
+          <Element name="contactUs" className="element ContactElement" style={{ height: '100vh' }}>
+            <div style={{ paddingTop: `${navbarHeight}px`, height: '100%' }}>
+              <Contact />
+            </div>
+          </Element>
+        </div>
       </div>
     </div>
   );

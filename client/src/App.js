@@ -152,8 +152,8 @@ function App() {
               <Home />
             </div>
           </Element>
-          <Element name="about" className="element" style={{ paddingTop: `${navbarHeight}` }}>
-            <div style={{ paddingTop: `${navbarHeight}px`, minHeight: '90vh' }}>
+          <Element name="about" className="element" style={{ paddingTop: `${navbarHeight}`, minHeight: '100vh' }}>
+            <div style={{ paddingTop: `${navbarHeight}px` }}>
               <About />
             </div>
           </Element>

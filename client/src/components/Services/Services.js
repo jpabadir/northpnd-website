@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Services.css';
 import { Card } from 'antd';
-import { Form, Button, Row, Col } from 'react-bootstrap';
+import { Form, Button, Row, Col, Container } from 'react-bootstrap';
 import coding from '../../assets/coding.svg';
 import feature from '../../assets/feature.svg';
 import userInterface from '../../assets/user-interface.svg';
@@ -42,9 +42,10 @@ function Services() {
       <div className="Subtitle">How we can help you</div>
       <div style={{ fontSize: '25px' }}>We're not (just) a web dev company.</div>
       <div style={{ fontSize: '20px' }}>We take care of your technical needs so you can focus on your business.</div>
-      <Row className="ServicesCardsRow">
-        <Col className="ServicesCardCol">
-          <ReactCardFlip isFlipped={isFirstFlipped} flipDirection="horizontal">
+      <Container>
+        <Row className="ServicesCardsRow">
+          <Col className="ServicesCardCol">
+            <ReactCardFlip isFlipped={isFirstFlipped} flipDirection="horizontal">
             <Card className="MyCard" cover={<img alt="example" src={analysis} height="80" />} onClick={() => flip(0)}>
               <h5>Web and Mobile Development</h5>
               <p>We'll build you a stunning, modern website or mobile app.</p>
@@ -53,8 +54,8 @@ function Services() {
               Do you have a technical team? We can assist with development in your tech stack of choice on a feature-by-feature basis.
             </Card>
           </ReactCardFlip>
-        </Col>
-        <Col className="ServicesCardCol">
+          </Col>
+          <Col className="ServicesCardCol">
           <ReactCardFlip isFlipped={isSecondFlipped} flipDirection="horizontal">
             <Card className="MyCard" cover={<img alt="example" src={upload} height="80" />} onClick={() => flip(1)}>
               <h5>Hosting</h5>
@@ -65,7 +66,7 @@ function Services() {
             </Card>
           </ReactCardFlip>
         </Col>
-        <Col className="ServicesCardCol">
+          <Col className="ServicesCardCol">
           <ReactCardFlip isFlipped={isThirdFlipped} flipDirection="horizontal">
             <Card className="MyCard" cover={<img alt="example" src={feature} height="80" />} onClick={() => flip(2)}>
               <h5>Custom Solution</h5>
@@ -78,7 +79,8 @@ function Services() {
             </Card>
           </ReactCardFlip>
         </Col>
-      </Row>
+        </Row>
+      </Container>
     </div>
   );
 }

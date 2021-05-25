@@ -1,5 +1,5 @@
 .ServicesMain {
-  padding: 70px 50px 0px 50px;
+  /* padding: 70px 50px 0px 50px; */
 }
 
 .ServicesCol {
@@ -19,9 +19,10 @@
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 10px;
+  padding: 0px 0px 0px 0px;
 }
 
-.MyCard {
+ .MyCard {
   text-align: center;
   width: 300px;
   padding-top: 40px;
@@ -49,6 +50,6 @@
 
 @media only screen and (max-width: 576px) {
   .ServicesMain {
-    padding: 10px 20px 0px 20px;
+    padding: 0px 0px 0px 0px;
   }
-}
+} 

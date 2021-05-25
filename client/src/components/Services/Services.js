@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Services.css';
 import { Card } from 'antd';
-import { Form, Button, Row, Col, Container } from 'react-bootstrap';
+import { Form, Button, Row, Col, Container,  } from 'react-bootstrap';
 import coding from '../../assets/coding.svg';
 import feature from '../../assets/feature.svg';
 import userInterface from '../../assets/user-interface.svg';
@@ -38,13 +38,13 @@ function Services() {
   };
 
   return (
-    <div className="ServicesMain">
-      <div className="TextBlock">
-        <div className="Subtitle">How we can help you</div>
-        <div style={{ fontSize: '25px' }}>We're not (just) a web dev company.</div>
-        <div style={{ fontSize: '20px' }}>We take care of your technical needs so you can focus on your business.</div>
-      </div>
-      <Container>
+    <div className="MainElementPadding">
+      <Container fluid>
+        <div className="TextBlock">
+          <div className="Subtitle">How we can help you</div>
+          <div style={{ fontSize: '25px' }}>We're not (just) a web dev company.</div>
+          <div style={{ fontSize: '20px' }}>We take care of your technical needs so you can focus on your business.</div>
+        </div>
         <Row className="ServicesCardsRow">
           <Col className="ServicesCardCol">
             <ReactCardFlip isFlipped={isFirstFlipped} flipDirection="horizontal">

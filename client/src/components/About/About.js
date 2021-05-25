@@ -4,8 +4,8 @@ import { Form, Button, Row, Col, Container } from 'react-bootstrap';
 
 function About() {
   return (
-    <div className="AboutMain">
-      <Container>
+    <div className="MainElementPadding">
+      <Container fluid>
         <Row className="AboutRow">
           <Col className="AboutFirstCol" xl={6}>
             <div className="Subtitle">Hi! I'm JP.</div>

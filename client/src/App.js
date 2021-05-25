@@ -167,7 +167,7 @@ function App() {
               <Services />
             </div>
           </Element>
-          <Element name="contactUs" className="element ContactElement" style={{ minHeight: '100vh' }}>
+          <Element name="contactUs" className="element" style={{ minHeight: '100vh' }}>
             <div style={{ paddingTop: `${navbarHeight}px`, height: '100%' }}>
               <Contact />
             </div>

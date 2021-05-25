@@ -1,18 +1,17 @@
 .HomeMain {
-  /* background-image: url('../../toronto.png');
-  height: 100vh;
-  margin-top: 0px;
-  background-size: cover; */
-  padding: 100px 50px 0px 50px;
+  padding: 100px 50px;
 }
 
 .HomeMainTitle {
   text-align: center;
   font-size: 45px;
-  /* padding: 20vh 20px 0px 20px; */
 }
 
 @media only screen and (max-width: 450px) {
+  .HomeMain {
+    padding: 0px 50px;
+  }
+
   .HomeMainTitle {
     font-size: 40px;
     padding-top: 5vh;

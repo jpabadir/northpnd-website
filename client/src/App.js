@@ -147,7 +147,7 @@ function App() {
       </Navbar>
       <div className="ContentParent">
         <div onClick={closeToggle} style={{ position: 'relative', filter: isToggleOpen ? 'blur(20px)' : '' }} className="Content">
-          <Element name="home" className="element" style={{ height: '100vh' }}>
+          <Element name="home" className="element" style={{ minHeight: '100vh' }}>
             <div style={{ paddingTop: `${navbarHeight}px` }}>
               <Home />
             </div>
@@ -157,17 +157,17 @@ function App() {
               <About />
             </div>
           </Element> */}
-          <Element name="pastWork" className="element">
+          <Element name="pastWork" className="element" style={{ minHeight: '100vh' }}>
             <div style={{ paddingTop: `${navbarHeight}px` }}>
               <PastWork />
             </div>
           </Element>
-          <Element name="services" className="element">
+          <Element name="services" className="element" style={{ minHeight: '100vh' }}>
             <div style={{ paddingTop: `${navbarHeight}px` }}>
               <Services />
             </div>
           </Element>
-          <Element name="contactUs" className="element ContactElement" style={{ height: '100vh' }}>
+          <Element name="contactUs" className="element ContactElement" style={{ minHeight: '100vh' }}>
             <div style={{ paddingTop: `${navbarHeight}px`, height: '100%' }}>
               <Contact />
             </div>

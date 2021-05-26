@@ -15,7 +15,7 @@ function About() {
             <div style={{ fontSize: '20px' }}>North P&amp;D is a newly-established company, for which I do the entirety of the work.</div>
             <div style={{ fontSize: '20px' }}>
               <br />
-              Before starting this company, I worked on a variety of web-projects, I interned as a software engineer at Amazon Web Services
+              Before starting this company, I worked on a variety of web projects, I interned as a software engineer at Amazon Web Services
               and RBC, and I also launched an iOS app called Habit One, which you can download on the App Store if you feel like doing so.
             </div>
           </Col>

@@ -1,5 +1,6 @@
 .HomeMain {
-  padding: 100px 50px;
+  /* padding: 100px 50px; */
+  padding: 20vh 50px;
 }
 
 .HomeMainTitle {
@@ -7,13 +8,22 @@
   font-size: 45px;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-height: 1000px) {
   .HomeMain {
-    padding: 0px 50px;
+    padding: 100px 50px;
   }
 
   .HomeMainTitle {
     font-size: 40px;
-    padding-top: 5vh;
+  }
+}
+
+@media only screen and (max-height: 750px) {
+  .HomeMain {
+    padding: 20px 50px;
+  }
+
+  .HomeMainTitle {
+    font-size: 40px;
   }
 }

@@ -1,5 +1,4 @@
 TODOs:
-
 - Add floating labels to my form
 - Use react reveal
 - Test on iPad pro portrait mode (especially the contact form)
@@ -9,6 +8,9 @@ currently it's too wide.
 - Out work thing should keep 3 columns for longer when shrinking.
 - Make FormSpree redirect to us (but with empty fields)
 - Fix scrolling stalling
+
+- Make a script that builds, moves the build folder into the server side one, and pushes to git. Maybe I need to 
+do that in the CI pipeline when I make a PR into master instead of pushing to master all the time.
 
 DONE: 
 - The YouTube video needs to have a different height. - DONE

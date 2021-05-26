@@ -9,6 +9,7 @@ currently it's too wide.
 - Make FormSpree redirect to us (but with empty fields)
 - Fix scrolling stalling
 - On the About component, the content should be at half the screen's height
+- Center the title on the Habit One component
 
 - Make a script that builds, moves the build folder into the server side one, and pushes to git. Maybe I need to 
 do that in the CI pipeline when I make a PR into master instead of pushing to master all the time.

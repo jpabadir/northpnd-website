@@ -7,7 +7,7 @@
   font-size: 45px;
 }
 
-@media only screen and (max-height: 1000px) {
+@media only screen and (max-height: 1000px) and (max-width: 992px) {
   .HomeMain {
     padding: 100px 50px;
   }
@@ -17,7 +17,7 @@
   }
 }
 
-@media only screen and (max-height: 750px) {
+@media only screen and (max-height: 750px) and (max-width: 992px) {
   .HomeMain {
     padding: 20px 50px;
   }

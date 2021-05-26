@@ -1,8 +1,9 @@
 - Add floating labels to my form
 - Use react reveal
 - Test on iPad pro portrait mode (especially the contact form)
-- Put minheight 100 vh on components
+- Put minheight 100 vh on components - DONE
 - Services component: make the total width of the cards smaller when on mobile,
 currently it's too wide.
 - Add functionality so that all cards flip back to normal when you click anywhere on the website
 - Out work thing should keep 3 columns for longer when shrinking.
+- The YouTube video needs to have a different height.

@@ -18,7 +18,7 @@ function About() {
 
   return (
     <div className="MainElementPadding">
-      <Container fluid>
+      <Container fluid className="AboutContainer">
         <Row className="AboutRow">
           <Col className="AboutFirstCol" xl={7}>
             <div className="Subtitle">Hi! I'm JP.</div>

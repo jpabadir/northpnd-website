@@ -69,8 +69,16 @@
 }
 */
 
+.AboutContainer {
+  padding-top: 5%;
+}
+
 @media only screen and (max-width: 1200px) {
   .VideoParent {
     padding-top: 60px;
+  }
+
+  .AboutContainer {
+    padding-top: 0;
   }
 }

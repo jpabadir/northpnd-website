@@ -19,7 +19,7 @@ function Contact() {
             <br />
             hello@northpnd.com
             <br />
-            +1 (250) 718 7251
+            +1 647-576-7112
           </Col>
           <Col xl={6}>
             <div className="FormParent">

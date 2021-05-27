@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Services.css';
 import { Card } from 'antd';
-import { Form, Button, Row, Col, Container,  } from 'react-bootstrap';
+import { Form, Button, Row, Col, Container } from 'react-bootstrap';
 import coding from '../../assets/coding.svg';
 import feature from '../../assets/feature.svg';
 import userInterface from '../../assets/user-interface.svg';
@@ -74,7 +74,6 @@ function Services() {
                 <h5>Custom Solution</h5>
                 <p>Do you have a unique business problem that can be solved with tech? We can help.</p>
               </Card>
-
               <Card className="MyCard" onClick={() => flip(2)} cover={<img alt="example" src={information} height="80" />}>
                 For instance, if you manage a retail store, we can help you connect your point of sale system to your existing technical
                 solution to streamline your process.

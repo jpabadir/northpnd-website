@@ -8,6 +8,9 @@ TODOs:
 - Our work thing should keep 3 columns for longer when shrinking. Actually, maybe we should just make it the same size as the services cards.
 - Make FormSpree redirect to us (but with empty fields)
 - Make proper YouTube video to embed
+- Add call to action higher up?
+- Add down arrow to show you can scroll
+- Make the Contact padding the same as the About
 
 DONE:
 

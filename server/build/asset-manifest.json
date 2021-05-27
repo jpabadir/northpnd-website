@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.6cdc2843.chunk.css",
+    "main.css": "/static/css/main.2e4b579d.chunk.css",
     "main.js": "/static/js/main.1734f38f.chunk.js",
     "main.js.map": "/static/js/main.1734f38f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.22530521.js",
@@ -12,12 +12,12 @@
     "static/js/3.0a44e07c.chunk.js.map": "/static/js/3.0a44e07c.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.8b9d5b02.chunk.css.map": "/static/css/2.8b9d5b02.chunk.css.map",
-    "static/css/main.6cdc2843.chunk.css.map": "/static/css/main.6cdc2843.chunk.css.map",
+    "static/css/main.2e4b579d.chunk.css.map": "/static/css/main.2e4b579d.chunk.css.map",
     "static/js/2.077298b5.chunk.js.LICENSE.txt": "/static/js/2.077298b5.chunk.js.LICENSE.txt",
     "static/media/analysis.80b9e383.svg": "/static/media/analysis.80b9e383.svg",
     "static/media/coding.fd015fdd.svg": "/static/media/coding.fd015fdd.svg",
     "static/media/feature.98c0e5d3.svg": "/static/media/feature.98c0e5d3.svg",
-    "static/media/PastWork.css": "/static/media/habitone.e13aed54.png",
+    "static/media/PastWork.css": "/static/media/habitoneSmaller.7dd257a2.png",
     "static/media/information.44d1f7c1.svg": "/static/media/information.44d1f7c1.svg",
     "static/media/menu.644fa295.svg": "/static/media/menu.644fa295.svg",
     "static/media/upload.c7712cbb.svg": "/static/media/upload.c7712cbb.svg",
@@ -27,7 +27,7 @@
     "static/js/runtime-main.22530521.js",
     "static/css/2.8b9d5b02.chunk.css",
     "static/js/2.077298b5.chunk.js",
-    "static/css/main.6cdc2843.chunk.css",
+    "static/css/main.2e4b579d.chunk.css",
     "static/js/main.1734f38f.chunk.js"
   ]
 }

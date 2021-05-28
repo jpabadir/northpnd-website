@@ -11,6 +11,7 @@ TODOs:
 - Add call to action higher up?
 - Add down arrow to show you can scroll
 - Make the Contact padding the same as the About
+- Add shadow to all interactable elements 
 
 DONE:
 

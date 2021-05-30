@@ -4,7 +4,7 @@ import './Contact.css';
 function Contact() {
   return (
     <div className="MainElementPadding">
-      <Container fluid>
+      <Container fluid className="ContactContainer">
         <Row>
           <Col xl={6} className="ContactCol">
             <div className="Subtitle">Contact Us. We'll respond within 24 hours.</div>

@@ -7,8 +7,6 @@ function About() {
 
   useLayoutEffect(() => {
     function updateVideoHeight() {
-      // if (window.screen.width >= 1200) setVideoHeight(280);
-      // else setVideoHeight(document.getElementById('myVideo').offsetWidth / 1.78);
       setVideoHeight(document.getElementById('myVideo').offsetWidth / 1.78);
     }
     window.addEventListener('resize', updateVideoHeight);
@@ -44,7 +42,6 @@ function About() {
                 allowFullScreen
                 id="myVideo"
                 style={{ boxShadow: '0px 5px 20px 0px rgba(0, 0, 0, 0.2)' }}
-                // style={{ boxShadow: '0px 5px 20px 10px rgba(0, 0, 0, 0.2)' }}
               />
             </div>
           </Col>

@@ -7,9 +7,7 @@ TODOs:
 - Add functionality so that all cards flip back to normal when you click anywhere on the website
 - Our work thing should keep 3 columns for longer when shrinking. Actually, maybe we should just make it the same size as the services cards.
 - Make FormSpree redirect to us (but with empty fields)
-- Make proper YouTube video to embed
 - Add call to action higher up?
-- Add down arrow to show you can scroll
 - Make the Contact padding the same as the About
 - Add shadow to all interactable elements
 - Maybe we want to reduce the font size on small devices?
@@ -25,3 +23,5 @@ DONE:
 - Fix scrolling stalling - DONE
 - Center the title on the Habit One component - DONE
 - On the About component, the content should be at half the screen's height - DONE
+- Make proper YouTube video to embed - DONE
+- - Add down arrow to show you can scroll - DONE

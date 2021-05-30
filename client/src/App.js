@@ -40,19 +40,6 @@ function App() {
     else enableBodyScroll(refContainer.current);
   }, [isToggleOpen]);
 
-  // useEffect(() => {
-  //   if (myScrollY > scrollAnimationTrigger && lastScrollY <= scrollAnimationTrigger && notDoneYet) {
-  //     setNotDoneYet(false);
-  //     anime({
-  //       targets: navbar,
-  //       boxShadow: '0px 5px 20px 0px rgba(0,0,0,0.2)',
-  //       duration: 200,
-  //       easing: 'linear',
-  //     });
-  //   }
-  //   setLastScrollY(myScrollY);
-  // }, [myScrollY, navbar, lastScrollY, notDoneYet]);
-
   function closeToggle() {
     if (isToggleOpen) refContainer.current.click();
   }

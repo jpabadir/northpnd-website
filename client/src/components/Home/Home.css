@@ -7,6 +7,17 @@
   font-size: 45px;
 }
 
+.TellMeMoreParent {
+  padding-top: 20vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.TellMeMore:hover {
+  cursor: pointer;
+}
+
 @media only screen and (max-height: 1000px) and (max-width: 992px) {
   .HomeMain {
     padding: 100px 50px;
@@ -19,10 +30,16 @@
 
 @media only screen and (max-height: 750px) and (max-width: 992px) {
   .HomeMain {
-    padding: 20px 50px;
+    padding: 30px 50px;
   }
 
   .HomeMainTitle {
-    font-size: 40px;
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-height: 600px) and (max-width: 992px) {
+  .TellMeMoreParent {
+    padding-top: 5vh;
   }
 }

@@ -39,9 +39,9 @@ function About() {
                 height={videoHeight}
                 src="https://www.youtube-nocookie.com/embed/9Si2XNaDs48?controls=1"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
                 id="myVideo"
                 style={{ boxShadow: '0px 5px 20px 0px rgba(0, 0, 0, 0.2)' }}
                 // style={{ boxShadow: '0px 5px 20px 10px rgba(0, 0, 0, 0.2)' }}

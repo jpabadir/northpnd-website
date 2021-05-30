@@ -13,6 +13,7 @@ TODOs:
 - Make the Contact padding the same as the About
 - Add shadow to all interactable elements
 - Maybe we want to reduce the font size on small devices?
+- Make tell me more more down on higher height screens (test on iiyama monitor, it looks too high)
 
 DONE:
 

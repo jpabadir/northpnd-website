@@ -12,6 +12,7 @@ TODOs:
 - Center About and Contact on screens above 1200px in width?
 - Add website footer
 - Work on copy
+- Add navbar animation
 
 DONE:
 

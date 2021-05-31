@@ -10,6 +10,8 @@ TODOs:
 - Maybe we want to reduce the font size on small devices?
 - Make tell me more more down on higher height screens (test on iiyama monitor, it looks too high)
 - Center About and Contact on screens above 1200px in width?
+- Add website footer
+- Work on copy
 
 DONE:
 

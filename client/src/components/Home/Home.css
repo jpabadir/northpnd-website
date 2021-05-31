@@ -1,5 +1,9 @@
 .HomeMain {
-  padding: 20vh 50px;
+  padding: 20vh 50px 0px 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .HomeMainTitle {
@@ -8,10 +12,9 @@
 }
 
 .TellMeMoreParent {
-  padding-top: 20vh;
-  display: flex;
   text-align: center;
   justify-content: center;
+  padding-bottom: 15vh;
 }
 
 .TellMeMore:hover {
@@ -20,26 +23,24 @@
 
 @media only screen and (max-height: 1000px) and (max-width: 992px) {
   .HomeMain {
-    padding: 100px 50px;
+    padding: 100px 50px 0px 50px;
   }
 
   .HomeMainTitle {
     font-size: 40px;
   }
+
+  .TellMeMoreParent {
+    padding-bottom: 5vh;
+  }
 }
 
 @media only screen and (max-height: 750px) and (max-width: 992px) {
   .HomeMain {
-    padding: 30px 50px;
+    padding: 30px 50px 0px 50px;
   }
 
   .HomeMainTitle {
     font-size: 35px;
-  }
-}
-
-@media only screen and (max-height: 600px) and (max-width: 992px) {
-  .TellMeMoreParent {
-    padding-top: 5vh;
   }
 }

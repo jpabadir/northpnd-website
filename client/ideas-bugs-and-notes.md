@@ -8,11 +8,13 @@ TODOs:
 - Make FormSpree redirect to us (but with empty fields)
 - Add shadow to all interactable elements
 - Maybe we want to reduce the font size on small devices?
-- Make tell me more more down on higher height screens (test on iiyama monitor, it looks too high)
+
 - Center About and Contact on screens above 1200px in width?
 - Add website footer
 - Work on copy
 - Add navbar animation
+- Make sure it looks good on iPhone 6/7/8
+- Make sure padding at top of all elements looks good on iPhone 5/SE
 
 DONE:
 
@@ -27,6 +29,7 @@ DONE:
 - Make proper YouTube video to embed - DONE
 - Add down arrow to show you can scroll - DONE
 - Make the Contact padding the same as the About - DONE
+- Make tell me more more down on higher height screens (test on iiyama monitor, it looks too high) - DONE
 
 ENHANCEMENTS:
 

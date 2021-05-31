@@ -134,7 +134,7 @@ function App() {
       </Navbar>
       <div className="ContentParent">
         <div onClick={closeToggle} style={{ position: 'relative', filter: isToggleOpen ? 'blur(20px)' : '' }} className="Content">
-          <Element name="home" className="element" style={{ minHeight: '100vh' }}>
+          <Element name="home" className="element" style={{ minHeight: '100vh', display: 'flex', justifyContent: 'center' }}>
             <div style={{ paddingTop: `${navbarHeight}px` }}>
               <Home />
             </div>

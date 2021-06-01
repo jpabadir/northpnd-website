@@ -54,10 +54,9 @@ function App() {
         id="myNavbar"
         collapseOnSelect
         expand="lg"
-        variant="light"
+        variant="dark"
         fixed="top"
-        bg="light"
-        style={{ boxShadow: '0px 5px 20px 0px rgba(0,0,0,0.2)' }}
+        style={{ boxShadow: '0px 5px 20px 0px rgba(0,0,0,0)', backdropFilter: 'blur(5px)', backgroundColor: 'rgb(2, 19, 46, 0.95)' }}
       >
         <Navbar.Brand href="/" style={{ fontSize: '25px' }}>
           North P&amp;D, Inc.
@@ -69,7 +68,15 @@ function App() {
           className="Toggle"
           id="toggler"
         >
-          <img src={menu} alt="menu" style={{ height: '40px', stroke: 'red' }}></img>
+          <img
+            src={menu}
+            alt="menu"
+            style={{
+              height: '40px',
+              WebkitFilter: 'invert(100%)',
+              filter: 'invert(100%)',
+            }}
+          />
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto text-center">

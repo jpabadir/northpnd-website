@@ -140,32 +140,50 @@ function App() {
         </Navbar.Collapse>
       </Navbar>
       <div className="ContentParent">
-        <div onClick={closeToggle} style={{ position: 'relative', filter: isToggleOpen ? 'blur(20px)' : '' }} className="Content">
-          <Element name="home" className="element" style={{ minHeight: '100vh', display: 'flex', justifyContent: 'center' }}>
-            <div style={{ paddingTop: `${navbarHeight}px` }}>
-              <Home />
-            </div>
-          </Element>
-          <Element name="about" className="element" style={{ paddingTop: `${navbarHeight}`, minHeight: '100vh' }}>
-            <div style={{ paddingTop: `${navbarHeight}px` }}>
-              <About />
-            </div>
-          </Element>
-          <Element name="pastWork" className="element" style={{ minHeight: '100vh' }}>
-            <div style={{ paddingTop: `${navbarHeight}px` }}>
-              <PastWork />
-            </div>
-          </Element>
-          <Element name="services" className="element" style={{ minHeight: '100vh' }}>
-            <div style={{ paddingTop: `${navbarHeight}px` }}>
-              <Services />
-            </div>
-          </Element>
-          <Element name="contactUs" className="element" style={{ minHeight: '100vh', display: 'flex', justifyContent: 'center' }}>
-            <div style={{ paddingTop: `${navbarHeight}px` }}>
-              <Contact />
-            </div>
-          </Element>
+        <div onClick={closeToggle} style={{ position: 'relative', filter: isToggleOpen ? 'blur(20px)' : '', width: '100%' }}>
+          <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
+            <Element
+              name="home"
+              className="element"
+              style={{ minHeight: '100vh', display: 'flex', justifyContent: 'center', width: '100%' }}
+            >
+              <div style={{ paddingTop: `${navbarHeight}px` }}>
+                <Home />
+              </div>
+            </Element>
+          </div>
+          <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
+            <Element name="about" className="element" style={{ paddingTop: `${navbarHeight}`, minHeight: '100vh', width: '100%' }}>
+              <div style={{ paddingTop: `${navbarHeight}px` }}>
+                <About />
+              </div>
+            </Element>
+          </div>
+          <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
+            <Element name="pastWork" className="element" style={{ minHeight: '100vh', width: '100%' }}>
+              <div style={{ paddingTop: `${navbarHeight}px` }}>
+                <PastWork />
+              </div>
+            </Element>
+          </div>
+          <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
+            <Element name="services" className="element" style={{ minHeight: '100vh', width: '100%' }}>
+              <div style={{ paddingTop: `${navbarHeight}px` }}>
+                <Services />
+              </div>
+            </Element>
+          </div>
+          <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#f5f5f5' }}>
+            <Element
+              name="contactUs"
+              className="element"
+              style={{ minHeight: '100vh', display: 'flex', justifyContent: 'center', width: '100%' }}
+            >
+              <div style={{ paddingTop: `${navbarHeight}px` }}>
+                <Contact />
+              </div>
+            </Element>
+          </div>
         </div>
       </div>
     </div>

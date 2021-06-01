@@ -23,11 +23,12 @@
 
 .ContentParent {
   justify-content: center;
-  display: flex;
+  /* Can I remove line below? */
+  display: flex; 
   background-color: white;
 }
 
-.Content {
+.element {
   max-width: 1500px;
 }
 

@@ -38,3 +38,7 @@ ENHANCEMENTS:
 MAYBEs:
 
 - Add call to action higher up
+
+
+MISCELLANEOUS: 
+- A cool grey I can use: #EEEEEE

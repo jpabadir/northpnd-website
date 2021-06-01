@@ -8,13 +8,13 @@ TODOs:
 - Make FormSpree redirect to us (but with empty fields)
 - Add shadow to all interactable elements
 - Maybe we want to reduce the font size on small devices?
-
 - Center About and Contact on screens above 1200px in width?
 - Add website footer
 - Work on copy
 - Add navbar animation
 - Make sure it looks good on iPhone 6/7/8
 - Make sure padding at top of all elements looks good on iPhone 5/SE
+- Fix max-width of Home title (test on iiyama)
 
 DONE:
 

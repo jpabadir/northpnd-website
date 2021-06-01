@@ -15,6 +15,7 @@ TODOs:
 - Make sure it looks good on iPhone 6/7/8
 - Make sure padding at top of all elements looks good on iPhone 5/SE
 - Fix max-width of Home title (test on iiyama)
+- Add footer
 
 DONE:
 

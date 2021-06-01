@@ -3,7 +3,7 @@ import './Contact.css';
 
 function Contact() {
   return (
-    <div className="MainElementPadding">
+    <div className="MainElementPadding ContactMain">
       <Container fluid className="ContactContainer">
         <Row>
           <Col xl={6} className="ContactCol">

@@ -13,6 +13,7 @@ TODOs:
 - Add navbar animation
 - Make sure it looks good on iPhone 6/7/8
 - Make sure padding at top of all elements looks good on iPhone 5/SE
+- Make Habit One mockup tilted (perspective mockup)
 
 DONE:
 

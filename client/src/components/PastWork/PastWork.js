@@ -1,8 +1,7 @@
 import React from 'react';
 import './PastWork.css';
 import { Card } from 'antd';
-import { Form, Button, Row, Col, Container } from 'react-bootstrap';
-const Meta = { Card };
+import { Row, Col, Container } from 'react-bootstrap';
 
 function PastWork() {
   return (

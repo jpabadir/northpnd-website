@@ -10,23 +10,17 @@ function PastWork() {
       <Container fluid>
         <div className="Subtitle">Past Work &amp; Testimonials</div>
         <Row>
-          <Col xl={4} style={{ padding: '0px 0px 0px 0px', border: 'solid transparent', borderWidth: '10px 40px', justifyContent: 'center' }}>
-            <a href="https://apps.apple.com/us/app/habit-one/id1564317049#?platform=iphone" target="_blank" rel="noreferrer">
-              <Card className="WorkCard PastWorkFirst"/>
-              <div className="CardTitle">Habit One</div>
-            </a>
-          </Col>
-          <Col xl={4} style={{ padding: '0px 0px 0px 0px', border: 'solid transparent', borderWidth: '10px 40px' }}>
-            <a href="https://apps.apple.com/us/app/habit-one/id1564317049#?platform=iphone" target="_blank" rel="noreferrer">
-              <Card className="WorkCard PastWorkFirst"/>
-              <div className="CardTitle">Habit One</div>
-            </a>
-          </Col>
-          <Col xl={4} style={{ padding: '0px 0px 0px 0px', border: 'solid transparent', borderWidth: '10px 40px' }}>
-            <a href="https://apps.apple.com/us/app/habit-one/id1564317049#?platform=iphone" target="_blank" rel="noreferrer">
-              <Card className="WorkCard PastWorkFirst"/>
-              <div className="CardTitle">Habit One</div>
-            </a>
+          <Col xl={4} lg={6} className="PastWorkCol">
+            <div style={{ maxWidth: '350px', maxHeight: '50px', width: '100%' }}>
+              <a
+                href="https://apps.apple.com/us/app/habit-one/id1564317049#?platform=iphone"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Card className="WorkCard PastWorkFirst" />
+                <div className="CardTitle">Habit One</div>
+              </a>
+            </div>
           </Col>
         </Row>
       </Container>

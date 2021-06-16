@@ -10,13 +10,22 @@ function PastWork() {
       <Container fluid>
         <div className="Subtitle">Past Work &amp; Testimonials</div>
         <Row>
-          <Col xl={4} style={{ padding: '0px 0px 0px 0px', border: 'solid transparent', borderWidth: '10px 40px' }}></Col>
           <Col xl={4} style={{ padding: '0px 0px 0px 0px', border: 'solid transparent', borderWidth: '10px 40px' }}>
             <a href="https://apps.apple.com/us/app/habit-one/id1564317049#?platform=iphone" target="_blank" rel="noreferrer">
-              <Card className="WorkCard PastWorkFirst Interactable">
-                <div className="CardTitle">Habit One</div>
-              </Card>
-              <div className="Overlay"></div>
+              <Card className="WorkCard PastWorkFirst"/>
+              <div className="CardTitle">Habit One</div>
+            </a>
+          </Col>
+          <Col xl={4} style={{ padding: '0px 0px 0px 0px', border: 'solid transparent', borderWidth: '10px 40px' }}>
+            <a href="https://apps.apple.com/us/app/habit-one/id1564317049#?platform=iphone" target="_blank" rel="noreferrer">
+              <Card className="WorkCard PastWorkFirst"/>
+              <div className="CardTitle">Habit One</div>
+            </a>
+          </Col>
+          <Col xl={4} style={{ padding: '0px 0px 0px 0px', border: 'solid transparent', borderWidth: '10px 40px' }}>
+            <a href="https://apps.apple.com/us/app/habit-one/id1564317049#?platform=iphone" target="_blank" rel="noreferrer">
+              <Card className="WorkCard PastWorkFirst"/>
+              <div className="CardTitle">Habit One</div>
             </a>
           </Col>
         </Row>

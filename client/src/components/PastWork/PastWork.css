@@ -9,33 +9,22 @@
 .WorkCard {
   padding: 0px 0px 0px 0px;
   height: 320px;
-  border-radius: 10px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  border: 0.1px solid lightgrey;
+  border: none;
+  border-radius: 10px 0px 10px 0px;
 }
 
 .PastWorkFirst {
-  background-image: url('../../assets/habitoneSmaller.png');
+  background-image: url('../../assets/habitoneSmallerTop.png');
+  background-color: rgb(218, 218, 218);
   background-position-x: center;
-  background-position-y: 30px;
+  background-position-y: 25px;
   background-repeat: no-repeat;
-  background-size: 100px;
+  background-size: 255px;
 }
 
 .CardTitle {
   font-size: 25px;
-}
-
-.Overlay {
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  opacity: 0.4;
-  height: 250px;
-  width: 100%;
-  background-color: grey;
-  border-radius: 10px 10px 0px 0px;
-  pointer-events: none;
+  font-weight: 700;
+  padding-top: 5px;
+  color: black;
 }

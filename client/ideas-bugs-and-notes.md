@@ -5,7 +5,7 @@ TODOs:
 - Add functionality so that all cards flip back to normal when you click anywhere on the website
 - Our work thing should keep 3 columns for longer when shrinking. Actually, maybe we should just make it the same size as the services cards.
 - Make FormSpree redirect to us (but with empty fields)
-- Add shadow to all interactable elements
+
 - Maybe we want to reduce the font size on small devices?
 - Center About and Contact on screens above 1200px in width?
 - Add website footer
@@ -30,6 +30,7 @@ DONE:
 - Add down arrow to show you can scroll - DONE
 - Make the Contact padding the same as the About - DONE
 - Make tell me more more down on higher height screens (test on iiyama monitor, it looks too high) - DONE
+- Add shadow to all interactable elements - DONE
 
 NICE TO HAVEs:
 

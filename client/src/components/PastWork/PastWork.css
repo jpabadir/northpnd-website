@@ -8,7 +8,7 @@
 
 .WorkCard {
   padding: 0px 0px 0px 0px;
-  height: 380px;
+  height: 320px;
   border-radius: 10px;
   display: flex;
   align-items: flex-end;
@@ -21,7 +21,7 @@
   background-position-x: center;
   background-position-y: 30px;
   background-repeat: no-repeat;
-  background-size: 130px;
+  background-size: 100px;
 }
 
 .CardTitle {
@@ -33,7 +33,7 @@
   position: absolute;
   top: 0;
   opacity: 0.4;
-  height: 310px;
+  height: 250px;
   width: 100%;
   background-color: grey;
   border-radius: 10px 10px 0px 0px;

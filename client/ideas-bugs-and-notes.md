@@ -1,6 +1,5 @@
 TODOs:
 
-- Add floating labels to my form
 - Services component: make the total width of the cards smaller when on mobile,
   currently it's too wide.
 - Add functionality so that all cards flip back to normal when you click anywhere on the website
@@ -32,9 +31,10 @@ DONE:
 - Make the Contact padding the same as the About - DONE
 - Make tell me more more down on higher height screens (test on iiyama monitor, it looks too high) - DONE
 
-ENHANCEMENTS:
+NICE TO HAVEs:
 
 - Use react reveal
+- Add floating labels to my form
 
 MAYBEs:
 

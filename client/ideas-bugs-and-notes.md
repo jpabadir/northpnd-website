@@ -3,7 +3,7 @@ TODOs:
 - Services component: make the total width of the cards smaller when on mobile,
   currently it's too wide.
 - Add functionality so that all cards flip back to normal when you click anywhere on the website
-- Our work thing should keep 3 columns for longer when shrinking. Actually, maybe we should just make it the same size as the services cards.
+- Our work thing should keep 3 columns for longer when shrinking. Actually, maybe we should just make it the same size as the services cards. Also, they're a bit large. 
 - Make FormSpree redirect to us (but with empty fields)
 
 - Maybe we want to reduce the font size on small devices?
@@ -13,8 +13,6 @@ TODOs:
 - Add navbar animation
 - Make sure it looks good on iPhone 6/7/8
 - Make sure padding at top of all elements looks good on iPhone 5/SE
-- Fix max-width of Home title (test on iiyama)
-- Add footer
 
 DONE:
 
@@ -31,6 +29,7 @@ DONE:
 - Make the Contact padding the same as the About - DONE
 - Make tell me more more down on higher height screens (test on iiyama monitor, it looks too high) - DONE
 - Add shadow to all interactable elements - DONE
+- Fix max-width of Home title (test on iiyama) - DONE
 
 NICE TO HAVEs:
 

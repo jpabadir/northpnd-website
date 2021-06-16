@@ -16,11 +16,6 @@
   border: 0.1px solid lightgrey;
 }
 
-.WorkCard:hover {
-  cursor: pointer;
-  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
-}
-
 .PastWorkFirst {
   background-image: url('../../assets/habitoneSmaller.png');
   background-position-x: center;

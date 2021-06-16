@@ -35,11 +35,6 @@
   border: 0.1px solid lightgrey;
 }
 
-.MyCard:hover {
-  cursor: pointer;
-  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
-}
-
 .MyCardBack {
   background-color: rgb(238, 238, 238);
   opacity: 0.85;

@@ -7,7 +7,7 @@ function PastWork() {
   return (
     <div className="MainElementPadding">
       <Container fluid>
-        <div className="Subtitle">Past Work &amp; Testimonials</div>
+        <div className="Subtitle">Our Work</div>
         <Row>
           <Col className="PastWorkCol">
             <div style={{ maxWidth: '350px', maxHeight: '50px', width: '100%' }}>

@@ -22,7 +22,7 @@ function Contact() {
             +1 647-576-7112
           </Col>
           <Col xl={6}>
-            <div className="FormParent">
+            <div className="FormParent StaticShadow">
               <Form action="https://formspree.io/f/xwkalnaz" method="POST" className="Form">
                 <Row>
                   <Col md={6}>

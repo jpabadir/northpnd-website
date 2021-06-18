@@ -1,7 +1,7 @@
-require('dotenv').config()
+require('dotenv').config();
 const express = require('express');
 const path = require('path');
-const https = require('https');
+const fetch = require('node-fetch');
 
 const app = express();
 const port = process.env.PORT || 8020;
@@ -23,23 +23,10 @@ app.use(express.static(path.join(__dirname, 'build')));
 app.listen(port, () => console.log(`App is live on port ${port}!`));
 
 // Google Maps Reviews
-app.get('/get-reviews', function (mainReq, mainRes) {
-  const options = {
-    hostname: 'maps.googleapis.com',
-    path: `/maps/api/place/details/json?key=${process.env.API_KEY}&place_id=ChIJHbxYLfU1K4gRemEVnxyALR8`,
-    method: 'GET',
-  };
-
-  const req = https.request(options, (res) => {
-    res.on('data', (data) => {
-      mainRes.write(data);
-      
-    });
-  });
-
-  req.on('error', (error) => {
-    console.error(error);
-  });
-
-  req.end();
+app.get('/get-reviews', function (req, res) {
+  fetch(
+    'https://maps.googleapis.com/maps/api/place/details/json?key=AIzaSyCR_L5JJ1fr7DOnCv-XUcWoAOnkJiBwK7A&place_id=ChIJHbxYLfU1K4gRemEVnxyALR8'
+  )
+    .then((googleResponse) => googleResponse.json())
+    .then((jsonData) => res.send(jsonData['result']['reviews']));
 });

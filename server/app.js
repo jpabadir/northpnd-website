@@ -6,17 +6,14 @@ const fetch = require('node-fetch');
 const app = express();
 const port = process.env.PORT || 8020;
 
-// Main app
-if (process.env.PORT) {
-  const forceSsl = (req, res, next) => {
-    if (req.headers['x-forwarded-proto'] !== 'https') {
-      return res.redirect(['https://', req.get('Host'), req.url].join(''));
-    }
-    return next();
-  };
+const forceSsl = (req, res, next) => {
+  if (req.headers['x-forwarded-proto'] !== 'https') {
+    return res.redirect(['https://', req.get('Host'), req.url].join(''));
+  }
+  return next();
+};
 
-  app.use(forceSsl);
-}
+app.use(forceSsl);
 
 app.use(express.static(path.join(__dirname, 'build')));
 

@@ -21,9 +21,7 @@ app.listen(port, () => console.log(`App is live on port ${port}!`));
 
 // Google Maps Reviews
 app.get('/get-reviews', function (req, res) {
-  fetch(
-    'https://maps.googleapis.com/maps/api/place/details/json?key=AIzaSyCR_L5JJ1fr7DOnCv-XUcWoAOnkJiBwK7A&place_id=ChIJHbxYLfU1K4gRemEVnxyALR8'
-  )
+  fetch(`https://maps.googleapis.com/maps/api/place/details/json?key=${process.env.API_KEY}&place_id=ChIJHbxYLfU1K4gRemEVnxyALR8`)
     .then((googleResponse) => googleResponse.json())
     .then((jsonData) => res.send(jsonData['result']['reviews']));
 });

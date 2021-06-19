@@ -9,9 +9,9 @@ function PastWork() {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    fetch('https://www.northpnd.com/get-reviews').then((reviews) => {
-      setReviews(reviews);
-    });
+    fetch('https://www.northpnd.com/get-reviews')
+      .then((reviews) => reviews.json())
+      .then((jsonData) => setReviews(jsonData));
   }, []);
 
   const StyledRating = withStyles({

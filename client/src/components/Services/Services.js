@@ -49,7 +49,7 @@ function Services() {
               <Card className="MyCard Interactable" cover={<img alt="example" src={analysis} height="80" />} onClick={() => flip(0)}>
                 <h5>Web and Mobile Development</h5>
                 <p>We'll build you a stunning, modern website or mobile app.</p>
-                <p className="LearnMore">{window.screen.width >= 1000 ? 'Click' : 'Tap'} to learn more</p>
+                <p className="LearnMore">{document.documentElement.clientWidth >= 1000 ? 'Click' : 'Tap'} to learn more</p>
               </Card>
               <Card className="MyCard MyCardBack Interactable" cover={<img alt="example" src={information} height="80" />} onClick={() => flip(0)}>
                 Do you have a technical team? We can assist with development in your tech stack of choice on a feature-by-feature basis.
@@ -61,7 +61,7 @@ function Services() {
               <Card className="MyCard Interactable" cover={<img alt="example" src={upload} height="80" />} onClick={() => flip(1)}>
                 <h5>Hosting</h5>
                 <p>We'll deal with your hosting needs so you only have one tech bill to pay - ours.</p>
-                <p className="LearnMore">{window.screen.width >= 1000 ? 'Click' : 'Tap'} to learn more</p>
+                <p className="LearnMore">{document.documentElement.clientWidth >= 1000 ? 'Click' : 'Tap'} to learn more</p>
               </Card>
               <Card className="MyCard MyCardBack Interactable" cover={<img alt="example" src={information} height="80" />} onClick={() => flip(1)}>
                 Already have a hosting solution? No problem, we'll deliver the application's code and let you handle the rest.
@@ -73,7 +73,7 @@ function Services() {
               <Card className="MyCard Interactable" cover={<img alt="example" src={feature} height="80" />} onClick={() => flip(2)}>
                 <h5>Custom Solution</h5>
                 <p>Do you have a unique business problem that can be solved with tech? We can help.</p>
-                <p className="LearnMore">{window.screen.width >= 1000 ? 'Click' : 'Tap'} to learn more</p>
+                <p className="LearnMore">{document.documentElement.clientWidth >= 1000 ? 'Click' : 'Tap'} to learn more</p>
               </Card>
               <Card className="MyCard MyCardBack Interactable" onClick={() => flip(2)} cover={<img alt="example" src={information} height="80" />}>
                 For instance, if you manage a retail store, we can help you connect your point of sale system to your existing technical

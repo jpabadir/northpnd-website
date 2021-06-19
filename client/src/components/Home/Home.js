@@ -5,7 +5,7 @@ import { scroller } from 'react-scroll';
 
 function Home() {
   return (
-    <div className="HomeMain" style={{ width: `${Math.min(window.screen.width, 1500)}px` }}>
+    <div className="HomeMain" style={{ width: `${Math.min(document.documentElement.clientWidth, 1500)}px` }}>
       <div className="HomeContent">
         <div className="HomeMainTitle">We love tech, and we worry about it so you don't have to.</div>
         <div className="TellMeMoreParent">

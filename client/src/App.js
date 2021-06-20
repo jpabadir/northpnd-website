@@ -7,6 +7,7 @@ import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
 import Services from './components/Services/Services';
 import PastWork from './components/PastWork/PastWork';
+import Footer from './components/Footer/Footer';
 import menu from './assets/menu.svg';
 import anime from 'animejs/lib/anime.es.js';
 import './hamburgers.css';
@@ -180,6 +181,13 @@ function App() {
                 <Contact />
               </div>
             </Element>
+          </div>
+          <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#f5f5f5' }}>
+            <div className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+              <div style={{ paddingTop: `${navbarHeight}px` }}>
+                <Footer />
+              </div>
+            </div>
           </div>
         </div>
       </div>

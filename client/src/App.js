@@ -183,10 +183,7 @@ function App() {
             </Element>
           </div>
           <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: 'rgb(21, 20, 26)' }}>
-            <div
-              className="element"
-              style={{ display: 'flex', justifyContent: 'center', width: '100%', height: '100px', alignItems: 'center' }}
-            >
+            <div className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%', alignItems: 'center' }}>
               <Footer />
             </div>
           </div>

@@ -182,11 +182,12 @@ function App() {
               </div>
             </Element>
           </div>
-          <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#f5f5f5' }}>
-            <div className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-              <div style={{ paddingTop: `${navbarHeight}px` }}>
-                <Footer />
-              </div>
+          <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: 'rgb(21, 20, 26)' }}>
+            <div
+              className="element"
+              style={{ display: 'flex', justifyContent: 'center', width: '100%', height: '100px', alignItems: 'center' }}
+            >
+              <Footer />
             </div>
           </div>
         </div>

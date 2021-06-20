@@ -2,8 +2,6 @@ BUGS:
 
 Improvements:
 
-- Add website footer
-
 - Services component: make the total width of the cards smaller when on mobile,
   currently it's too wide.
 - Add functionality so that all cards flip back to normal when you click anywhere on the website
@@ -36,6 +34,7 @@ DONE:
 - Make sure it looks good on iPhone 6/7/8
 - Resizing works when dragging the chrome inspector handle, but not when resizing the browser itself.
 - Work on copy
+- Add website footer
 
 NICE TO HAVEs:
 

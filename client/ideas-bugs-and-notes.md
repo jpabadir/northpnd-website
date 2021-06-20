@@ -12,7 +12,7 @@ Improvements:
 - Center About and Contact on screens above 1200px in width?
 - Add navbar animation
 - Make sure padding at top of all elements looks good on iPhone 5/SE
-- Make Habit One mockup tilted (perspective mockup)
+- Make Habit One mockup perspective mockup
 - Fix naked domain SSL issue (or I think it's actually non-naked)
 - Change API key since it was pushed to github
 

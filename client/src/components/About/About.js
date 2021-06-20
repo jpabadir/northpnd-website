@@ -23,11 +23,10 @@ function About() {
             <div className="Subtitle" style={{ fontSize: '25px' }}>
               I am the founder of North P&amp;D.
             </div>
-            <div style={{ fontSize: '20px' }}>North P&amp;D is a newly-established company, for which I do the entirety of the work.</div>
             <div style={{ fontSize: '20px' }}>
               <br />
-              Before starting this company, I worked on a variety of web projects, I interned as a software engineer at Amazon Web Services
-              and RBC, and I also launched an iOS app called Habit One, which you can download on the App Store if you feel like doing so.
+              In May of 2021, I established this company with the goal of providing high-quality software development and technology
+              services to both technical and non-technical businesses and individuals.
             </div>
           </Col>
           <Col className="AboutSecondCol" xl={5}>

@@ -51,7 +51,11 @@ function Services() {
                 <p>We'll build you a stunning, modern website or mobile app.</p>
                 <p className="LearnMore">{document.documentElement.clientWidth >= 1000 ? 'Click' : 'Tap'} to learn more</p>
               </Card>
-              <Card className="MyCard MyCardBack Interactable" cover={<img alt="example" src={information} height="80" />} onClick={() => flip(0)}>
+              <Card
+                className="MyCard MyCardBack Interactable"
+                cover={<img alt="example" src={information} height="80" />}
+                onClick={() => flip(0)}
+              >
                 Do you have a technical team? We can assist with development in your tech stack of choice on a feature-by-feature basis.
               </Card>
             </ReactCardFlip>
@@ -63,7 +67,11 @@ function Services() {
                 <p>We'll deal with your hosting needs so you only have one tech bill to pay - ours.</p>
                 <p className="LearnMore">{document.documentElement.clientWidth >= 1000 ? 'Click' : 'Tap'} to learn more</p>
               </Card>
-              <Card className="MyCard MyCardBack Interactable" cover={<img alt="example" src={information} height="80" />} onClick={() => flip(1)}>
+              <Card
+                className="MyCard MyCardBack Interactable"
+                cover={<img alt="example" src={information} height="80" />}
+                onClick={() => flip(1)}
+              >
                 Already have a hosting solution? No problem, we'll deliver the application's code and let you handle the rest.
               </Card>
             </ReactCardFlip>
@@ -75,7 +83,11 @@ function Services() {
                 <p>Do you have a unique business problem that can be solved with tech? We can help.</p>
                 <p className="LearnMore">{document.documentElement.clientWidth >= 1000 ? 'Click' : 'Tap'} to learn more</p>
               </Card>
-              <Card className="MyCard MyCardBack Interactable" onClick={() => flip(2)} cover={<img alt="example" src={information} height="80" />}>
+              <Card
+                className="MyCard MyCardBack Interactable"
+                onClick={() => flip(2)}
+                cover={<img alt="example" src={information} height="80" />}
+              >
                 For instance, if you manage a retail store, we can help you connect your point of sale system to your existing technical
                 solution to streamline your process.
               </Card>

@@ -5,6 +5,20 @@ import { Row, Col, Container } from 'react-bootstrap';
 import Rating from '@material-ui/lab/Rating';
 import { withStyles } from '@material-ui/core/styles';
 
+function WorkCard(props) {
+  return (
+    <Col className="PastWorkCol" md={6}>
+      <div style={{ maxWidth: '350px', width: '100%' }}>
+        <a href={props.link} target="_blank" rel="noreferrer">
+          <Card className={`WorkCard ${props.title.replace(/\s/g, '')}`} />
+          <div className="CardTitle">{props.title}</div>
+        </a>
+        <div>{props.subtitle}</div>
+      </div>
+    </Col>
+  );
+}
+
 function PastWork() {
   const [reviews, setReviews] = useState([]);
 
@@ -25,14 +39,16 @@ function PastWork() {
       <Container fluid>
         <div className="Subtitle">Our Work</div>
         <Row>
-          <Col className="PastWorkCol">
-            <div style={{ maxWidth: '350px', width: '100%' }}>
-              <a href="https://apps.apple.com/us/app/habit-one/id1564317049#?platform=iphone" target="_blank" rel="noreferrer">
-                <Card className="WorkCard PastWorkFirst" />
-                <div className="CardTitle">Habit One</div>
-              </a>
-            </div>
-          </Col>
+          <WorkCard
+            link="https://apps.apple.com/us/app/habit-one/id1564317049#?platform=iphone"
+            title="Habit One"
+            subtitle="Habit One is the simplest habit tracker, built using React Native."
+          />
+          <WorkCard
+            link="https://proximy.ca/"
+            title="Proximy"
+            subtitle="We built Proximy's mobile app's friend request feature, using Flutter and Cloud Firestore."
+          />
         </Row>
         <Row className="Reviews">
           {reviews.map((review) => {

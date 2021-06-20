@@ -15,21 +15,28 @@
   height: 320px;
   border: none;
   border-radius: 10px 0px 10px 0px;
-}
-
-.PastWorkFirst {
-  background-image: url('../../assets/habitoneSmaller.png');
-  background-color: rgb(218, 218, 218);
   background-position-x: center;
-  background-position-y: 25px;
   background-repeat: no-repeat;
   background-size: 80%;
+}
+
+.HabitOne {
+  background-image: url('../../assets/habitoneSmaller.png');
+  background-color: rgb(218, 218, 218);
+  background-position-y: 25px;
+}
+
+.Proximy {
+  background-image: url('../../assets/proximy-logo.png');
+  border-color: rgb(91, 141, 239);
+  border: 2px solid rgb(91, 141, 239);
+  background-position-y: center;
 }
 
 .CardTitle {
   font-size: 25px;
   font-weight: 700;
-  padding-top: 5px;
+  padding-top: 10px;
   color: black;
 }
 

@@ -36,7 +36,7 @@ function Services() {
   };
 
   return (
-    <div className="MainElementPadding">
+    <div className="MainElementPadding ServicesMain">
       <Container fluid>
         <div className="TextBlock">
           <div className="Subtitle">How we can help you</div>

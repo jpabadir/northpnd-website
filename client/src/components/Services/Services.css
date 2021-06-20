@@ -1,5 +1,5 @@
 .ServicesMain {
-  padding: 70px 50px 0px 50px;
+  padding-bottom: 50px;
 }
 
 .ServicesCol {
@@ -8,10 +8,6 @@
 
 .Subtitle {
   font-size: 40px;
-}
-
-.TextBlock {
-  /* padding: 0px 50px; */
 }
 
 .ServicesCardsRow {
@@ -48,19 +44,9 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  .ServicesMain {
-    padding: 70px 50px 0px 50px;
-  }
-
   .MyCard {
     text-align: center;
     width: 300px;
     padding-top: 40px;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .ServicesMain {
-    padding: 0px 0px 0px 0px;
   }
 }

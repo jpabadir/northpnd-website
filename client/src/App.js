@@ -9,6 +9,7 @@ import Services from './components/Services/Services';
 import PastWork from './components/PastWork/PastWork';
 import menu from './assets/menu.svg';
 import anime from 'animejs/lib/anime.es.js';
+import './hamburgers.css';
 
 const bodyScrollLock = require('body-scroll-lock');
 const disableBodyScroll = bodyScrollLock.disableBodyScroll;
@@ -68,15 +69,11 @@ function App() {
           className="Toggle"
           id="toggler"
         >
-          <img
-            src={menu}
-            alt="menu"
-            style={{
-              height: '40px',
-              WebkitFilter: 'invert(100%)',
-              filter: 'invert(100%)',
-            }}
-          />
+          <div class={`hamburger hamburger--collapse ${isToggleOpen && 'is-active'}`}>
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+          </div>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto text-center">

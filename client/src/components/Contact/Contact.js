@@ -41,11 +41,12 @@ function Contact() {
                 <Form.Group controlId="formBasicMessage" className="form-floating">
                   <Form.Label>Message</Form.Label>
                   <Form.Control
+                    style={{ resize: 'none' }}
                     className="MyFormControl"
                     type="text"
                     placeholder="How can we help you?"
                     name="message"
-                    rows="2"
+                    rows="3"
                     as="textarea"
                     required
                   />

@@ -15,7 +15,7 @@ function Home() {
               scroller.scrollTo('about', { duration: 300, smooth: true, spy: true });
             }}
           >
-            Tell Me More.
+            Tell me more
             <br />
             <div style={{ justifyContent: 'center', display: 'flex' }}>
               <img src={downArrow} alt="Down arrow" height="50" />

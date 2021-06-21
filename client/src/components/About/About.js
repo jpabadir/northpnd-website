@@ -18,7 +18,7 @@ function About() {
     <div className="MainElementPadding">
       <Container fluid className="AboutContainer">
         <Row className="AboutRow">
-          <Col className="AboutFirstCol" xl={7}>
+          <Col xl={7}>
             <div className="Subtitle">Hi! I'm JP.</div>
             <div className="Subtitle" style={{ fontSize: '25px' }}>
               I am the founder of North P&amp;D.
@@ -29,7 +29,7 @@ function About() {
               services to both technical and non-technical businesses and individuals.
             </div>
           </Col>
-          <Col className="AboutSecondCol" xl={5}>
+          <Col xl={5}>
             <div className="VideoParent">
               <iframe
                 width="100%"

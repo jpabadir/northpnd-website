@@ -164,7 +164,7 @@ function App() {
               </div>
             </Element>
           </div>
-          <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#e6e6e6' }}>
+          <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#e8e9eb' }}>
             <Element name="services" className="element" style={{ minHeight: '100vh', width: '100%' }}>
               <div style={{ paddingTop: `${navbarHeight}px` }}>
                 <Services />
@@ -182,7 +182,7 @@ function App() {
               </div>
             </Element>
           </div>
-          <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: 'rgb(21, 20, 26)' }}>
+          <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#010e21' }}>
             <div className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%', alignItems: 'center' }}>
               <Footer />
             </div>

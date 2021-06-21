@@ -164,7 +164,7 @@ function App() {
               </div>
             </Element>
           </div>
-          <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#e8e9eb' }}>
+          <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#f5f5f5' }}>
             <Element name="services" className="element" style={{ minHeight: '100vh', width: '100%' }}>
               <div style={{ paddingTop: `${navbarHeight}px` }}>
                 <Services />

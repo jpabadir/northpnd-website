@@ -49,7 +49,7 @@ function Services() {
               <Card className="MyCard Interactable" cover={<img alt="example" src={analysis} height="80" />} onClick={() => flip(0)}>
                 <h5>Web and Mobile Development</h5>
                 <p>We'll build you a stunning, modern website or mobile app.</p>
-                <p className="LearnMore">{document.documentElement.clientWidth >= 1000 ? 'Click' : 'Tap'} to learn more</p>
+                <p className="LearnMore">{document.documentElement.clientWidth >= 1000 ? 'Click' : 'Tap'} to learn more.</p>
               </Card>
               <Card
                 className="MyCard MyCardBack Interactable"
@@ -65,7 +65,7 @@ function Services() {
               <Card className="MyCard Interactable" cover={<img alt="example" src={upload} height="80" />} onClick={() => flip(1)}>
                 <h5>Hosting</h5>
                 <p>We'll deal with your hosting needs so you only have one tech bill to pay - ours.</p>
-                <p className="LearnMore">{document.documentElement.clientWidth >= 1000 ? 'Click' : 'Tap'} to learn more</p>
+                <p className="LearnMore">{document.documentElement.clientWidth >= 1000 ? 'Click' : 'Tap'} to learn more.</p>
               </Card>
               <Card
                 className="MyCard MyCardBack Interactable"
@@ -81,7 +81,7 @@ function Services() {
               <Card className="MyCard Interactable" cover={<img alt="example" src={feature} height="80" />} onClick={() => flip(2)}>
                 <h5>Custom Solution</h5>
                 <p>Do you have a unique business problem that can be solved with tech? We can help.</p>
-                <p className="LearnMore">{document.documentElement.clientWidth >= 1000 ? 'Click' : 'Tap'} to learn more</p>
+                <p className="LearnMore">{document.documentElement.clientWidth >= 1000 ? 'Click' : 'Tap'} to learn more.</p>
               </Card>
               <Card
                 className="MyCard MyCardBack Interactable"

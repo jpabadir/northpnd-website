@@ -5,7 +5,8 @@ Improvements:
 - Services component: make the total width of the cards smaller when on mobile,
   currently it's too wide.
 - Add functionality so that all cards flip back to normal when you click anywhere on the website
-- Make FormSpree redirect to us (but with empty fields)
+- Clear fields when opening contact form so that after filling out formspree, you have a clear fields.
+- Make FormSpree redirect to us (but with empty fields) 
 - Maybe we want to reduce the font size on small devices?
 - Center About and Contact on screens above 1200px in width?
 - Add navbar animation

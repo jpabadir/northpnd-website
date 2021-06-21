@@ -41,7 +41,7 @@ function Services() {
         <div className="TextBlock">
           <div className="Subtitle">How we can help you</div>
           <div style={{ fontSize: '25px' }}>We're not (just) a web dev company.</div>
-          <div style={{ fontSize: '20px' }}>We take care of your technical needs so you can focus on your business.</div>
+          <div style={{ fontSize: '20px' }}>We take care of your technology needs so you can focus on your business.</div>
         </div>
         <Row className="ServicesCardsRow">
           <Col className="ServicesCardCol">
@@ -64,7 +64,7 @@ function Services() {
             <ReactCardFlip isFlipped={isSecondFlipped} flipDirection="horizontal">
               <Card className="MyCard Interactable" cover={<img alt="example" src={upload} height="80" />} onClick={() => flip(1)}>
                 <h5>Hosting</h5>
-                <p>We'll deal with your hosting needs so you only have one tech bill to pay - ours.</p>
+                <p>We'll deal with your hosting and domain name needs so you only have one tech bill to pay - ours.</p>
                 <p className="LearnMore">{document.documentElement.clientWidth >= 1000 ? 'Click' : 'Tap'} to learn more.</p>
               </Card>
               <Card

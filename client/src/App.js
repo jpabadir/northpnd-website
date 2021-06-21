@@ -70,9 +70,9 @@ function App() {
           className="Toggle"
           id="toggler"
         >
-          <div class={`hamburger hamburger--slider ${isToggleOpen && 'is-active'}`}>
-            <div class="hamburger-box">
-              <div class="hamburger-inner"></div>
+          <div className={`hamburger hamburger--slider ${isToggleOpen && 'is-active'}`}>
+            <div className="hamburger-box">
+              <div className="hamburger-inner"></div>
             </div>
           </div>
         </Navbar.Toggle>

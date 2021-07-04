@@ -12,8 +12,8 @@ Improvements:
 - Add navbar animation
 - Make sure padding at top of all elements looks good on iPhone 5/SE
 - Make Habit One mockup perspective mockup
-- Fix naked domain SSL issue (or I think it's actually non-naked)
 - Change API key since it was pushed to github
+- For the services cards, we could add little videos with text underneath instead of what we currently have. 
 
 DONE:
 
@@ -36,6 +36,8 @@ DONE:
 - Resizing works when dragging the chrome inspector handle, but not when resizing the browser itself.
 - Work on copy
 - Add website footer
+- Fix dns and stuff
+- Fix naked domain SSL issue (or I think it's actually non-naked)
 
 NICE TO HAVEs:
 

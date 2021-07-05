@@ -24,6 +24,7 @@ function ServicesCard(props) {
               event.target.pause();
               event.target.currentTime = 0;
             }}
+            playsInline
             loop
             muted
           />

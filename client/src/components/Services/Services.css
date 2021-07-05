@@ -22,16 +22,9 @@
 }
 
 .ServicesVideoParent {
-  transition: 0.2s;
-  transform: scale(1);
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.ServicesVideoParent:hover {
-  transition: 0.2s;
-  transform: scale(1.1);
 }
 
 .ServicesVideo {
@@ -40,6 +33,11 @@
   transform: scale(1);
   border-radius: inherit;
   height: 100%;
+}
+
+.ServicesVideo:hover {
+  transition: 0.2s;
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 991px) {

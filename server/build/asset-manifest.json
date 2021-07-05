@@ -1,31 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.4531cd01.chunk.css",
-    "main.js": "/static/js/main.697c49d0.chunk.js",
-    "main.js.map": "/static/js/main.697c49d0.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.39d4545c.js",
-    "runtime-main.js.map": "/static/js/runtime-main.39d4545c.js.map",
+    "main.css": "/static/css/main.8f37114a.chunk.css",
+    "main.js": "/static/js/main.e9c09b17.chunk.js",
+    "main.js.map": "/static/js/main.e9c09b17.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.89d8131b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.89d8131b.js.map",
     "static/css/2.8b9d5b02.chunk.css": "/static/css/2.8b9d5b02.chunk.css",
-    "static/js/2.33e22bc5.chunk.js": "/static/js/2.33e22bc5.chunk.js",
-    "static/js/2.33e22bc5.chunk.js.map": "/static/js/2.33e22bc5.chunk.js.map",
-    "static/js/3.cd6e4e33.chunk.js": "/static/js/3.cd6e4e33.chunk.js",
-    "static/js/3.cd6e4e33.chunk.js.map": "/static/js/3.cd6e4e33.chunk.js.map",
+    "static/js/2.0bb0ba9c.chunk.js": "/static/js/2.0bb0ba9c.chunk.js",
+    "static/js/2.0bb0ba9c.chunk.js.map": "/static/js/2.0bb0ba9c.chunk.js.map",
+    "static/js/3.2c069bcb.chunk.js": "/static/js/3.2c069bcb.chunk.js",
+    "static/js/3.2c069bcb.chunk.js.map": "/static/js/3.2c069bcb.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.8b9d5b02.chunk.css.map": "/static/css/2.8b9d5b02.chunk.css.map",
-    "static/css/main.4531cd01.chunk.css.map": "/static/css/main.4531cd01.chunk.css.map",
-    "static/js/2.33e22bc5.chunk.js.LICENSE.txt": "/static/js/2.33e22bc5.chunk.js.LICENSE.txt",
-    "static/media/analysis.80b9e383.svg": "/static/media/analysis.80b9e383.svg",
-    "static/media/feature.98c0e5d3.svg": "/static/media/feature.98c0e5d3.svg",
+    "static/css/main.8f37114a.chunk.css.map": "/static/css/main.8f37114a.chunk.css.map",
+    "static/js/2.0bb0ba9c.chunk.js.LICENSE.txt": "/static/js/2.0bb0ba9c.chunk.js.LICENSE.txt",
+    "static/media/cables.d5c5ae2e.mp4": "/static/media/cables.d5c5ae2e.mp4",
+    "static/media/coding.a833cd5a.mp4": "/static/media/coding.a833cd5a.mp4",
+    "static/media/discussion.d61f661f.mp4": "/static/media/discussion.d61f661f.mp4",
     "static/media/PastWork.css": "/static/media/proximy-logo.485ce016.png",
-    "static/media/information.44d1f7c1.svg": "/static/media/information.44d1f7c1.svg",
-    "static/media/menu.644fa295.svg": "/static/media/menu.644fa295.svg",
-    "static/media/upload.c7712cbb.svg": "/static/media/upload.c7712cbb.svg"
+    "static/media/menu.644fa295.svg": "/static/media/menu.644fa295.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.39d4545c.js",
+    "static/js/runtime-main.89d8131b.js",
     "static/css/2.8b9d5b02.chunk.css",
-    "static/js/2.33e22bc5.chunk.js",
-    "static/css/main.4531cd01.chunk.css",
-    "static/js/main.697c49d0.chunk.js"
+    "static/js/2.0bb0ba9c.chunk.js",
+    "static/css/main.8f37114a.chunk.css",
+    "static/js/main.e9c09b17.chunk.js"
   ]
 }

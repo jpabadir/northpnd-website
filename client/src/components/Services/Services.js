@@ -28,7 +28,7 @@ function ServicesCard(props) {
             muted
           />
         </div>
-        <div className="CardTitle" style={{ fontSize: '17px' }}>
+        <div className="CardTitle" style={{ fontSize: '17px', paddingTop: '15px' }}>
           {props.title}
         </div>
         <div style={{ fontSize: '15px', opacity: `${props.subtitleDisplay === props.index ? '0.7' : '0'}`, transition: '0.3s' }}>
@@ -55,7 +55,7 @@ function Services() {
             index={0}
             src={coding}
             title="Web &amp; Mobile Development"
-            subtitle="Do you have a technical team? We can assist with development in your tech stack of choice on a feature-by-feature basis."
+            subtitle="We'll work with you to design, develop, and deploy your website or app."
             subtitleDisplay={subtitleDisplay}
             setSubtitleDisplay={setSubtitleDisplay}
           />

@@ -13,7 +13,7 @@ Improvements:
 - Make sure padding at top of all elements looks good on iPhone 5/SE
 - Make Habit One mockup perspective mockup
 - Change API key since it was pushed to github
-- For the services cards, we could add little videos with text underneath instead of what we currently have. 
+- Add some pricing
 
 DONE:
 
@@ -38,6 +38,7 @@ DONE:
 - Add website footer
 - Fix dns and stuff
 - Fix naked domain SSL issue (or I think it's actually non-naked)
+- For the services cards, we could add little videos with text underneath instead of what we currently have. 
 
 NICE TO HAVEs:
 

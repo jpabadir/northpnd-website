@@ -7,7 +7,7 @@ function Contact() {
       <Container fluid className="ContactContainer">
         <Row>
           <Col xl={6} className="ContactCol">
-            <div className="Subtitle">Contact Us. We'll respond within 24 hours.</div>
+            <div className="Subtitle">Contact us. We'll respond within 24 hours.</div>
             <br />
             <div style={{ fontSize: '25px' }}>North P&amp;D, Inc.</div>
             401 Bay St., 16th Floor

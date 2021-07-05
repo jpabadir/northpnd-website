@@ -2,10 +2,6 @@
   padding-bottom: 50px;
 }
 
-.ServicesCol {
-  padding-bottom: 100px;
-}
-
 .Subtitle {
   font-size: 40px;
 }
@@ -19,34 +15,50 @@
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 0px 0px 0px 0px;
 }
 
-.MyCard {
-  text-align: center;
-  width: 300px;
-  padding-top: 40px;
-  height: 300px;
-  border-radius: 5px;
-  border: 1px solid rgb(220, 220, 220);
-  background-color: rgb(245, 245, 245);
+.ServicesVideoGrandParent {
+  width: 90%;
 }
 
-.MyCardBack {
-  border: 1px solid rgb(220, 220, 220);
-  background-color: rgb(245, 245, 245);
+.ServicesVideoParent {
+  transition: 0.2s;
+  transform: scale(1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.LearnMore {
-  color: rgb(100, 100, 100);
-  font-size: 10px;
-  padding-top: 0px;
+.ServicesVideoParent:hover {
+  transition: 0.2s;
+  transform: scale(1.1);
 }
 
-@media only screen and (max-width: 1200px) {
-  .MyCard {
-    text-align: center;
-    width: 300px;
-    padding-top: 40px;
+.ServicesVideo {
+  overflow: hidden;
+  transition: 0.2s;
+  transform: scale(1);
+  border-radius: inherit;
+  height: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+  .ServicesVideoGrandParent {
+    padding-top: 15px;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ServicesVideoGrandParent {
+    padding-top: 15px;
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .ServicesVideoGrandParent {
+    padding-top: 15px;
+    width: 80%;
   }
 }

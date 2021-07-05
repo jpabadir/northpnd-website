@@ -1,39 +1,46 @@
 import React, { useState } from 'react';
 import './Services.css';
-import { Card } from 'antd';
 import { Row, Col, Container } from 'react-bootstrap';
-import feature from '../../assets/feature.svg';
-import information from '../../assets/information.svg';
-import upload from '../../assets/upload.svg';
-import analysis from '../../assets/analysis.svg';
-import ReactCardFlip from 'react-card-flip';
+import coding from '../../assets/coding.mp4';
+import cables from '../../assets/cables.mp4';
+import discussion from '../../assets/discussion.mp4';
+
+function ServicesCard(props) {
+  return (
+    <Col className="ServicesCardCol" lg={4}>
+      <div className="ServicesVideoGrandParent">
+        <div className="ServicesVideoParent StaticShadow">
+          <video
+            className="ServicesVideo"
+            src={props.src}
+            height="250"
+            type="video/mp4"
+            onMouseOver={(event) => {
+              props.setSubtitleDisplay(props.index);
+              event.target.play();
+            }}
+            onMouseOut={(event) => {
+              props.setSubtitleDisplay(-1);
+              event.target.pause();
+              event.target.currentTime = 0;
+            }}
+            loop
+            muted
+          />
+        </div>
+        <div className="CardTitle" style={{ fontSize: '17px' }}>
+          {props.title}
+        </div>
+        <div style={{ fontSize: '15px', opacity: `${props.subtitleDisplay === props.index ? '0.7' : '0'}`, transition: '0.3s' }}>
+          {props.subtitle}
+        </div>
+      </div>
+    </Col>
+  );
+}
 
 function Services() {
-  const [isFirstFlipped, setIsFirstFlipped] = useState(false);
-  const [isSecondFlipped, setIsSecondFlipped] = useState(false);
-  const [isThirdFlipped, setIsThirdFlipped] = useState(false);
-
-  const flip = (index) => {
-    switch (index) {
-      case 0:
-        setIsFirstFlipped(!isFirstFlipped);
-        setIsSecondFlipped(false);
-        setIsThirdFlipped(false);
-        break;
-      case 1:
-        setIsSecondFlipped(!isSecondFlipped);
-        setIsFirstFlipped(false);
-        setIsThirdFlipped(false);
-        break;
-      case 2:
-        setIsThirdFlipped(!isThirdFlipped);
-        setIsFirstFlipped(false);
-        setIsSecondFlipped(false);
-        break;
-      default:
-        console.log('Something weird happened.');
-    }
-  };
+  const [subtitleDisplay, setSubtitleDisplay] = useState(-1);
 
   return (
     <div className="MainElementPadding ServicesMain">
@@ -44,55 +51,30 @@ function Services() {
           <div style={{ fontSize: '20px' }}>We take care of your technology needs so you can focus on your business.</div>
         </div>
         <Row className="ServicesCardsRow">
-          <Col className="ServicesCardCol">
-            <ReactCardFlip isFlipped={isFirstFlipped} flipDirection="horizontal">
-              <Card className="MyCard Interactable" cover={<img alt="example" src={analysis} height="80" />} onClick={() => flip(0)}>
-                <h5>Web and Mobile Development</h5>
-                <p>We'll build you a stunning, modern website or mobile app.</p>
-                <p className="LearnMore">{document.documentElement.clientWidth >= 1000 ? 'Click' : 'Tap'} to learn more.</p>
-              </Card>
-              <Card
-                className="MyCard MyCardBack Interactable"
-                cover={<img alt="example" src={information} height="80" />}
-                onClick={() => flip(0)}
-              >
-                Do you have a technical team? We can assist with development in your tech stack of choice on a feature-by-feature basis.
-              </Card>
-            </ReactCardFlip>
-          </Col>
-          <Col className="ServicesCardCol">
-            <ReactCardFlip isFlipped={isSecondFlipped} flipDirection="horizontal">
-              <Card className="MyCard Interactable" cover={<img alt="example" src={upload} height="80" />} onClick={() => flip(1)}>
-                <h5>Hosting</h5>
-                <p>We'll deal with your hosting and domain name needs so you only have one tech bill to pay - ours.</p>
-                <p className="LearnMore">{document.documentElement.clientWidth >= 1000 ? 'Click' : 'Tap'} to learn more.</p>
-              </Card>
-              <Card
-                className="MyCard MyCardBack Interactable"
-                cover={<img alt="example" src={information} height="80" />}
-                onClick={() => flip(1)}
-              >
-                Already have a hosting solution? No problem, we'll deliver the application's code and let you handle the rest.
-              </Card>
-            </ReactCardFlip>
-          </Col>
-          <Col className="ServicesCardCol">
-            <ReactCardFlip isFlipped={isThirdFlipped} flipDirection="horizontal">
-              <Card className="MyCard Interactable" cover={<img alt="example" src={feature} height="80" />} onClick={() => flip(2)}>
-                <h5>Custom Solution</h5>
-                <p>Do you have a unique business problem that can be solved with tech? We can help.</p>
-                <p className="LearnMore">{document.documentElement.clientWidth >= 1000 ? 'Click' : 'Tap'} to learn more.</p>
-              </Card>
-              <Card
-                className="MyCard MyCardBack Interactable"
-                onClick={() => flip(2)}
-                cover={<img alt="example" src={information} height="80" />}
-              >
-                For instance, if you manage a retail store, we can help you connect your point of sale system to your existing technical
-                solution to streamline your process.
-              </Card>
-            </ReactCardFlip>
-          </Col>
+          <ServicesCard
+            index={0}
+            src={coding}
+            title="Web &amp; Mobile Development"
+            subtitle="Do you have a technical team? We can assist with development in your tech stack of choice on a feature-by-feature basis."
+            subtitleDisplay={subtitleDisplay}
+            setSubtitleDisplay={setSubtitleDisplay}
+          />
+          <ServicesCard
+            index={1}
+            src={cables}
+            title="Hosting"
+            subtitle="We'll deal with your hosting and domain name needs so you only have one tech bill to pay - ours."
+            subtitleDisplay={subtitleDisplay}
+            setSubtitleDisplay={setSubtitleDisplay}
+          />
+          <ServicesCard
+            index={2}
+            src={discussion}
+            title="Custom Solution"
+            subtitle="Do you have a unique business problem that can be solved with tech? We can help."
+            subtitleDisplay={subtitleDisplay}
+            setSubtitleDisplay={setSubtitleDisplay}
+          />
         </Row>
       </Container>
     </div>

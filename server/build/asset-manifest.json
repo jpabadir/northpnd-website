@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.d559ba1e.chunk.css",
-    "main.js": "/static/js/main.6a855dae.chunk.js",
-    "main.js.map": "/static/js/main.6a855dae.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.81a25963.js",
-    "runtime-main.js.map": "/static/js/runtime-main.81a25963.js.map",
+    "main.css": "/static/css/main.90de8cf1.chunk.css",
+    "main.js": "/static/js/main.00fbc276.chunk.js",
+    "main.js.map": "/static/js/main.00fbc276.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0733886e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0733886e.js.map",
     "static/css/2.8b9d5b02.chunk.css": "/static/css/2.8b9d5b02.chunk.css",
-    "static/js/2.d18d40bb.chunk.js": "/static/js/2.d18d40bb.chunk.js",
-    "static/js/2.d18d40bb.chunk.js.map": "/static/js/2.d18d40bb.chunk.js.map",
-    "static/js/3.404b89f6.chunk.js": "/static/js/3.404b89f6.chunk.js",
-    "static/js/3.404b89f6.chunk.js.map": "/static/js/3.404b89f6.chunk.js.map",
+    "static/js/2.e06f0577.chunk.js": "/static/js/2.e06f0577.chunk.js",
+    "static/js/2.e06f0577.chunk.js.map": "/static/js/2.e06f0577.chunk.js.map",
+    "static/js/3.ccd5d3b9.chunk.js": "/static/js/3.ccd5d3b9.chunk.js",
+    "static/js/3.ccd5d3b9.chunk.js.map": "/static/js/3.ccd5d3b9.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.8b9d5b02.chunk.css.map": "/static/css/2.8b9d5b02.chunk.css.map",
-    "static/css/main.d559ba1e.chunk.css.map": "/static/css/main.d559ba1e.chunk.css.map",
-    "static/js/2.d18d40bb.chunk.js.LICENSE.txt": "/static/js/2.d18d40bb.chunk.js.LICENSE.txt",
+    "static/css/main.90de8cf1.chunk.css.map": "/static/css/main.90de8cf1.chunk.css.map",
+    "static/js/2.e06f0577.chunk.js.LICENSE.txt": "/static/js/2.e06f0577.chunk.js.LICENSE.txt",
     "static/media/cables-light.828b15ee.mov": "/static/media/cables-light.828b15ee.mov",
     "static/media/cables-poster.16eb148d.png": "/static/media/cables-poster.16eb148d.png",
     "static/media/coding-light.4a0c2f02.mov": "/static/media/coding-light.4a0c2f02.mov",
@@ -23,10 +23,10 @@
     "static/media/PastWork.css": "/static/media/proximy-logo.485ce016.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.81a25963.js",
+    "static/js/runtime-main.0733886e.js",
     "static/css/2.8b9d5b02.chunk.css",
-    "static/js/2.d18d40bb.chunk.js",
-    "static/css/main.d559ba1e.chunk.css",
-    "static/js/main.6a855dae.chunk.js"
+    "static/js/2.e06f0577.chunk.js",
+    "static/css/main.90de8cf1.chunk.css",
+    "static/js/main.00fbc276.chunk.js"
   ]
 }

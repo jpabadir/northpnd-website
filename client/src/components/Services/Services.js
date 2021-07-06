@@ -69,10 +69,12 @@ function Services() {
       <Container fluid>
         <div className="TextBlock">
           <div className="Subtitle">How we can help you</div>
-          <div style={{ fontSize: '25px' }}>We're not (just) a web dev company.</div>
-          <div style={{ fontSize: '20px' }}>We take care of your technology needs so you can focus on your business.</div>
+          <Fade duration="1200">
+            <div style={{ fontSize: '25px' }}>We're not (just) a web dev company.</div>
+            <div style={{ fontSize: '20px' }}>We take care of your technology needs so you can focus on your business.</div>
+          </Fade>
         </div>
-        <Fade>
+        <Fade duration="1200">
           <Row className="ServicesCardsRow">
             <ServicesCard
               index={0}

@@ -153,15 +153,13 @@ function App() {
               </Element>
             </div>
           </Fade>
-          <Fade duration="1200">
-            <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
-              <Element name="about" className="element" style={{ paddingTop: `${navbarHeight}`, minHeight: '100vh', width: '100%' }}>
-                <div style={{ paddingTop: `${navbarHeight}px` }}>
-                  <About />
-                </div>
-              </Element>
-            </div>
-          </Fade>
+          <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
+            <Element name="about" className="element" style={{ paddingTop: `${navbarHeight}`, minHeight: '100vh', width: '100%' }}>
+              <div style={{ paddingTop: `${navbarHeight}px` }}>
+                <About />
+              </div>
+            </Element>
+          </div>
           <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
             <Element name="pastWork" className="element" style={{ minHeight: '100vh', width: '100%' }}>
               <div style={{ paddingTop: `${navbarHeight}px` }}>

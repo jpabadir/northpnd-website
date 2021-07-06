@@ -39,7 +39,7 @@ function PastWork() {
     <div className="MainElementPadding">
       <Container fluid>
         <div className="Subtitle">Our Work</div>
-        <Fade>
+        <Fade duration="1200">
           <Row>
             <WorkCard
               link="https://apps.apple.com/us/app/habit-one/id1564317049#?platform=iphone"
@@ -53,7 +53,7 @@ function PastWork() {
             />
           </Row>
         </Fade>
-        <Fade>
+        <Fade duration="1200">
           <Row className="Reviews">
             {reviews.map((review) => {
               return (

@@ -1,6 +1,7 @@
 import React, { useState, useLayoutEffect } from 'react';
 import './About.css';
 import { Form, Button, Row, Col, Container } from 'react-bootstrap';
+import Fade from 'react-reveal/Fade';
 
 function About() {
   const [videoHeight, setVideoHeight] = useState(300);
@@ -20,14 +21,16 @@ function About() {
         <Row className="AboutRow">
           <Col xl={7}>
             <div className="Subtitle">Hi! I'm JP.</div>
-            <div className="Subtitle" style={{ fontSize: '25px' }}>
-              I am the founder of North P&amp;D.
-            </div>
-            <div style={{ fontSize: '20px' }}>
-              <br />
-              In May of 2021, I established this company with the goal of providing high-quality software development and technology
-              services to both technical and non-technical businesses and individuals.
-            </div>
+            <Fade duration="1200">
+              <div className="Subtitle" style={{ fontSize: '25px' }}>
+                I am the founder of North P&amp;D.
+              </div>
+              <div style={{ fontSize: '20px' }}>
+                <br />
+                In May of 2021, I established this company with the goal of providing high-quality software development and technology
+                services to both technical and non-technical businesses and individuals.
+              </div>
+            </Fade>
           </Col>
           <Col xl={5}>
             <div className="VideoParent">

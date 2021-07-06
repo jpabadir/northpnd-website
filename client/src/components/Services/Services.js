@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './Services.css';
 import { Row, Col, Container } from 'react-bootstrap';
-import coding from '../../assets/coding.mp4';
-import cables from '../../assets/cables.mp4';
-import discussion from '../../assets/discussion.mp4';
+import coding from '../../assets/coding-light.mov';
+import cables from '../../assets/cables-light.mov';
+import discussion from '../../assets/discussion-light.mov';
 
 function ServicesCard(props) {
   return (

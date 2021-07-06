@@ -1,6 +1,6 @@
 import React, { useState, useLayoutEffect } from 'react';
 import './About.css';
-import { Form, Button, Row, Col, Container } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 
 function About() {

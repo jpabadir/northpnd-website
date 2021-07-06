@@ -1,6 +1,6 @@
 import './App.css';
 import { Link, Element } from 'react-scroll';
-import { Navbar, Nav, Form, Button } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import { useEffect, useRef, useState } from 'react';
 import About from './components/About/About';
 import Home from './components/Home/Home';
@@ -8,8 +8,6 @@ import Contact from './components/Contact/Contact';
 import Services from './components/Services/Services';
 import PastWork from './components/PastWork/PastWork';
 import Footer from './components/Footer/Footer';
-import menu from './assets/menu.svg';
-import anime from 'animejs/lib/anime.es.js';
 import './hamburgers.css';
 import Fade from 'react-reveal/Fade';
 

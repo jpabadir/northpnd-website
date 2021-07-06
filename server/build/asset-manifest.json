@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.b6dad34b.chunk.css",
-    "main.js": "/static/js/main.ee07161c.chunk.js",
-    "main.js.map": "/static/js/main.ee07161c.chunk.js.map",
+    "main.js": "/static/js/main.813542aa.chunk.js",
+    "main.js.map": "/static/js/main.813542aa.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.89d8131b.js",
     "runtime-main.js.map": "/static/js/runtime-main.89d8131b.js.map",
     "static/css/2.8b9d5b02.chunk.css": "/static/css/2.8b9d5b02.chunk.css",
@@ -15,8 +15,11 @@
     "static/css/main.b6dad34b.chunk.css.map": "/static/css/main.b6dad34b.chunk.css.map",
     "static/js/2.0bb0ba9c.chunk.js.LICENSE.txt": "/static/js/2.0bb0ba9c.chunk.js.LICENSE.txt",
     "static/media/cables-light.828b15ee.mov": "/static/media/cables-light.828b15ee.mov",
+    "static/media/cables-poster.16eb148d.png": "/static/media/cables-poster.16eb148d.png",
     "static/media/coding-light.4a0c2f02.mov": "/static/media/coding-light.4a0c2f02.mov",
+    "static/media/coding-poster.6d1e8213.png": "/static/media/coding-poster.6d1e8213.png",
     "static/media/discussion-light.43503863.mov": "/static/media/discussion-light.43503863.mov",
+    "static/media/discussion-poster.a640fb18.png": "/static/media/discussion-poster.a640fb18.png",
     "static/media/PastWork.css": "/static/media/proximy-logo.485ce016.png",
     "static/media/menu.644fa295.svg": "/static/media/menu.644fa295.svg"
   },
@@ -25,6 +28,6 @@
     "static/css/2.8b9d5b02.chunk.css",
     "static/js/2.0bb0ba9c.chunk.js",
     "static/css/main.b6dad34b.chunk.css",
-    "static/js/main.ee07161c.chunk.js"
+    "static/js/main.813542aa.chunk.js"
   ]
 }

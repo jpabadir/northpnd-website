@@ -1,0 +1,15 @@
+.Reviews {
+  padding: 100px 0px;
+  text-align: center;
+  justify-content: center;
+}
+
+.Review {
+  max-width: 500px;
+  padding: 0px 50px;
+}
+
+.ReviewText {
+  font-weight: 700;
+  padding-bottom: 5px;
+}

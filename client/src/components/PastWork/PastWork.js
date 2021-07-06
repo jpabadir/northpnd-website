@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './PastWork.css';
 import { Card } from 'antd';
 import { Row, Col, Container } from 'react-bootstrap';
-import Rating from '@material-ui/lab/Rating';
-import { withStyles } from '@material-ui/core/styles';
+import Reviews from '../Reviews/Reviews';
 import Fade from 'react-reveal/Fade';
 
 function WorkCard(props) {
@@ -21,20 +20,6 @@ function WorkCard(props) {
 }
 
 function PastWork() {
-  const [reviews, setReviews] = useState([]);
-
-  useEffect(() => {
-    fetch('https://www.northpnd.com/get-reviews')
-      .then((reviews) => reviews.json())
-      .then((jsonData) => setReviews(jsonData));
-  }, []);
-
-  const StyledRating = withStyles({
-    iconFilled: {
-      color: 'rgb(252, 186, 3)',
-    },
-  })(Rating);
-
   return (
     <div className="MainElementPadding">
       <Container fluid>
@@ -54,17 +39,7 @@ function PastWork() {
           </Row>
         </Fade>
         <Fade duration="1200">
-          <Row className="Reviews">
-            {reviews.map((review) => {
-              return (
-                <Col className="Review">
-                  <StyledRating value={review.rating} readOnly size="large" />
-                  <div className="ReviewText">"{review.text}"</div>
-                  <div>{review.author_name}</div>
-                </Col>
-              );
-            })}
-          </Row>
+          <Reviews />
         </Fade>
       </Container>
     </div>

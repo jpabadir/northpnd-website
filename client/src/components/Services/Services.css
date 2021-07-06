@@ -35,7 +35,12 @@
   height: 100%;
 }
 
-.ServicesVideo:hover {
+.VideoTransition {
+  transition: 0.2s;
+  transform: scale(1);
+}
+
+.VideoTransition:hover {
   transition: 0.2s;
   transform: scale(1.1);
 }

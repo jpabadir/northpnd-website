@@ -2,6 +2,7 @@ BUGS:
 
 Improvements:
 
+- useLayoutEffect is used badly!
 - Services component: make the total width of the cards smaller when on mobile,
   currently it's too wide.
 - Add functionality so that all cards flip back to normal when you click anywhere on the website

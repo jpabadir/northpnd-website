@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import './Services.css';
 import { Row, Col, Container } from 'react-bootstrap';
 import coding from '../../assets/coding-light.mov';
@@ -9,20 +9,33 @@ import cablesPoster from '../../assets/cables-poster.png';
 import discussionPoster from '../../assets/discussion-poster.png';
 
 function ServicesCard(props) {
+  const [isMobile, setIsMobile] = useState(false);
+  
+  useLayoutEffect(() => {
+    function updateIsMobile() {
+      setIsMobile(document.documentElement.clientWidth < 992);
+    }
+    window.addEventListener('resize', updateIsMobile);
+    updateIsMobile();
+    return () => window.removeEventListener('resize', updateIsMobile);
+  }, []);
+
   return (
     <Col className="ServicesCardCol" lg={4}>
       <div className="ServicesVideoGrandParent">
-        <div className="ServicesVideoParent StaticShadow">
+        <div className={`ServicesVideoParent StaticShadow ${isMobile ? '' : 'VideoTransition'}`}>
           <video
             className="ServicesVideo"
             src={props.videoSrc}
             height="250"
             type="video/mov"
             onMouseOver={(event) => {
+              if (isMobile) return;
               props.setSubtitleDisplay(props.index);
               event.target.play();
             }}
             onMouseOut={(event) => {
+              if (isMobile) return;
               props.setSubtitleDisplay(-1);
               event.target.pause();
               event.target.currentTime = 0;
@@ -36,7 +49,9 @@ function ServicesCard(props) {
         <div className="CardTitle" style={{ fontSize: '17px', paddingTop: '15px' }}>
           {props.title}
         </div>
-        <div style={{ fontSize: '15px', opacity: `${props.subtitleDisplay === props.index ? '0.7' : '0'}`, transition: '0.3s' }}>
+        <div
+          style={{ fontSize: '15px', opacity: `${props.subtitleDisplay === props.index || isMobile ? '0.7' : '0'}`, transition: '0.3s' }}
+        >
           {props.subtitle}
         </div>
       </div>

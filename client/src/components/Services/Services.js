@@ -7,10 +7,11 @@ import discussion from '../../assets/discussion-light.mov';
 import codingPoster from '../../assets/coding-poster.png';
 import cablesPoster from '../../assets/cables-poster.png';
 import discussionPoster from '../../assets/discussion-poster.png';
+import Fade from 'react-reveal/Fade';
 
 function ServicesCard(props) {
   const [isMobile, setIsMobile] = useState(false);
-  
+
   useLayoutEffect(() => {
     function updateIsMobile() {
       setIsMobile(document.documentElement.clientWidth < 992);
@@ -71,35 +72,37 @@ function Services() {
           <div style={{ fontSize: '25px' }}>We're not (just) a web dev company.</div>
           <div style={{ fontSize: '20px' }}>We take care of your technology needs so you can focus on your business.</div>
         </div>
-        <Row className="ServicesCardsRow">
-          <ServicesCard
-            index={0}
-            videoSrc={coding}
-            posterSrc={codingPoster}
-            title="Web &amp; Mobile Development"
-            subtitle="We'll work with you to design, develop, and deploy your website or app."
-            subtitleDisplay={subtitleDisplay}
-            setSubtitleDisplay={setSubtitleDisplay}
-          />
-          <ServicesCard
-            index={1}
-            videoSrc={cables}
-            posterSrc={cablesPoster}
-            title="Hosting"
-            subtitle="We'll deal with your hosting and domain name so you only have one tech bill to pay - ours."
-            subtitleDisplay={subtitleDisplay}
-            setSubtitleDisplay={setSubtitleDisplay}
-          />
-          <ServicesCard
-            index={2}
-            videoSrc={discussion}
-            posterSrc={discussionPoster}
-            title="Custom Solution"
-            subtitle="Do you have a unique business problem that can be solved with tech? We can help."
-            subtitleDisplay={subtitleDisplay}
-            setSubtitleDisplay={setSubtitleDisplay}
-          />
-        </Row>
+        <Fade>
+          <Row className="ServicesCardsRow">
+            <ServicesCard
+              index={0}
+              videoSrc={coding}
+              posterSrc={codingPoster}
+              title="Web &amp; Mobile Development"
+              subtitle="We'll work with you to design, develop, and deploy your website or app."
+              subtitleDisplay={subtitleDisplay}
+              setSubtitleDisplay={setSubtitleDisplay}
+            />
+            <ServicesCard
+              index={1}
+              videoSrc={cables}
+              posterSrc={cablesPoster}
+              title="Hosting"
+              subtitle="We'll deal with your hosting and domain name so you only have one tech bill to pay - ours."
+              subtitleDisplay={subtitleDisplay}
+              setSubtitleDisplay={setSubtitleDisplay}
+            />
+            <ServicesCard
+              index={2}
+              videoSrc={discussion}
+              posterSrc={discussionPoster}
+              title="Custom Solution"
+              subtitle="Do you have a unique business problem that can be solved with tech? We can help."
+              subtitleDisplay={subtitleDisplay}
+              setSubtitleDisplay={setSubtitleDisplay}
+            />
+          </Row>
+        </Fade>
       </Container>
     </div>
   );

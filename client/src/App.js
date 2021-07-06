@@ -11,6 +11,7 @@ import Footer from './components/Footer/Footer';
 import menu from './assets/menu.svg';
 import anime from 'animejs/lib/anime.es.js';
 import './hamburgers.css';
+import Fade from 'react-reveal/Fade';
 
 const bodyScrollLock = require('body-scroll-lock');
 const disableBodyScroll = bodyScrollLock.disableBodyScroll;
@@ -139,24 +140,28 @@ function App() {
       </Navbar>
       <div className="ContentParent">
         <div onClick={closeToggle} style={{ position: 'relative', filter: isToggleOpen ? 'blur(20px)' : '', width: '100%' }}>
-          <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
-            <Element
-              name="home"
-              className="element"
-              style={{ minHeight: '100vh', display: 'flex', justifyContent: 'center', width: '100%' }}
-            >
-              <div style={{ paddingTop: `${navbarHeight}px` }}>
-                <Home />
-              </div>
-            </Element>
-          </div>
-          <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
-            <Element name="about" className="element" style={{ paddingTop: `${navbarHeight}`, minHeight: '100vh', width: '100%' }}>
-              <div style={{ paddingTop: `${navbarHeight}px` }}>
-                <About />
-              </div>
-            </Element>
-          </div>
+          <Fade duration="1200">
+            <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
+              <Element
+                name="home"
+                className="element"
+                style={{ minHeight: '100vh', display: 'flex', justifyContent: 'center', width: '100%' }}
+              >
+                <div style={{ paddingTop: `${navbarHeight}px` }}>
+                  <Home />
+                </div>
+              </Element>
+            </div>
+          </Fade>
+          <Fade duration="1200">
+            <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
+              <Element name="about" className="element" style={{ paddingTop: `${navbarHeight}`, minHeight: '100vh', width: '100%' }}>
+                <div style={{ paddingTop: `${navbarHeight}px` }}>
+                  <About />
+                </div>
+              </Element>
+            </div>
+          </Fade>
           <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
             <Element name="pastWork" className="element" style={{ minHeight: '100vh', width: '100%' }}>
               <div style={{ paddingTop: `${navbarHeight}px` }}>
@@ -171,17 +176,20 @@ function App() {
               </div>
             </Element>
           </div>
-          <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#f5f5f5' }}>
-            <Element
-              name="contactUs"
-              className="element"
-              style={{ minHeight: '100vh', display: 'flex', justifyContent: 'center', width: '100%' }}
-            >
-              <div style={{ paddingTop: `${navbarHeight}px` }}>
-                <Contact />
-              </div>
-            </Element>
-          </div>
+          <Fade duration="1200">
+            <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#f5f5f5' }}>
+              <Element
+                name="contactUs"
+                className="element"
+                style={{ minHeight: '100vh', display: 'flex', justifyContent: 'center', width: '100%' }}
+              >
+                <div style={{ paddingTop: `${navbarHeight}px` }}>
+                  <Contact />
+                </div>
+              </Element>
+            </div>
+          </Fade>
+
           <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#010e21' }}>
             <div className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%', alignItems: 'center' }}>
               <Footer />

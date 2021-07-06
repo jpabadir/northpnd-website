@@ -4,6 +4,7 @@ import { Card } from 'antd';
 import { Row, Col, Container } from 'react-bootstrap';
 import Rating from '@material-ui/lab/Rating';
 import { withStyles } from '@material-ui/core/styles';
+import Fade from 'react-reveal/Fade';
 
 function WorkCard(props) {
   return (
@@ -38,29 +39,33 @@ function PastWork() {
     <div className="MainElementPadding">
       <Container fluid>
         <div className="Subtitle">Our Work</div>
-        <Row>
-          <WorkCard
-            link="https://apps.apple.com/us/app/habit-one/id1564317049#?platform=iphone"
-            title="Habit One"
-            subtitle="Habit One is the simplest habit tracker, built using React Native."
-          />
-          <WorkCard
-            link="https://proximy.ca/"
-            title="Proximy"
-            subtitle="We built Proximy's mobile app's friend request feature, using Flutter and Cloud Firestore."
-          />
-        </Row>
-        <Row className="Reviews">
-          {reviews.map((review) => {
-            return (
-              <Col className="Review">
-                <StyledRating value={review.rating} readOnly size="large" />
-                <div className="ReviewText">"{review.text}"</div>
-                <div>{review.author_name}</div>
-              </Col>
-            );
-          })}
-        </Row>
+        <Fade>
+          <Row>
+            <WorkCard
+              link="https://apps.apple.com/us/app/habit-one/id1564317049#?platform=iphone"
+              title="Habit One"
+              subtitle="Habit One is the simplest habit tracker, built using React Native."
+            />
+            <WorkCard
+              link="https://proximy.ca/"
+              title="Proximy"
+              subtitle="We built Proximy's mobile app's friend request feature, using Flutter and Cloud Firestore."
+            />
+          </Row>
+        </Fade>
+        <Fade>
+          <Row className="Reviews">
+            {reviews.map((review) => {
+              return (
+                <Col className="Review">
+                  <StyledRating value={review.rating} readOnly size="large" />
+                  <div className="ReviewText">"{review.text}"</div>
+                  <div>{review.author_name}</div>
+                </Col>
+              );
+            })}
+          </Row>
+        </Fade>
       </Container>
     </div>
   );

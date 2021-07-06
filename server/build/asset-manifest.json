@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.b6dad34b.chunk.css",
-    "main.js": "/static/js/main.3cd78b6e.chunk.js",
-    "main.js.map": "/static/js/main.3cd78b6e.chunk.js.map",
+    "main.js": "/static/js/main.d6087f57.chunk.js",
+    "main.js.map": "/static/js/main.d6087f57.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.89d8131b.js",
     "runtime-main.js.map": "/static/js/runtime-main.89d8131b.js.map",
     "static/css/2.8b9d5b02.chunk.css": "/static/css/2.8b9d5b02.chunk.css",
@@ -14,9 +14,9 @@
     "static/css/2.8b9d5b02.chunk.css.map": "/static/css/2.8b9d5b02.chunk.css.map",
     "static/css/main.b6dad34b.chunk.css.map": "/static/css/main.b6dad34b.chunk.css.map",
     "static/js/2.0bb0ba9c.chunk.js.LICENSE.txt": "/static/js/2.0bb0ba9c.chunk.js.LICENSE.txt",
-    "static/media/cables.d5c5ae2e.mp4": "/static/media/cables.d5c5ae2e.mp4",
-    "static/media/coding.a833cd5a.mp4": "/static/media/coding.a833cd5a.mp4",
-    "static/media/discussion.d61f661f.mp4": "/static/media/discussion.d61f661f.mp4",
+    "static/media/cables-light.828b15ee.mov": "/static/media/cables-light.828b15ee.mov",
+    "static/media/coding-light.4a0c2f02.mov": "/static/media/coding-light.4a0c2f02.mov",
+    "static/media/discussion-light.43503863.mov": "/static/media/discussion-light.43503863.mov",
     "static/media/PastWork.css": "/static/media/proximy-logo.485ce016.png",
     "static/media/menu.644fa295.svg": "/static/media/menu.644fa295.svg"
   },
@@ -25,6 +25,6 @@
     "static/css/2.8b9d5b02.chunk.css",
     "static/js/2.0bb0ba9c.chunk.js",
     "static/css/main.b6dad34b.chunk.css",
-    "static/js/main.3cd78b6e.chunk.js"
+    "static/js/main.d6087f57.chunk.js"
   ]
 }

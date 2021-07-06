@@ -4,6 +4,9 @@ import { Row, Col, Container } from 'react-bootstrap';
 import coding from '../../assets/coding-light.mov';
 import cables from '../../assets/cables-light.mov';
 import discussion from '../../assets/discussion-light.mov';
+import codingPoster from '../../assets/coding-poster.png';
+import cablesPoster from '../../assets/cables-poster.png';
+import discussionPoster from '../../assets/discussion-poster.png';
 
 function ServicesCard(props) {
   return (
@@ -12,7 +15,7 @@ function ServicesCard(props) {
         <div className="ServicesVideoParent StaticShadow">
           <video
             className="ServicesVideo"
-            src={props.src}
+            src={props.videoSrc}
             height="250"
             type="video/mov"
             onMouseOver={(event) => {
@@ -27,7 +30,7 @@ function ServicesCard(props) {
             playsInline
             loop
             muted
-            poster={props.src + '-poster.png'}
+            poster={props.poster}
           />
         </div>
         <div className="CardTitle" style={{ fontSize: '17px', paddingTop: '15px' }}>
@@ -55,7 +58,8 @@ function Services() {
         <Row className="ServicesCardsRow">
           <ServicesCard
             index={0}
-            src={coding}
+            videoSrc={coding}
+            posterSrc={codingPoster}
             title="Web &amp; Mobile Development"
             subtitle="We'll work with you to design, develop, and deploy your website or app."
             subtitleDisplay={subtitleDisplay}
@@ -63,7 +67,8 @@ function Services() {
           />
           <ServicesCard
             index={1}
-            src={cables}
+            videoSrc={cables}
+            posterSrc={cablesPoster}
             title="Hosting"
             subtitle="We'll deal with your hosting and domain name so you only have one tech bill to pay - ours."
             subtitleDisplay={subtitleDisplay}
@@ -71,7 +76,8 @@ function Services() {
           />
           <ServicesCard
             index={2}
-            src={discussion}
+            videoSrc={discussion}
+            posterSrc={discussionPoster}
             title="Custom Solution"
             subtitle="Do you have a unique business problem that can be solved with tech? We can help."
             subtitleDisplay={subtitleDisplay}

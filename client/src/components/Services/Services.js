@@ -65,7 +65,7 @@ function Services() {
             index={1}
             src={cables}
             title="Hosting"
-            subtitle="We'll deal with your hosting and domain name needs so you only have one tech bill to pay - ours."
+            subtitle="We'll deal with your hosting and domain name so you only have one tech bill to pay - ours."
             subtitleDisplay={subtitleDisplay}
             setSubtitleDisplay={setSubtitleDisplay}
           />

@@ -14,7 +14,7 @@ function ServicesCard(props) {
             className="ServicesVideo"
             src={props.src}
             height="250"
-            type="video/mp4"
+            type="video/mov"
             onMouseOver={(event) => {
               props.setSubtitleDisplay(props.index);
               event.target.play();
@@ -27,6 +27,7 @@ function ServicesCard(props) {
             playsInline
             loop
             muted
+            poster={props.src + '-poster.png'}
           />
         </div>
         <div className="CardTitle" style={{ fontSize: '17px', paddingTop: '15px' }}>

@@ -94,7 +94,7 @@ function Services() {
               videoSrc={discussion}
               posterSrc={discussionPoster}
               title="Custom Solution"
-              subtitle="Do you have a unique business problem that can be solved with tech? We can help."
+              subtitle="Do you have a unique business problem that can be solved with tech? Do you need a consultant to speed up development? We can help."
               subtitleDisplay={subtitleDisplay}
               setSubtitleDisplay={setSubtitleDisplay}
             />

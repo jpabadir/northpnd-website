@@ -172,20 +172,17 @@ function App() {
               </div>
             </Element>
           </div>
-          <Fade duration="1200">
-            <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#f5f5f5' }}>
-              <Element
-                name="contactUs"
-                className="element"
-                style={{ minHeight: '100vh', display: 'flex', justifyContent: 'center', width: '100%' }}
-              >
-                <div style={{ paddingTop: `${navbarHeight}px` }}>
-                  <Contact />
-                </div>
-              </Element>
-            </div>
-          </Fade>
-
+          <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#f5f5f5' }}>
+            <Element
+              name="contactUs"
+              className="element"
+              style={{ minHeight: '100vh', display: 'flex', justifyContent: 'center', width: '100%' }}
+            >
+              <div style={{ paddingTop: `${navbarHeight}px` }}>
+                <Contact />
+              </div>
+            </Element>
+          </div>
           <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#010e21' }}>
             <div className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%', alignItems: 'center' }}>
               <Footer />

@@ -30,16 +30,11 @@ function ServicesCard(props) {
             src={props.videoSrc}
             height="250"
             type="video/mov"
-            onMouseOver={(event) => {
-              if (isMobile) return;
-              props.setSubtitleDisplay(props.index);
-              event.target.play();
+            onMouseOver={() => {
+              if (!isMobile) props.setSubtitleDisplay(props.index);
             }}
-            onMouseOut={(event) => {
-              if (isMobile) return;
-              props.setSubtitleDisplay(-1);
-              event.target.pause();
-              event.target.currentTime = 0;
+            onMouseOut={() => {
+              if (!isMobile) props.setSubtitleDisplay(-1);
             }}
             playsInline
             loop

@@ -10,6 +10,7 @@ import PastWork from './components/PastWork/PastWork';
 import Footer from './components/Footer/Footer';
 import './hamburgers.css';
 import Fade from 'react-reveal/Fade';
+import logo from './assets/transparentLogo.svg';
 
 const bodyScrollLock = require('body-scroll-lock');
 const disableBodyScroll = bodyScrollLock.disableBodyScroll;
@@ -60,7 +61,7 @@ function App() {
         style={{ boxShadow: '0px 5px 20px 0px rgba(0,0,0,0)', backdropFilter: 'blur(5px)', backgroundColor: 'rgb(2, 19, 46, 0.95)' }}
       >
         <Navbar.Brand href="/" style={{ fontSize: '25px' }}>
-          North P&amp;D, Inc.
+          <img src={logo} alt="logo" className="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

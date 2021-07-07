@@ -55,8 +55,16 @@
   color: black;
 }
 
+.Logo {
+  height: 80px;
+}
+
 @media only screen and (max-width: 576px) {
   .MainElementPadding {
     padding: 0px 0px 0px 0px;
+  }
+
+  .Logo {
+    height: 60px;
   }
 }

@@ -43,7 +43,7 @@ function ServicesCard(props) {
             }}
             playsInline
             loop
-            autoPlay={isMobile}
+            autoPlay
             muted
             poster={props.poster}
           />

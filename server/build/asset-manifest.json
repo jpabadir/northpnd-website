@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.e6fbc03a.chunk.css",
-    "main.js": "/static/js/main.0562aeda.chunk.js",
-    "main.js.map": "/static/js/main.0562aeda.chunk.js.map",
+    "main.css": "/static/css/main.58027d73.chunk.css",
+    "main.js": "/static/js/main.3389f0ae.chunk.js",
+    "main.js.map": "/static/js/main.3389f0ae.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0733886e.js",
     "runtime-main.js.map": "/static/js/runtime-main.0733886e.js.map",
     "static/css/2.8b9d5b02.chunk.css": "/static/css/2.8b9d5b02.chunk.css",
-    "static/js/2.701131ee.chunk.js": "/static/js/2.701131ee.chunk.js",
-    "static/js/2.701131ee.chunk.js.map": "/static/js/2.701131ee.chunk.js.map",
+    "static/js/2.4937ed0a.chunk.js": "/static/js/2.4937ed0a.chunk.js",
+    "static/js/2.4937ed0a.chunk.js.map": "/static/js/2.4937ed0a.chunk.js.map",
     "static/js/3.ccd5d3b9.chunk.js": "/static/js/3.ccd5d3b9.chunk.js",
     "static/js/3.ccd5d3b9.chunk.js.map": "/static/js/3.ccd5d3b9.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.8b9d5b02.chunk.css.map": "/static/css/2.8b9d5b02.chunk.css.map",
-    "static/css/main.e6fbc03a.chunk.css.map": "/static/css/main.e6fbc03a.chunk.css.map",
-    "static/js/2.701131ee.chunk.js.LICENSE.txt": "/static/js/2.701131ee.chunk.js.LICENSE.txt",
+    "static/css/main.58027d73.chunk.css.map": "/static/css/main.58027d73.chunk.css.map",
+    "static/js/2.4937ed0a.chunk.js.LICENSE.txt": "/static/js/2.4937ed0a.chunk.js.LICENSE.txt",
     "static/media/cables-light.828b15ee.mov": "/static/media/cables-light.828b15ee.mov",
     "static/media/cables-poster.16eb148d.png": "/static/media/cables-poster.16eb148d.png",
     "static/media/coding-light.4a0c2f02.mov": "/static/media/coding-light.4a0c2f02.mov",
@@ -21,13 +21,14 @@
     "static/media/discussion-light.43503863.mov": "/static/media/discussion-light.43503863.mov",
     "static/media/discussion-poster.a640fb18.png": "/static/media/discussion-poster.a640fb18.png",
     "static/media/PastWork.css": "/static/media/proximy-logo.485ce016.png",
+    "static/media/home-background.78517caf.mov": "/static/media/home-background.78517caf.mov",
     "static/media/transparentLogo.332c5e16.svg": "/static/media/transparentLogo.332c5e16.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.0733886e.js",
     "static/css/2.8b9d5b02.chunk.css",
-    "static/js/2.701131ee.chunk.js",
-    "static/css/main.e6fbc03a.chunk.css",
-    "static/js/main.0562aeda.chunk.js"
+    "static/js/2.4937ed0a.chunk.js",
+    "static/css/main.58027d73.chunk.css",
+    "static/js/main.3389f0ae.chunk.js"
   ]
 }

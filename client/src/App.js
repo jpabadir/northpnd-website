@@ -11,6 +11,7 @@ import Footer from './components/Footer/Footer';
 import './hamburgers.css';
 import Fade from 'react-reveal/Fade';
 import logo from './assets/transparentLogo.svg';
+import homeBackground from './assets/home-background.mov';
 
 const bodyScrollLock = require('body-scroll-lock');
 const disableBodyScroll = bodyScrollLock.disableBodyScroll;
@@ -139,6 +140,7 @@ function App() {
       </Navbar>
       <div className="ContentParent">
         <div onClick={closeToggle} style={{ position: 'relative', filter: isToggleOpen ? 'blur(20px)' : '', width: '100%' }}>
+          <video src={homeBackground} className="BackgroundVideo" loop autoPlay muted />
           <Fade duration="1200">
             <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
               <Element

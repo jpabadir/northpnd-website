@@ -7,6 +7,13 @@
   scroll-behavior: smooth;
 }
 
+.BackgroundVideo {
+  width: 100%;
+  height: 100vh;
+  object-fit: fill;
+  position: absolute;
+}
+
 .MainTitle {
   display: inline-block;
   margin: 15% 20px 0px 20px;
@@ -19,13 +26,6 @@
 
 #toggler {
   border: 0ch;
-}
-
-.ContentParent {
-  justify-content: center;
-  /* Can I remove line below? */
-  display: flex;
-  background-color: white;
 }
 
 .element {

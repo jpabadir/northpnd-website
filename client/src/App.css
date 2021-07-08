@@ -27,6 +27,11 @@
   font-size: 60px;
 }
 
+.Navbar {
+  max-height: 80px;
+  font-size: 16px;
+}
+
 .WhiteNavbar {
   background-color: white;
   box-shadow: 0 4px 12px rgb(8 46 181 / 12%);
@@ -107,7 +112,7 @@ Link:focus::after {
 }
 
 .Logo {
-  height: 80px;
+  height: 100px;
 }
 
 .DarkLogo {

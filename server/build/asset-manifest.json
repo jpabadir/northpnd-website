@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.420ef219.chunk.css",
-    "main.js": "/static/js/main.8fb4154d.chunk.js",
-    "main.js.map": "/static/js/main.8fb4154d.chunk.js.map",
+    "main.js": "/static/js/main.bef04594.chunk.js",
+    "main.js.map": "/static/js/main.bef04594.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0733886e.js",
     "runtime-main.js.map": "/static/js/runtime-main.0733886e.js.map",
     "static/css/2.8b9d5b02.chunk.css": "/static/css/2.8b9d5b02.chunk.css",
@@ -21,6 +21,7 @@
     "static/media/discussion-light.43503863.mov": "/static/media/discussion-light.43503863.mov",
     "static/media/discussion-poster.a640fb18.png": "/static/media/discussion-poster.a640fb18.png",
     "static/media/PastWork.css": "/static/media/proximy-logo.485ce016.png",
+    "static/media/home-background-poster.841cee67.png": "/static/media/home-background-poster.841cee67.png",
     "static/media/home-background.3c6f7ad0.mov": "/static/media/home-background.3c6f7ad0.mov",
     "static/media/transparentLogo.332c5e16.svg": "/static/media/transparentLogo.332c5e16.svg"
   },
@@ -29,6 +30,6 @@
     "static/css/2.8b9d5b02.chunk.css",
     "static/js/2.4937ed0a.chunk.js",
     "static/css/main.420ef219.chunk.css",
-    "static/js/main.8fb4154d.chunk.js"
+    "static/js/main.bef04594.chunk.js"
   ]
 }

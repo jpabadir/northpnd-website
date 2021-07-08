@@ -68,7 +68,9 @@ function App() {
           className="Toggle"
           id="toggler"
         >
-          <div className={`hamburger hamburger--slider ${isToggleOpen && 'is-active'}`}>
+          <div
+            className={`hamburger hamburger--slider ${isToggleOpen && 'is-active'} ${myScrollY > scrollAnimationTrigger && 'BlackBurger'}`}
+          >
             <div className="hamburger-box">
               <div className="hamburger-inner"></div>
             </div>

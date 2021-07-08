@@ -44,6 +44,11 @@
   transition: 0.5s;
 }
 
+.BlackBurger {
+  -webkit-filter: brightness(1) invert(1);
+  filter: brightness(1) invert(1);
+}
+
 .Link {
   display: block;
   position: relative;

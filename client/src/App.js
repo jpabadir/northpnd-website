@@ -20,8 +20,6 @@ const enableBodyScroll = bodyScrollLock.enableBodyScroll;
 const scrollAnimationTrigger = 50;
 
 function App() {
-  const navbar = document.getElementById('myNavbar');
-
   useEffect(() => {
     document.addEventListener('scroll', () => {
       setMyScrollY(window.scrollY);
@@ -33,9 +31,7 @@ function App() {
   const refContainer = useRef(null);
   const [isToggleOpen, setIsToggleOpen] = useState(false);
   const [myScrollY, setMyScrollY] = useState(0);
-  const [lastScrollY, setLastScrollY] = useState(0);
   const [navbarHeight, setNavbarHeight] = useState(0);
-  const [notDoneYet, setNotDoneYet] = useState(true);
 
   useEffect(() => {
     // Use of RefContainer below is just a way to pass the body scroll functions something, I don't really need it.
@@ -59,10 +55,11 @@ function App() {
         expand="lg"
         variant="dark"
         fixed="top"
+        className={`${myScrollY > scrollAnimationTrigger ? 'WhiteNavbar' : 'TransparentNavbar'}`}
         // style={{ boxShadow: '0px 5px 20px 0px rgba(0,0,0,0)', backdropFilter: 'blur(5px)', backgroundColor: 'rgb(2, 19, 46, 0.95)' }}
       >
         <Navbar.Brand href="/" style={{ fontSize: '25px' }}>
-          <img src={logo} alt="logo" className="Logo" />
+          <img src={logo} alt="logo" className={`${myScrollY > scrollAnimationTrigger ? 'DarkLogo' : ''} Logo`} />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -82,7 +79,7 @@ function App() {
             <li>
               <Link
                 activeClass="active"
-                className="Link"
+                className={`Link ${myScrollY > scrollAnimationTrigger ? 'BlackLink' : ''}`}
                 to="about"
                 spy={true}
                 smooth={true}
@@ -96,7 +93,7 @@ function App() {
             <li>
               <Link
                 activeClass="active"
-                className="Link"
+                className={`Link ${myScrollY > scrollAnimationTrigger ? 'BlackLink' : ''}`}
                 to="pastWork"
                 spy={true}
                 smooth={true}
@@ -110,7 +107,7 @@ function App() {
             <li>
               <Link
                 activeClass="active"
-                className="Link"
+                className={`Link ${myScrollY > scrollAnimationTrigger ? 'BlackLink' : ''}`}
                 to="services"
                 spy={true}
                 smooth={true}
@@ -124,7 +121,7 @@ function App() {
             <li>
               <Link
                 activeClass="active"
-                className="Link"
+                className={`Link ${myScrollY > scrollAnimationTrigger ? 'BlackLink' : ''}`}
                 to="contactUs"
                 spy={true}
                 smooth={true}

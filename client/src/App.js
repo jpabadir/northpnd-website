@@ -82,7 +82,7 @@ function App() {
             <li>
               <Link
                 activeClass="active"
-                className="Link nav-link"
+                className="Link"
                 to="about"
                 spy={true}
                 smooth={true}
@@ -96,7 +96,7 @@ function App() {
             <li>
               <Link
                 activeClass="active"
-                className="Link nav-link"
+                className="Link"
                 to="pastWork"
                 spy={true}
                 smooth={true}
@@ -110,7 +110,7 @@ function App() {
             <li>
               <Link
                 activeClass="active"
-                className="Link nav-link"
+                className="Link"
                 to="services"
                 spy={true}
                 smooth={true}
@@ -124,7 +124,7 @@ function App() {
             <li>
               <Link
                 activeClass="active"
-                className="Link nav-link"
+                className="Link"
                 to="contactUs"
                 spy={true}
                 smooth={true}

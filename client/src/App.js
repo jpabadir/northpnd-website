@@ -56,7 +56,10 @@ function App() {
         variant="dark"
         fixed="top"
         className={`${myScrollY > scrollAnimationTrigger ? 'WhiteNavbar' : 'TransparentNavbar'} Navbar`}
-        // style={{ boxShadow: '0px 5px 20px 0px rgba(0,0,0,0)', backdropFilter: 'blur(5px)', backgroundColor: 'rgb(2, 19, 46, 0.95)' }}
+        style={{
+          boxShadow: !isToggleOpen && myScrollY > scrollAnimationTrigger ? '0 4px 12px rgb(8 46 181 / 12%)' : '',
+          backgroundColor: isToggleOpen && 'transparent',
+        }}
       >
         <Navbar.Brand href="/" style={{ fontSize: '25px' }}>
           <img src={logo} alt="logo" className={`${myScrollY > scrollAnimationTrigger ? 'DarkLogo' : ''} Logo`} />
@@ -138,7 +141,8 @@ function App() {
         </Navbar.Collapse>
       </Navbar>
       <div className="ContentParent">
-        <div onClick={closeToggle} style={{ position: 'relative', filter: isToggleOpen ? 'blur(20px)' : '', width: '100%' }}>
+        <div onClick={closeToggle} style={{ position: 'relative', width: '100%' }}>
+          {/* <div onClick={closeToggle} style={{ position: 'relative', filter: isToggleOpen ? 'blur(20px)' : '', width: '100%' }}> */}
           <video src={homeBackground} className="BackgroundVideo Overlay" type="video/mov" playsInline loop autoPlay muted />
           <div className="Overlay DarkOverlay" />
           <Fade duration="1200">
@@ -193,6 +197,11 @@ function App() {
           </div>
         </div>
       </div>
+      <div
+        className={`Overlay Fixed ${
+          isToggleOpen && (myScrollY > scrollAnimationTrigger ? 'CollapseBackgroundWhite' : 'CollapseBackgroundDark')
+        }`}
+      />
     </div>
   );
 }

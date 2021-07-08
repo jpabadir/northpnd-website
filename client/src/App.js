@@ -59,7 +59,7 @@ function App() {
         expand="lg"
         variant="dark"
         fixed="top"
-        style={{ boxShadow: '0px 5px 20px 0px rgba(0,0,0,0)', backdropFilter: 'blur(5px)', backgroundColor: 'rgb(2, 19, 46, 0.95)' }}
+        // style={{ boxShadow: '0px 5px 20px 0px rgba(0,0,0,0)', backdropFilter: 'blur(5px)', backgroundColor: 'rgb(2, 19, 46, 0.95)' }}
       >
         <Navbar.Brand href="/" style={{ fontSize: '25px' }}>
           <img src={logo} alt="logo" className="Logo" />
@@ -140,7 +140,8 @@ function App() {
       </Navbar>
       <div className="ContentParent">
         <div onClick={closeToggle} style={{ position: 'relative', filter: isToggleOpen ? 'blur(20px)' : '', width: '100%' }}>
-          <video src={homeBackground} className="BackgroundVideo" loop autoPlay muted />
+          <video src={homeBackground} className="BackgroundVideo Overlay" loop autoPlay muted />
+          <div className="Overlay DarkOverlay" />
           <Fade duration="1200">
             <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
               <Element

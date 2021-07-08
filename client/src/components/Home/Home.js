@@ -18,7 +18,12 @@ function Home() {
             Tell me more
             <br />
             <div style={{ justifyContent: 'center', display: 'flex' }}>
-              <img src={downArrow} alt="Down arrow" height="50" />
+              <img
+                src={downArrow}
+                alt="Down arrow"
+                height="50"
+                style={{ webkitFilter: 'brightness(0) invert(1)', filter: 'brightness(0) invert(1)' }}
+              />
             </div>
           </div>
         </div>

@@ -34,7 +34,7 @@ function PastWork() {
             <WorkCard
               link="https://proximy.ca/"
               title="Proximy"
-              subtitle="We built Proximy's mobile app's friend request feature, using Flutter and Cloud Firestore."
+              subtitle="We build features on Proximy's mobile app on an ongoing basis, using Flutter and Cloud Firestore."
             />
           </Row>
         </Fade>

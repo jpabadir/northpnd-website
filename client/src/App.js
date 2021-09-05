@@ -11,8 +11,8 @@ import Footer from './components/Footer/Footer';
 import './hamburgers.css';
 import Fade from 'react-reveal/Fade';
 import logo from './assets/transparentLogo.svg';
-import homeBackground from './assets/home-background.mov';
-import homeBackgroundPoster from './assets/home-background-poster.png';
+import homeBackground from './assets/home-background.mp4';
+// import homeBackgroundPoster from './assets/home-background-poster.png';
 
 const bodyScrollLock = require('body-scroll-lock');
 const disableBodyScroll = bodyScrollLock.disableBodyScroll;
@@ -151,7 +151,7 @@ function App() {
             loop
             autoPlay
             muted
-            poster={homeBackgroundPoster}
+            // poster={homeBackgroundPoster}
           />
           <div className="Overlay DarkOverlay" />
           <Fade duration="1200">

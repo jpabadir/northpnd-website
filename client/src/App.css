@@ -74,7 +74,29 @@
 }
 
 .BlackLink {
-  color: black !important;
+  color: #010e21 !important;
+}
+
+.BlackLink::after {
+  background-color: #010e21 !important;
+  color: #010e21 !important;
+}
+
+.BlackLink:hover::after,
+.BlackLink:focus::after {
+  background-color: #010e21 !important;
+  color: #010e21 !important;
+}
+
+.WhiteLink::after {
+  background-color: white !important;
+  color: white !important;
+}
+
+.WhiteLink:hover::after,
+.WhiteLink:focus::after {
+  background-color: white !important;
+  color: white !important;
 }
 
 .Link::after {
@@ -84,20 +106,17 @@
   left: 0;
   width: 100%;
   height: 0.1em;
-  background-color: #010e21 !important;
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
 }
 
 .Link:hover::after,
 Link:focus::after {
-  color: #010e21 !important;
   opacity: 1;
   transform: translate3d(0, 0.2em, 0);
 }
 
 .Link.active::after {
-  color: #010e21 !important;
   opacity: 1;
   transform: translate3d(0, 0.2em, 0);
 }

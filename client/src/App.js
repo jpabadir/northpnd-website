@@ -84,7 +84,7 @@ function App() {
             <li>
               <Link
                 activeClass="active"
-                className={`Link ${myScrollY > scrollAnimationTrigger ? 'BlackLink' : ''}`}
+                className={`Link ${myScrollY > scrollAnimationTrigger ? 'BlackLink' : 'WhiteLink'}`}
                 to="about"
                 spy={true}
                 smooth={true}
@@ -98,7 +98,7 @@ function App() {
             <li>
               <Link
                 activeClass="active"
-                className={`Link ${myScrollY > scrollAnimationTrigger ? 'BlackLink' : ''}`}
+                className={`Link ${myScrollY > scrollAnimationTrigger ? 'BlackLink' : 'WhiteLink'}`}
                 to="pastWork"
                 spy={true}
                 smooth={true}
@@ -112,7 +112,7 @@ function App() {
             <li>
               <Link
                 activeClass="active"
-                className={`Link ${myScrollY > scrollAnimationTrigger ? 'BlackLink' : ''}`}
+                className={`Link ${myScrollY > scrollAnimationTrigger ? 'BlackLink' : 'WhiteLink'}`}
                 to="services"
                 spy={true}
                 smooth={true}
@@ -126,7 +126,7 @@ function App() {
             <li>
               <Link
                 activeClass="active"
-                className={`Link ${myScrollY > scrollAnimationTrigger ? 'BlackLink' : ''}`}
+                className={`Link ${myScrollY > scrollAnimationTrigger ? 'BlackLink' : 'WhiteLink'}`}
                 to="contactUs"
                 spy={true}
                 smooth={true}
@@ -150,7 +150,6 @@ function App() {
             loop
             autoPlay
             muted
-            // poster={homeBackgroundPoster}
           />
           <div className="Overlay DarkOverlay" />
           <Fade duration="1200">

@@ -51,13 +51,3 @@
 .form-control:hover {
   border-color: #80bdff;
 }
-
-.ContactContainer {
-  padding-top: 5%;
-}
-
-@media only screen and (max-width: 1200px) {
-  .ContactContainer {
-    padding-top: 0;
-  }
-}

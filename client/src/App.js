@@ -158,7 +158,7 @@ function App() {
             </div>
           </Fade>
           <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
-            <Element name="about" className="element" style={{ paddingTop: `${navbarHeight}`, minHeight: '100vh', width: '100%' }}>
+            <Element name="about" className="element" style={{ paddingTop: `${navbarHeight}`, width: '100%' }}>
               <div style={{ paddingTop: `${navbarHeight}px` }}>
                 <About />
               </div>

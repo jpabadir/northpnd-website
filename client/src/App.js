@@ -142,15 +142,7 @@ function App() {
       </Navbar>
       <div className="ContentParent">
         <div onClick={closeToggle} style={{ position: 'relative', width: '100%' }}>
-          <video
-            src={homeBackground}
-            className="BackgroundVideo Overlay"
-            type="video/mov"
-            playsInline
-            loop
-            autoPlay
-            muted
-          />
+          <video src={homeBackground} className="BackgroundVideo Overlay" type="video/mov" playsInline loop autoPlay muted />
           <div className="Overlay DarkOverlay" />
           <Fade duration="1200">
             <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>

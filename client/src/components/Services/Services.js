@@ -47,7 +47,11 @@ function ServicesCard(props) {
           {props.title}
         </div>
         <div
-          style={{ fontSize: '15px', opacity: `${props.subtitleDisplay === props.index || isMobile ? '0.7' : '0'}`, transition: '0.3s' }}
+          style={{
+            fontSize: '15px',
+            opacity: `${props.subtitleDisplay === props.index || isMobile || true ? '0.7' : '0'}`,
+            transition: '0.3s',
+          }}
         >
           {props.subtitle}
         </div>

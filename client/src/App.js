@@ -179,11 +179,7 @@ function App() {
             </Element>
           </div>
           <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#f5f5f5' }}>
-            <Element
-              name="contactUs"
-              className="element"
-              style={{ minHeight: '100vh', display: 'flex', justifyContent: 'center', width: '100%' }}
-            >
+            <Element name="contactUs" className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
               <div style={{ paddingTop: `${navbarHeight}px` }}>
                 <Contact />
               </div>

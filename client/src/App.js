@@ -136,6 +136,7 @@ function App() {
                 duration={300}
                 style={{ display: 'inline-block', margin: '20px' }}
                 onClick={closeToggle}
+                offset={-80}
               >
                 Contact Us
               </Link>
@@ -154,19 +155,18 @@ function App() {
                 className="element"
                 style={{ minHeight: '100vh', display: 'flex', justifyContent: 'center', width: '100%' }}
               >
-                <div style={{ paddingTop: `${navbarHeight}px` }}>
-                  <Home />
-                </div>
+                <Home />
               </Element>
             </div>
           </Fade>
+          <div style={{ height: '80px' }} />
           <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
-            <Element name="about" className="element" style={{ paddingTop: `${navbarHeight}`, width: '100%' }}>
+            <Element name="about" className="element" style={{ width: '100%' }}>
               <About />
             </Element>
           </div>
           <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
-            <Element name="pastWork" className="element" style={{ minHeight: '100vh', width: '100%' }}>
+            <Element name="pastWork" className="element" style={{ width: '100%' }}>
               <PastWork />
             </Element>
           </div>
@@ -177,9 +177,7 @@ function App() {
           </div>
           <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#f5f5f5' }}>
             <Element name="contactUs" className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-              <div style={{ paddingTop: `${navbarHeight}px` }}>
-                <Contact />
-              </div>
+              <Contact />
             </Element>
           </div>
           <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#010e21' }}>

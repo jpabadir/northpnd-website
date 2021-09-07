@@ -119,6 +119,7 @@ function App() {
                 duration={300}
                 style={{ display: 'inline-block', margin: '20px' }}
                 onClick={closeToggle}
+                offset={-80}
               >
                 Services
               </Link>
@@ -172,11 +173,8 @@ function App() {
             </Element>
           </div>
           <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#f5f5f5' }}>
-            <div style={{ backgroundColor: 'white', height: '80px', width: '100%', position: 'absolute' }} />
             <Element name="services" className="element" style={{ width: '100%' }}>
-              <div style={{ paddingTop: `${navbarHeight}px` }}>
-                <Services />
-              </div>
+              <Services />
             </Element>
           </div>
           <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#f5f5f5' }}>

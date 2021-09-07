@@ -91,6 +91,7 @@ function App() {
                 duration={300}
                 style={{ display: 'inline-block', margin: '20px' }}
                 onClick={closeToggle}
+                offset={-80}
               >
                 About
               </Link>
@@ -105,6 +106,7 @@ function App() {
                 duration={300}
                 style={{ display: 'inline-block', margin: '20px' }}
                 onClick={closeToggle}
+                offset={-80}
               >
                 Past Work
               </Link>
@@ -160,9 +162,7 @@ function App() {
           </Fade>
           <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
             <Element name="about" className="element" style={{ paddingTop: `${navbarHeight}`, width: '100%' }}>
-              <div style={{ paddingTop: `${navbarHeight}px` }}>
-                <About />
-              </div>
+              <About />
             </Element>
           </div>
           <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>

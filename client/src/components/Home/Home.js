@@ -12,7 +12,7 @@ function Home() {
           <div
             className="TellMeMore"
             onClick={() => {
-              scroller.scrollTo('about', { duration: 300, smooth: true, spy: true });
+              scroller.scrollTo('about', { duration: 300, smooth: true, spy: true, offset: -80 });
             }}
           >
             Tell me more

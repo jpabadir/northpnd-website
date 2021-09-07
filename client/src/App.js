@@ -167,9 +167,7 @@ function App() {
           </div>
           <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
             <Element name="pastWork" className="element" style={{ minHeight: '100vh', width: '100%' }}>
-              <div style={{ paddingTop: `${navbarHeight}px` }}>
-                <PastWork />
-              </div>
+              <PastWork />
             </Element>
           </div>
           <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#f5f5f5' }}>

@@ -13,6 +13,8 @@ Improvements:
 - Make Habit One mockup perspective mockup
 - Change API key since it was pushed to github
 - Add some pricing
+- Write some articles
+- Fix Contact Us spacing
 
 DONE:
 

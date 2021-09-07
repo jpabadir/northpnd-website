@@ -24,14 +24,11 @@ function App() {
     document.addEventListener('scroll', () => {
       setMyScrollY(window.scrollY);
     });
-
-    setNavbarHeight(document.getElementById('myNavbar').clientHeight);
   }, []);
 
   const refContainer = useRef(null);
   const [isToggleOpen, setIsToggleOpen] = useState(false);
   const [myScrollY, setMyScrollY] = useState(0);
-  const [navbarHeight, setNavbarHeight] = useState(0);
 
   useEffect(() => {
     // Use of RefContainer below is just a way to pass the body scroll functions something, I don't really need it.

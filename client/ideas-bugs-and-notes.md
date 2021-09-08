@@ -6,7 +6,7 @@ Improvements:
 - Services component: make the total width of the cards smaller when on mobile,
   currently it's too wide.
 - Clear fields when opening contact form so that after filling out formspree, you have a clear fields.
-- Make FormSpree redirect to us (but with empty fields) 
+- Make FormSpree redirect to us (but with empty fields)
 - Maybe we want to reduce the font size on small devices?
 - Center About and Contact on screens above 1200px in width?
 - Make sure padding at top of all elements looks good on iPhone 5/SE
@@ -16,9 +16,20 @@ Improvements:
 - Write some articles
 - Fix Contact Us spacing
 - Re-enable spy to true for heights that allow it
-- Add a bit of padding to the bottom of elements
-- Fix homescreen sentence
+- Fix mobile menu labels that are still there when you close the toggle
 
+NICE TO HAVEs:
+
+- Use react reveal
+- Add floating labels to my form
+
+MAYBEs:
+
+- Add call to action higher up
+
+MISCELLANEOUS:
+
+- A cool grey I can use: #EEEEEE
 
 DONE:
 
@@ -43,18 +54,6 @@ DONE:
 - Add website footer
 - Fix dns and stuff
 - Fix naked domain SSL issue (or I think it's actually non-naked)
-- For the services cards, we could add little videos with text underneath instead of what we currently have. 
+- For the services cards, we could add little videos with text underneath instead of what we currently have.
 - Add navbar animation
-
-NICE TO HAVEs:
-
-- Use react reveal
-- Add floating labels to my form
-
-MAYBEs:
-
-- Add call to action higher up
-
-MISCELLANEOUS:
-
-- A cool grey I can use: #EEEEEE
+- Fix homescreen sentence

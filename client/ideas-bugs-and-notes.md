@@ -15,6 +15,10 @@ Improvements:
 - Add some pricing
 - Write some articles
 - Fix Contact Us spacing
+- Re-enable spy to true for heights that allow it
+- Add a bit of padding to the bottom of elements
+- Fix homescreen sentence
+
 
 DONE:
 

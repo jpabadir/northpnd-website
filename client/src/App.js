@@ -83,7 +83,7 @@ function App() {
                 activeClass="active"
                 className={`Link ${myScrollY > scrollAnimationTrigger ? 'BlackLink' : 'WhiteLink'}`}
                 to="about"
-                spy={true}
+                // spy={true}
                 smooth={true}
                 duration={300}
                 style={{ display: 'inline-block', margin: '20px' }}
@@ -98,7 +98,7 @@ function App() {
                 activeClass="active"
                 className={`Link ${myScrollY > scrollAnimationTrigger ? 'BlackLink' : 'WhiteLink'}`}
                 to="pastWork"
-                spy={true}
+                // spy={true}
                 smooth={true}
                 duration={300}
                 style={{ display: 'inline-block', margin: '20px' }}
@@ -113,7 +113,7 @@ function App() {
                 activeClass="active"
                 className={`Link ${myScrollY > scrollAnimationTrigger ? 'BlackLink' : 'WhiteLink'}`}
                 to="services"
-                spy={true}
+                // spy={true}
                 smooth={true}
                 duration={300}
                 style={{ display: 'inline-block', margin: '20px' }}
@@ -128,7 +128,7 @@ function App() {
                 activeClass="active"
                 className={`Link ${myScrollY > scrollAnimationTrigger ? 'BlackLink' : 'WhiteLink'}`}
                 to="contactUs"
-                spy={true}
+                // spy={true}
                 smooth={true}
                 duration={300}
                 style={{ display: 'inline-block', margin: '20px' }}

@@ -43,7 +43,7 @@ function ServicesCard(props) {
             poster={props.poster}
           />
         </div>
-        <div className="CardTitle" style={{ fontSize: '17px', paddingTop: '15px' }}>
+        <div className="CardTitle ServicesCardTitle" style={{ fontSize: '17px', paddingTop: '15px' }}>
           {props.title}
         </div>
         <div

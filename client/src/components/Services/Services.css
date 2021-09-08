@@ -41,6 +41,10 @@
   transform: scale(1.1);
 }
 
+.ServicesCardTitle {
+  color: rgb(255, 255, 255, 0.85);
+}
+
 @media only screen and (max-width: 991px) {
   .ServicesVideoGrandParent {
     padding-top: 15px;

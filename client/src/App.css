@@ -161,6 +161,16 @@ Link:focus::after {
   filter: brightness(1) invert(1);
 }
 
+.Spacer {
+  transform: translateY(5px);
+  aspect-ratio: 900/135;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('./assets/layered-waves-haikei.svg');
+}
+
 @media only screen and (max-width: 576px) {
   .MainElementPadding {
     padding: 30px 0px 0px 0px;

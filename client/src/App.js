@@ -169,17 +169,18 @@ function App() {
               <PastWork />
             </Element>
           </div>
-          <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#f5f5f5' }}>
+          <div className="Spacer" />
+          <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#151419', color: '#ededed' }}>
             <Element name="services" className="element" style={{ width: '100%' }}>
               <Services />
             </Element>
           </div>
-          <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#f5f5f5' }}>
+          <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#151419', color: '#ededed' }}>
             <Element name="contactUs" className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
               <Contact />
             </Element>
           </div>
-          <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#010e21' }}>
+          <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#212129' }}>
             <div className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%', alignItems: 'center' }}>
               <Footer />
             </div>

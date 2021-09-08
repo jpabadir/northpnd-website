@@ -152,7 +152,9 @@ function App() {
                 className="element"
                 style={{ minHeight: '100vh', display: 'flex', justifyContent: 'center', width: '100%' }}
               >
-                <Home />
+                <div style={{ paddingTop: '80px' }}>
+                  <Home />
+                </div>
               </Element>
             </div>
           </Fade>

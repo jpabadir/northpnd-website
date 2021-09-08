@@ -14,6 +14,7 @@ Improvements:
 - Change API key since it was pushed to github
 - Add some pricing
 - Write some articles
+
 - Fix Contact Us spacing
 - Re-enable spy to true for heights that allow it
 - Fix mobile menu labels that are still there when you close the toggle

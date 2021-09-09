@@ -170,7 +170,7 @@ Link:focus::after {
 }
 
 .Spacer {
-  transform: translateY(10px);
+  transform: translateY(12px);
   height: 135px;
   width: 100%;
   background-repeat: no-repeat;

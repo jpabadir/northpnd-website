@@ -53,8 +53,9 @@ function App() {
         variant="dark"
         fixed="top"
         className={`${myScrollY > scrollAnimationTrigger || isToggleOpen ? 'GreyNavbar' : 'TransparentNavbar'} ${
-          isToggleOpen && 'FullNav'
+          isToggleOpen ? 'FullNav' : 'TopNav'
         } Navbar`}
+        style={{ height: isToggleOpen ? '100vh' : '80px' }}
       >
         <Navbar.Brand href="/" style={{ fontSize: '25px' }}>
           <img src={logo} alt="logo" className="Logo" />

@@ -35,7 +35,6 @@
 }
 
 .Navbar {
-  max-height: 80px;
   font-size: 16px;
   align-content: flex-start;
 }
@@ -50,11 +49,6 @@
   background-color: transparent;
   box-shadow: none;
   transition: 0.5s;
-}
-
-.FullNav {
-  max-height: 100vh !important;
-  height: 100vh !important;
 }
 
 .CollapseBackgroundDark {

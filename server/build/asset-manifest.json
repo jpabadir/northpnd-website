@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.1bac71f6.chunk.css",
+    "main.css": "/static/css/main.5082c64f.chunk.css",
     "main.js": "/static/js/main.90da4157.chunk.js",
     "main.js.map": "/static/js/main.90da4157.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0733886e.js",
@@ -12,7 +12,7 @@
     "static/js/3.ccd5d3b9.chunk.js.map": "/static/js/3.ccd5d3b9.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.8b9d5b02.chunk.css.map": "/static/css/2.8b9d5b02.chunk.css.map",
-    "static/css/main.1bac71f6.chunk.css.map": "/static/css/main.1bac71f6.chunk.css.map",
+    "static/css/main.5082c64f.chunk.css.map": "/static/css/main.5082c64f.chunk.css.map",
     "static/js/2.6ddd7c6e.chunk.js.LICENSE.txt": "/static/js/2.6ddd7c6e.chunk.js.LICENSE.txt",
     "static/media/cables-light.828b15ee.mov": "/static/media/cables-light.828b15ee.mov",
     "static/media/cables-poster.16eb148d.png": "/static/media/cables-poster.16eb148d.png",
@@ -29,7 +29,7 @@
     "static/js/runtime-main.0733886e.js",
     "static/css/2.8b9d5b02.chunk.css",
     "static/js/2.6ddd7c6e.chunk.js",
-    "static/css/main.1bac71f6.chunk.css",
+    "static/css/main.5082c64f.chunk.css",
     "static/js/main.90da4157.chunk.js"
   ]
 }

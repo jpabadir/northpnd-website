@@ -64,7 +64,7 @@ function Services() {
   const [subtitleDisplay, setSubtitleDisplay] = useState(-1);
 
   return (
-    <div className="MainElementPadding">
+    <div className="ServicesPadding">
       <Container fluid>
         <div className="TextBlock">
           <div className="Subtitle">How we can help you</div>

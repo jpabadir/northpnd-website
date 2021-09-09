@@ -52,7 +52,9 @@ function App() {
         expand="lg"
         variant="dark"
         fixed="top"
-        className={`${myScrollY > scrollAnimationTrigger && !isToggleOpen ? 'GreyNavbar' : 'TransparentNavbar'} Navbar`}
+        className={`${myScrollY > scrollAnimationTrigger || isToggleOpen ? 'GreyNavbar' : 'TransparentNavbar'} ${
+          isToggleOpen && 'FullNav'
+        } Navbar`}
       >
         <Navbar.Brand href="/" style={{ fontSize: '25px' }}>
           <img src={logo} alt="logo" className="Logo" />
@@ -181,7 +183,6 @@ function App() {
           </div>
         </div>
       </div>
-      <div className={`Overlay Fixed ${isToggleOpen ? 'CollapseBackgroundDark' : ''}`} />
     </div>
   );
 }

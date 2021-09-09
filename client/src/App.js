@@ -155,7 +155,7 @@ function App() {
               </Element>
             </div>
           </Fade>
-          <div style={{ height: '80px' }} />
+          <div className="FirstSeparator" />
           <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
             <Element name="about" className="element" style={{ width: '100%' }}>
               <About />

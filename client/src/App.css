@@ -166,10 +166,18 @@ Link:focus::after {
   background-image: url('./assets/layered-waves-haikei.svg');
 }
 
+.FirstSeparator {
+    height: 80px;
+}
+
 @media only screen and (max-width: 576px) {
   .MainElementPadding {
     padding: 30px 0px 0px 0px;
   }
+
+  .FirstSeparator {
+    height: 30px;
+}
 }
 
 @media only screen and (max-width: 991px) {

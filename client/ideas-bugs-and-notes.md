@@ -14,8 +14,8 @@ Improvements:
 - Change API key since it was pushed to github
 - Add some pricing
 - Write some articles
-
 - Fix padding on small screen (sides are a bit small)
+
 - Re-enable spy to true for heights that allow it
 - Fix mobile menu labels that are still there when you close the toggle
 - Fix toggle bar blur

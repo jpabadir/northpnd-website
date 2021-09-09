@@ -45,6 +45,14 @@
   transition: 0.5s;
 }
 
+.BlackNavbar {
+  /* background: rgba(0, 0, 0, 0.8); */
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: blur(50px);
+  transition: 0.5s;
+}
+
 .TransparentNavbar {
   background-color: transparent;
   box-shadow: none;

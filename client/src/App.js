@@ -52,14 +52,14 @@ function App() {
         expand="lg"
         variant="dark"
         fixed="top"
-        className={`${myScrollY > scrollAnimationTrigger ? 'WhiteNavbar' : 'TransparentNavbar'} Navbar`}
+        className={`${myScrollY > scrollAnimationTrigger ? 'BlackNavbar' : 'TransparentNavbar'} Navbar`}
         style={{
           boxShadow: !isToggleOpen && myScrollY > scrollAnimationTrigger ? '0 4px 12px rgb(8 46 181 / 12%)' : '',
           backgroundColor: isToggleOpen && 'transparent',
         }}
       >
         <Navbar.Brand href="/" style={{ fontSize: '25px' }}>
-          <img src={logo} alt="logo" className={`${myScrollY > scrollAnimationTrigger ? 'DarkLogo' : ''} Logo`} />
+          <img src={logo} alt="logo" className="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -68,9 +68,7 @@ function App() {
           className="Toggle"
           id="toggler"
         >
-          <div
-            className={`hamburger hamburger--slider ${isToggleOpen && 'is-active'} ${myScrollY > scrollAnimationTrigger && 'BlackBurger'}`}
-          >
+          <div className={`hamburger hamburger--slider ${isToggleOpen && 'is-active'}`}>
             <div className="hamburger-box">
               <div className="hamburger-inner"></div>
             </div>
@@ -81,7 +79,7 @@ function App() {
             <li>
               <Link
                 activeClass="active"
-                className={`Link ${myScrollY > scrollAnimationTrigger ? 'BlackLink' : 'WhiteLink'}`}
+                className={`Link ${myScrollY > scrollAnimationTrigger ? '' : 'WhiteLink'}`}
                 to="about"
                 // spy={true}
                 smooth={true}
@@ -96,7 +94,7 @@ function App() {
             <li>
               <Link
                 activeClass="active"
-                className={`Link ${myScrollY > scrollAnimationTrigger ? 'BlackLink' : 'WhiteLink'}`}
+                className={`Link ${myScrollY > scrollAnimationTrigger ? '' : 'WhiteLink'}`}
                 to="pastWork"
                 // spy={true}
                 smooth={true}
@@ -111,7 +109,7 @@ function App() {
             <li>
               <Link
                 activeClass="active"
-                className={`Link ${myScrollY > scrollAnimationTrigger ? 'BlackLink' : 'WhiteLink'}`}
+                className={`Link ${myScrollY > scrollAnimationTrigger ? '' : 'WhiteLink'}`}
                 to="services"
                 // spy={true}
                 smooth={true}
@@ -126,7 +124,7 @@ function App() {
             <li>
               <Link
                 activeClass="active"
-                className={`Link ${myScrollY > scrollAnimationTrigger ? 'BlackLink' : 'WhiteLink'}`}
+                className={`Link ${myScrollY > scrollAnimationTrigger ? '' : 'WhiteLink'}`}
                 to="contactUs"
                 // spy={true}
                 smooth={true}
@@ -187,11 +185,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div
-        className={`Overlay Fixed ${
-          isToggleOpen && (myScrollY > scrollAnimationTrigger ? 'CollapseBackgroundWhite' : 'CollapseBackgroundDark')
-        }`}
-      />
+      <div className={`Overlay Fixed ${isToggleOpen ? 'CollapseBackgroundDark' : ''}`} />
     </div>
   );
 }

@@ -171,7 +171,7 @@ Link:focus::after {
 
 .Spacer {
   transform: translateY(5px);
-  aspect-ratio: 900/135;
+  height: 135px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;

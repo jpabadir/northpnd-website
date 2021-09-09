@@ -52,11 +52,7 @@ function App() {
         expand="lg"
         variant="dark"
         fixed="top"
-        className={`${myScrollY > scrollAnimationTrigger ? 'BlackNavbar' : 'TransparentNavbar'} Navbar`}
-        style={{
-          boxShadow: !isToggleOpen && myScrollY > scrollAnimationTrigger ? '0 4px 12px rgb(8 46 181 / 12%)' : '',
-          backgroundColor: isToggleOpen && 'transparent',
-        }}
+        className={`${myScrollY > scrollAnimationTrigger && !isToggleOpen ? 'GreyNavbar' : 'TransparentNavbar'} Navbar`}
       >
         <Navbar.Brand href="/" style={{ fontSize: '25px' }}>
           <img src={logo} alt="logo" className="Logo" />

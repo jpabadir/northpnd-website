@@ -39,17 +39,9 @@
   font-size: 16px;
 }
 
-.WhiteNavbar {
-  background-color: rgb(255, 255, 255, 0.8);
-  backdrop-filter: blur(20px);
-  transition: 0.5s;
-}
-
-.BlackNavbar {
-  /* background: rgba(0, 0, 0, 0.8); */
+.GreyNavbar {
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: blur(50px);
   transition: 0.5s;
 }
 

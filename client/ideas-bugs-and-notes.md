@@ -17,8 +17,6 @@ Improvements:
 - Fix padding on small screen (sides are a bit small)
 
 - Re-enable spy to true for heights that allow it
-- Fix mobile menu labels that are still there when you close the toggle
-- Fix toggle bar blur
 
 NICE TO HAVEs:
 
@@ -60,3 +58,5 @@ DONE:
 - Fix homescreen sentence
 - Use react reveal
 - Add some SVG curves in between components
+- Fix mobile menu labels that are still there when you close the toggle
+- Fix toggle bar blur

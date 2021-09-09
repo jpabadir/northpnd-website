@@ -18,7 +18,6 @@ Improvements:
 
 - Re-enable spy to true for heights that allow it
 - Fix mobile menu labels that are still there when you close the toggle
-- Add some SVG curves in between components
 
 NICE TO HAVEs:
 
@@ -59,3 +58,4 @@ DONE:
 - Add navbar animation
 - Fix homescreen sentence
 - Use react reveal
+- Add some SVG curves in between components

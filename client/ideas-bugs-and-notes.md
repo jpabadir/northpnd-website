@@ -14,6 +14,7 @@ Improvements:
 - Change API key since it was pushed to github
 - Add some pricing
 - Write some articles
+- Fix padding on small screen (sides are a bit small)
 
 - Re-enable spy to true for heights that allow it
 - Fix mobile menu labels that are still there when you close the toggle
@@ -21,7 +22,6 @@ Improvements:
 
 NICE TO HAVEs:
 
-- Use react reveal
 - Add floating labels to my form
 
 MAYBEs:
@@ -58,3 +58,4 @@ DONE:
 - For the services cards, we could add little videos with text underneath instead of what we currently have.
 - Add navbar animation
 - Fix homescreen sentence
+- Use react reveal

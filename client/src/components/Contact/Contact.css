@@ -15,12 +15,13 @@
   background-color: #292933;
   padding: 50px 50px 50px 50px;
   border-radius: 5px;
+  color: rgb(255, 255, 255, 0.75);
 }
 
 .form-control {
-  text-emphasis-color: white;
+  color: white;
   background-color: #292933;
-  border-color: black;
+  border-color: #1c1c1c;
   -webkit-box-shadow: none !important;
   -webkit-appearance: none;
   box-shadow: none;
@@ -31,8 +32,17 @@
 
 .form-control:focus,
 .form-control:hover {
+  color: white;
   background-color: #292933;
-  border-color: #525266;
+  border-color: #323545;
+}
+
+.SubmitButton,
+.SubmitButton:hover,
+.SubmitButton:active,
+.SubmitButton:focus {
+  background-color: #3c4992 !important;
+  border-color: #3c4992 !important;
 }
 
 @media only screen and (max-width: 1200px) {

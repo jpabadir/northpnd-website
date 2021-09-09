@@ -42,13 +42,13 @@
 .GreyNavbar {
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: saturate(180%) blur(20px);
-  transition: 0.5s;
+  transition: 0.5s -webkit-filter linear;
 }
 
 .TransparentNavbar {
   background-color: transparent;
   box-shadow: none;
-  transition: 0.5s;
+  transition: 0.5s -webkit-filter linear;
 }
 
 .CollapseBackgroundWhite {

@@ -22,7 +22,7 @@ function Home() {
                 src={downArrow}
                 alt="Down arrow"
                 height="50"
-                style={{ webkitFilter: 'brightness(0) invert(1)', filter: 'brightness(0) invert(1)' }}
+                style={{ WebkitFilter: 'brightness(0) invert(1)', filter: 'brightness(0) invert(1)' }}
               />
             </div>
           </div>

@@ -9,7 +9,7 @@ function Contact() {
         <Row>
           <Col xl={6} className="ContactCol">
             <div className="Subtitle">Contact us. We'll respond within 24 hours.</div>
-            <Fade duration="1200">
+            <Fade duration={1200}>
               <div>
                 <br />
                 <div style={{ fontSize: '25px' }}>North P&amp;D, Inc.</div>
@@ -28,7 +28,7 @@ function Contact() {
           </Col>
 
           <Col xl={6}>
-            <Fade duration="1200">
+            <Fade duration={1200}>
               <div className="FormParent StaticShadow">
                 <Form action="https://formspree.io/f/xwkalnaz" method="POST" className="Form">
                   <Row>

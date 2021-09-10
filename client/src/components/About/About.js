@@ -21,7 +21,7 @@ function About() {
         <Row className="AboutRow">
           <Col xl={7}>
             <div className="Subtitle">Hi! I'm JP.</div>
-            <Fade duration="1200">
+            <Fade duration={1200}>
               <div className="Subtitle" style={{ fontSize: '25px' }}>
                 I am the founder of North P&amp;D.
               </div>

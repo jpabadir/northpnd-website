@@ -29,12 +29,19 @@ function App() {
   const refContainer = useRef(null);
   const [isToggleOpen, setIsToggleOpen] = useState(false);
   const [myScrollY, setMyScrollY] = useState(0);
+  const [scrollSpy, setScrollSpy] = useState(true);
 
   useEffect(() => {
     // Use of RefContainer below is just a way to pass the body scroll functions something, I don't really need it.
     if (isToggleOpen) disableBodyScroll(refContainer.current);
     else enableBodyScroll(refContainer.current);
   }, [isToggleOpen]);
+
+  useEffect(() => {
+    setScrollSpy(
+      document.getElementById('bottomPart') != null && window.innerHeight - 80 < document.getElementById('bottomPart').clientHeight
+    );
+  }, []);
 
   function closeToggle() {
     if (isToggleOpen) refContainer.current.click();
@@ -78,9 +85,9 @@ function App() {
             <li>
               <Link
                 activeClass="active"
-                className={`Link ${myScrollY > scrollAnimationTrigger ? '' : 'WhiteLink'}`}
+                className="Link WhiteLink"
                 to="about"
-                // spy={true}
+                spy={scrollSpy}
                 smooth={true}
                 duration={300}
                 style={{ display: 'inline-block', margin: '20px' }}
@@ -93,9 +100,9 @@ function App() {
             <li>
               <Link
                 activeClass="active"
-                className={`Link ${myScrollY > scrollAnimationTrigger ? '' : 'WhiteLink'}`}
+                className="Link WhiteLink"
                 to="pastWork"
-                // spy={true}
+                spy={scrollSpy}
                 smooth={true}
                 duration={300}
                 style={{ display: 'inline-block', margin: '20px' }}
@@ -108,9 +115,9 @@ function App() {
             <li>
               <Link
                 activeClass="active"
-                className={`Link ${myScrollY > scrollAnimationTrigger ? '' : 'WhiteLink'}`}
+                className="Link WhiteLink"
                 to="services"
-                // spy={true}
+                spy={scrollSpy}
                 smooth={true}
                 duration={300}
                 style={{ display: 'inline-block', margin: '20px' }}
@@ -123,9 +130,9 @@ function App() {
             <li>
               <Link
                 activeClass="active"
-                className={`Link ${myScrollY > scrollAnimationTrigger ? '' : 'WhiteLink'}`}
+                className="Link WhiteLink"
                 to="contactUs"
-                // spy={true}
+                spy={scrollSpy}
                 smooth={true}
                 duration={300}
                 style={{ display: 'inline-block', margin: '20px' }}
@@ -138,7 +145,7 @@ function App() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <div className="ContentParent">
+      <div>
         <div onClick={closeToggle} style={{ position: 'relative', width: '100%' }}>
           <video src={homeBackground} className="BackgroundVideo Overlay" type="video/mov" playsInline loop autoPlay muted />
           <div className="Overlay DarkOverlay" />
@@ -172,14 +179,16 @@ function App() {
               <Services />
             </Element>
           </div>
-          <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#151419', color: '#ededed' }}>
-            <Element name="contactUs" className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-              <Contact />
-            </Element>
-          </div>
-          <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#212129' }}>
-            <div className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%', alignItems: 'center' }}>
-              <Footer />
+          <div id="bottomPart">
+            <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#151419', color: '#ededed' }}>
+              <Element name="contactUs" className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+                <Contact />
+              </Element>
+            </div>
+            <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#212129' }}>
+              <div className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%', alignItems: 'center' }}>
+                <Footer />
+              </div>
             </div>
           </div>
         </div>

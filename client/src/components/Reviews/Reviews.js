@@ -34,7 +34,7 @@ function Reviews() {
     <Row className="Reviews">
       {reviews.map((review) => {
         return (
-          <Col className="Review">
+          <Col className="Review" key={review.text}>
             <StyledRating value={review.rating} readOnly size="large" />
             <div className="ReviewText">"{review.text}"</div>
             <div>{review.author_name}, Proximy</div>

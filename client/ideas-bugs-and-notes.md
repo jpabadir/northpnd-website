@@ -17,6 +17,7 @@ Improvements:
 - Fix padding on small screen (sides are a bit small)
 
 - Re-enable spy to true for heights that allow it
+- Fix that when we toggle navbar open, if we're at the very top, the blur comes on in a non-smooth way
 
 NICE TO HAVEs:
 

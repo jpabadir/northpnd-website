@@ -1,6 +1,7 @@
 .FooterMain {
-  padding: 15px 0px;
-  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #c4c4c4;
   text-align: center;
   opacity: 0.8;
 }
@@ -10,8 +11,9 @@
 }
 
 .FooterHr {
-  border-color: white;
+  border-color: #c4c4c4;
   border-width: 1px;
+  margin: 3px 0px 10px 0px;
 }
 
 .FooterLinks {

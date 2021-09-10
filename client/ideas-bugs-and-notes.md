@@ -18,7 +18,7 @@ Improvements:
 
 - Re-enable spy to true for heights that allow it
 
-NICE TO HAVEs:
+NICE TO HAVES:
 
 - Add floating labels to my form
 

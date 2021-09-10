@@ -173,7 +173,7 @@ function App() {
               <PastWork />
             </Element>
           </div>
-          <div className="Spacer" />
+          <div className="Spacer" style={{ height: `${window.innerWidth / 8}px` }} />
           <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#151419', color: '#ededed' }}>
             <Element name="services" className="element" style={{ width: '100%' }}>
               <Services />

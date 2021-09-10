@@ -15,7 +15,6 @@ Improvements:
 - Add some pricing
 - Write some articles
 - Fix padding on small screen (sides are a bit small)
-- Fix SVG on second monitor
 
 NICE TO HAVES:
 
@@ -61,3 +60,4 @@ DONE:
 - Fix toggle bar blur
 - Re-enable spy to true for heights that allow it
 - Clear issues from the console
+- Fix SVG on second monitor

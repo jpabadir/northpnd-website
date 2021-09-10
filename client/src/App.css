@@ -157,14 +157,11 @@ Link:focus::after {
 }
 
 .Spacer {
-  transform: translateY(20px);
-  height: 135px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-image: url('./assets/layered-waves-haikei.svg');
-  border-bottom: 10px solid #151419;
 }
 
 .FirstSeparator {

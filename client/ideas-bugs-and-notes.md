@@ -16,7 +16,6 @@ Improvements:
 - Write some articles
 - Fix padding on small screen (sides are a bit small)
 
-- Re-enable spy to true for heights that allow it
 - Clear issues from the console
 
 NICE TO HAVES:
@@ -62,3 +61,4 @@ DONE:
 - Add some SVG curves in between components
 - Fix mobile menu labels that are still there when you close the toggle
 - Fix toggle bar blur
+- Re-enable spy to true for heights that allow it

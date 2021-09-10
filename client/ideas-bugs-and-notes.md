@@ -22,6 +22,7 @@ Improvements:
 NICE TO HAVES:
 
 - Add floating labels to my form
+- Fix SVG on second monitor
 
 MAYBEs:
 

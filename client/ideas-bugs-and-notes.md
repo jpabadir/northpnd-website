@@ -15,11 +15,11 @@ Improvements:
 - Add some pricing
 - Write some articles
 - Fix padding on small screen (sides are a bit small)
+- Fix SVG on second monitor
 
 NICE TO HAVES:
 
 - Add floating labels to my form
-- Fix SVG on second monitor
 
 MAYBEs:
 

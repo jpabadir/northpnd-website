@@ -16,6 +16,8 @@ Improvements:
 - Write some articles
 - Fix padding on small screen (sides are a bit small)
 
+- Fix white line on phone
+
 NICE TO HAVES:
 
 - Add floating labels to my form

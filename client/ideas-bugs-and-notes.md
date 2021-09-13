@@ -16,8 +16,6 @@ Improvements:
 - Write some articles
 - Fix padding on small screen (sides are a bit small)
 
-- Fix white line on phone
-
 NICE TO HAVES:
 
 - Add floating labels to my form
@@ -63,3 +61,4 @@ DONE:
 - Re-enable spy to true for heights that allow it
 - Clear issues from the console
 - Fix SVG on second monitor
+- Fix white line on phone

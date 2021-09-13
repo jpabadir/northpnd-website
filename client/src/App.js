@@ -174,7 +174,9 @@ function App() {
             </Element>
           </div>
           <div style={{ width: '100%', backgroundColor: '#151419', color: '#ededed' }}>
+            <div className="WhiteGhost Ghost" style={{ height: `${window.innerWidth / 8 - 10}px` }} />
             <div className="Spacer" style={{ height: `${window.innerWidth / 8}px` }} />
+            <div className="Ghost" style={{ height: `${window.innerWidth / 8 - 10}px` }} />
             <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
               <Element name="services" className="element" style={{ width: '100%' }}>
                 <Services />

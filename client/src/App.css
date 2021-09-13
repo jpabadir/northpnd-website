@@ -162,14 +162,20 @@ Link:focus::after {
   background-position: center;
   background-size: cover;
   background-image: url('./assets/layered-waves-haikei.svg');
-  position: 'absolute';
-  z-index: 10;
+  position: absolute;
+}
+
+.Ghost {
+  width: 100%;
 }
 
 .WhiteGhost {
-  position: 'absolute';
-  background-color: red;
-  height: 100px;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  border: none !important; 
+  display: block;
+  transform: translateY(-5px);
 }
 
 .FirstSeparator {

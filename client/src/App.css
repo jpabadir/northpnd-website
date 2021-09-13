@@ -173,7 +173,7 @@ Link:focus::after {
   position: absolute;
   background-color: white;
   width: 100%;
-  border: none !important; 
+  border: none !important;
   display: block;
   transform: translateY(-5px);
 }
@@ -184,7 +184,7 @@ Link:focus::after {
 
 @media only screen and (max-width: 576px) {
   .MainElementPadding {
-    padding: 30px 0px 0px 0px;
+    padding: 30px 0px;
   }
 
   .FirstSeparator {

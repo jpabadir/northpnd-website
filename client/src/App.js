@@ -173,21 +173,23 @@ function App() {
               <PastWork />
             </Element>
           </div>
-          <div className="Spacer" style={{ height: `${window.innerWidth / 8}px` }} />
-          <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#151419', color: '#ededed' }}>
-            <Element name="services" className="element" style={{ width: '100%' }}>
-              <Services />
-            </Element>
-          </div>
-          <div id="bottomPart">
-            <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#151419', color: '#ededed' }}>
-              <Element name="contactUs" className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-                <Contact />
+          <div style={{ width: '100%', backgroundColor: '#151419', color: '#ededed' }}>
+            <div className="Spacer" style={{ height: `${window.innerWidth / 8}px` }} />
+            <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
+              <Element name="services" className="element" style={{ width: '100%' }}>
+                <Services />
               </Element>
             </div>
-            <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#212129' }}>
-              <div className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%', alignItems: 'center' }}>
-                <Footer />
+            <div id="bottomPart">
+              <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
+                <Element name="contactUs" className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+                  <Contact />
+                </Element>
+              </div>
+              <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#212129' }}>
+                <div className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%', alignItems: 'center' }}>
+                  <Footer />
+                </div>
               </div>
             </div>
           </div>

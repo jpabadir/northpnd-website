@@ -27,7 +27,7 @@ function About() {
               </div>
               <div style={{ fontSize: '20px' }}>
                 <br />
-                After acquiring industry experience at AWS and RBC, I started this company with the goal of providing high-quality software development and technology
+                After acquiring industry experience at Amazon Web Services and RBC, I started this company with the goal of providing high-quality software development and technology
                 services to both technical and non-technical businesses and individuals.
               </div>
             </Fade>

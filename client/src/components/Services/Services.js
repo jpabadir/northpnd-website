@@ -80,7 +80,7 @@ function Services() {
               videoSrc={coding}
               posterSrc={codingPoster}
               title="Web &amp; Mobile Development"
-              subtitle="We'll work with you to design, develop, and deploy your website or app."
+              subtitle="We'll work with you to design, develop, and deploy your website or mobile app."
               subtitleDisplay={subtitleDisplay}
               setSubtitleDisplay={setSubtitleDisplay}
             />

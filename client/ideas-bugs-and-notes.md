@@ -15,6 +15,7 @@ Improvements:
 - Add some pricing
 - Write some articles
 - Fix padding on small screen (sides are a bit small)
+- Use Google Maps client libraries for reviews instead of backend API
 
 NICE TO HAVES:
 

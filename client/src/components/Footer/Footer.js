@@ -9,9 +9,6 @@ function Footer() {
         <a href="https://www.facebook.com/northpnd" target="_blank" rel="noreferrer" className="FooterLink">
           Facebook
         </a>
-        <a href="https://www.instagram.com/northpnd/" target="_blank" rel="noreferrer" className="FooterLink">
-          Instagram
-        </a>
         <a href="https://www.linkedin.com/company/northpnd" target="_blank" rel="noreferrer" className="FooterLink">
           LinkedIn
         </a>

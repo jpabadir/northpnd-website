@@ -18,6 +18,9 @@ function Footer() {
         <a href="https://twitter.com/northpndinc" target="_blank" rel="noreferrer" className="FooterLink">
           Twitter
         </a>
+        <a href="https://goo.gl/maps/QnvFWXVoY7wKMg88A" target="_blank" rel="noreferrer" className="FooterLink">
+          Google
+        </a>
       </div>
     </div>
   );

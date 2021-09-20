@@ -69,8 +69,7 @@ function Services() {
         <div className="TextBlock">
           <div className="Subtitle">How we can help you</div>
           <Fade duration={1200}>
-            <div style={{ fontSize: '25px' }}>We're not (just) a web dev company.</div>
-            <div style={{ fontSize: '20px' }}>We take care of your technology needs so you can focus on your business.</div>
+            <div style={{ fontSize: '25px' }}>We take care of your technology needs so you can focus on your business.</div>
           </Fade>
         </div>
         <Fade duration={1200}>
@@ -97,8 +96,8 @@ function Services() {
               index={2}
               videoSrc={discussion}
               posterSrc={discussionPoster}
-              title="Custom Solution"
-              subtitle="Do you have a unique business problem that can be solved with tech? Do you need a consultant to speed up development? We can help."
+              title="Consulting"
+              subtitle="Whether you have a unique business problem that can be solved with tech, or you need a consultant to speed up a project's development, we can help."
               subtitleDisplay={subtitleDisplay}
               setSubtitleDisplay={setSubtitleDisplay}
             />

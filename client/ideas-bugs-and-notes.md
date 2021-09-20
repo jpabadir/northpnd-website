@@ -17,6 +17,7 @@ Improvements:
 - Fix padding on small screen (sides are a bit small)
 - Use Google Maps client libraries for reviews instead of backend API
 - Fix bug where if you refresh the page you get active links when you shouldn't (if screen is too large)
+- Add "see our reviews on google"
 
 NICE TO HAVES:
 

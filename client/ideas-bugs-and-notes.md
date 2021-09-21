@@ -18,6 +18,7 @@ Improvements:
 - Use Google Maps client libraries for reviews instead of backend API
 - Fix bug where if you refresh the page you get active links when you shouldn't (if screen is too large)
 - Add "see our reviews on google"
+- Disable google form filling white background on contact form
 
 NICE TO HAVES:
 

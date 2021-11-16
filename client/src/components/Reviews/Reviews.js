@@ -5,23 +5,19 @@ import { Row, Col } from 'react-bootstrap';
 import Rating from '@material-ui/lab/Rating';
 
 function Reviews() {
-  const [reviews, setReviews] = useState([
-    {
-      author_name: 'Brandon Caiza',
-      author_url: 'https://www.google.com/maps/contrib/116340316200654309946/reviews',
-      language: 'en',
-      profile_photo_url: 'https://lh3.googleusercontent.com/a-/AOh14GidOs29yxXMP-GgJhh5nRZGt-7AqZTBYg8zGfIFRA=s128-c0x00000000-cc-rp-mo',
-      rating: 5,
-      relative_time_description: '2 months ago',
-      text: 'Fantastic service and great final product. Highly recommended because of attention to detail, strong aptitude for programming, and overall great at system design.',
-      time: 1623802829,
-    },
-  ]);
+  const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    fetch('https://www.northpnd.com/get-reviews')
-      .then((reviews) => reviews.json())
-      .then((jsonData) => setReviews(jsonData));
+    const googleMapsScript = document.createElement('script');
+    googleMapsScript.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCR_L5JJ1fr7DOnCv-XUcWoAOn kJiBwK7A&libraries=places';
+    googleMapsScript.async = true;
+    window.document.body.appendChild(googleMapsScript);
+    googleMapsScript.addEventListener('load', () => {
+      const service = new window.google.maps.places.PlacesService(document.createElement('div'));
+      service.getDetails({ placeId: 'ChIJHbxYLfU1K4gRemEVnxyALR8', fields: ['reviews'] }, (place) => {
+        setReviews(place.reviews);
+      });
+    });
   }, []);
 
   const StyledRating = withStyles({

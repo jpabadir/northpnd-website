@@ -25,3 +25,5 @@ yarn-debug.log*
 yarn-error.log*
 server/.env
 .vscode/settings.json
+
+ideas-bugs-and-notes.md

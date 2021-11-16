@@ -1,20 +1,48 @@
 {
-  "name": "northpnd-website",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "brackets-website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/lab": "*",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "animejs": "^3.2.1",
+    "antd": "^4.15.6",
+    "body-scroll-lock": "^3.1.5",
+    "bootstrap": "^4.6.0",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.0",
+    "react-card-flip": "^1.1.1",
+    "react-dom": "^17.0.2",
+    "react-reveal": "^1.2.2",
+    "react-scripts": "4.0.3",
+    "react-scroll": "^1.8.2",
+    "web-vitals": "^1.0.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd server; npm install; node app.js"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jpabadir/brackets-website.git"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jpabadir/brackets-website/issues"
-  },
-  "homepage": "https://github.com/jpabadir/brackets-website#readme"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

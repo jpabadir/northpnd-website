@@ -12,6 +12,7 @@ import './hamburgers.css';
 import Fade from 'react-reveal/Fade';
 import logo from './assets/transparentLogo.svg';
 import homeBackground from './assets/home-background.mp4';
+import ReactGA from 'react-ga';
 
 const bodyScrollLock = require('body-scroll-lock');
 const disableBodyScroll = bodyScrollLock.disableBodyScroll;
@@ -41,6 +42,10 @@ function App() {
     setScrollSpy(
       document.getElementById('bottomPart') != null && window.innerHeight - 80 < document.getElementById('bottomPart').clientHeight
     );
+
+    ReactGA.initialize('G-98KDQ7WEWP');
+    // ReactGA.pageview(window.location.pathname + window.location.search);
+    ReactGA.pageview('/');
   }, []);
 
   function closeToggle() {

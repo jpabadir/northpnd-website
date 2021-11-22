@@ -18,6 +18,9 @@ function Footer() {
         <a href="https://goo.gl/maps/QnvFWXVoY7wKMg88A" target="_blank" rel="noreferrer" className="FooterLink">
           Google
         </a>
+        <a href="https://www.northpnd.com/privacy" target="_blank" rel="noreferrer" className="FooterLink">
+          Privacy
+        </a>
       </div>
     </div>
   );

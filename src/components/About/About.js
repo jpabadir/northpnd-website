@@ -27,8 +27,9 @@ function About() {
               </div>
               <div style={{ fontSize: '20px' }}>
                 <br />
-                After acquiring industry experience at Amazon Web Services and RBC, I started North P&amp;D with the goal of providing high-quality software development and technology
-                services to both technical and non-technical businesses and individuals.
+                After working at Amazon Web Services and RBC as a software engineer intern, I started North P&amp;D with the goal of
+                providing high-quality software development and technology services to both technical and non-technical businesses and
+                individuals.
               </div>
             </Fade>
           </Col>

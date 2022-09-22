@@ -23,18 +23,18 @@ function PastWork() {
   return (
     <div className="MainElementPadding">
       <Container fluid>
-        <div className="Subtitle">Our Work</div>
+        <div className="Subtitle">Our Clients</div>
         <Fade duration={1200}>
           <Row>
             <WorkCard
               link="https://proximy.ca/"
               title="Proximy"
-              subtitle="We helped Proximy build specific features on their cross-platform mobile app using Flutter, Cloud Firestore, and Google Cloud Functions."
+              subtitle="We helped Proximy build their cross-platform mobile app using Flutter, Cloud Firestore, and Google Cloud Functions."
             />
             <WorkCard
-              link="https://apps.apple.com/us/app/habit-one/id1564317049#?platform=iphone"
-              title="Midstride"
-              subtitle="We work with Midstride."
+              link="https://midstride.com"
+              title="Midstride Technologies"
+              subtitle="We work closely with Midstride's team by communicating directly with its clients and getting a thorough understanding of their requirements before buildling out full-stack features on their products."
             />
           </Row>
         </Fade>

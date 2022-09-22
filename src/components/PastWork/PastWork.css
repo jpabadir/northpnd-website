@@ -18,17 +18,17 @@
   background-position-x: center;
   background-repeat: no-repeat;
   background-size: 80%;
-}
-
-.Midstride {
-  background-image: url('../../assets/midstride-white.png');
-  background-color: #19658E;
   background-position-y: center;
 }
+
 
 .Proximy {
   background-image: url('../../assets/proximy-logo.png');
   border-color: rgb(91, 141, 239);
   border: 2px solid rgb(91, 141, 239);
-  background-position-y: center;
+}
+
+.MidstrideTechnologies {
+  background-image: url('../../assets/midstride-white.png');
+  background-color: #19658E;
 }

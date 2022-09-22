@@ -6,6 +6,7 @@ import Rating from '@material-ui/lab/Rating';
 
 function Reviews() {
   const [reviews, setReviews] = useState([]);
+  const companies = ["Proximy", "Midstride Technologies"]
 
   useEffect(() => {
     const googleMapsScript = document.createElement('script');
@@ -15,7 +16,7 @@ function Reviews() {
     googleMapsScript.addEventListener('load', () => {
       const service = new window.google.maps.places.PlacesService(document.createElement('div'));
       service.getDetails({ placeId: 'ChIJHbxYLfU1K4gRemEVnxyALR8', fields: ['reviews'] }, (place) => {
-        setReviews(place.reviews);
+        setReviews(place.reviews.sort((a, b) => a.time - b.time));
       });
     });
   }, []);
@@ -28,12 +29,12 @@ function Reviews() {
 
   return (
     <Row className="Reviews">
-      {reviews.map((review) => {
+      {reviews.map((review, index) => {
         return (
           <Col className="Review" key={review.text}>
             <StyledRating value={review.rating} readOnly size="large" />
             <div className="ReviewText">"{review.text}"</div>
-            <div>{review.author_name}, Proximy</div>
+            <div>{review.author_name}, {companies[index]}</div>
           </Col>
         );
       })}

@@ -27,14 +27,14 @@ function PastWork() {
         <Fade duration={1200}>
           <Row>
             <WorkCard
-              link="https://apps.apple.com/us/app/habit-one/id1564317049#?platform=iphone"
-              title="Habit One"
-              subtitle="Habit One is the simplest habit tracker, built using React Native."
-            />
-            <WorkCard
               link="https://proximy.ca/"
               title="Proximy"
-              subtitle="We build features on Proximy's mobile app on an ongoing basis, using Flutter, Cloud Firestore, and Google Cloud Functions."
+              subtitle="We helped Proximy build specific features on their cross-platform mobile app using Flutter, Cloud Firestore, and Google Cloud Functions."
+            />
+            <WorkCard
+              link="https://apps.apple.com/us/app/habit-one/id1564317049#?platform=iphone"
+              title="Midstride"
+              subtitle="We work with Midstride."
             />
           </Row>
         </Fade>

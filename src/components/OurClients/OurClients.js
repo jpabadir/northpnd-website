@@ -19,7 +19,7 @@ function WorkCard(props) {
   );
 }
 
-function PastWork() {
+function OurClients() {
   return (
     <div className="MainElementPadding">
       <Container fluid>
@@ -46,4 +46,4 @@ function PastWork() {
   );
 }
 
-export default PastWork;
+export default OurClients;

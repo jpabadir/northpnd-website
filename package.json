@@ -16,6 +16,7 @@
     "react-bootstrap": "^1.6.0",
     "react-card-flip": "^1.1.1",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^6.4.2",
     "react-reveal": "^1.2.2",
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.2",
@@ -24,8 +25,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && rm -rf docs && mv build docs",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+
   },
   "eslintConfig": {
     "extends": [

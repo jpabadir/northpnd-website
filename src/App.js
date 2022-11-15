@@ -12,6 +12,9 @@ import './hamburgers.css';
 import Fade from 'react-reveal/Fade';
 import logo from './assets/transparentLogo.svg';
 import homeBackground from './assets/home-background.mp4';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import OurExpertise from './components/OurExpertise/OurExpertise';
+
 
 const bodyScrollLock = require('body-scroll-lock');
 const disableBodyScroll = bodyScrollLock.disableBodyScroll;
@@ -111,6 +114,21 @@ function App() {
               >
                 Our Clients
               </Link>
+            </li>
+            <li>
+                <Link
+                activeClass="active"
+                className="Link WhiteLink"
+                to="Expertise"
+                spy={scrollSpy}
+                smooth={true}
+                duration={300}
+                style={{ display: 'inline-block', margin: '20px' }}
+                onClick={closeToggle}
+                offset={-80}
+                >
+                Our Expertise
+                </Link>
             </li>
             <li>
               <Link

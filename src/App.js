@@ -13,7 +13,7 @@ import Fade from 'react-reveal/Fade';
 import logo from './assets/transparentLogo.svg';
 import homeBackground from './assets/home-background.mp4';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import OurExpertise from './components/Expertise/Expertise';
+import Expertise from './components/Expertise/Expertise';
 
 
 const bodyScrollLock = require('body-scroll-lock');
@@ -28,6 +28,7 @@ function App() {
       setMyScrollY(window.scrollY);
     });
   }, []);
+
 
   const refContainer = useRef(null);
   const [isToggleOpen, setIsToggleOpen] = useState(false);
@@ -55,6 +56,12 @@ function App() {
   }
 
   return (
+    <Router>
+    <div classname='router'>
+      <Routes basename='/expertise'>
+        <Route path='/expertise' element={<Expertise />}/>
+      </Routes>
+    </div>
     <div>
       <Navbar
         id="myNavbar"
@@ -127,7 +134,7 @@ function App() {
                 onClick={closeToggle}
                 offset={-80}
                 >
-                Our Expertise
+                Expertise
                 </Link>
             </li>
             <li>
@@ -216,6 +223,8 @@ function App() {
         </div>
       </div>
     </div>
+    </Router>
+
   );
 }
 

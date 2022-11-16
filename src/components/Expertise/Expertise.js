@@ -4,7 +4,6 @@
 // import Fade from 'react-reveal/Fade';
 
 
-
 function Expertise(){
     return  <div>hello</div>
 }

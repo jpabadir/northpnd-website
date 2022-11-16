@@ -5,7 +5,7 @@
 
 
 
-function OurExpertise(){
-    return <div>hello</div>
+function Expertise(){
+    return  <div>hello</div>
 }
-export default OurExpertise;
+export default Expertise;

@@ -13,7 +13,7 @@ import Fade from 'react-reveal/Fade';
 import logo from './assets/transparentLogo.svg';
 import homeBackground from './assets/home-background.mp4';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import OurExpertise from './components/OurExpertise/OurExpertise';
+import OurExpertise from './components/Expertise/Expertise';
 
 
 const bodyScrollLock = require('body-scroll-lock');

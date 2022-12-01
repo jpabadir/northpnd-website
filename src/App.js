@@ -1,17 +1,20 @@
 import './App.css';
-import { Link, Element } from 'react-scroll';
+import { Element } from 'react-scroll';
+import { Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 import { useEffect, useRef, useState } from 'react';
 import About from './components/About/About';
 import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
 import Services from './components/Services/Services';
+import Expertise from './components/Expertise/Expertise'
 import OurClients from './components/OurClients/OurClients';
 import Footer from './components/Footer/Footer';
 import './hamburgers.css';
 import Fade from 'react-reveal/Fade';
 import logo from './assets/transparentLogo.svg';
 import homeBackground from './assets/home-background.mp4';
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
 const bodyScrollLock = require('body-scroll-lock');
 const disableBodyScroll = bodyScrollLock.disableBodyScroll;
@@ -20,6 +23,19 @@ const enableBodyScroll = bodyScrollLock.enableBodyScroll;
 const scrollAnimationTrigger = 50;
 
 function App() {
+  return (
+  <div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Main />} />
+        <Route path='expertise' element={<Expertise />}/> 
+      </Routes>
+    </Router>
+  </div>
+  )
+} 
+
+function Main() {
   useEffect(() => {
     document.addEventListener('scroll', () => {
       setMyScrollY(window.scrollY);
@@ -112,6 +128,16 @@ function App() {
                 Our Clients
               </Link>
             </li>
+            {/* Our Expertise */}
+            <li>
+              <Link 
+                activeClass="active"
+                className="Link WhiteLink"
+                to="expertise"
+                style={{ display: 'inline-block', margin: '20px' }}>
+                Expertise
+              </Link>
+            </li>
             <li>
               <Link
                 activeClass="active"
@@ -196,7 +222,7 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
+      </div> 
     </div>
   );
 }

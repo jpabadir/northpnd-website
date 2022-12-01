@@ -1,0 +1,18 @@
+.Testing {
+    color: #cccccc;
+  }
+  
+  @media screen and (max-width: 600px) { 
+    table thead {
+      display: none !important;
+    }
+    table td {
+      display: flex !important;
+    }
+    
+    table td::before {
+      content: attr(label) !important;
+      font-weight: bold !important;
+      width: 140px !important;
+    }
+  }

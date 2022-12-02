@@ -13,6 +13,7 @@ import './hamburgers.css';
 import Fade from 'react-reveal/Fade';
 import logo from './assets/transparentLogo.svg';
 import homeBackground from './assets/home-background.mp4';
+//import './components/Books/Books.css';
 
 const bodyScrollLock = require('body-scroll-lock');
 const disableBodyScroll = bodyScrollLock.disableBodyScroll;
@@ -189,7 +190,7 @@ function App() {
           </div>
           <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
             <Element name="Books" className="element" style={{ width: '100%' }}>
-              <Books />
+                <Books />
             </Element>
           </div>
           <div style={{ width: '100%', backgroundColor: '#151419', color: '#ededed' }}>

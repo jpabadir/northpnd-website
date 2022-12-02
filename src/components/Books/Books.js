@@ -8,7 +8,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import './Books.css';
 
-export default function Books() {
+function Books() {
   return (
     <div>
       <TableContainer>
@@ -44,3 +44,4 @@ export default function Books() {
     </div>
   );
 }
+export default Books;

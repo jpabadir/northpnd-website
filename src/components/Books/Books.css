@@ -16,3 +16,9 @@
       width: 140px !important;
     }
   }
+  tr:nth-child(even) {
+    background: rgb(228, 230, 252);
+  }
+  tr:nth-child(odd) {
+    background: #fff;
+  }

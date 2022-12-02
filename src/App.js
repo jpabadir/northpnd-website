@@ -1,6 +1,6 @@
 import './App.css';
-import { Element } from 'react-scroll';
-import { Link } from 'react-router-dom';
+import { Link, Element } from 'react-scroll';
+import { NavLink } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 import { useEffect, useRef, useState } from 'react';
 import About from './components/About/About';
@@ -130,13 +130,13 @@ function Main() {
             </li>
             {/* Our Expertise */}
             <li>
-              <Link 
+              <NavLink 
                 activeClass="active"
                 className="Link WhiteLink"
                 to="expertise"
                 style={{ display: 'inline-block', margin: '20px' }}>
                 Expertise
-              </Link>
+              </NavLink>
             </li>
             <li>
               <Link

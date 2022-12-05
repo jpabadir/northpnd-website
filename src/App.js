@@ -30,6 +30,11 @@ function App() {
         <Route path='/' element={<Main />} />
         <Route path='expertise' element={<Expertise />}/> 
       </Routes>
+      <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#212129' }}>
+        <div className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%', alignItems: 'center' }}>
+          <Footer />
+        </div>
+      </div>
     </Router>
   </div>
   )
@@ -213,11 +218,6 @@ function Main() {
                 <Element name="contactUs" className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
                   <Contact />
                 </Element>
-              </div>
-              <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#212129' }}>
-                <div className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%', alignItems: 'center' }}>
-                  <Footer />
-                </div>
               </div>
             </div>
           </div>

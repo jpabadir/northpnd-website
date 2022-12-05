@@ -97,10 +97,10 @@ function Navigation() {
               </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 activeClass="active"
                 className="Link WhiteLink"
-                to="ourClients"
+                to="/"
                 spy={scrollSpy}
                 smooth={true}
                 duration={300}
@@ -109,7 +109,7 @@ function Navigation() {
                 offset={-80}
               >
                 Our Clients
-              </Link>
+              </NavLink>
             </li>
             <li>
               <Link
@@ -127,10 +127,10 @@ function Navigation() {
               </Link>
             </li>
             <li>
-              <Link
+              <NavLink
                 activeClass="active"
                 className="Link WhiteLink"
-                to="services"
+                to="/"
                 spy={scrollSpy}
                 smooth={true}
                 duration={300}
@@ -139,13 +139,13 @@ function Navigation() {
                 offset={-80}
               >
                 Services
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 activeClass="active"
                 className="Link WhiteLink"
-                to="contactUs"
+                to="/"
                 spy={scrollSpy}
                 smooth={true}
                 duration={300}
@@ -154,7 +154,7 @@ function Navigation() {
                 offset={-80}
               >
                 Contact Us
-              </Link>
+              </NavLink>
             </li>
           </Nav>
         </Navbar.Collapse>

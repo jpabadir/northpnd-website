@@ -7,6 +7,7 @@ import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
 import Services from './components/Services/Services';
 import OurClients from './components/OurClients/OurClients';
+import Blog from './components/Blog/everyone-should-have-perfect-grammar';
 import Footer from './components/Footer/Footer';
 import './hamburgers.css';
 import Fade from 'react-reveal/Fade';
@@ -116,6 +117,21 @@ function App() {
               <Link
                 activeClass="active"
                 className="Link WhiteLink"
+                to="everyone-should-have-perfect-grammar"
+                spy={scrollSpy}
+                smooth={true}
+                duration={300}
+                style={{ display: 'inline-block', margin: '20px' }}
+                onClick={closeToggle}
+                offset={-80}
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                className="Link WhiteLink"
                 to="services"
                 spy={scrollSpy}
                 smooth={true}
@@ -171,6 +187,11 @@ function App() {
           <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
             <Element name="ourClients" className="element" style={{ width: '100%' }}>
               <OurClients />
+            </Element>
+          </div>
+          <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
+            <Element name="everyone-should-have-perfect-grammar" className="element" style={{ width: '100%' }}>
+              <Blog />
             </Element>
           </div>
           <div style={{ width: '100%', backgroundColor: '#151419', color: '#ededed' }}>

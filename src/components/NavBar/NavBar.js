@@ -111,16 +111,20 @@ function Navigation() {
                 Our Clients
               </Link>
             </li>
-            {/* Our Expertise */}
             <li>
-              <NavLink
+              <Link
                 activeClass="active"
                 className="Link WhiteLink"
                 to="expertise"
+                spy={scrollSpy}
+                smooth={true}
+                duration={300}
                 style={{ display: "inline-block", margin: "20px" }}
+                onClick={closeToggle}
+                offset={-80}
               >
                 Expertise
-              </NavLink>
+              </Link>
             </li>
             <li>
               <Link

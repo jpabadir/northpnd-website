@@ -4,7 +4,7 @@ import Navbar from "../NavBar/NavBar";
 
 function Expertise() {
   return (
-    <div>
+    <div style={{backgroundColor: 'gray'}}>
       <Navbar />
       <div style={{ paddingTop: "20cm" }}>hello</div>
     </div>

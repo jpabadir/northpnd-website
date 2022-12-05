@@ -5,7 +5,7 @@ import Navbar from "../NavBar/NavBar";
 function Expertise() {
   return (
     <div
-      style={{ "background-color": "blue", opacity: "0.5", height: "100%" }}
+      style={{ "background-color": "orange", opacity: "0.5", height: "100%" }}
     >
       <Navbar />
       <div style={{ paddingTop: "20cm" }}>hello</div>

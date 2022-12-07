@@ -1,11 +1,11 @@
 import React from "react";
 import "./Expertise.css";
-import Navbar from "../NavBar/NavBar";
+import LocalNavbar from "../LocalNavbar/LocalNavbar";
 
 function Expertise() {
   return (
     <div style={{backgroundColor: 'gray'}}>
-      <Navbar />
+      <LocalNavbar />
       <div style={{ paddingTop: "20cm" }}>hello</div>
     </div>
   );

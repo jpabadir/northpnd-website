@@ -11,7 +11,7 @@ const enableBodyScroll = bodyScrollLock.enableBodyScroll;
 
 const scrollAnimationTrigger = 50;
 
-function Navigation() {
+function LocalNavbar() {
   useEffect(() => {
     document.addEventListener("scroll", () => {
       setMyScrollY(window.scrollY);
@@ -163,4 +163,4 @@ function Navigation() {
   );
 }
 
-export default Navigation;
+export default LocalNavbar;

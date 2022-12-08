@@ -7,6 +7,7 @@ import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
 import Services from './components/Services/Services';
 import OurClients from './components/OurClients/OurClients';
+import FAQ from './components/FAQ/FAQ';
 import Footer from './components/Footer/Footer';
 import './hamburgers.css';
 import Fade from 'react-reveal/Fade';
@@ -186,6 +187,11 @@ function App() {
               <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
                 <Element name="contactUs" className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
                   <Contact />
+                </Element>
+              </div>
+              <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
+                <Element name="FAQ" className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+                  <FAQ />
                 </Element>
               </div>
               <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#212129' }}>

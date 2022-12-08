@@ -1,5 +1,5 @@
 import './Main.css';
-import { Link, Element } from 'react-scroll';
+import { Link, Element, scroller } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 import { useEffect, useRef, useState } from 'react';
@@ -22,7 +22,7 @@ const enableBodyScroll = bodyScrollLock.enableBodyScroll;
 
 const scrollAnimationTrigger = 50;
 
-function Main() {
+function Main(props) {
   useEffect(() => {
     document.addEventListener('scroll', () => {
       setMyScrollY(window.scrollY);
@@ -46,6 +46,11 @@ function Main() {
     );
   }, []);
 
+  useEffect(() => {
+    console.log(props.scrollGoal)
+    scroller.scrollTo(props.scrollGoal, { duration: 300, smooth: true, spy: true, offset: -80 });
+  }, [props.scrollGoal]);
+
   function closeToggle() {
     if (isToggleOpen) refContainer.current.click();
   }
@@ -56,113 +61,6 @@ function Main() {
 
   return (
     <div>
-      <Navbar
-        id="myNavbar"
-        collapseOnSelect
-        expand="lg"
-        variant="dark"
-        fixed="top"
-        className={`${myScrollY > scrollAnimationTrigger || isToggleOpen ? 'GreyNavbar' : 'TransparentNavbar'} ${
-          isToggleOpen ? 'FullNav' : 'TopNav'
-        } Navbar`}
-        style={{ height: isToggleOpen ? '100vh' : '80px' }}
-      >
-        <Navbar.Brand href="/" style={{ fontSize: '25px' }}>
-          <img src={logo} alt="logo" className="Logo" />
-        </Navbar.Brand>
-        <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
-          ref={refContainer}
-          onClick={toggleIsToggleOpen}
-          className="Toggle"
-          id="toggler"
-        >
-          <div className={`hamburger hamburger--slider ${isToggleOpen && 'is-active'}`}>
-            <div className="hamburger-box">
-              <div className="hamburger-inner"></div>
-            </div>
-          </div>
-        </Navbar.Toggle>
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto text-center">
-            <li>
-              <Link
-                activeClass="active"
-                className="Link WhiteLink"
-                to="about"
-                spy={scrollSpy}
-                smooth={true}
-                duration={300}
-                style={{ display: 'inline-block', margin: '20px' }}
-                onClick={closeToggle}
-                offset={-80}
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                className="Link WhiteLink"
-                to="ourClients"
-                spy={scrollSpy}
-                smooth={true}
-                duration={300}
-                style={{ display: 'inline-block', margin: '20px' }}
-                onClick={closeToggle}
-                offset={-80}
-              >
-                Our Clients
-              </Link>
-            </li>
-            <li>
-              <NavLink 
-                activeClass="active"
-                className="Link WhiteLink"
-                to="expertise"
-                spy={scrollSpy}
-                smooth={true}
-                duration={300}
-                style={{ display: 'inline-block', margin: '20px' }}
-                onClick={closeToggle}
-                offset={-80}
-                >
-                Expertise
-              </NavLink>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                className="Link WhiteLink"
-                to="services"
-                spy={scrollSpy}
-                smooth={true}
-                duration={300}
-                style={{ display: 'inline-block', margin: '20px' }}
-                onClick={closeToggle}
-                offset={-80}
-              >
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                className="Link WhiteLink"
-                to="contactUs"
-                spy={scrollSpy}
-                smooth={true}
-                duration={300}
-                style={{ display: 'inline-block', margin: '20px' }}
-                onClick={closeToggle}
-                offset={-80}
-              >
-                Contact Us
-              </Link>
-            </li>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
       <div>
         <div onClick={closeToggle} style={{ position: 'relative', width: '100%' }}>
           <video src={homeBackground} className="BackgroundVideo Overlay" type="video/mov" playsInline loop autoPlay muted />
@@ -187,7 +85,7 @@ function Main() {
             </Element>
           </div>
           <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
-            <Element name="ourClients" className="element" style={{ width: '100%' }}>
+            <Element name="ourclients" className="element" style={{ width: '100%' }}>
               <OurClients />
             </Element>
           </div>
@@ -202,7 +100,7 @@ function Main() {
             </div>
             <div id="bottomPart">
               <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
-                <Element name="contactUs" className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+                <Element name="contactus" className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
                   <Contact />
                 </Element>
               </div>

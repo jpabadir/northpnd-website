@@ -14,25 +14,32 @@ import './hamburgers.css';
 import Fade from 'react-reveal/Fade';
 import logo from './assets/transparentLogo.svg';
 import homeBackground from './assets/home-background.mp4';
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Main from "./components/Main/Main";
+import LocalNavbar from './components/LocalNavbar/LocalNavbar';
 
 function App() {
+  const [scrollGoal, setScrollGoal] = useState('')
+  function updateThatThing(stuff) {
+    setScrollGoal(stuff)
+  }
+
   return (
-  <div>
-    <Router>
-      <Routes>
-        <Route path='/' element={<Main />} />
-        <Route path='expertise' element={<Expertise />}/> 
-      </Routes>
-      <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#212129' }}>
-        <div className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%', alignItems: 'center' }}>
-          <Footer />
+    <div>
+      <Router>
+        <LocalNavbar myHandler={updateThatThing} />
+        <Routes>
+          <Route path='/' element={<Main scrollGoal={scrollGoal} />} />
+          <Route path='expertise' element={<Expertise />} />
+        </Routes>
+        <div style={{ width: '100%', justifyContent: 'center', display: 'flex', backgroundColor: '#212129' }}>
+          <div className="element" style={{ display: 'flex', justifyContent: 'center', width: '100%', alignItems: 'center' }}>
+            <Footer />
+          </div>
         </div>
-      </div>
-    </Router>
-  </div>
+      </Router>
+    </div>
   )
-} 
+}
 
 export default App;

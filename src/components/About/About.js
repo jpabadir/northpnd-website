@@ -8,7 +8,7 @@ function About() {
 
   useLayoutEffect(() => {
     function updateVideoHeight() {
-      setVideoHeight(document.getElementById('myVideo').offsetWidth / 1.78);
+      // setVideoHeight(document.getElementById('myVideo').offsetWidth / 1.78);
     }
     window.addEventListener('resize', updateVideoHeight);
     updateVideoHeight();
@@ -34,7 +34,7 @@ function About() {
             </Fade>
           </Col>
           <Col xl={5}>
-            <div className="VideoParent">
+            {/* <div className="VideoParent">
               <iframe
                 width="100%"
                 height={videoHeight}
@@ -46,7 +46,7 @@ function About() {
                 id="myVideo"
                 className="StaticShadow"
               />
-            </div>
+            </div> */}
           </Col>
         </Row>
       </Container>

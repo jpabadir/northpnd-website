@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-scroll";
-import { NavLink } from "react-router-dom";
+import { Link, scroller } from "react-scroll";
+import { NavLink, useLocation } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import { useEffect, useRef, useState } from "react";
 import logo from "../../assets/transparentLogo.svg";
@@ -11,7 +11,7 @@ const enableBodyScroll = bodyScrollLock.enableBodyScroll;
 
 const scrollAnimationTrigger = 50;
 
-function LocalNavbar() {
+function LocalNavbar(props) {
   useEffect(() => {
     document.addEventListener("scroll", () => {
       setMyScrollY(window.scrollY);
@@ -37,13 +37,20 @@ function LocalNavbar() {
     );
   }, []);
 
-  function closeToggle() {
+  const location = useLocation();
+
+  function closeToggle(e) {
+    // console.log(e.target)
     if (isToggleOpen) refContainer.current.click();
+    props.myHandler(e.target.innerText.replace(/\s/g, '').toLowerCase())
+    // scroller.scrollTo(e.target.innerText, { duration: 300, smooth: true, spy: true, offset: -80 });
+    // scroller.scrollTo(e.target.innerText.replace(/\s/g, '').toLowerCase(), { duration: 300, smooth: true, spy: true, offset: -80 });
   }
 
   function toggleIsToggleOpen() {
     setIsToggleOpen(!isToggleOpen);
   }
+
   return (
     <div>
       <Navbar
@@ -83,10 +90,10 @@ function LocalNavbar() {
           <Nav className="ml-auto text-center">
             <li>
               <NavLink
-                activeClass="active"
+                activeClass="testing"
                 className="Link WhiteLink"
                 to="/"
-                spy={scrollSpy}
+                // spy={scrollSpy}
                 smooth={true}
                 duration={300}
                 style={{ display: "inline-block", margin: "20px" }}
@@ -98,10 +105,10 @@ function LocalNavbar() {
             </li>
             <li>
               <NavLink
-                activeClass="active"
+                activeClass="testing"
                 className="Link WhiteLink"
                 to="/"
-                spy={scrollSpy}
+                // spy={scrollSpy}
                 smooth={true}
                 duration={300}
                 style={{ display: "inline-block", margin: "20px" }}
@@ -112,26 +119,11 @@ function LocalNavbar() {
               </NavLink>
             </li>
             <li>
-              <Link
-                activeClass="active"
-                className="Link WhiteLink"
-                to="expertise"
-                spy={scrollSpy}
-                smooth={true}
-                duration={300}
-                style={{ display: "inline-block", margin: "20px" }}
-                onClick={closeToggle}
-                offset={-80}
-              >
-                Expertise
-              </Link>
-            </li>
-            <li>
               <NavLink
-                activeClass="active"
+                activeClass="testing"
                 className="Link WhiteLink"
                 to="/"
-                spy={scrollSpy}
+                // spy={scrollSpy}
                 smooth={true}
                 duration={300}
                 style={{ display: "inline-block", margin: "20px" }}
@@ -143,10 +135,10 @@ function LocalNavbar() {
             </li>
             <li>
               <NavLink
-                activeClass="active"
+                activeClass="testing"
                 className="Link WhiteLink"
                 to="/"
-                spy={scrollSpy}
+                // spy={scrollSpy}
                 smooth={true}
                 duration={300}
                 style={{ display: "inline-block", margin: "20px" }}
@@ -154,6 +146,18 @@ function LocalNavbar() {
                 offset={-80}
               >
                 Contact Us
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                activeClass="testing"
+                className="Link WhiteLink"
+                to="expertise"
+                style={{ display: "inline-block", margin: "20px" }}
+                onClick={closeToggle}
+                offset={-80}
+              >
+                Expertise
               </NavLink>
             </li>
           </Nav>

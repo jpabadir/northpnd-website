@@ -40,11 +40,8 @@ function LocalNavbar(props) {
   const location = useLocation();
 
   function closeToggle(e) {
-    // console.log(e.target)
     if (isToggleOpen) refContainer.current.click();
     props.myHandler(e.target.innerText.replace(/\s/g, '').toLowerCase())
-    // scroller.scrollTo(e.target.innerText, { duration: 300, smooth: true, spy: true, offset: -80 });
-    // scroller.scrollTo(e.target.innerText.replace(/\s/g, '').toLowerCase(), { duration: 300, smooth: true, spy: true, offset: -80 });
   }
 
   function toggleIsToggleOpen() {
@@ -90,7 +87,7 @@ function LocalNavbar(props) {
           <Nav className="ml-auto text-center">
             <li>
               <NavLink
-                activeClass="testing"
+                activeClassName="testing"
                 className="Link WhiteLink"
                 to="/"
                 // spy={scrollSpy}
@@ -105,7 +102,7 @@ function LocalNavbar(props) {
             </li>
             <li>
               <NavLink
-                activeClass="testing"
+                activeClassName="testing"
                 className="Link WhiteLink"
                 to="/"
                 // spy={scrollSpy}
@@ -120,7 +117,7 @@ function LocalNavbar(props) {
             </li>
             <li>
               <NavLink
-                activeClass="testing"
+                activeClassName="testing"
                 className="Link WhiteLink"
                 to="/"
                 // spy={scrollSpy}
@@ -135,7 +132,7 @@ function LocalNavbar(props) {
             </li>
             <li>
               <NavLink
-                activeClass="testing"
+                activeClassName="testing"
                 className="Link WhiteLink"
                 to="/"
                 // spy={scrollSpy}
@@ -150,7 +147,7 @@ function LocalNavbar(props) {
             </li>
             <li>
               <NavLink
-                activeClass="testing"
+                activeClassName="testing"
                 className="Link WhiteLink"
                 to="expertise"
                 style={{ display: "inline-block", margin: "20px" }}

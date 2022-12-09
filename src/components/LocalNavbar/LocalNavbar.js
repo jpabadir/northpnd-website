@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, scroller } from "react-scroll";
+import { Link } from "react-scroll";
 import { NavLink, useLocation } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import { useEffect, useRef, useState } from "react";
@@ -24,7 +24,6 @@ function LocalNavbar(props) {
   const [scrollSpy, setScrollSpy] = useState(true);
 
   useEffect(() => {
-    // Use of RefContainer below is just a way to pass the body scroll functions something, I don't really need it.
     if (isToggleOpen) disableBodyScroll(refContainer.current);
     else enableBodyScroll(refContainer.current);
   }, [isToggleOpen]);
@@ -41,7 +40,7 @@ function LocalNavbar(props) {
 
   function closeToggle(e) {
     if (isToggleOpen) refContainer.current.click();
-    props.myHandler(e.target.innerText.replace(/\s/g, '').toLowerCase())
+    props.myHandler(e.target.innerText.replace(/\s/g, "").toLowerCase());
   }
 
   function toggleIsToggleOpen() {
@@ -87,7 +86,7 @@ function LocalNavbar(props) {
           <Nav className="ml-auto text-center">
             <li>
               <NavLink
-                activeClassName="testing"
+                activeClass="testing"
                 className="Link WhiteLink"
                 to="/"
                 // spy={scrollSpy}
@@ -102,7 +101,7 @@ function LocalNavbar(props) {
             </li>
             <li>
               <NavLink
-                activeClassName="testing"
+                activeClass="testing"
                 className="Link WhiteLink"
                 to="/"
                 // spy={scrollSpy}
@@ -117,7 +116,7 @@ function LocalNavbar(props) {
             </li>
             <li>
               <NavLink
-                activeClassName="testing"
+                activeClass="testing"
                 className="Link WhiteLink"
                 to="/"
                 // spy={scrollSpy}
@@ -132,7 +131,7 @@ function LocalNavbar(props) {
             </li>
             <li>
               <NavLink
-                activeClassName="testing"
+                activeClass="testing"
                 className="Link WhiteLink"
                 to="/"
                 // spy={scrollSpy}
@@ -147,7 +146,7 @@ function LocalNavbar(props) {
             </li>
             <li>
               <NavLink
-                activeClassName="testing"
+                activeClass="testing"
                 className="Link WhiteLink"
                 to="expertise"
                 style={{ display: "inline-block", margin: "20px" }}

@@ -1,6 +1,5 @@
 import React from "react";
 import "./Expertise.css";
-import LocalNavbar from "../LocalNavbar/LocalNavbar";
 
 function Expertise() {
   return (

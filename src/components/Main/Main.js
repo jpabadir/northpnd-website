@@ -14,33 +14,14 @@ const bodyScrollLock = require("body-scroll-lock");
 const disableBodyScroll = bodyScrollLock.disableBodyScroll;
 const enableBodyScroll = bodyScrollLock.enableBodyScroll;
 
-const scrollAnimationTrigger = 50;
-
 function Main(props) {
-  useEffect(() => {
-    document.addEventListener("scroll", () => {
-      setMyScrollY(window.scrollY);
-    });
-  }, []);
-
   const refContainer = useRef(null);
   const [isToggleOpen, setIsToggleOpen] = useState(false);
-  const [myScrollY, setMyScrollY] = useState(0);
-  const [scrollSpy, setScrollSpy] = useState(true);
 
   useEffect(() => {
-    // Use of RefContainer below is just a way to pass the body scroll functions something, I don't really need it.
     if (isToggleOpen) disableBodyScroll(refContainer.current);
     else enableBodyScroll(refContainer.current);
   }, [isToggleOpen]);
-
-  useEffect(() => {
-    setScrollSpy(
-      document.getElementById("bottomPart") != null &&
-        window.innerHeight - 80 <
-          document.getElementById("bottomPart").clientHeight
-    );
-  }, []);
 
   useEffect(() => {
     scroller.scrollTo(props.scrollGoal, {

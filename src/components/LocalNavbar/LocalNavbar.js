@@ -36,8 +36,6 @@ function LocalNavbar(props) {
     );
   }, []);
 
-  const location = useLocation();
-
   function closeToggle(e) {
     if (isToggleOpen) refContainer.current.click();
     props.myHandler(e.target.innerText.replace(/\s/g, "").toLowerCase());
@@ -86,7 +84,7 @@ function LocalNavbar(props) {
           <Nav className="ml-auto text-center">
             <li>
               <NavLink
-                activeClass="testing"
+                activeclass="testing"
                 className="Link WhiteLink"
                 to="/"
                 // spy={scrollSpy}
@@ -101,7 +99,7 @@ function LocalNavbar(props) {
             </li>
             <li>
               <NavLink
-                activeClass="testing"
+                activeclass="testing"
                 className="Link WhiteLink"
                 to="/"
                 // spy={scrollSpy}
@@ -116,7 +114,7 @@ function LocalNavbar(props) {
             </li>
             <li>
               <NavLink
-                activeClass="testing"
+                activeclass="testing"
                 className="Link WhiteLink"
                 to="/"
                 // spy={scrollSpy}
@@ -131,7 +129,7 @@ function LocalNavbar(props) {
             </li>
             <li>
               <NavLink
-                activeClass="testing"
+                activeclass="testing"
                 className="Link WhiteLink"
                 to="/"
                 // spy={scrollSpy}
@@ -146,7 +144,7 @@ function LocalNavbar(props) {
             </li>
             <li>
               <NavLink
-                activeClass="testing"
+                activeclass="testing"
                 className="Link WhiteLink"
                 to="expertise"
                 style={{ display: "inline-block", margin: "20px" }}

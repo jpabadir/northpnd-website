@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import { useEffect, useRef, useState } from "react";
 import logo from "../../assets/transparentLogo.svg";
@@ -83,10 +83,9 @@ function LocalNavbar(props) {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto text-center">
             <li>
-              <NavLink
-                activeclass="testing"
-                className="Link WhiteLink"
+              <Link
                 to="/"
+                activeClassName="selected"
                 // spy={scrollSpy}
                 smooth={true}
                 duration={300}
@@ -94,14 +93,15 @@ function LocalNavbar(props) {
                 onClick={closeToggle}
                 offset={-80}
               >
-                About
-              </NavLink>
+                <NavLink className="Link WhiteLink" to="/">
+                  About
+                </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink
-                activeclass="testing"
-                className="Link WhiteLink"
+              <Link
                 to="/"
+                activeClassName="selected"
                 // spy={scrollSpy}
                 smooth={true}
                 duration={300}
@@ -109,14 +109,15 @@ function LocalNavbar(props) {
                 onClick={closeToggle}
                 offset={-80}
               >
-                Our Clients
-              </NavLink>
+                <NavLink className="Link WhiteLink" to="/">
+                  Our Clients
+                </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink
-                activeclass="testing"
-                className="Link WhiteLink"
+              <Link
                 to="/"
+                activeClassName="selected"
                 // spy={scrollSpy}
                 smooth={true}
                 duration={300}
@@ -124,14 +125,15 @@ function LocalNavbar(props) {
                 onClick={closeToggle}
                 offset={-80}
               >
-                Services
-              </NavLink>
+                <NavLink className="Link WhiteLink" to="/">
+                  Services
+                </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink
-                activeclass="testing"
-                className="Link WhiteLink"
+              <Link
                 to="/"
+                activeClassName="selected"
                 // spy={scrollSpy}
                 smooth={true}
                 duration={300}
@@ -139,12 +141,13 @@ function LocalNavbar(props) {
                 onClick={closeToggle}
                 offset={-80}
               >
-                Contact Us
-              </NavLink>
+                <NavLink className="Link WhiteLink" to="/">
+                  Contact Us
+                </NavLink>
+              </Link>
             </li>
             <li>
               <NavLink
-                activeclass="testing"
                 className="Link WhiteLink"
                 to="expertise"
                 style={{ display: "inline-block", margin: "20px" }}

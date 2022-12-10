@@ -1,7 +1,6 @@
 import React from "react";
 import "./LocalNavbar.css";
-import { Link } from "react-scroll";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import { useEffect, useRef, useState } from "react";
 import logo from "../../assets/transparentLogo.svg";
@@ -22,20 +21,11 @@ function LocalNavbar(props) {
   const refContainer = useRef(null);
   const [isToggleOpen, setIsToggleOpen] = useState(false);
   const [myScrollY, setMyScrollY] = useState(0);
-  const [scrollSpy, setScrollSpy] = useState(true);
 
   useEffect(() => {
     if (isToggleOpen) disableBodyScroll(refContainer.current);
     else enableBodyScroll(refContainer.current);
   }, [isToggleOpen]);
-
-  useEffect(() => {
-    setScrollSpy(
-      document.getElementById("bottomPart") != null &&
-        window.innerHeight - 80 <
-          document.getElementById("bottomPart").clientHeight
-    );
-  }, []);
 
   function closeToggle(e) {
     if (isToggleOpen) refContainer.current.click();
@@ -54,11 +44,10 @@ function LocalNavbar(props) {
         expand="lg"
         variant="dark"
         fixed="top"
-        className={`${
-          myScrollY > scrollAnimationTrigger || isToggleOpen
-            ? "GreyNavbar"
-            : "TransparentNavbar"
-        } ${isToggleOpen ? "FullNav" : "TopNav"} Navbar`}
+        className={`${myScrollY > scrollAnimationTrigger || isToggleOpen
+          ? "GreyNavbar"
+          : "TransparentNavbar"
+          } ${isToggleOpen ? "FullNav" : "TopNav"} Navbar`}
         style={{ height: isToggleOpen ? "100vh" : "80px" }}
       >
         <Navbar.Brand href="/" style={{ fontSize: "25px" }}>
@@ -72,9 +61,8 @@ function LocalNavbar(props) {
           id="toggler"
         >
           <div
-            className={`hamburger hamburger--slider ${
-              isToggleOpen && "is-active"
-            }`}
+            className={`hamburger hamburger--slider ${isToggleOpen && "is-active"
+              }`}
           >
             <div className="hamburger-box">
               <div className="hamburger-inner"></div>
@@ -86,65 +74,15 @@ function LocalNavbar(props) {
             <li>
               <Link
                 to="/"
-                activeClassName="selected"
-                // spy={scrollSpy}
+                activeClass="selected"
                 smooth={true}
                 duration={300}
                 style={{ display: "inline-block", margin: "20px" }}
                 onClick={closeToggle}
                 offset={-80}
+                className="Link WhiteLink"
               >
-                <NavLink className="Link WhiteLink" to="/">
-                  About
-                </NavLink>
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/"
-                activeClassName="selected"
-                // spy={scrollSpy}
-                smooth={true}
-                duration={300}
-                style={{ display: "inline-block", margin: "20px" }}
-                onClick={closeToggle}
-                offset={-80}
-              >
-                <NavLink className="Link WhiteLink" to="/">
-                  Our Clients
-                </NavLink>
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/"
-                activeClassName="selected"
-                // spy={scrollSpy}
-                smooth={true}
-                duration={300}
-                style={{ display: "inline-block", margin: "20px" }}
-                onClick={closeToggle}
-                offset={-80}
-              >
-                <NavLink className="Link WhiteLink" to="/">
-                  Services
-                </NavLink>
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/"
-                activeClassName="selected"
-                // spy={scrollSpy}
-                smooth={true}
-                duration={300}
-                style={{ display: "inline-block", margin: "20px" }}
-                onClick={closeToggle}
-                offset={-80}
-              >
-                <NavLink className="Link WhiteLink" to="/">
-                  Contact Us
-                </NavLink>
+                About
               </Link>
             </li>
             <li>
@@ -157,6 +95,51 @@ function LocalNavbar(props) {
               >
                 Expertise
               </NavLink>
+            </li>
+            <li>
+              <Link
+                to="/"
+                activeClass="selected"
+                smooth={true}
+                duration={300}
+                style={{ display: "inline-block", margin: "20px" }}
+                onClick={closeToggle}
+                offset={-80}
+              >
+                <Link className="Link WhiteLink" to="/">
+                  Our Clients
+                </Link>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/"
+                activeClass="selected"
+                smooth={true}
+                duration={300}
+                style={{ display: "inline-block", margin: "20px" }}
+                onClick={closeToggle}
+                offset={-80}
+              >
+                <Link className="Link WhiteLink" to="/">
+                  Services
+                </Link>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/"
+                activeClass="selected"
+                smooth={true}
+                duration={300}
+                style={{ display: "inline-block", margin: "20px" }}
+                onClick={closeToggle}
+                offset={-80}
+              >
+                <Link className="Link WhiteLink" to="/">
+                  Contact Us
+                </Link>
+              </Link>
             </li>
           </Nav>
         </Navbar.Collapse>

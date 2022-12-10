@@ -16,7 +16,7 @@ function App() {
   return (
     <div>
       <Router>
-        <LocalNavbar myHandler={updateScrollPath} />
+        <LocalNavbar scrollHandler={updateScrollPath} />
         <Routes>
           <Route path="/" element={<Main scrollGoal={scrollGoal} />} />
           <Route path="expertise" element={<Expertise />} />

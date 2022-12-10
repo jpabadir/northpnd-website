@@ -1,4 +1,5 @@
 import React from "react";
+import "./LocalNavbar.css";
 import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
@@ -38,7 +39,7 @@ function LocalNavbar(props) {
 
   function closeToggle(e) {
     if (isToggleOpen) refContainer.current.click();
-    props.myHandler(e.target.innerText.replace(/\s/g, "").toLowerCase());
+    props.scrollHandler(e.target.innerText.replace(/\s/g, "").toLowerCase());
   }
 
   function toggleIsToggleOpen() {

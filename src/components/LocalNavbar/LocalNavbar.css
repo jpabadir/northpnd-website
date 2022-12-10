@@ -69,3 +69,13 @@ Link:focus::after {
   -webkit-filter: brightness(1) invert(1);
   filter: brightness(1) invert(1);
 }
+
+.Logo {
+  height: 100px;
+}
+
+@media only screen and (max-width: 991px) {
+  .Logo {
+    height: 60px;
+  }
+}

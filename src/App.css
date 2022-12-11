@@ -16,3 +16,7 @@
     height: 30px;
   }
 }
+
+.CentralContent {
+  min-height: 100vh;
+}

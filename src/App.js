@@ -17,10 +17,12 @@ function App() {
     <div>
       <Router>
         <LocalNavbar scrollHandler={updateScrollPath} />
-        <Routes>
-          <Route path="/" element={<Main scrollGoal={scrollGoal} />} />
-          <Route path="expertise" element={<Expertise />} />
-        </Routes>
+        <div className="CentralContent">
+          <Routes>
+            <Route path="/" element={<Main scrollGoal={scrollGoal} />} />
+            <Route path="expertise" element={<Expertise />} />
+          </Routes>
+        </div>
         <div
           style={{
             width: "100%",

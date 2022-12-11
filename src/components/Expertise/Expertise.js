@@ -7,8 +7,13 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import './Expertise.css';
+import { useEffect } from 'react';
 
 export default function Expertise() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  })
+
   return (
     <div className='ExpertiseParent d-flex justify-content-center'>
       <div className='Expertise'>

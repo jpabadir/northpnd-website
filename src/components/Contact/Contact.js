@@ -13,7 +13,9 @@ function Contact() {
               <div>
                 <br />
                 <div style={{ fontSize: '25px' }}>North P&amp;D, Inc.</div>
-                401 Bay St., 16th Floor
+                1 Dundas St. W, 25th Floor
+                <br />
+                M5G 1Z3 
                 <br />
                 Toronto, ON
                 <br />

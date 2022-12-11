@@ -11,3 +11,14 @@
     padding-top: 0;
   }
 }
+
+.JpHeadshot {
+  max-width: min(95vw, 400px);
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 992px) {
+  .JpHeadshot {
+    margin-top: 15px;
+  }
+}

@@ -14,7 +14,6 @@ export default function Expertise() {
       <TableContainer>
         <Table aria-label="simple table">
           <TableHead>
-            
             <TableRow>
               <TableCell sx={{ color: 'inherit', fontSize: 'inherit', fontWeight: 'bold' }}>Author</TableCell>
               <TableCell sx={{ color: 'inherit', fontSize: 'inherit', fontWeight: 'bold' }}>Title</TableCell>

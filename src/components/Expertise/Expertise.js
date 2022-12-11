@@ -4,7 +4,25 @@ import Books from "../Books/Books"
 
 function Expertise() {
   return (
-    <Books />
+    <div>
+      <Books />
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+    </div>
   );
 }
 

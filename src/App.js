@@ -12,6 +12,7 @@ function App() {
   function updateScrollPath(path) {
     setScrollGoal(path);
   }
+
   return (
     <div>
       <Router>

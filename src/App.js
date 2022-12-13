@@ -7,6 +7,7 @@ import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
 import Services from './components/Services/Services';
 import OurClients from './components/OurClients/OurClients';
+import Faq from './components/Faq/Faq';
 import Footer from './components/Footer/Footer';
 import './hamburgers.css';
 import Fade from 'react-reveal/Fade';
@@ -131,6 +132,21 @@ function App() {
               <Link
                 activeClass="active"
                 className="Link WhiteLink"
+                to="Faq"
+                spy={scrollSpy}
+                smooth={true}
+                duration={300}
+                style={{ display: 'inline-block', margin: '20px' }}
+                onClick={closeToggle}
+                offset={-80}
+              >
+                FAQ
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                className="Link WhiteLink"
                 to="contactUs"
                 spy={scrollSpy}
                 smooth={true}
@@ -180,6 +196,11 @@ function App() {
             <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
               <Element name="services" className="element" style={{ width: '100%' }}>
                 <Services />
+              </Element>
+            </div>
+            <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
+              <Element name="Faq" className="element" style={{ width: '100%' }}>
+                <Faq />
               </Element>
             </div>
             <div id="bottomPart">

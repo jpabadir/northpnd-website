@@ -44,10 +44,11 @@ function LocalNavbar(props) {
         expand="lg"
         variant="dark"
         fixed="top"
-        className={`${myScrollY > scrollAnimationTrigger || isToggleOpen
-          ? "GreyNavbar"
-          : "TransparentNavbar"
-          } ${isToggleOpen ? "FullNav" : "TopNav"} Navbar`}
+        className={`${
+          myScrollY > scrollAnimationTrigger || isToggleOpen
+            ? "GreyNavbar"
+            : "TransparentNavbar"
+        } ${isToggleOpen ? "FullNav" : "TopNav"} Navbar`}
         style={{ height: isToggleOpen ? "100vh" : "80px" }}
       >
         <Navbar.Brand href="/" style={{ fontSize: "25px" }}>
@@ -61,8 +62,9 @@ function LocalNavbar(props) {
           id="toggler"
         >
           <div
-            className={`hamburger hamburger--slider ${isToggleOpen && "is-active"
-              }`}
+            className={`hamburger hamburger--slider ${
+              isToggleOpen && "is-active"
+            }`}
           >
             <div className="hamburger-box">
               <div className="hamburger-inner"></div>
@@ -140,6 +142,17 @@ function LocalNavbar(props) {
                   Contact Us
                 </Link>
               </Link>
+            </li>
+            <li>
+              <NavLink
+                className="Link WhiteLink"
+                to="articles"
+                style={{ display: "inline-block", margin: "20px" }}
+                onClick={closeToggle}
+                offset={-80}
+              >
+                Articles
+              </NavLink>
             </li>
           </Nav>
         </Navbar.Collapse>

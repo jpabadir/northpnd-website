@@ -1,0 +1,32 @@
+.Article {
+  text-align: justify;
+  justify-content: center;
+  display: flex;
+}
+
+.ArticleImage {
+  width: 100%;
+  /* aspect-ratio: 16 / 9; */
+  max-width: 900px;
+  border-radius: 10px;
+}
+
+.Subtitle {
+  opacity: 0.8;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+
+.Date {
+  opacity: 0.6;
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+}
+
+.ImageCaption {
+  opacity: 0.8;
+  color: black;
+  text-decoration: none;
+}

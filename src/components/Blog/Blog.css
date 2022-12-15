@@ -1,0 +1,27 @@
+.BlogLink {
+  color: black;
+  text-decoration: underline 0.15em rgb(255, 255, 255);
+  transition: text-decoration-color 300ms;
+}
+
+.BlogLink:hover {
+  color: black;
+  text-decoration-color: rgb(62, 62, 62);
+}
+
+.BlogThumbnailParent {
+  display: inline-block;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.BlogThumbnail {
+  width: 330px;
+  height: 190px;
+  border-radius: 10px;
+  transition: 300ms;
+}
+
+.BlogThumbnailScaled {
+  scale: 1.1;
+}

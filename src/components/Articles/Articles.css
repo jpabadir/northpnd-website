@@ -4,7 +4,7 @@
   display: flex;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+    sans-serif !important;
 }
 
 .ArticleImage {
@@ -31,5 +31,4 @@
 
 .BlogContent {
   font-size: 20px;
-
 }

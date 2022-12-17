@@ -15,36 +15,38 @@ export default function Blog() {
   }
 
   return (
-    <div className="Blog">
-      {blogsData.map((blog) => (
-        <div
-          key={blog.title}
-          onMouseEnter={toggleScaleThumbnail}
-          onMouseLeave={toggleScaleThumbnail}
-        >
-          <NavLink
-            className="container BlogLink"
-            to={blog.title.replace(/\s+/g, "-").toLowerCase()}
+    <div className="StandalonePageParent">
+      <div className="Blog">
+        {blogsData.map((blog) => (
+          <div
+            key={blog.title}
+            onMouseEnter={toggleScaleThumbnail}
+            onMouseLeave={toggleScaleThumbnail}
           >
-            <div className="row justify-content-center">
-              <div className="col-lg-5 text-center">
-                <div className="BlogThumbnailParent">
-                  <img
-                    className="BlogThumbnail"
-                    src={blog.image}
-                    alt={blog.title}
-                  />
+            <NavLink
+              className="container BlogLink"
+              to={blog.title.replace(/\s+/g, "-").toLowerCase()}
+            >
+              <div className="row justify-content-center">
+                <div className="col-lg-5 text-center">
+                  <div className="BlogThumbnailParent">
+                    <img
+                      className="BlogThumbnail"
+                      src={blog.image}
+                      alt={blog.title}
+                    />
+                  </div>
+                </div>
+                <div className="col-lg-5 d-flex align-items-center justify-content-center">
+                  <div className="text-center" style={{ fontSize: "20px" }}>
+                    {blog.title}
+                  </div>
                 </div>
               </div>
-              <div className="col-lg-5 d-flex align-items-center justify-content-center">
-                <div className="text-center" style={{ fontSize: "20px" }}>
-                  {blog.title}
-                </div>
-              </div>
-            </div>
-          </NavLink>
-        </div>
-      ))}
+            </NavLink>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Articles.css";
+import "./Article.css";
 import { linkify } from "../../helpers";
 
 export default function Article(props) {

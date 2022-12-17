@@ -21,18 +21,20 @@ function App() {
     <div>
       <Router>
         <LocalNavbar scrollHandler={updateScrollPath} />
-        <Routes>
-          <Route path="/" element={<Main scrollGoal={scrollGoal} />} />
-          <Route path="expertise" element={<Expertise />} />
-          <Route path="articles" element={<Blog />} />
-          {blogsData.map((blog) => (
-            <Route
-              key={blog.title}
-              path={`articles/${linkify(blog.title)}`}
-              element={<Articles blog={blog} />}
-            />
-          ))}
-        </Routes>
+        <div className="CentralContent">
+          <Routes>
+            <Route path="/" element={<Main scrollGoal={scrollGoal} />} />
+            <Route path="expertise" element={<Expertise />} />
+            <Route path="articles" element={<Blog />} />
+              {blogsData.map((blog) => (
+                <Route
+                  key={blog.title}
+                  path={`articles/${linkify(blog.title)}`}
+                  element={<Articles blog={blog} />}
+                />
+              ))}
+          </Routes>
+        </div>
         <div
           style={{
             width: "100%",

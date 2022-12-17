@@ -44,11 +44,10 @@ function LocalNavbar(props) {
         expand="lg"
         variant="dark"
         fixed="top"
-        className={`${
-          myScrollY > scrollAnimationTrigger || isToggleOpen
-            ? "GreyNavbar"
-            : "TransparentNavbar"
-        } ${isToggleOpen ? "FullNav" : "TopNav"} Navbar`}
+        className={`${myScrollY > scrollAnimationTrigger || isToggleOpen || window.location.pathname == "/expertise"
+          ? "GreyNavbar"
+          : "TransparentNavbar"
+          } ${isToggleOpen ? "FullNav" : "TopNav"} Navbar`}
         style={{ height: isToggleOpen ? "100vh" : "80px" }}
       >
         <Navbar.Brand href="/" style={{ fontSize: "25px" }}>

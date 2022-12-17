@@ -44,7 +44,7 @@ function LocalNavbar(props) {
         expand="lg"
         variant="dark"
         fixed="top"
-        className={`${myScrollY > scrollAnimationTrigger || isToggleOpen || window.location.pathname == "/expertise"
+        className={`${myScrollY > scrollAnimationTrigger || isToggleOpen || window.location.pathname == "/expertise" || window.location.pathname.includes("articles")
           ? "GreyNavbar"
           : "TransparentNavbar"
           } ${isToggleOpen ? "FullNav" : "TopNav"} Navbar`}
@@ -61,16 +61,17 @@ function LocalNavbar(props) {
           id="toggler"
         >
           <div
-            className={`hamburger hamburger--slider ${isToggleOpen && "is-active"
-              }`}
+            className={`hamburger hamburger--slider ${
+              isToggleOpen && "is-active"
+            }`}
           >
             <div className="hamburger-box">
               <div className="hamburger-inner"></div>
             </div>
           </div>
         </Navbar.Toggle>
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto text-center">
+        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
+          <Nav className="ml-auto">
             <li>
               <Link
                 to="/"
@@ -140,6 +141,17 @@ function LocalNavbar(props) {
                   Contact Us
                 </Link>
               </Link>
+            </li>
+            <li>
+              <NavLink
+                className="Link WhiteLink"
+                to="articles"
+                style={{ display: "inline-block", margin: "20px" }}
+                onClick={closeToggle}
+                offset={-80}
+              >
+                Articles
+              </NavLink>
             </li>
           </Nav>
         </Navbar.Collapse>

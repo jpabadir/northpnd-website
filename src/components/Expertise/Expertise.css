@@ -22,11 +22,6 @@ tr:nth-child(odd) {
     background: #fff;
 }
 
-.ExpertiseParent {
-    font-size: 18px;
-    padding-top: 120px;
-}
-
 .Expertise {
     flex: 1;
     max-width: 1300px;

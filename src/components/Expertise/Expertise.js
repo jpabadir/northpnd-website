@@ -15,7 +15,7 @@ export default function Expertise() {
   })
 
   return (
-    <div className='ExpertiseParent d-flex justify-content-center'>
+    <div className='StandalonePageParent d-flex justify-content-center'>
       <div className='Expertise'>
         <TableContainer>
           <Table aria-label="simple table">

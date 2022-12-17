@@ -1,8 +1,13 @@
+import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import blogsData from "../../blogs/blogs-headers.json";
 import "./Blog.css";
 
 export default function Blog() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  })
+
   function toggleScaleThumbnail(event) {
     event.currentTarget
       .getElementsByTagName("img")[0]

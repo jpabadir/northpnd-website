@@ -1,0 +1,33 @@
+@media screen and (max-width: 600px) {
+    table thead {
+        display: none !important;
+    }
+
+    table td {
+        display: flex !important;
+    }
+
+    table td::before {
+        content: attr(label) !important;
+        font-weight: bold !important;
+        width: 140px !important;
+    }
+}
+
+tr:nth-child(even) {
+    background: rgb(228, 230, 252);
+}
+
+tr:nth-child(odd) {
+    background: #fff;
+}
+
+.ExpertiseParent {
+    font-size: 18px;
+    padding-top: 120px;
+}
+
+.Expertise {
+    flex: 1;
+    max-width: 1300px;
+}

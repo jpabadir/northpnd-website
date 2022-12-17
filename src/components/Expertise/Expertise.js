@@ -1,47 +1,53 @@
-import React from "react";
-import "./Expertise.css";
+import expertiseItems from './expertise-items.json';
+import * as React from 'react';
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import './Expertise.css';
+import { useEffect } from 'react';
 
-function Expertise() {
+export default function Expertise() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  })
+
   return (
-    <div style={{ backgroundColor: 'gray', height: "100vh" }}>
-      <table className="d-flex flex-column justify-content-center text-center align-items-center h-100">
-        <thead>
-          <tr>
-            <th>Project</th>
-            <th>Tech</th>
-            <th>This</th>
-            <th>That</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Stuff</td>
-            <td>Stuff</td>
-            <td>Stuff</td>
-            <td>Stuff</td>
-          </tr>
-          <tr>
-            <td>Stuff</td>
-            <td>Stuff</td>
-            <td>Stuff</td>
-            <td>Stuff</td>
-          </tr>
-          <tr>
-            <td>Stuff</td>
-            <td>Stuff</td>
-            <td>Stuff</td>
-            <td>Stuff</td>
-          </tr>
-          <tr>
-            <td>Stuff</td>
-            <td>Stuff</td>
-            <td>Stuff</td>
-            <td>Stuff</td>
-          </tr>
-        </tbody>
-      </table>
+    <div className='ExpertiseParent d-flex justify-content-center'>
+      <div className='Expertise'>
+        <TableContainer>
+          <Table aria-label="simple table">
+            <TableHead>
+              <TableRow>
+                <TableCell sx={{ color: 'inherit', fontSize: 'inherit', fontWeight: 'bold' }}>Author</TableCell>
+                <TableCell sx={{ color: 'inherit', fontSize: 'inherit', fontWeight: 'bold' }}>Title</TableCell>
+                <TableCell sx={{ color: 'inherit', fontSize: 'inherit', fontWeight: 'bold' }}>Date Started</TableCell>
+                <TableCell sx={{ color: 'inherit', fontSize: 'inherit', fontWeight: 'bold' }}>Date Finished</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {expertiseItems.map((row) => (
+                <TableRow key={row.title} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
+                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Title">
+                    {row.title}
+                  </TableCell>
+                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Author">
+                    {row.author}
+                  </TableCell>
+                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Date Started">
+                    {row.dateStarted}
+                  </TableCell>
+                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Date Finished">
+                    {row.dateFinished}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
+      </div>
     </div>
   );
 }
-
-export default Expertise;

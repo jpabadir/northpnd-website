@@ -70,7 +70,7 @@ function LocalNavbar(props) {
             </div>
           </div>
         </Navbar.Toggle>
-        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
+        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end text-center">
           <Nav className="ml-auto">
             <li>
               <Link

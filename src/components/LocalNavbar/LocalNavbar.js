@@ -142,7 +142,7 @@ function LocalNavbar(props) {
                 </Link>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 className="Link WhiteLink"
                 to="articles"
@@ -152,7 +152,7 @@ function LocalNavbar(props) {
               >
                 Articles
               </NavLink>
-            </li>
+            </li> */}
           </Nav>
         </Navbar.Collapse>
       </Navbar>

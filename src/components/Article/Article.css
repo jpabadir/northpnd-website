@@ -9,14 +9,8 @@
 
 .ArticleImage {
   width: 100%;
-  /* aspect-ratio: 16 / 9; */
   max-width: 900px;
   border-radius: 10px;
-}
-
-.Subtitle {
-  opacity: 0.8;
-  font-size: 18px;
 }
 
 .Date {

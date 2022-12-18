@@ -7,10 +7,6 @@
   padding-bottom: 100px;
 }
 
-.Subtitle {
-  font-size: 40px;
-}
-
 .FormParent {
   background-color: #292933;
   padding: 50px 50px 50px 50px;
@@ -53,10 +49,6 @@
 }
 
 @media only screen and (max-width: 576px) {
-  .Subtitle {
-    font-size: 30px;
-  }
-
   .FormParent {
     padding: 10px 10px 10px 10px;
     margin-bottom: 100px;

@@ -26,8 +26,6 @@ function Main(props) {
   useEffect(() => {
     scroller.scrollTo(props.scrollGoal, {
       duration: 300,
-      smooth: true,
-      spy: true,
       offset: -80,
     });
   }, [props.scrollGoal]);

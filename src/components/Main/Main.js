@@ -6,6 +6,7 @@ import Home from "../Home/Home";
 import Contact from "../Contact/Contact";
 import Services from "../Services/Services";
 import OurClients from "../OurClients/OurClients";
+import TeamSection from "../TeamSection/TeamSection";
 import "../../hamburgers.css";
 import Fade from "react-reveal/Fade";
 import homeBackground from "../../assets/home-background.mp4";
@@ -83,6 +84,13 @@ function Main(props) {
           >
             <Element name="about" className="element" style={{ width: "100%" }}>
               <About />
+            </Element>
+          </div>
+          <div
+            style={{ width: "100%", justifyContent: "center", display: "flex" }}
+          >
+            <Element name="TeamSection" className="element" style={{ width: "100%" }}>
+              <TeamSection />
             </Element>
           </div>
           <div

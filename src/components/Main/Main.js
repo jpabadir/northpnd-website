@@ -23,7 +23,7 @@ function Main(props) {
     else enableBodyScroll(refContainer.current);
   }, [isToggleOpen]);
 
-  useEffect(() => {
+  useEffect(() => { // Might be relevant
     scroller.scrollTo(props.scrollGoal, {
       duration: 300,
       offset: -80,
@@ -36,83 +36,98 @@ function Main(props) {
 
   return (
     <div>
-      <div>
-        <div
-          onClick={closeToggle}
-          style={{ position: "relative", width: "100%" }}
-        >
-          <video
-            src={homeBackground}
-            className="BackgroundVideo Overlay"
-            type="video/mov"
-            playsInline
-            loop
-            autoPlay
-            muted
-          />
-          <div className="Overlay DarkOverlay" />
-          <Fade duration={1200}>
-            <div
-              style={{
-                width: "100%",
-                justifyContent: "center",
-                display: "flex",
-              }}
-            >
-              <Element
-                name="home"
-                className="element"
-                style={{
-                  minHeight: "100vh",
-                  display: "flex",
-                  justifyContent: "center",
-                  width: "100%",
-                }}
-              >
-                <div style={{ paddingTop: "80px" }}>
-                  <Home />
-                </div>
-              </Element>
-            </div>
-          </Fade>
-          <div className="FirstSeparator" />
-          <div
-            style={{ width: "100%", justifyContent: "center", display: "flex" }}
-          >
-            <Element name="about" className="element" style={{ width: "100%" }}>
-              <About />
-            </Element>
-          </div>
-          <div
-            style={{ width: "100%", justifyContent: "center", display: "flex" }}
-          >
-            <Element
-              name="ourclients"
-              className="element"
-              style={{ width: "100%" }}
-            >
-              <OurClients />
-            </Element>
-          </div>
+      <div
+        onClick={closeToggle}
+        style={{ position: "relative", width: "100%" }}
+      >
+        <video
+          src={homeBackground}
+          className="BackgroundVideo Overlay"
+          type="video/mov"
+          playsInline
+          loop
+          autoPlay
+          muted
+        />
+        <div className="Overlay DarkOverlay" />
+        <Fade duration={1200}>
           <div
             style={{
               width: "100%",
-              backgroundColor: "#151419",
-              color: "#ededed",
+              justifyContent: "center",
+              display: "flex",
             }}
           >
-            <div
-              className="WhiteGhost Ghost"
-              style={{ height: `${window.innerWidth / 8 - 10}px` }}
-            />
-            <div
-              className="Spacer"
-              style={{ height: `${window.innerWidth / 8}px` }}
-            />
-            <div
-              className="Ghost"
-              style={{ height: `${window.innerWidth / 8 - 10}px` }}
-            />
+            <Element
+              name="home"
+              className="element"
+              style={{
+                minHeight: "100vh",
+                display: "flex",
+                justifyContent: "center",
+                width: "100%",
+              }}
+            >
+              <div style={{ paddingTop: "80px" }}>
+                <Home />
+              </div>
+            </Element>
+          </div>
+        </Fade>
+        <div className="FirstSeparator" />
+        <div
+          style={{ width: "100%", justifyContent: "center", display: "flex" }}
+        >
+          <Element name="about" className="element" style={{ width: "100%" }}>
+            <About />
+          </Element>
+        </div>
+        <div
+          style={{ width: "100%", justifyContent: "center", display: "flex" }}
+        >
+          <Element
+            name="ourclients"
+            className="element"
+            style={{ width: "100%" }}
+          >
+            <OurClients />
+          </Element>
+        </div>
+        <div
+          style={{
+            width: "100%",
+            backgroundColor: "#151419",
+            color: "#ededed",
+          }}
+        >
+          <div
+            className="WhiteGhost Ghost"
+            style={{ height: `${window.innerWidth / 8 - 10}px` }}
+          />
+          <div
+            className="Spacer"
+            style={{ height: `${window.innerWidth / 8}px` }}
+          />
+          <div
+            className="Ghost"
+            style={{ height: `${window.innerWidth / 8 - 10}px` }}
+          />
+          <div
+            style={{
+              width: "100%",
+              justifyContent: "center",
+              display: "flex",
+            }}
+          >
+            <Element
+              name="services"
+              className="element"
+              style={{ width: "100%" }}
+            >
+              <Services />
+            </Element>
+          </div>
+          <div id="bottomPart">
             <div
               style={{
                 width: "100%",
@@ -121,33 +136,16 @@ function Main(props) {
               }}
             >
               <Element
-                name="services"
+                name="contactus"
                 className="element"
-                style={{ width: "100%" }}
-              >
-                <Services />
-              </Element>
-            </div>
-            <div id="bottomPart">
-              <div
                 style={{
-                  width: "100%",
-                  justifyContent: "center",
                   display: "flex",
+                  justifyContent: "center",
+                  width: "100%",
                 }}
               >
-                <Element
-                  name="contactus"
-                  className="element"
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    width: "100%",
-                  }}
-                >
-                  <Contact />
-                </Element>
-              </div>
+                <Contact />
+              </Element>
             </div>
           </div>
         </div>

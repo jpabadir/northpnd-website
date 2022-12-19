@@ -3,6 +3,7 @@ import "./LocalNavbar.css";
 import { NavLink, Link } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import { useEffect, useRef, useState } from "react";
+import { scrollSpy } from 'react-scroll';
 import logo from "../../assets/transparentLogo.svg";
 
 const bodyScrollLock = require("body-scroll-lock");
@@ -75,8 +76,9 @@ function LocalNavbar(props) {
             <li>
               <Link
                 to="/"
-                activeClass="selected"
+                activeclassname="selected"
                 smooth={true}
+                spy={scrollSpy}
                 duration={300}
                 style={{ display: "inline-block", margin: "20px" }}
                 onClick={closeToggle}
@@ -100,8 +102,9 @@ function LocalNavbar(props) {
             <li>
               <Link
                 to="/"
-                activeClass="selected"
+                activeclassname="selected"
                 smooth={true}
+                spy={scrollSpy}
                 duration={300}
                 style={{ display: "inline-block", margin: "20px" }}
                 onClick={closeToggle}
@@ -115,8 +118,9 @@ function LocalNavbar(props) {
             <li>
               <Link
                 to="/"
-                activeClass="selected"
+                activeclassname="selected"
                 smooth={true}
+                spy={scrollSpy}
                 duration={300}
                 style={{ display: "inline-block", margin: "20px" }}
                 onClick={closeToggle}
@@ -130,8 +134,9 @@ function LocalNavbar(props) {
             <li>
               <Link
                 to="/"
-                activeClass="selected"
+                activeclassname="selected"
                 smooth={true}
+                spy={scrollSpy}
                 duration={300}
                 style={{ display: "inline-block", margin: "20px" }}
                 onClick={closeToggle}

@@ -7,9 +7,9 @@ import JP_Team from '../../assets/JP_Team.jpg';
 function TeamSection() {
     return (
         // [
-        //     {"personName": "JP", "position": "ower", "imagePath": ""},
-        //     {"personName": "JP", "position": "ower", "imagePath": ""},
-        //     {"personName": "JP", "position": "ower", "imagePath": ""}
+        //     {"personName": "JP", "position": "owner", "imagePath": ""},
+        //     {"personName": "JP", "position": "owner", "imagePath": ""},
+        //     {"personName": "JP", "position": "owner", "imagePath": ""}
         // ]
 
         <div className="MainElementPadding">
@@ -17,7 +17,7 @@ function TeamSection() {
                 <div className="TextBlock">
                     <div className="Subtitle">Our Team at North P&D</div>
                     <Fade duration={1200}>
-                        <div className="d-flex justify-content-left">
+                        <div>
                             <img src={JP_Team} className="TeamHeadshots" />
                                 <div className='NameAndOccupation'>
                                     <div style={{ fontSize: '20px' }}>Jean-Philippe</div>
@@ -26,7 +26,7 @@ function TeamSection() {
                         </div>
                     </Fade>
                 </div>
-            </Container>
+            </Container> 
         </div>
     );
 }

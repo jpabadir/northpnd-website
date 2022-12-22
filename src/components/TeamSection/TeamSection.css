@@ -2,17 +2,25 @@
     font-size: 40px;
   }
 
+   .list-order{
+    display: inline-block;
+    margin-left: 125px;
+    margin-right: 125px;
+  }
+
    .TeamHeadshots{
     height: 150px;
     width: 150px;
     border-radius: 100%;
     object-fit: cover; 
-    display: block;
     flex-flow: column wrap;
+    flex-wrap: wrap;
+    justify-self: baseline;
     }    
 
   .NameAndOccupation{
     display:flex;
     flex-direction: column; 
-    text-align: center;
+    flex-basis: fit-content;
+    vertical-align: baseline;
   }

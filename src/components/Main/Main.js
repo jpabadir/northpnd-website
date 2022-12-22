@@ -15,20 +15,20 @@ const disableBodyScroll = bodyScrollLock.disableBodyScroll;
 const enableBodyScroll = bodyScrollLock.enableBodyScroll;
 
 function Main(props) {
-  const refContainer = useRef(null);
+  const refContainer = useRef(null); // Does not cause component to re-render when state changes 
   const [isToggleOpen, setIsToggleOpen] = useState(false);
 
   useEffect(() => {
-    if (isToggleOpen) disableBodyScroll(refContainer.current);
-    else enableBodyScroll(refContainer.current);
-  }, [isToggleOpen]);
+    if (isToggleOpen) disableBodyScroll(refContainer.current); // Does not allow user to scroll if hamburger menu is open 
+    else enableBodyScroll(refContainer.current); // DEF: Enable body scroll and removing listeners on target element
+  }, [isToggleOpen]); // Only run when isToggleOpen state changes
 
-  useEffect(() => { // Might be relevant
+  useEffect(() => { // Scroll to the scrollGoal given duration and offset properties
     scroller.scrollTo(props.scrollGoal, {
       duration: 300,
       offset: -80,
     });
-  }, [props.scrollGoal]);
+  }, [props.scrollGoal]); // Only scroll to scrollGoal if scrollGoal changes
 
   function closeToggle() {
     if (isToggleOpen) refContainer.current.click();

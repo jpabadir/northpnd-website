@@ -8,6 +8,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import './Expertise.css';
 import { useEffect } from 'react';
+import TechCard from '../TechCard/TechCard';
 
 export default function Expertise() {
   useEffect(() => {
@@ -35,7 +36,7 @@ export default function Expertise() {
                     {row.client}
                   </TableCell>
                   <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Tech" className="text-center">
-                    {row.tech.map((tech) => (<span>{tech}</span>))}
+                    {row.tech.map((tech) => (<TechCard image={tech} />))}
                   </TableCell>
                   <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Date Started" className="text-center">
                     {row.description}

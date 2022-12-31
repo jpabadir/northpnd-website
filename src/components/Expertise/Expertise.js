@@ -36,7 +36,7 @@ export default function Expertise() {
                     {row.client}
                   </TableCell>
                   <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Tech" className="text-center">
-                    {row.tech.map((tech) => (<TechCard image={tech} />))}
+                    {row.tech.map((tech) => (<span className='pill darkpill'>{tech}</span>))}
                   </TableCell>
                   <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Date Started" className="text-center">
                     {row.description}

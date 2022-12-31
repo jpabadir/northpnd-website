@@ -33,11 +33,16 @@ table {
 }
 
 .pill {
-    /* border: 1px solid; */
     padding: 8px;
     border-radius: 15px;
     color: white;
     font-size: 13px;
     white-space: nowrap;
     margin: 1px;
+}
+
+.darkpill {
+    border: 1px solid;
+    color: black;
+    border-color: black;
 }

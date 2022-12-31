@@ -25,4 +25,19 @@ tr:nth-child(odd) {
 .Expertise {
     flex: 1;
     max-width: 1300px;
+    
+}
+
+table {
+    font-size: 18px;
+}
+
+.pill {
+    /* border: 1px solid; */
+    padding: 8px;
+    border-radius: 15px;
+    color: white;
+    font-size: 13px;
+    white-space: nowrap;
+    margin: 1px;
 }

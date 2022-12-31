@@ -1,4 +1,4 @@
-import expertiseItems from './expertise-items.json';
+import { items as expertiseItems, tagColors } from './expertise-items';
 import * as React from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -21,26 +21,30 @@ export default function Expertise() {
           <Table aria-label="simple table">
             <TableHead>
               <TableRow>
-                <TableCell sx={{ color: 'inherit', fontSize: 'inherit', fontWeight: 'bold' }}>Author</TableCell>
-                <TableCell sx={{ color: 'inherit', fontSize: 'inherit', fontWeight: 'bold' }}>Title</TableCell>
-                <TableCell sx={{ color: 'inherit', fontSize: 'inherit', fontWeight: 'bold' }}>Date Started</TableCell>
-                <TableCell sx={{ color: 'inherit', fontSize: 'inherit', fontWeight: 'bold' }}>Date Finished</TableCell>
+                <TableCell className="text-center" sx={{ color: 'inherit', fontSize: 'inherit', fontWeight: 'bold' }}>Client</TableCell>
+                <TableCell className="text-center" sx={{ color: 'inherit', fontSize: 'inherit', fontWeight: 'bold' }}>Tech</TableCell>
+                <TableCell className="text-center" sx={{ color: 'inherit', fontSize: 'inherit', fontWeight: 'bold' }}>Description</TableCell>
+                <TableCell className="text-center" sx={{ color: 'inherit', fontSize: 'inherit', fontWeight: 'bold' }}>Tags</TableCell>
+                <TableCell className="text-center" sx={{ color: 'inherit', fontSize: 'inherit', fontWeight: 'bold' }}>Dates</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
               {expertiseItems.map((row) => (
                 <TableRow key={row.title} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
-                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Title">
-                    {row.title}
+                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Client" className="text-center">
+                    {row.client}
                   </TableCell>
-                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Author">
-                    {row.author}
+                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Tech" className="text-center">
+                    {row.tech.map((tech) => (<span>{tech}</span>))}
                   </TableCell>
-                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Date Started">
-                    {row.dateStarted}
+                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Date Started" className="text-center">
+                    {row.description}
                   </TableCell>
-                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Date Finished">
-                    {row.dateFinished}
+                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Date Started" className="text-center">
+                    {row.tags.map((tag) => (<span className='pill' style={{ background: tagColors[tag] }}>{tag}</span>))}
+                  </TableCell>
+                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Date Started" className="text-center">
+                    {row.dates}
                   </TableCell>
                 </TableRow>
               ))}

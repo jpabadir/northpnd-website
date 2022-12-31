@@ -38,13 +38,13 @@ export default function Expertise() {
                   <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Tech" className="text-center">
                     {row.tech.map((tech) => (<span className='pill darkpill'>{tech}</span>))}
                   </TableCell>
-                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Date Started" className="text-center">
+                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Description" className="text-center">
                     {row.description}
                   </TableCell>
-                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Date Started" className="text-center">
+                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Tags" className="text-center">
                     {row.tags.map((tag) => (<span className='pill' style={{ background: tagColors[tag] }}>{tag}</span>))}
                   </TableCell>
-                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Date Started" className="text-center">
+                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Dates" className="text-center">
                     {row.dates}
                   </TableCell>
                 </TableRow>

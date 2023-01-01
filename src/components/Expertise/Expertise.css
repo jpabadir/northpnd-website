@@ -5,12 +5,7 @@
 
     table td {
         display: flex !important;
-    }
-
-    table td::before {
-        content: attr(label) !important;
-        font-weight: bold !important;
-        width: 100px !important;
+        flex-wrap: wrap;
     }
 }
 
@@ -25,7 +20,6 @@ tr:nth-child(odd) {
 .Expertise {
     flex: 1;
     max-width: 1300px;
-    
 }
 
 table {

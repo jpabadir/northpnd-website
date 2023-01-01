@@ -32,19 +32,19 @@ export default function Expertise() {
             <TableBody>
               {expertiseItems.map((row) => (
                 <TableRow key={row.title} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
-                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Client" className="text-center">
-                    {row.client}
+                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Client" className="text-center justify-content-center">
+                    <span>{row.client}</span>
                   </TableCell>
-                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Tech" className="text-center">
+                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Tech" className="text-center justify-content-center">
                     {row.tech.map((tech) => (<span className='pill darkpill'>{tech}</span>))}
                   </TableCell>
-                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Description" className="text-center">
+                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Description" className="">
                     {row.description}
                   </TableCell>
-                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Tags" className="text-center">
+                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Tags" className="text-center justify-content-center">
                     {row.tags.map((tag) => (<span className='pill' style={{ background: tagColors[tag] }}>{tag}</span>))}
                   </TableCell>
-                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Dates" className="text-center">
+                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Dates" className="text-center justify-content-center">
                     {row.dates}
                   </TableCell>
                 </TableRow>

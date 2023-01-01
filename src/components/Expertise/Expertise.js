@@ -32,8 +32,8 @@ export default function Expertise() {
             <TableBody>
               {expertiseItems.map((row) => (
                 <TableRow key={row.title} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
-                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Client" className="text-center justify-content-center">
-                    <span>{row.client}</span>
+                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Client" className="text-center justify-content-center ClientNameCell">
+                    {row.client}
                   </TableCell>
                   <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Tech" className="text-center justify-content-center">
                     {row.tech.map((tech) => (<span className='pill darkpill'>{tech}</span>))}

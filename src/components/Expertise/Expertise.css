@@ -7,6 +7,10 @@
         display: flex !important;
         flex-wrap: wrap;
     }
+
+    .ClientNameCell {
+        font-weight: bold !important;
+    }
 }
 
 tr:nth-child(even) {

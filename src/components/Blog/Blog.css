@@ -1,0 +1,37 @@
+.row {
+  margin: 0;
+}
+
+.BlogLink {
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.BlogLink:hover {
+  color: black;
+  text-decoration: underline 0.15em rgb(255, 255, 255);
+  text-decoration-color: rgb(62, 62, 62);
+}
+
+.BlogThumbnailParent {
+  display: inline-block;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.BlogThumbnail {
+  width: 330px;
+  height: 190px;
+  border-radius: 10px;
+  transition: 300ms;
+}
+
+.BlogThumbnailScaled {
+  scale: 1.1;
+}
+
+.Blog {
+  flex: 1;
+}

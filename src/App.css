@@ -1,4 +1,4 @@
-* {
+body {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -15,4 +15,13 @@
   .FirstSeparator {
     height: 30px;
   }
+}
+
+.CentralContent {
+  min-height: 100vh;
+}
+
+.StandalonePageParent {
+  padding: 120px 10px;
+  min-height: 85vh;
 }

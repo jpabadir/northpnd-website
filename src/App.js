@@ -40,7 +40,7 @@ function App() {
             width: "100%",
             justifyContent: "center",
             display: "flex",
-            backgroundColor: "#212129",
+            backgroundColor: "black",
           }}
         >
           <div

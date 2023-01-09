@@ -11,7 +11,7 @@ function TeamSection() {
         <div className="MainElementPadding">
             <Container fluid>
                 <div className="TextBlock">
-                    <div className="Subtitle">Our Team at North P&D</div>
+                    <div className="Subtitle">Our Team</div>
                     <Fade duration={1200}>
                         <div className='text-center'>
                             <li className='list-order'>

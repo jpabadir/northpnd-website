@@ -8,12 +8,6 @@ import KJ_Team from '../../assets/KJ_Team.jpg';
 
 function TeamSection() {
     return (
-        // [
-        //     {"personName": "JP", "position": "owner", "imagePath": ""},
-        //     {"personName": "JP", "position": "owner", "imagePath": ""},
-        //     {"personName": "JP", "position": "owner", "imagePath": ""}
-        // ]
-
         <div className="MainElementPadding">
             <Container fluid>
                 <div className="TextBlock">

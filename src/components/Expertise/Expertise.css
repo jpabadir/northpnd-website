@@ -5,12 +5,11 @@
 
     table td {
         display: flex !important;
+        flex-wrap: wrap;
     }
 
-    table td::before {
-        content: attr(label) !important;
+    .ClientNameCell {
         font-weight: bold !important;
-        width: 140px !important;
     }
 }
 
@@ -25,4 +24,23 @@ tr:nth-child(odd) {
 .Expertise {
     flex: 1;
     max-width: 1300px;
+}
+
+table {
+    font-size: 18px;
+}
+
+.pill {
+    padding: 8px;
+    border-radius: 15px;
+    color: white;
+    font-size: 14px;
+    white-space: nowrap;
+    margin: 2px;
+}
+
+.darkpill {
+    border: 1px solid;
+    color: black;
+    border-color: black;
 }

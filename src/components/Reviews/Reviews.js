@@ -25,9 +25,14 @@ function Reviews() {
       "relative_time_description": "2 months ago",
       "text": "We partnered with North P&D to add capacity to our software development team and have been very pleased. Very thorough, detailed oriented and excellent communication skills. Delivers results on time and continues to be a valuable partner in our operations.",
       "time": 1663282781
+    },
+    {
+      "author_name": "Khody Miller",
+      "rating": 5,
+      "text": "JP truly cares for properly serving his customers. After our initial consultation, JP went the extra mile and gave me a comprehensive email of valuable recommendations on considerations for my business.",
     }
   ]);
-  const companies = ["Proximy", "Midstride Technologies"]
+  const companies = ["Proximy", "Midstride Technologies", "Khody Miller Enterprises"]
 
   // useEffect(() => {
   //   const googleMapsScript = document.createElement('script');
@@ -55,7 +60,7 @@ function Reviews() {
           <Col className="Review" key={review.text}>
             <StyledRating value={review.rating} readOnly size="large" />
             <div className="ReviewText">"{review.text}"</div>
-            <div>{review.author_name}, {companies[index]}</div>
+            <div>{review.author_name}{Boolean(companies[index]) && (`, ${companies[index]}`)}</div>
           </Col>
         );
       })}

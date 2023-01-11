@@ -3,7 +3,7 @@ import "./LocalNavbar.css";
 import { NavLink, Link } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import { useEffect, useRef, useState } from "react";
-import { scrollSpy } from 'react-scroll';
+import { scrollSpy } from "react-scroll";
 import logo from "../../assets/transparentLogo.svg";
 
 const bodyScrollLock = require("body-scroll-lock");
@@ -14,6 +14,7 @@ const scrollAnimationTrigger = 50;
 
 function LocalNavbar(props) {
   useEffect(() => {
+    // Listens for scroll and updates myScrollY with the corresponding coords
     document.addEventListener("scroll", () => {
       setMyScrollY(window.scrollY);
     });
@@ -45,10 +46,14 @@ function LocalNavbar(props) {
         expand="lg"
         variant="dark"
         fixed="top"
-        className={`${myScrollY > scrollAnimationTrigger || isToggleOpen || window.location.pathname == "/expertise" || window.location.pathname.includes("articles")
-          ? "GreyNavbar"
-          : "TransparentNavbar"
-          } ${isToggleOpen ? "FullNav" : "TopNav"} Navbar`}
+        className={`${
+          myScrollY > scrollAnimationTrigger ||
+          isToggleOpen ||
+          window.location.pathname == "/expertise" ||
+          window.location.pathname.includes("articles")
+            ? "GreyNavbar"
+            : "TransparentNavbar"
+        } ${isToggleOpen ? "FullNav" : "TopNav"} Navbar`}
         style={{ height: isToggleOpen ? "100vh" : "80px" }}
       >
         <Navbar.Brand href="/" style={{ fontSize: "25px" }}>
@@ -71,7 +76,10 @@ function LocalNavbar(props) {
             </div>
           </div>
         </Navbar.Toggle>
-        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end text-center">
+        <Navbar.Collapse
+          id="responsive-navbar-nav"
+          className="justify-content-end text-center"
+        >
           <Nav className="ml-auto">
             <li>
               <Link

@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Expertise from "./components/Expertise/Expertise";
 import Footer from "./components/Footer/Footer";
 import "./hamburgers.css";
@@ -11,9 +11,10 @@ import Blog from "./components/Blog/Blog";
 import blogsData from "./blogs/blogs-headers.json";
 import { linkify } from "./helpers";
 
-function App() {
+const App = () => {
+  // const pathRef = useRef()
   function updateScrollPath(path) {
-    // Code goes here
+    // Code goes here 
     console.log(path);
   }
 

@@ -23,12 +23,12 @@ function Main(props) {
     else enableBodyScroll(refContainer.current);
   }, [isToggleOpen]);
 
-  useEffect(() => {
-    scroller.scrollTo(props.scrollGoal, {
-      duration: 300,
-      offset: -80,
-    });
-  }, [props.scrollGoal]);
+  // useEffect(() => {
+  //   scroller.scrollTo(props.scrollGoal, {
+  //     duration: 300,
+  //     offset: -80,
+  //   });
+  // }, [props.scrollGoal]);
 
   function closeToggle() {
     if (isToggleOpen) refContainer.current.click();

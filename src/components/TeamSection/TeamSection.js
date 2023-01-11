@@ -16,32 +16,32 @@ function TeamSection() {
 
         <div className="MainElementPadding">
             <Container fluid>
-                <div className="TextBlock">
+                <div>
                     <div className="Subtitle">Our Team at North P&D</div>
                     <div className='Team-Section'>
                         <Fade duration={1200}>
-                            <div className='text-center'>
-                                <li className='list-order'>
+                            <div>
+                                <div className='list-order'>
                                     <img src={JP_Team} className="TeamHeadshots" />
                                     <div className='NameAndOccupation'>
                                         <div style={{ fontSize: '20px' }}>Jean-Philippe</div>
-                                        <div style={{ fontSize: '15px' }}>Software Engineer Intern</div>
+                                        <div style={{ fontSize: '15px' }}>Principal Software Engineer</div>
                                     </div>
-                                </li>
-                                <li className='list-order'>
+                                </div>
+                                <div className='list-order'>
                                     <img src={KJ_Team} className="TeamHeadshots" />
                                     <div className='NameAndOccupation'>
                                         <div style={{ fontSize: '20px' }}>Khallan Jamal</div>
                                         <div style={{ fontSize: '15px' }}>Software Engineer Intern</div>
                                     </div>
-                                </li>
-                                <li className='list-order'>
+                                </div>
+                                <div className='list-order'>
                                     <img src={FT_Team} className="TeamHeadshots" />
                                     <div className='NameAndOccupation'>
                                         <div style={{ fontSize: '20px' }}>Fabien Thich</div>
                                         <div style={{ fontSize: '15px' }}>Software Engineer Intern</div>
                                     </div>
-                                </li>
+                                </div>
                             </div>
                         </Fade>
                     </div>

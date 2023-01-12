@@ -1,5 +1,4 @@
   .Team-Section {
-    padding: 0px 0px 0px 0px;
     text-align: center;
     justify-content: center;
   }
@@ -19,19 +18,14 @@
     width: 150px;
     border-radius: 100%;
     object-fit: cover;
-    flex-flow: column wrap;
-    flex-wrap: wrap;
-    justify-self: baseline;
   }
 
   .NameAndOccupation {
     display: flex;
     flex-direction: column;
-    flex-basis: fit-content;
-    vertical-align: baseline;
   }
 
-  /* @media only screen and (max-width:300px) {
+  @media only screen and (max-width:300px) {
     .TeamHeadshots {
       width: 75px !important;
       height: 75px !important;
@@ -39,4 +33,4 @@
     .NameAndOccupation{
       font-size: smaller;
     }
-  } */
+  }

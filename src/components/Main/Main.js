@@ -1,6 +1,6 @@
 import "./Main.css";
 import { Element, scroller } from "react-scroll";
-import { useEffect, useRef, useState, forwardRef, useImperativeHandle} from "react";
+import { useEffect, useRef, useState, forwardRef, useImperativeHandle } from "react";
 import About from "../About/About";
 import Home from "../Home/Home";
 import Contact from "../Contact/Contact";
@@ -19,25 +19,18 @@ const Main = forwardRef((props, ref) => {
   const [isToggleOpen, setIsToggleOpen] = useState(false);
 
   useImperativeHandle(ref, () => ({
-    function () {
-      scroller.scrollTo(props.scrollGoal, {
-         duration: 300,
-         offset: -80,
-       });
-    }
-  }))
+    scrollTo(scrollPath) {
+      scroller.scrollTo(scrollPath, {
+        duration: 300,
+        offset: -80,
+      });
+    },
+  }));
 
   useEffect(() => {
     if (isToggleOpen) disableBodyScroll(refContainer.current);
     else enableBodyScroll(refContainer.current);
   }, [isToggleOpen]);
-
-  // useEffect(() => {
-  //   scroller.scrollTo(props.scrollGoal, {
-  //     duration: 300,
-  //     offset: -80,
-  //   });
-  // }, [props.scrollGoal]);
 
   function closeToggle() {
     if (isToggleOpen) refContainer.current.click();
@@ -163,6 +156,6 @@ const Main = forwardRef((props, ref) => {
       </div>
     </div>
   );
-})
+});
 
 export default Main;

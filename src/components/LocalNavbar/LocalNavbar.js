@@ -44,10 +44,14 @@ function LocalNavbar(props) {
         expand="lg"
         variant="dark"
         fixed="top"
-        className={`${myScrollY > scrollAnimationTrigger || isToggleOpen || window.location.pathname == "/expertise" || window.location.pathname.includes("articles")
-          ? "GreyNavbar"
-          : "TransparentNavbar"
-          } ${isToggleOpen ? "FullNav" : "TopNav"} Navbar`}
+        className={`${
+          myScrollY > scrollAnimationTrigger ||
+          isToggleOpen ||
+          window.location.pathname == "/expertise" ||
+          window.location.pathname.includes("articles")
+            ? "GreyNavbar"
+            : "TransparentNavbar"
+        } ${isToggleOpen ? "FullNav" : "TopNav"} Navbar`}
         style={{ height: isToggleOpen ? "100vh" : "80px" }}
       >
         <Navbar.Brand href="/" style={{ fontSize: "25px" }}>
@@ -70,7 +74,10 @@ function LocalNavbar(props) {
             </div>
           </div>
         </Navbar.Toggle>
-        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end text-center">
+        <Navbar.Collapse
+          id="responsive-navbar-nav"
+          className="justify-content-end text-center"
+        >
           <Nav className="ml-auto">
             <li>
               <Link

@@ -11,11 +11,10 @@ import Blog from "./components/Blog/Blog";
 import blogsData from "./blogs/blogs-headers.json";
 import { linkify } from "./helpers";
 
-const App = () => {
-  // const pathRef = useRef()
+function App() {
+  const pathRef = useRef();
   function updateScrollPath(path) {
-    // Code goes here 
-    console.log(path);
+    pathRef.current.scrollTo(path);
   }
 
   return (
@@ -24,7 +23,7 @@ const App = () => {
         <LocalNavbar scrollHandler={updateScrollPath} />
         <div className="CentralContent">
           <Routes>
-            <Route path="/" element={<Main />} />
+            <Route path="/" element={<Main ref={pathRef} />} />
             <Route path="expertise" element={<Expertise />} />
             <Route path="articles" element={<Blog />} />
             {blogsData.map((blog) => (

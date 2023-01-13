@@ -6,6 +6,7 @@ import Home from "../Home/Home";
 import Contact from "../Contact/Contact";
 import Services from "../Services/Services";
 import OurClients from "../OurClients/OurClients";
+import FAQ from "../Faq/Faq";
 import "../../hamburgers.css";
 import Fade from "react-reveal/Fade";
 import homeBackground from "../../assets/home-background.mp4";
@@ -128,6 +129,21 @@ function Main(props) {
                 style={{ width: "100%" }}
               >
                 <Services />
+              </Element>
+            </div>
+            <div
+              style={{
+                width: "100%",
+                justifyContent: "center",
+                display: "flex",
+              }}
+            >
+              <Element
+                name="FAQ"
+                className="element"
+                style={{ width: "100%" }}
+              >
+                <FAQ />
               </Element>
             </div>
             <div id="bottomPart">

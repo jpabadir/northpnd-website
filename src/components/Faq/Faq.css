@@ -1,0 +1,20 @@
+.Subtitle {
+  font-size: 40px;
+}
+
+.FAQ-Margin {
+  margin-left: 15px;
+}
+
+.Questions {
+  font-size: 20px;
+}
+
+.Response {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.Overflow {
+  overflow: hidden;
+}

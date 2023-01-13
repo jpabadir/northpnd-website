@@ -1,16 +1,20 @@
-.Subtitle-FAQ {
-    font-size: 40px;
-  }
+.Subtitle {
+  font-size: 40px;
+}
 
-.ServicesCardTitle {
-    color: rgb(255, 255, 255, 0.85);
-  }
+.FAQ-Margin {
+  margin-left: 15px;
+}
 
 .Questions {
-  font-size: 25px;
-  padding-left: 50px;
+  font-size: 20px;
 }
 
 .Response {
-  padding-left: 50px;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.Overflow {
+  overflow: hidden;
 }

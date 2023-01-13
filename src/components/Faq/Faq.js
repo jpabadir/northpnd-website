@@ -7,6 +7,21 @@ function Faq() {
   return (
     <div className="MainElementPadding">
       <div>
+          <Row className='FAQ-Margin'>
+            <Col>
+              <Row className="Subtitle">Frequently Asked Questions</Row>
+              <Row className='Questions'>Question 1</Row>
+              <Row className='Response'>Response 1</Row>
+              <Row className='Questions'>Question 2</Row>
+              <Row className='Response'>Response 2</Row>
+              <Row className='Questions'>Question 3</Row>
+              <Row className='Response'>Response 3</Row>
+            </Col>
+          </Row>
+      </div>
+
+
+      {/* <div>
         <div class="row justify-content-between row mb-4">
           <div class="col-3" className='Subtitle'>
             Frequantly asked Questions
@@ -25,23 +40,23 @@ function Faq() {
             Question 3
           </div>
         </div>
-      </div>
+      </div> */}
       {/* <Container fluid>
         <div className="TextBlock">
           <Row>
-            <Col xl={6}>
+            <Row xl={6}>
               <div className="Subtitle-FAQ"></div>
               <Fade duration={1200}>
-                <Col md={6}>
+                <Row>
                   <div className='Questions'>Question</div>
                   <div className='Response'>Response</div>
                   <div className='Questions'>Question</div>
                   <div className='Response'>Response</div>
                   <div className='Questions'>Question</div>
                   <div className='Response'>Response</div>
-                </Col>
+                </Row>
               </Fade>
-            </Col>
+            </Row>
           </Row>
         </div>
       </Container> */}

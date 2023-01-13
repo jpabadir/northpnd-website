@@ -8,7 +8,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import './Expertise.css';
 import { useEffect } from 'react';
-import TechCard from '../TechCard/TechCard';
+// import TechCard from '../TechCard/TechCard';
 
 export default function Expertise() {
   useEffect(() => {

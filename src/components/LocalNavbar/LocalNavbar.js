@@ -44,7 +44,7 @@ function LocalNavbar(props) {
         expand="lg"
         variant="dark"
         fixed="top"
-        className={`${myScrollY > scrollAnimationTrigger || isToggleOpen || window.location.pathname == "/expertise" || window.location.pathname.includes("articles")
+        className={`${myScrollY > scrollAnimationTrigger || isToggleOpen || window.location.pathname === "/expertise" || window.location.pathname.includes("articles")
           ? "GreyNavbar"
           : "TransparentNavbar"
           } ${isToggleOpen ? "FullNav" : "TopNav"} Navbar`}

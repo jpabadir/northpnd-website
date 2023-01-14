@@ -31,6 +31,13 @@ const Main = forwardRef((props, ref) => {
     else enableBodyScroll(refContainer.current);
   }, [isToggleOpen]);
 
+  useEffect(() => {
+    scroller.scrollTo(props.scrollGoal, {
+      duration: 300,
+      offset: -80,
+    });
+  }, [props.scrollGoal]);
+
   function closeToggle() {
     if (isToggleOpen) refContainer.current.click();
   }
@@ -52,28 +59,28 @@ const Main = forwardRef((props, ref) => {
             muted
           />
           <div className="Overlay DarkOverlay" />
-            <div
+          <div
+            style={{
+              width: "100%",
+              justifyContent: "center",
+              display: "flex",
+            }}
+          >
+            <Element
+              name="home"
+              className="element"
               style={{
-                width: "100%",
-                justifyContent: "center",
+                minHeight: "100vh",
                 display: "flex",
+                justifyContent: "center",
+                width: "100%",
               }}
             >
-              <Element
-                name="home"
-                className="element"
-                style={{
-                  minHeight: "100vh",
-                  display: "flex",
-                  justifyContent: "center",
-                  width: "100%",
-                }}
-              >
-                <div style={{ paddingTop: "80px" }}>
-                  <Home />
-                </div>
-              </Element>
-            </div>
+              <div style={{ paddingTop: "80px" }}>
+                <Home />
+              </div>
+            </Element>
+          </div>
           <div className="FirstSeparator" />
           <div
             style={{ width: "100%", justifyContent: "center", display: "flex" }}

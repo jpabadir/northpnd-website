@@ -12,10 +12,15 @@ import blogsData from "./blogs/blogs-headers.json";
 import { linkify } from "./helpers";
 
 function App() {
+  const [scrollGoal, setScrollGoal] = useState("");
   const mainRef = useRef();
 
   function updateScrollPath(path) {
-    mainRef.current.scrollTo(path);
+    if (window.location.pathname != "/expertise") {
+      mainRef.current.scrollTo(path);
+    } else {
+      setScrollGoal(path);
+    }
   }
 
   return (
@@ -24,7 +29,7 @@ function App() {
         <LocalNavbar scrollHandler={updateScrollPath} />
         <div className="CentralContent">
           <Routes>
-            <Route path="/" element={<Main ref={mainRef} />} />
+            <Route path="/" element={<Main ref={mainRef} scrollGoal={scrollGoal} />} />
             <Route path="expertise" element={<Expertise />} />
             <Route path="articles" element={<Blog />} />
             {blogsData.map((blog) => (

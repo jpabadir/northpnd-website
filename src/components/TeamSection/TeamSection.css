@@ -8,8 +8,8 @@
   }
 
   .TeamHeadshots {
-    height: 150px;
-    width: 150px;
+    height: 180px;
+    width: 180px;
     border-radius: 100%;
     object-fit: cover;
   }

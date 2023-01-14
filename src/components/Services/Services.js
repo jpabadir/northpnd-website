@@ -7,7 +7,6 @@ import discussion from '../../assets/discussion-light.mov';
 import codingPoster from '../../assets/coding-poster.png';
 import cablesPoster from '../../assets/cables-poster.png';
 import discussionPoster from '../../assets/discussion-poster.png';
-import Fade from 'react-reveal/Fade';
 
 function ServicesCard(props) {
   const [isMobile, setIsMobile] = useState(false);
@@ -68,11 +67,8 @@ function Services() {
       <Container fluid>
         <div className="TextBlock">
           <div className="Subtitle">How we can help you</div>
-          <Fade duration={1200}>
             <div style={{ fontSize: '25px' }}>We take care of your technology needs so you can focus on your business.</div>
-          </Fade>
         </div>
-        <Fade duration={1200}>
           <Row className="ServicesCardsRow">
             <ServicesCard
               index={0}
@@ -102,7 +98,6 @@ function Services() {
               setSubtitleDisplay={setSubtitleDisplay}
             />
           </Row>
-        </Fade>
       </Container>
     </div>
   );

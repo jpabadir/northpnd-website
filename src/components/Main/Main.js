@@ -1,6 +1,6 @@
 import "./Main.css";
 import { Element, scroller } from "react-scroll";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, forwardRef, useImperativeHandle } from "react";
 import About from "../About/About";
 import Home from "../Home/Home";
 import Contact from "../Contact/Contact";
@@ -8,16 +8,24 @@ import Services from "../Services/Services";
 import OurClients from "../OurClients/OurClients";
 import TeamSection from "../TeamSection/TeamSection";
 import "../../hamburgers.css";
-import Fade from "react-reveal/Fade";
 import homeBackground from "../../assets/home-background.mp4";
 
 const bodyScrollLock = require("body-scroll-lock");
 const disableBodyScroll = bodyScrollLock.disableBodyScroll;
 const enableBodyScroll = bodyScrollLock.enableBodyScroll;
 
-function Main(props) {
+const Main = forwardRef((props, ref) => {
   const refContainer = useRef(null);
   const [isToggleOpen, setIsToggleOpen] = useState(false);
+
+  useImperativeHandle(ref, () => ({
+    scrollTo(scrollPath) {
+      scroller.scrollTo(scrollPath, {
+        duration: 300,
+        offset: -80,
+      });
+    },
+  }));
 
   useEffect(() => {
     if (isToggleOpen) disableBodyScroll(refContainer.current);
@@ -52,30 +60,28 @@ function Main(props) {
             muted
           />
           <div className="Overlay DarkOverlay" />
-          <Fade duration={1200}>
-            <div
+          <div
+            style={{
+              width: "100%",
+              justifyContent: "center",
+              display: "flex",
+            }}
+          >
+            <Element
+              name="home"
+              className="element"
               style={{
-                width: "100%",
-                justifyContent: "center",
+                minHeight: "100vh",
                 display: "flex",
+                justifyContent: "center",
+                width: "100%",
               }}
             >
-              <Element
-                name="home"
-                className="element"
-                style={{
-                  minHeight: "100vh",
-                  display: "flex",
-                  justifyContent: "center",
-                  width: "100%",
-                }}
-              >
-                <div style={{ paddingTop: "80px" }}>
-                  <Home />
-                </div>
-              </Element>
-            </div>
-          </Fade>
+              <div style={{ paddingTop: "80px" }}>
+                <Home />
+              </div>
+            </Element>
+          </div>
           <div className="FirstSeparator" />
           <div
             style={{ width: "100%", justifyContent: "center", display: "flex" }}
@@ -162,6 +168,6 @@ function Main(props) {
       </div>
     </div>
   );
-}
+});
 
 export default Main;

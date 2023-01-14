@@ -11,29 +11,25 @@ function TeamSection() {
             <Container fluid>
                 <div className="Subtitle">Our Team</div>
                 <Row className='text-center'>
-                    <Col>
+                    <Col className='my-2'>
                         <img src={JP_Team} className="TeamHeadshots" />
                         <div className='NameAndOccupation'>
                             <div style={{ fontSize: '20px' }}>JP</div>
                             <div style={{ fontSize: '15px' }}>Founder and Tech Lead</div>
                         </div>
                     </Col>
-                    <Col>
-                        <div className='list-orde'>
-                            <img src={FT_Team} className="TeamHeadshots" />
-                            <div className='NameAndOccupation'>
-                                <div style={{ fontSize: '20px' }}>Fabien</div>
-                                <div style={{ fontSize: '15px' }}>Software Engineer - Junior</div>
-                            </div>
+                    <Col className='my-2'>
+                        <img src={FT_Team} className="TeamHeadshots" />
+                        <div className='NameAndOccupation'>
+                            <div style={{ fontSize: '20px' }}>Fabien</div>
+                            <div style={{ fontSize: '15px' }}>Software Engineer - Junior</div>
                         </div>
                     </Col>
-                    <Col>
-                        <div className='list-orde'>
-                            <img src={KJ_Team} className="TeamHeadshots" />
-                            <div className='c'>
-                                <div style={{ fontSize: '20px' }}>Khallan</div>
-                                <div style={{ fontSize: '15px' }}>Software Engineer - Intern</div>
-                            </div>
+                    <Col className='my-2'>
+                        <img src={KJ_Team} className="TeamHeadshots" />
+                        <div className='c'>
+                            <div style={{ fontSize: '20px' }}>Khallan</div>
+                            <div style={{ fontSize: '15px' }}>Software Engineer - Intern</div>
                         </div>
                     </Col>
                 </Row>

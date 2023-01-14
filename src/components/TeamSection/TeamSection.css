@@ -1,26 +1,36 @@
+  .Team-Section {
+    text-align: center;
+    justify-content: center;
+  }
+
   .Subtitle {
     font-size: 40px;
   }
 
-   .list-order{
+  .list-order {
     display: inline-block;
-    margin-left: 125px;
-    margin-right: 125px;
+    padding: 0px 75px 0px 75px;
+
   }
 
-   .TeamHeadshots{
+  .TeamHeadshots {
     height: 150px;
     width: 150px;
     border-radius: 100%;
-    object-fit: cover; 
-    flex-flow: column wrap;
-    flex-wrap: wrap;
-    justify-self: baseline;
-    }    
+    object-fit: cover;
+  }
 
-  .NameAndOccupation{
-    display:flex;
-    flex-direction: column; 
-    flex-basis: fit-content;
-    vertical-align: baseline;
+  .NameAndOccupation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media only screen and (max-width:300px) {
+    .TeamHeadshots {
+      width: 75px !important;
+      height: 75px !important;
+    }
+    .NameAndOccupation{
+      font-size: smaller;
+    }
   }

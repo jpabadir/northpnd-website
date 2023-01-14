@@ -1,7 +1,6 @@
 import React, { useState, useLayoutEffect } from 'react';
 import './TeamSection.css';
 import { Row, Col, Container } from 'react-bootstrap';
-import Fade from 'react-reveal/Fade';
 import JP_Team from '../../assets/JP_Team.jpg';
 import FT_Team from '../../assets/FT_Team.jpg';
 import KJ_Team from '../../assets/KJ_Team.jpg';

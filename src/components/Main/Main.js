@@ -7,7 +7,6 @@ import Contact from "../Contact/Contact";
 import Services from "../Services/Services";
 import OurClients from "../OurClients/OurClients";
 import "../../hamburgers.css";
-import Fade from "react-reveal/Fade";
 import homeBackground from "../../assets/home-background.mp4";
 
 const bodyScrollLock = require("body-scroll-lock");
@@ -53,7 +52,6 @@ const Main = forwardRef((props, ref) => {
             muted
           />
           <div className="Overlay DarkOverlay" />
-          <Fade duration={1200}>
             <div
               style={{
                 width: "100%",
@@ -76,7 +74,6 @@ const Main = forwardRef((props, ref) => {
                 </div>
               </Element>
             </div>
-          </Fade>
           <div className="FirstSeparator" />
           <div
             style={{ width: "100%", justifyContent: "center", display: "flex" }}

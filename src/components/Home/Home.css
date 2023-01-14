@@ -10,11 +10,13 @@
 .HomeMainTitle {
   font-size: 45px;
   font-weight: 900;
+  position: relative;
 }
 
 .TellMeMoreParent {
   display: flex;
   padding-top: 15px;
+  position: relative;
 }
 
 .TellMeMore:hover {

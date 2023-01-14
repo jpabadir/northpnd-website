@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from 'react';
+import React from 'react';
 import './TeamSection.css';
 import { Row, Col, Container } from 'react-bootstrap';
 import JP_Team from '../../assets/JP_Team.jpg';

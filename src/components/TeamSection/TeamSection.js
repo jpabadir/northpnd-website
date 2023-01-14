@@ -15,7 +15,7 @@ function TeamSection() {
                         <img src={JP_Team} className="TeamHeadshots" />
                         <div className='NameAndOccupation'>
                             <div style={{ fontSize: '20px' }}>JP</div>
-                            <div style={{ fontSize: '15px' }}>Owner and tech lead</div>
+                            <div style={{ fontSize: '15px' }}>Founder and tech lead</div>
                         </div>
                     </Col>
                     <Col>

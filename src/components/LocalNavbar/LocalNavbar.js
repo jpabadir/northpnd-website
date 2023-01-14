@@ -61,9 +61,8 @@ function LocalNavbar(props) {
           id="toggler"
         >
           <div
-            className={`hamburger hamburger--slider ${
-              isToggleOpen && "is-active"
-            }`}
+            className={`hamburger hamburger--slider ${isToggleOpen && "is-active"
+              }`}
           >
             <div className="hamburger-box">
               <div className="hamburger-inner"></div>
@@ -75,12 +74,8 @@ function LocalNavbar(props) {
             <li>
               <Link
                 to="/"
-                activeClass="selected"
-                smooth={true}
-                duration={300}
                 style={{ display: "inline-block", margin: "20px" }}
                 onClick={closeToggle}
-                offset={-80}
                 className="Link WhiteLink"
               >
                 About
@@ -100,49 +95,34 @@ function LocalNavbar(props) {
             <li>
               <Link
                 to="/"
-                activeClass="selected"
-                smooth={true}
-                duration={300}
                 style={{ display: "inline-block", margin: "20px" }}
                 onClick={closeToggle}
-                offset={-80}
+                className="Link WhiteLink"
               >
-                <Link className="Link WhiteLink" to="/">
-                  Our Clients
-                </Link>
+                Our Clients
               </Link>
             </li>
             <li>
               <Link
                 to="/"
-                activeClass="selected"
-                smooth={true}
-                duration={300}
                 style={{ display: "inline-block", margin: "20px" }}
                 onClick={closeToggle}
-                offset={-80}
+                className="Link WhiteLink"
               >
-                <Link className="Link WhiteLink" to="/">
-                  Services
-                </Link>
+                Services
               </Link>
-            </li>
-            <li>
-              <Link
-                to="/"
-                activeClass="selected"
-                smooth={true}
-                duration={300}
-                style={{ display: "inline-block", margin: "20px" }}
-                onClick={closeToggle}
-                offset={-80}
-              >
-                <Link className="Link WhiteLink" to="/">
-                  Contact Us
-                </Link>
-              </Link>
-            </li>
-            {/* <li>
+          </li>
+          <li>
+            <Link
+              to="/"
+              style={{ display: "inline-block", margin: "20px" }}
+              onClick={closeToggle}
+              className="Link WhiteLink"
+            >
+              Contact Us
+            </Link>
+        </li>
+        {/* <li>
               <NavLink
                 className="Link WhiteLink"
                 to="articles"
@@ -153,10 +133,10 @@ function LocalNavbar(props) {
                 Articles
               </NavLink>
             </li> */}
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
-    </div>
+      </Nav>
+    </Navbar.Collapse>
+      </Navbar >
+    </div >
   );
 }
 

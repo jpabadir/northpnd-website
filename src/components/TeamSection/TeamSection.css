@@ -14,12 +14,13 @@
     object-fit: cover;
   }
 
-  @media only screen and (max-width:300px) {
+  @media only screen and (max-width:576px) {
     .TeamHeadshots {
-      width: 75px !important;
-      height: 75px !important;
+      width: 130px !important;
+      height: 130px !important;
     }
-    .NameAndOccupation{
+
+    .NameAndOccupation {
       font-size: smaller;
     }
   }

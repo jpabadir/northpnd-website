@@ -1,6 +1,6 @@
 import React from "react";
 import "./LocalNavbar.css";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import { useEffect, useRef, useState } from "react";
 import logo from "../../assets/transparentLogo.svg";
@@ -12,28 +12,36 @@ const enableBodyScroll = bodyScrollLock.enableBodyScroll;
 const scrollAnimationTrigger = 50;
 
 function LocalNavbar(props) {
+  const refContainer = useRef(null);
+  const [isToggleOpen, setIsToggleOpen] = useState(false);
+  const [myScrollY, setMyScrollY] = useState(0);
+  const location = useLocation();
+
   useEffect(() => {
     document.addEventListener("scroll", () => {
       setMyScrollY(window.scrollY);
     });
   }, []);
 
-  const refContainer = useRef(null);
-  const [isToggleOpen, setIsToggleOpen] = useState(false);
-  const [myScrollY, setMyScrollY] = useState(0);
-
   useEffect(() => {
     if (isToggleOpen) disableBodyScroll(refContainer.current);
     else enableBodyScroll(refContainer.current);
   }, [isToggleOpen]);
 
-  function closeToggle(e) {
+  function handleNavLinkClick(e) {
     if (isToggleOpen) refContainer.current.click();
     props.scrollHandler(e.target.innerText.replace(/\s/g, "").toLowerCase());
   }
 
   function toggleIsToggleOpen() {
     setIsToggleOpen(!isToggleOpen);
+  }
+
+  function getClasses() {
+    return `${myScrollY > scrollAnimationTrigger || isToggleOpen || location.pathname == "/expertise" || window.location.pathname.includes("articles")
+      ? "GreyNavbar"
+      : "TransparentNavbar"
+      } ${isToggleOpen ? "FullNav" : "TopNav"} Navbar`
   }
 
   return (
@@ -44,10 +52,7 @@ function LocalNavbar(props) {
         expand="lg"
         variant="dark"
         fixed="top"
-        className={`${myScrollY > scrollAnimationTrigger || isToggleOpen || window.location.pathname === "/expertise" || window.location.pathname.includes("articles")
-          ? "GreyNavbar"
-          : "TransparentNavbar"
-          } ${isToggleOpen ? "FullNav" : "TopNav"} Navbar`}
+        className={getClasses()}
         style={{ height: isToggleOpen ? "100vh" : "80px" }}
       >
         <Navbar.Brand href="/" style={{ fontSize: "25px" }}>
@@ -61,9 +66,8 @@ function LocalNavbar(props) {
           id="toggler"
         >
           <div
-            className={`hamburger hamburger--slider ${
-              isToggleOpen && "is-active"
-            }`}
+            className={`hamburger hamburger--slider ${isToggleOpen && "is-active"
+              }`}
           >
             <div className="hamburger-box">
               <div className="hamburger-inner"></div>
@@ -75,12 +79,8 @@ function LocalNavbar(props) {
             <li>
               <Link
                 to="/"
-                activeClass="selected"
-                smooth={true}
-                duration={300}
                 style={{ display: "inline-block", margin: "20px" }}
-                onClick={closeToggle}
-                offset={-80}
+                onClick={handleNavLinkClick}
                 className="Link WhiteLink"
               >
                 About
@@ -91,7 +91,7 @@ function LocalNavbar(props) {
                 className="Link WhiteLink"
                 to="expertise"
                 style={{ display: "inline-block", margin: "20px" }}
-                onClick={closeToggle}
+                onClick={handleNavLinkClick}
                 offset={-80}
               >
                 Expertise
@@ -100,46 +100,31 @@ function LocalNavbar(props) {
             <li>
               <Link
                 to="/"
-                activeClass="selected"
-                smooth={true}
-                duration={300}
                 style={{ display: "inline-block", margin: "20px" }}
-                onClick={closeToggle}
-                offset={-80}
+                onClick={handleNavLinkClick}
+                className="Link WhiteLink"
               >
-                <Link className="Link WhiteLink" to="/">
-                  Our Clients
-                </Link>
+                Our Clients
               </Link>
             </li>
             <li>
               <Link
                 to="/"
-                activeClass="selected"
-                smooth={true}
-                duration={300}
                 style={{ display: "inline-block", margin: "20px" }}
-                onClick={closeToggle}
-                offset={-80}
+                onClick={handleNavLinkClick}
+                className="Link WhiteLink"
               >
-                <Link className="Link WhiteLink" to="/">
-                  Services
-                </Link>
+                Services
               </Link>
             </li>
             <li>
               <Link
                 to="/"
-                activeClass="selected"
-                smooth={true}
-                duration={300}
                 style={{ display: "inline-block", margin: "20px" }}
-                onClick={closeToggle}
-                offset={-80}
+                onClick={handleNavLinkClick}
+                className="Link WhiteLink"
               >
-                <Link className="Link WhiteLink" to="/">
-                  Contact Us
-                </Link>
+                Contact Us
               </Link>
             </li>
             {/* <li>
@@ -155,8 +140,8 @@ function LocalNavbar(props) {
             </li> */}
           </Nav>
         </Navbar.Collapse>
-      </Navbar>
-    </div>
+      </Navbar >
+    </div >
   );
 }
 

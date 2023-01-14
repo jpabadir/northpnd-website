@@ -15,21 +15,21 @@ function TeamSection() {
                         <img src={JP_Team} className="TeamHeadshots" />
                         <div className='NameAndOccupation'>
                             <div style={{ fontSize: '20px' }}>JP</div>
-                            <div style={{ fontSize: '15px' }}>Founder and Tech Lead</div>
+                            <div>Founder and Tech Lead</div>
                         </div>
                     </Col>
                     <Col className='my-2'>
                         <img src={FT_Team} className="TeamHeadshots" />
                         <div className='NameAndOccupation'>
                             <div style={{ fontSize: '20px' }}>Fabien</div>
-                            <div style={{ fontSize: '15px' }}>Software Engineer - Junior</div>
+                            <div>Software Engineer - Junior</div>
                         </div>
                     </Col>
                     <Col className='my-2'>
                         <img src={KJ_Team} className="TeamHeadshots" />
                         <div className='c'>
                             <div style={{ fontSize: '20px' }}>Khallan</div>
-                            <div style={{ fontSize: '15px' }}>Software Engineer - Intern</div>
+                            <div>Software Engineer - Intern</div>
                         </div>
                     </Col>
                 </Row>

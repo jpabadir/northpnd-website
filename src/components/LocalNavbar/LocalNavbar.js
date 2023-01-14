@@ -111,18 +111,18 @@ function LocalNavbar(props) {
               >
                 Services
               </Link>
-          </li>
-          <li>
-            <Link
-              to="/"
-              style={{ display: "inline-block", margin: "20px" }}
-              onClick={closeToggle}
-              className="Link WhiteLink"
-            >
-              Contact Us
-            </Link>
-        </li>
-        {/* <li>
+            </li>
+            <li>
+              <Link
+                to="/"
+                style={{ display: "inline-block", margin: "20px" }}
+                onClick={closeToggle}
+                className="Link WhiteLink"
+              >
+                Contact Us
+              </Link>
+            </li>
+            {/* <li>
               <NavLink
                 className="Link WhiteLink"
                 to="articles"
@@ -133,8 +133,8 @@ function LocalNavbar(props) {
                 Articles
               </NavLink>
             </li> */}
-      </Nav>
-    </Navbar.Collapse>
+          </Nav>
+        </Navbar.Collapse>
       </Navbar >
     </div >
   );

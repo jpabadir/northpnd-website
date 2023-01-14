@@ -13,24 +13,18 @@ function TeamSection() {
                 <Row className='text-center'>
                     <Col className='my-2'>
                         <img src={JP_Team} className="TeamHeadshots" />
-                        <div className='NameAndOccupation'>
-                            <div style={{ fontSize: '20px' }}>JP</div>
-                            <div>Founder and Tech Lead</div>
-                        </div>
+                        <div style={{ fontSize: '20px' }}>JP</div>
+                        <div>Founder and Tech Lead</div>
                     </Col>
                     <Col className='my-2'>
                         <img src={FT_Team} className="TeamHeadshots" />
-                        <div className='NameAndOccupation'>
-                            <div style={{ fontSize: '20px' }}>Fabien</div>
-                            <div>Software Engineer - Junior</div>
-                        </div>
+                        <div style={{ fontSize: '20px' }}>Fabien</div>
+                        <div>Software Engineer - Junior</div>
                     </Col>
                     <Col className='my-2'>
                         <img src={KJ_Team} className="TeamHeadshots" />
-                        <div className='c'>
-                            <div style={{ fontSize: '20px' }}>Khallan</div>
-                            <div>Software Engineer - Intern</div>
-                        </div>
+                        <div style={{ fontSize: '20px' }}>Khallan</div>
+                        <div>Software Engineer - Intern</div>
                     </Col>
                 </Row>
             </Container >

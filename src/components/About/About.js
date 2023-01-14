@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from 'react';
+import React from 'react';
 import './About.css';
 import { Row, Col, Container } from 'react-bootstrap';
 import jpHeadshot from '../../assets/jp-headshot.png';

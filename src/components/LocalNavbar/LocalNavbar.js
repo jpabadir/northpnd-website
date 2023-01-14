@@ -1,6 +1,6 @@
 import React from "react";
 import "./LocalNavbar.css";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import { useEffect, useRef, useState } from "react";
 import logo from "../../assets/transparentLogo.svg";
@@ -15,6 +15,7 @@ function LocalNavbar(props) {
   const refContainer = useRef(null);
   const [isToggleOpen, setIsToggleOpen] = useState(false);
   const [myScrollY, setMyScrollY] = useState(0);
+  const location = useLocation();
 
   useEffect(() => {
     document.addEventListener("scroll", () => {
@@ -36,6 +37,13 @@ function LocalNavbar(props) {
     setIsToggleOpen(!isToggleOpen);
   }
 
+  function getClasses() {
+    return `${myScrollY > scrollAnimationTrigger || isToggleOpen || location.pathname == "/expertise" || window.location.pathname.includes("articles")
+      ? "GreyNavbar"
+      : "TransparentNavbar"
+      } ${isToggleOpen ? "FullNav" : "TopNav"} Navbar`
+  }
+
   return (
     <div>
       <Navbar
@@ -44,10 +52,7 @@ function LocalNavbar(props) {
         expand="lg"
         variant="dark"
         fixed="top"
-        className={`${myScrollY > scrollAnimationTrigger || isToggleOpen || window.location.pathname == "/expertise" || window.location.pathname.includes("articles")
-          ? "GreyNavbar"
-          : "TransparentNavbar"
-          } ${isToggleOpen ? "FullNav" : "TopNav"} Navbar`}
+        className={getClasses()}
         style={{ height: isToggleOpen ? "100vh" : "80px" }}
       >
         <Navbar.Brand href="/" style={{ fontSize: "25px" }}>

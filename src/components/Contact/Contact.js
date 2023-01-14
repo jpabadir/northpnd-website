@@ -1,6 +1,5 @@
 import { Form, Button, Row, Col, Container } from 'react-bootstrap';
 import './Contact.css';
-import Fade from 'react-reveal/Fade';
 
 function Contact() {
   return (
@@ -9,7 +8,6 @@ function Contact() {
         <Row>
           <Col xl={6} className="ContactCol">
             <div className="Subtitle">Contact us. We'll respond within 24 hours.</div>
-            <Fade duration={1200}>
               <div>
                 <br />
                 <div style={{ fontSize: '25px' }}>North P&amp;D, Inc.</div>
@@ -26,11 +24,9 @@ function Contact() {
                 <br />
                 +1 647-576-7112
               </div>
-            </Fade>
           </Col>
 
           <Col xl={6}>
-            <Fade duration={1200}>
               <div className="FormParent StaticShadow">
                 <Form action="https://formspree.io/f/xwkalnaz" method="POST" className="Form">
                   <Row>
@@ -71,7 +67,6 @@ function Contact() {
                   </Button>
                 </Form>
               </div>
-            </Fade>
           </Col>
         </Row>
       </Container>

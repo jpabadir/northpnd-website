@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Expertise from "./components/Expertise/Expertise";
 import Footer from "./components/Footer/Footer";
 import "./hamburgers.css";
@@ -13,8 +13,14 @@ import { linkify } from "./helpers";
 
 function App() {
   const [scrollGoal, setScrollGoal] = useState("");
+  const mainRef = useRef();
+
   function updateScrollPath(path) {
-    setScrollGoal(path);
+    if (window.location.pathname != "/expertise") {
+      mainRef.current.scrollTo(path);
+    } else {
+      setScrollGoal(path);
+    }
   }
 
   return (
@@ -23,7 +29,7 @@ function App() {
         <LocalNavbar scrollHandler={updateScrollPath} />
         <div className="CentralContent">
           <Routes>
-            <Route path="/" element={<Main scrollGoal={scrollGoal} />} />
+            <Route path="/" element={<Main ref={mainRef} scrollGoal={scrollGoal} />} />
             <Route path="expertise" element={<Expertise />} />
             <Route path="articles" element={<Blog />} />
             {blogsData.map((blog) => (

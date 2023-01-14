@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from 'react';
+import React from 'react';
 import './About.css';
 import { Row, Col, Container } from 'react-bootstrap';
 import jpHeadshot from '../../assets/jp-headshot.png';
@@ -21,7 +21,7 @@ function About() {
               </div>
           </Col>
           <Col l={4} className="d-flex justify-content-center">
-            <img src={jpHeadshot} className="JpHeadshot" />
+            <img src={jpHeadshot} alt="Headshot" className="JpHeadshot" />
           </Col>
         </Row>
       </Container>

@@ -22,7 +22,7 @@ function TeamSection() {
                         <div className='list-orde'>
                             <img src={FT_Team} className="TeamHeadshots" />
                             <div className='NameAndOccupation'>
-                                <div style={{ fontSize: '20px' }}>Fabien Thich</div>
+                                <div style={{ fontSize: '20px' }}>Fabien</div>
                                 <div style={{ fontSize: '15px' }}>Software Engineer - Junior</div>
                             </div>
                         </div>
@@ -31,7 +31,7 @@ function TeamSection() {
                         <div className='list-orde'>
                             <img src={KJ_Team} className="TeamHeadshots" />
                             <div className='c'>
-                                <div style={{ fontSize: '20px' }}>Khallan Jamal</div>
+                                <div style={{ fontSize: '20px' }}>Khallan</div>
                                 <div style={{ fontSize: '15px' }}>Software Engineer - Intern</div>
                             </div>
                         </div>

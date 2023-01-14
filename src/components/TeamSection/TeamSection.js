@@ -9,32 +9,36 @@ function TeamSection() {
     return (
         <div className="MainElementPadding">
             <Container fluid>
-                <Row>
-                    <div className="Subtitle">Our Team</div>
-                    <div className='text-center'>
+                <div className="Subtitle">Our Team</div>
+                <Row className='text-center'>
+                    <Col>
                         <img src={JP_Team} className="TeamHeadshots" />
                         <div className='NameAndOccupation'>
                             <div style={{ fontSize: '20px' }}>JP</div>
-                            <div style={{ fontSize: '15px' }}>Principal Software Engineer</div>
+                            <div style={{ fontSize: '15px' }}>Owner and tech lead</div>
                         </div>
-                        <div className='list-order'>
-                            <img src={KJ_Team} className="TeamHeadshots" />
-                            <div className='NameAndOccupation'>
-                                <div style={{ fontSize: '20px' }}>Khallan Jamal</div>
-                                <div style={{ fontSize: '15px' }}>Software Engineer Intern</div>
-                            </div>
-                        </div>
-                        <div className='list-order'>
+                    </Col>
+                    <Col>
+                        <div className='list-orde'>
                             <img src={FT_Team} className="TeamHeadshots" />
                             <div className='NameAndOccupation'>
                                 <div style={{ fontSize: '20px' }}>Fabien Thich</div>
-                                <div style={{ fontSize: '15px' }}>Software Engineer Intern</div>
+                                <div style={{ fontSize: '15px' }}>Software Engineer - Junior</div>
                             </div>
                         </div>
-                    </div>
+                    </Col>
+                    <Col>
+                        <div className='list-orde'>
+                            <img src={KJ_Team} className="TeamHeadshots" />
+                            <div className='NameAndOccupation'>
+                                <div style={{ fontSize: '20px' }}>Khallan Jamal</div>
+                                <div style={{ fontSize: '15px' }}>Software Engineer - Intern</div>
+                            </div>
+                        </div>
+                    </Col>
                 </Row>
             </Container >
-        </div>
+        </div >
     );
 }
 

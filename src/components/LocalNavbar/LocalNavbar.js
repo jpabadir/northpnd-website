@@ -12,15 +12,15 @@ const enableBodyScroll = bodyScrollLock.enableBodyScroll;
 const scrollAnimationTrigger = 50;
 
 function LocalNavbar(props) {
+  const refContainer = useRef(null);
+  const [isToggleOpen, setIsToggleOpen] = useState(false);
+  const [myScrollY, setMyScrollY] = useState(0);
+
   useEffect(() => {
     document.addEventListener("scroll", () => {
       setMyScrollY(window.scrollY);
     });
   }, []);
-
-  const refContainer = useRef(null);
-  const [isToggleOpen, setIsToggleOpen] = useState(false);
-  const [myScrollY, setMyScrollY] = useState(0);
 
   useEffect(() => {
     if (isToggleOpen) disableBodyScroll(refContainer.current);

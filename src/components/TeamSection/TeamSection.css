@@ -1,26 +1,17 @@
-  .Team-Section {
-    text-align: center;
-    justify-content: center;
-  }
+.TeamHeadshots {
+  height: 180px;
+  width: 180px;
+  border-radius: 100%;
+  object-fit: cover;
+}
 
-  .Subtitle {
-    font-size: 40px;
-  }
-
+@media only screen and (max-width:576px) {
   .TeamHeadshots {
-    height: 180px;
-    width: 180px;
-    border-radius: 100%;
-    object-fit: cover;
+    width: 130px !important;
+    height: 130px !important;
   }
 
-  @media only screen and (max-width:576px) {
-    .TeamHeadshots {
-      width: 130px !important;
-      height: 130px !important;
-    }
-
-    .NameAndOccupation {
-      font-size: smaller;
-    }
+  .NameAndOccupation {
+    font-size: smaller;
   }
+}

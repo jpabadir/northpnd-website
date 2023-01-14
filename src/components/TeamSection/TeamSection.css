@@ -14,11 +14,6 @@
     object-fit: cover;
   }
 
-  .NameAndOccupation {
-    display: flex;
-    flex-direction: column;
-  }
-
   @media only screen and (max-width:300px) {
     .TeamHeadshots {
       width: 75px !important;

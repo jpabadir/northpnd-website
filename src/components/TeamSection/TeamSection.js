@@ -30,7 +30,7 @@ function TeamSection() {
                     <Col>
                         <div className='list-orde'>
                             <img src={KJ_Team} className="TeamHeadshots" />
-                            <div className='NameAndOccupation'>
+                            <div className='c'>
                                 <div style={{ fontSize: '20px' }}>Khallan Jamal</div>
                                 <div style={{ fontSize: '15px' }}>Software Engineer - Intern</div>
                             </div>

@@ -28,7 +28,7 @@ function LocalNavbar(props) {
     else enableBodyScroll(refContainer.current);
   }, [isToggleOpen]);
 
-  function closeToggle(e) {
+  function handleNavLinkClick(e) {
     if (isToggleOpen) refContainer.current.click();
     props.scrollHandler(e.target.innerText.replace(/\s/g, "").toLowerCase());
   }
@@ -80,7 +80,7 @@ function LocalNavbar(props) {
               <Link
                 to="/"
                 style={{ display: "inline-block", margin: "20px" }}
-                onClick={closeToggle}
+                onClick={handleNavLinkClick}
                 className="Link WhiteLink"
               >
                 About
@@ -91,7 +91,7 @@ function LocalNavbar(props) {
                 className="Link WhiteLink"
                 to="expertise"
                 style={{ display: "inline-block", margin: "20px" }}
-                onClick={closeToggle}
+                onClick={handleNavLinkClick}
                 offset={-80}
               >
                 Expertise
@@ -101,7 +101,7 @@ function LocalNavbar(props) {
               <Link
                 to="/"
                 style={{ display: "inline-block", margin: "20px" }}
-                onClick={closeToggle}
+                onClick={handleNavLinkClick}
                 className="Link WhiteLink"
               >
                 Our Clients
@@ -111,7 +111,7 @@ function LocalNavbar(props) {
               <Link
                 to="/"
                 style={{ display: "inline-block", margin: "20px" }}
-                onClick={closeToggle}
+                onClick={handleNavLinkClick}
                 className="Link WhiteLink"
               >
                 Services
@@ -121,7 +121,7 @@ function LocalNavbar(props) {
               <Link
                 to="/"
                 style={{ display: "inline-block", margin: "20px" }}
-                onClick={closeToggle}
+                onClick={handleNavLinkClick}
                 className="Link WhiteLink"
               >
                 Contact Us

@@ -9,12 +9,12 @@ function TeamSection() {
     return (
         <div className="MainElementPadding">
             <Container fluid>
-                <div className="TextBlock">
+                <Row>
                     <div className="Subtitle">Our Team</div>
                     <div className='text-center'>
                         <img src={JP_Team} className="TeamHeadshots" />
                         <div className='NameAndOccupation'>
-                            <div style={{ fontSize: '20px' }}>Jean-Philippe</div>
+                            <div style={{ fontSize: '20px' }}>JP</div>
                             <div style={{ fontSize: '15px' }}>Principal Software Engineer</div>
                         </div>
                         <div className='list-order'>
@@ -32,7 +32,7 @@ function TeamSection() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </Row>
             </Container >
         </div>
     );

@@ -13,6 +13,7 @@ import { linkify } from "./helpers";
 
 function App() {
   const pathRef = useRef();
+
   function updateScrollPath(path) {
     pathRef.current.scrollTo(path);
   }

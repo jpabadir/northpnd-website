@@ -1,0 +1,13 @@
+.TeamHeadshots {
+  height: 180px;
+  width: 180px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width:576px) {
+  .TeamHeadshots {
+    width: 130px !important;
+    height: 130px !important;
+  }
+}

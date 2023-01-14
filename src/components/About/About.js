@@ -20,8 +20,8 @@ function About() {
               individuals.
             </div>
           </Col>
-          <Col l={4} className="d-flex justify-content-center">
-            <img src={jpHeadshot} alt="Headshot" className="JpHeadshot" />
+          <Col l={4} className="d-flex justify-content-center JpHeadshotParent">
+            <img src={jpHeadshot} className="JpHeadshot" />
           </Col>
         </Row>
       </Container>

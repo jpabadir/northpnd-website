@@ -5,7 +5,7 @@ import { Row, Col } from 'react-bootstrap';
 import Rating from '@material-ui/lab/Rating';
 
 function Reviews() {
-  const [reviews, setReviews] = useState([
+  const reviews = [
     {
       "author_name": "Brandon Caiza",
       "author_url": "https://www.google.com/maps/contrib/116340316200654309946/reviews",
@@ -31,7 +31,7 @@ function Reviews() {
       "rating": 5,
       "text": "JP truly cares for properly serving his customers. After our initial consultation, JP went the extra mile and gave me a comprehensive email of valuable recommendations on considerations for my business.",
     }
-  ]);
+  ];
   const companies = ["Proximy", "Midstride Technologies", "Khody Miller Enterprises"]
 
   // useEffect(() => {

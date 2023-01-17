@@ -18,6 +18,6 @@
   float: right;
 }
 
-/* .GoogleReviews:hover {
-
-} */
+.GoogleReviews:hover {
+  transform: translateX(15px);
+}

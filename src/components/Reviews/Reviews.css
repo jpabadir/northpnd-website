@@ -14,10 +14,12 @@
   padding-bottom: 5px;
 }
 
-.GoogleReviews {
-  float: right;
+.ReadOnGoogle {
+  text-align: right;
 }
 
-.GoogleReviews:hover {
-  transform: translateX(15px);
+@media only screen and (max-width: 576px) {
+  .ReadOnGoogle {
+    text-align: center;
+  }
 }

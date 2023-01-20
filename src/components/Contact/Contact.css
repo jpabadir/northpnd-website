@@ -39,6 +39,8 @@
 .SubmitButton:focus {
   background-color: #3c4992 !important;
   border-color: #3c4992 !important;
+  margin-top: 15px;
+  margin-left: 11px;
 }
 
 @media only screen and (max-width: 1200px) {

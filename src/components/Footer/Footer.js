@@ -21,6 +21,9 @@ function Footer() {
         <a href="https://www.northpnd.com/privacy" target="_blank" rel="noreferrer" className="FooterLink">
           Privacy
         </a>
+        <a href="intern-testimonials.html" target="_blank" rel="noreferrer" className="FooterLink">
+          Intern Testimonials
+        </a>
       </div>
     </div>
   );

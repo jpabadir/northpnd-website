@@ -1,5 +1,15 @@
 import './Footer.css';
+import { NavLink, Link, useLocation } from "react-router-dom";
+import InternTestimonials from "../InternTestimonials/InternTestimonials";
+import { Element } from "react-scroll";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+function getClasses() {
+  return `${window.location.pathname == "/InternTestimonials"
+    // ? "GreyNavbar"
+    // : "TransparentNavbar"
+    } `
+}
 function Footer() {
   return (
     <div className="FooterMain">
@@ -21,9 +31,13 @@ function Footer() {
         <a href="https://www.northpnd.com/privacy" target="_blank" rel="noreferrer" className="FooterLink">
           Privacy
         </a>
-      </div>
+          <Link to="/interntestimonials"  target="_blank" rel="noreferrer" className="FooterLink">
+            Intern Testimonials
+          </Link>
+        </div>
     </div>
   );
 }
 
 export default Footer;
+// src="../InternTestimonials/InternTestimonials"

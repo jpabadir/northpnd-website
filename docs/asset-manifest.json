@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b192bdf8.css",
-    "main.js": "/static/js/main.3eaa27cd.js",
+    "main.css": "/static/css/main.a60bb504.css",
+    "main.js": "/static/js/main.28fdd20a.js",
     "static/js/787.90f9f944.chunk.js": "/static/js/787.90f9f944.chunk.js",
     "static/media/home-background.mp4": "/static/media/home-background.fc0b870534672fee29cd.mp4",
     "static/media/JP_Team.jpg": "/static/media/JP_Team.eac5d59e254233e61a5e.jpg",
@@ -13,17 +13,17 @@
     "static/media/coding-poster.png": "/static/media/coding-poster.6d1e8213385b4778e304.png",
     "static/media/cables-poster.png": "/static/media/cables-poster.16eb148de4e30217b444.png",
     "static/media/FT_Team.jpg": "/static/media/FT_Team.eb466ee712b88a4cf12c.jpg",
-    "static/media/KJ_Team.jpg": "/static/media/KJ_Team.5846c0c78e259b527365.jpg",
+    "static/media/KM_Team.jpg": "/static/media/KM_Team.8f45f4a319b8876d4667.jpg",
     "static/media/proximy-logo.png": "/static/media/proximy-logo.485ce016ed99f3abea60.png",
     "static/media/transparentLogo.svg": "/static/media/transparentLogo.332c5e16dd0717e02bf6e6137a8a58ce.svg",
     "static/media/layered-waves-haikei.svg": "/static/media/layered-waves-haikei.7cecff5e9dc9f50de7b4.svg",
     "index.html": "/index.html",
-    "main.b192bdf8.css.map": "/static/css/main.b192bdf8.css.map",
-    "main.3eaa27cd.js.map": "/static/js/main.3eaa27cd.js.map",
+    "main.a60bb504.css.map": "/static/css/main.a60bb504.css.map",
+    "main.28fdd20a.js.map": "/static/js/main.28fdd20a.js.map",
     "787.90f9f944.chunk.js.map": "/static/js/787.90f9f944.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b192bdf8.css",
-    "static/js/main.3eaa27cd.js"
+    "static/css/main.a60bb504.css",
+    "static/js/main.28fdd20a.js"
   ]
 }

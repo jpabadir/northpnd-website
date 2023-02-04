@@ -5,6 +5,12 @@
   object-fit: cover;
 }
 
+.TeamNames{
+  font-size: 20px;
+  margin-top: 15px;
+
+}
+
 @media only screen and (max-width:576px) {
   .TeamHeadshots {
     width: 130px !important;

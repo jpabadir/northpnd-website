@@ -3,6 +3,7 @@ import "./TeamSection.css";
 import { Row, Col, Container } from "react-bootstrap";
 import JP_Team from "../../assets/JP_Team.jpg";
 import FT_Team from "../../assets/FT_Team.jpg";
+import KM_Team from "../../assets/KM_Team.jpg";
 
 function TeamSection() {
   return (
@@ -14,6 +15,11 @@ function TeamSection() {
             <img src={JP_Team} className='TeamHeadshots' />
             <div style={{ fontSize: "20px" }}>JP</div>
             <div>Founder and Tech Lead</div>
+          </Col>
+          <Col className='my-2'>
+            <img src={KM_Team} className='TeamHeadshots' />
+            <div style={{ fontSize: "20px" }}>Katrina</div>
+            <div>Software Engineer</div>
           </Col>
           <Col className='my-2'>
             <img src={FT_Team} className='TeamHeadshots' />

@@ -11,6 +11,11 @@
 
 }
 
+#Katrina{
+  object-position: 100% 20%;
+}
+
+
 @media only screen and (max-width:576px) {
   .TeamHeadshots {
     width: 130px !important;

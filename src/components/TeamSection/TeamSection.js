@@ -17,7 +17,7 @@ function TeamSection() {
             <div>Founder and Tech Lead</div>
           </Col>
           <Col className='my-2'>
-            <img src={KM_Team} className='TeamHeadshots' />
+            <img src={KM_Team} className='TeamHeadshots' id='Katrina' />
             <div className='TeamNames'>Katrina</div>
             <div>Software Engineer</div>
           </Col>

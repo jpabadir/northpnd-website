@@ -9,7 +9,7 @@ function Contact() {
         <div className="Subtitle">Contact Us</div>
         <Row className='ContactRow'>
           <Col xl={6} className="ContactCol ButtonCol">
-            <a href='https://calendly.com/jpabadir' target="_blank" rel="noopener noreferrer">
+            <a href='https://calendly.com/jpabadir/north-p-n-d-initial-consultation' target="_blank" rel="noopener noreferrer">
               <button className='ConsultationButton'>
                 Book a free consultation &nbsp;
                 <FaArrowRight style={{ transform: 'translateY(-1px)' }} />

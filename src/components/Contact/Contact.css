@@ -3,10 +3,6 @@
   width: 100%;
 }
 
-.ContactCol {
-  padding-bottom: 100px;
-}
-
 .FormParent {
   background-color: #292933;
   padding: 50px 50px 50px 50px;
@@ -41,20 +37,53 @@
   border-color: #3c4992 !important;
 }
 
-@media only screen and (max-width: 1200px) {
-  .ContactCol {
-    margin-bottom: 40px;
-    padding-bottom: 0px;
-  }
+.ConsultationButton {
+  background-color: #341f9d;
+  border-radius: 8px;
+  border-style: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  outline: none;
+  padding: 10px 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: 300ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.ConsultationButton:hover,
+.ConsultationButton:focus {
+  background-color: #5965ec;
+}
+
+.ContactRow {
+  margin-bottom: 50px;
+}
+
+.ContactInfo {
+  font-size: 25px;
+}
+
+.ButtonCol {
+  display: flex;
+  align-items: center;
 }
 
 @media only screen and (max-width: 576px) {
-  .FormParent {
-    padding: 10px 10px 10px 10px;
-    margin-bottom: 100px;
+  .ConsultationButton {
+    font-size: 16px;
+  }
+
+  .ContactInfo {
+    font-size: 16px;
   }
 
   .ContactCol {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }

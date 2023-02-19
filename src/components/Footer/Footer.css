@@ -1,6 +1,5 @@
 .FooterMain {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 15px;
   color: #c4c4c4;
   text-align: center;
   opacity: 0.8;
@@ -17,12 +16,13 @@
 }
 
 .FooterLinks {
-  font-size: 10pt;
-  padding: 5px 0px 10px 0px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .FooterLink {
-  padding-bottom: 2px;
   margin: 0px 10px;
   opacity: 0.7;
   border-bottom: 1px solid white;

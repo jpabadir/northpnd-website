@@ -4,29 +4,8 @@
 }
 
 .FormParent {
-  background-color: #292933;
-  padding: 50px 50px 50px 50px;
-  border-radius: 5px;
-  color: rgb(255, 255, 255, 0.75);
-}
-
-.form-control {
-  color: white;
-  background-color: #292933;
-  border-color: #1c1c1c;
-  -webkit-box-shadow: none !important;
-  -webkit-appearance: none;
-  box-shadow: none;
-  border-width: 0 0 2px;
-  border-radius: 0%;
-  font-size: 13px;
-}
-
-.form-control:focus,
-.form-control:hover {
-  color: white;
-  background-color: #292933;
-  border-color: #323545;
+  display: flex;
+  justify-content: center;
 }
 
 .SubmitButton,
@@ -61,12 +40,19 @@
   background-color: #5965ec;
 }
 
+.ConsultationForm {
+  width: 400px;
+  height: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 .ContactRow {
   margin-bottom: 50px;
 }
 
 .ContactInfo {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .ButtonCol {
@@ -75,10 +61,6 @@
 }
 
 @media only screen and (max-width: 576px) {
-  .ConsultationButton {
-    font-size: 16px;
-  }
-
   .ContactInfo {
     font-size: 16px;
   }

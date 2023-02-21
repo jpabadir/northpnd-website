@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e1df32c7.css",
-    "main.js": "/static/js/main.64db7c41.js",
+    "main.css": "/static/css/main.4fb20673.css",
+    "main.js": "/static/js/main.216ae4c2.js",
     "static/js/787.90f9f944.chunk.js": "/static/js/787.90f9f944.chunk.js",
     "static/media/home-background.mp4": "/static/media/home-background.fc0b870534672fee29cd.mp4",
     "static/media/JP_Team.jpg": "/static/media/JP_Team.eac5d59e254233e61a5e.jpg",
@@ -15,15 +15,16 @@
     "static/media/FT_Team.jpg": "/static/media/FT_Team.eb466ee712b88a4cf12c.jpg",
     "static/media/KM_Team.jpg": "/static/media/KM_Team.8f45f4a319b8876d4667.jpg",
     "static/media/proximy-logo.png": "/static/media/proximy-logo.485ce016ed99f3abea60.png",
+    "static/media/tension.png": "/static/media/tension.e362216575ffbec03444.png",
     "static/media/transparentLogo.svg": "/static/media/transparentLogo.332c5e16dd0717e02bf6e6137a8a58ce.svg",
     "static/media/layered-waves-haikei.svg": "/static/media/layered-waves-haikei.7cecff5e9dc9f50de7b4.svg",
     "index.html": "/index.html",
-    "main.e1df32c7.css.map": "/static/css/main.e1df32c7.css.map",
-    "main.64db7c41.js.map": "/static/js/main.64db7c41.js.map",
+    "main.4fb20673.css.map": "/static/css/main.4fb20673.css.map",
+    "main.216ae4c2.js.map": "/static/js/main.216ae4c2.js.map",
     "787.90f9f944.chunk.js.map": "/static/js/787.90f9f944.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1df32c7.css",
-    "static/js/main.64db7c41.js"
+    "static/css/main.4fb20673.css",
+    "static/js/main.216ae4c2.js"
   ]
 }

@@ -6,7 +6,7 @@ import Reviews from '../Reviews/Reviews';
 
 function WorkCard(props) {
   return (
-    <Col className="PastWorkCol" md={6}>
+    <Col className="PastWorkCol" md={4}>
       <div style={{ maxWidth: '350px', width: '100%' }}>
         <a href={props.link} target="_blank" rel="noreferrer">
           <Card className={`WorkCard ${props.title.replace(/\s/g, '')}`} />
@@ -32,7 +32,12 @@ function OurClients() {
             <WorkCard
               link="https://midstride.com"
               title="Midstride Technologies"
-              subtitle="We work closely with Midstride's team by communicating directly with its clients and getting a thorough understanding of their requirements before buildling out full-stack features on their products."
+              subtitle="We work closely with Midstride's team by communicating directly with its clients and getting a thorough understanding of their requirements before building out full-stack features on their products."
+            />
+            <WorkCard
+              link="https://wearetension.com"
+              title="tension consulting"
+              subtitle="Stay tuned for more info on our work with tension!"
             />
           </Row>
           <Reviews />

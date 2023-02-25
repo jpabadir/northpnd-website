@@ -127,17 +127,17 @@ function LocalNavbar(props) {
                 Contact Us
               </Link>
             </li>
-            {/* <li>
-              <NavLink
+            <li>
+              <Link
                 className="Link WhiteLink"
                 to="articles"
                 style={{ display: "inline-block", margin: "20px" }}
-                onClick={closeToggle}
+                onClick={handleNavLinkClick}
                 offset={-80}
               >
                 Articles
-              </NavLink>
-            </li> */}
+              </Link>
+            </li>
           </Nav>
         </Navbar.Collapse>
       </Navbar >

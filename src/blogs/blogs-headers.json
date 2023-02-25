@@ -1,33 +1,9 @@
 [
   {
-    "title": "How Working Out Every Day Completely Changed my Life",
-    "subtitle": "Exercising every day has improved my life and productivity in almost every way, which I never expected.",
-    "publishDate": "2022-10-10T00:00:00",
-    "image": "/publicassets/blueshorts.jpeg",
-    "imageCaption": "My Friends Ahmed and Yuki and I at TKMT, the gym we train at in downtown Toronto",
-    "isStaff": true
-  },
-  {
-    "title": "How Working Out Every Day Completely Changed my Life",
-    "subtitle": "Exercising every day has improved my life and productivity in almost every way, which I never expected.",
-    "publishDate": "2022-10-10T00:00:00",
-    "image": "/publicassets/blueshorts.jpeg",
-    "imageCaption": "My Friends Ahmed and Yuki and I at TKMT, the gym we train at in downtown Toronto",
-    "isStaff": true
-  },
-  {
-    "title": "How Working Out Every Day Completely Changed my Life",
-    "subtitle": "Exercising every day has improved my life and productivity in almost every way, which I never expected.",
-    "publishDate": "2022-10-10T00:00:00",
-    "image": "/publicassets/blueshorts.jpeg",
-    "imageCaption": "My Friends Ahmed and Yuki and I at TKMT, the gym we train at in downtown Toronto",
-    "isStaff": true
-  },
-  {
-    "title": "How Working Out Every Day Completely Changed my Life",
-    "subtitle": "Exercising every day has improved my life and productivity in almost every way, which I never expected.",
-    "publishDate": "2022-10-10T00:00:00",
-    "image": "/publicassets/blueshorts.jpeg",
+    "title": "How to Prepare and Submit a Pull Request",
+    "subtitle": "When submitting PRs, it's important to follow specific steps to ensure your code is of the highest quality.",
+    "publishDate": "2023-02-10T00:00:00",
+    "image": "/publicassets/github.jpg",
     "imageCaption": "My Friends Ahmed and Yuki and I at TKMT, the gym we train at in downtown Toronto",
     "isStaff": true
   }

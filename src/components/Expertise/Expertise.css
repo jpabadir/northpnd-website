@@ -31,12 +31,13 @@ table {
 }
 
 .pill {
-    padding: 8px;
+    padding: 8px 10px;
     border-radius: 15px;
     color: white;
     font-size: 14px;
     white-space: nowrap;
     margin: 2px;
+    text-decoration: none !important;
 }
 
 .darkpill {

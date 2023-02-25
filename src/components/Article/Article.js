@@ -6,14 +6,14 @@ export default function Article(props) {
   const ComponentToRender = require("../../blogs/" +
     linkify(props.blog.title)).default;
   return (
-    <div class="StandalonePageParent">
+    <div className="StandalonePageParent">
       <div className="Article">
         <div style={{ maxWidth: "1100px" }}>
           <div className="text-left mb-4">
             <h1>{props.blog.title}</h1>
-            <h2 className="Subtitle">{props.blog.subtitle}</h2>
+            {/* <h4 className="Subtitle">{props.blog.subtitle}</h4> */}
             <div className="Date">
-              {new Date(props.blog.publishDate).toDateString()}
+              {new Date(props.blog.publishDate).toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
             </div>
           </div>
           <div className="d-flex align-items-center mb-4 flex-column">

@@ -42,7 +42,7 @@ function Contact() {
             </div>
           </Col>
           <Col xl={6} className="FormParent">
-            <div class="calendly-inline-widget ConsultationForm" data-url="https://calendly.com/jpabadir/north-p-n-d-initial-consultation?hide_event_type_details=1&hide_gdpr_banner=1&background_color=212329&text_color=ffffff"></div>
+            <div className="calendly-inline-widget ConsultationForm" data-url="https://calendly.com/jpabadir/north-p-n-d-initial-consultation?hide_event_type_details=1&hide_gdpr_banner=1&background_color=212329&text_color=ffffff"></div>
           </Col>
         </Row>
       </Container>

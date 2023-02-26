@@ -26,6 +26,7 @@ export default function Blog() {
             <NavLink
               className="container BlogLink"
               to={blog.title.replace(/\s+/g, "-").toLowerCase()}
+              style={{ textDecoration: "none" }}
             >
               <div className="row justify-content-center">
                 <div className="col-lg-5 text-center">

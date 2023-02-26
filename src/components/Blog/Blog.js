@@ -38,14 +38,14 @@ export default function Blog() {
                     />
                   </div>
                 </div>
-                <div className="col-lg-5 d-flex flex-column justify-content-center justify-content-center">
-                  <div className="text-center" style={{ fontSize: "20px" }}>
-                    {blog.title}
-                  </div>
-                  <div className="d-flex justify-content-center">
+                <div className="col-lg-5 d-flex align-items-center justify-content-center">
+                  <div className="">
                     <div className="pill darkpill text-center" style={{ color: 'red', borderColor: 'red' }}>
-                      Staff
+                      Internal
                     </div>
+                  </div>
+                  <div style={{ fontSize: "20px", paddingLeft: '10px' }}>
+                    {blog.title}
                   </div>
                 </div>
               </div>

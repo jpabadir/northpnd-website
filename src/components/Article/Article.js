@@ -16,7 +16,7 @@ export default function Article(props) {
               {new Date(props.blog.publishDate).toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
             </div>
           </div>
-          <div className="d-flex align-items-center mb-4 flex-column">
+          <div className="d-flex align-items-center flex-column">
             <div className="ArticleImage">
               <img
                 className="ArticleImage"
@@ -26,6 +26,18 @@ export default function Article(props) {
               <p className="ImageCaption">{props.blog.imageCaption}</p>
             </div>
           </div>
+          {props.blog.isStaff &&
+            (<div className="d-flex pt-1 mb-4" style={{ maxWidth: '900px' }}>
+              <div className="d-flex align-items-center">
+                <div className="pill darkpill" style={{ color: 'red', borderColor: 'red' }}>
+                  Internal
+                </div>
+              </div>
+              <div style={{ opacity: 0.7, paddingLeft: '10px' }}>
+                This is an inertal article, intended to provide North P&D's developers with guidance about company processes. If someone outside of our company happens to find value in this article, that's great, but that's not its primary purpose.
+              </div>
+            </div>
+            )}
           <div className="BlogContent">
             <ComponentToRender />
           </div>

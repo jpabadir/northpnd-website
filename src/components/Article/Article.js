@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState, useLayoutEffect } from "react";
 import "./Article.css";
 import { linkify } from "../../helpers";
 
 export default function Article(props) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useLayoutEffect(() => {
+    function updateIsMobile() {
+      setIsMobile(document.documentElement.clientWidth < 992);
+    }
+    window.addEventListener('resize', updateIsMobile);
+    updateIsMobile();
+    return () => window.removeEventListener('resize', updateIsMobile);
+  }, []);
+
   const ComponentToRender = require("../../blogs/" +
     linkify(props.blog.title)).default;
   return (
@@ -27,8 +38,8 @@ export default function Article(props) {
             </div>
           </div>
           {props.blog.isStaff &&
-            (<div className="d-flex pt-1 mb-4" style={{ maxWidth: '900px' }}>
-              <div className="d-flex align-items-center">
+            (<div className={"d-flex pt-1 mb-4 " + (isMobile ? 'flex-column' : '')} style={{ maxWidth: '900px' }}>
+              <div className={"d-flex align-items-center justify-content-center " + (isMobile ? 'mb-2' : '')}>
                 <div className="pill darkpill" style={{ color: 'red', borderColor: 'red' }}>
                   Internal
                 </div>

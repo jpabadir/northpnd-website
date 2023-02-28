@@ -16,7 +16,7 @@ export default function Content() {
       <header>
         <h2>Creating a GitHub Account</h2>
       </header>
-        <img class="fit-picture" src="https://miro.medium.com/max/719/0*LqBi2dONH28oTKVX.png"></img>
+        <img class="fit-picture" src="https://miro.medium.com/max/719/0*LqBi2dONH28oTKVX.png" height="400"></img>
       <p>
         Before you can start working on GitHub, you need a GitHub account to allow you to access the repositories you wish to edit.
         Creating a GitHub account is not a difficult task however, and you can do so just by going to the <a href="https://github.com" target="_blank"> GitHub Website</a> and clicking "Sign Up".
@@ -25,17 +25,17 @@ export default function Content() {
       <header>
         <h2>Downloading Git</h2>
       </header>
-      <img class="fit-picture" src="https://cdn.freebiesupply.com/logos/thumbs/2x/git-logo.png"></img>
+      <img class="fit-picture" src="https://cdn.freebiesupply.com/logos/thumbs/2x/git-logo.png" height="400"></img>
       <p>
         The next step towards working with GitHub is downloading Git, which is a control system that is usually used for coordinating work among programmers collaboratively.
         To download git, go to their website <a href="https://git-scm.com/downloads" target="_blank">here</a> and download the latest source release for your system. 
         For more set up instructions, visit google or <a href="https://github.com/git-guides/install-git" target="_blank">this website</a> if needed.
-        <img class="fit-picture" src="/Users/andyc/OneDrive/Desktop/Images/Downloading_Git.jpg"></img>
+        <img class="fit-picture" src="/Users/andyc/OneDrive/Desktop/Images/Downloading_Git.jpg" height="400"></img>
       </p>
       <header>
         <h2>VSCode</h2>
       </header>
-      <img class="fit-picture" src="/Users/andyc/OneDrive/Desktop/Images/VSCode.jpg"></img>
+      <img class="fit-picture" src="/Users/andyc/OneDrive/Desktop/Images/VSCode.jpg" height="400"></img>
       <header>
         <h3>Downloading VSCode</h3>
       </header>
@@ -52,9 +52,11 @@ export default function Content() {
         Now that we have VSCode downloaded and opened, all that is left to do is set it up to be ready to work with GitHub.
         The simplest way to get started pushing and pulling between VSCode and GitHub is by installing the extension "GitHub Pull Requests and Issues".
         You can find this by searching for the extension in the Extensions Marketplace in VSCode.
-        <img class="fit-picture" src="/Users/andyc/OneDrive/Desktop/Images/Extensions1.jpg"></img>
-        <img class="fit-picture" src="/Users/andyc/OneDrive/Desktop/Images/Extensions2.jpg"></img>
-        <img class="fit-picture" src="/Users/andyc/OneDrive/Desktop/Images/Extensions3.jpg"></img>
+      </p>
+      <p>
+        <img class="fit-picture" src="/Users/andyc/OneDrive/Desktop/Images/Extensions1.jpg" height="300"></img>
+        <img class="fit-picture" src="/Users/andyc/OneDrive/Desktop/Images/Extensions2.jpg" height="300"></img>
+        <img class="fit-picture" src="/Users/andyc/OneDrive/Desktop/Images/Extensions3.jpg" height="300"></img>
       </p>
       <header>
         <h2>Cloning the Repository</h2>
@@ -65,19 +67,25 @@ export default function Content() {
         To do this, we do something called a <code>Git: Clone</code>. 
         First, we need the link to the code that you want to edit and clone. 
         To get this, go to the repository in GitHub, and copy the HTTPS link under the green "Code" button.
-        <img class="fit-picture" src="/Users/andyc/OneDrive/Desktop/Images/Link.jpg"></img>
+        <img class="fit-picture" src="/Users/andyc/OneDrive/Desktop/Images/Link.jpg" height="400"></img>
       </p>
       <p>
         Now going back to VSCode, open the command palette with the short cut control+shift+p or by clicking the option under "View".
-        <img class="fit-picture" src="/Users/andyc/OneDrive/Desktop/Images/Cloning.jpg"></img>
+        <img class="fit-picture" src="/Users/andyc/OneDrive/Desktop/Images/Cloning.jpg" height="400"></img>
       </p>
       <p>
         Now run the command <code>Git: Clone</code> and paste in the link that you just copied.
-        <img class="fit-picture" src="/Users/andyc/OneDrive/Desktop/Images/GitClone.jpg"></img>
-        <img class="fit-picture" src="/Users/andyc/OneDrive/Desktop/Images/Paste.jpg"></img>
+      </p>
+      <p>
+        <img class="fit-picture" src="/Users/andyc/OneDrive/Desktop/Images/GitClone.jpg" width="800"></img>
+      </p>
+      <p>
+        <img class="fit-picture" src="/Users/andyc/OneDrive/Desktop/Images/Paste.jpg" width="800"></img>
       </p>
       <p>
         Now after running the command, 
+      </p>
+      <p>
       </p>
     </div>
   );

@@ -6,5 +6,13 @@
     "image": "/publicassets/github.jpg",
     "imageCaption": "The network graph of a git repo.",
     "isStaff": true
+  },
+  {
+    "title": "Getting Started With GitHub",
+    "subtitle": "Downloading and preparing everything needed to start contributing to the website.",
+    "publishDate": "2023-02-28T00:00:00",
+    "image": "/publicassets/githubhome.jpg",
+    "imageCaption": "",
+    "isStaff": true
   }
 ]

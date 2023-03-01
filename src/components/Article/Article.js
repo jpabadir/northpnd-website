@@ -26,6 +26,10 @@ export default function Article(props) {
             <div className="Date">
               {new Date(props.blog.publishDate).toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
             </div>
+            <div>
+              <img className="ProfilePicture" src={props.blog.profilePic}/>
+              <p className="Author">{props.blog.author}</p>
+            </div>
           </div>
           <div className="d-flex align-items-center flex-column">
             <div className="ArticleImage">

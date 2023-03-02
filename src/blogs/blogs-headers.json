@@ -6,14 +6,5 @@
     "image": "/publicassets/githubhome.jpg",
     "imageCaption": "",
     "isStaff": true
-  },
-  {
-    "title": "How to Contribute Code to a Repo",
-    "subtitle": "When submitting PRs, it's important to follow specific steps to ensure your code is of the highest quality.",
-    "publishDate": "2023-02-10T00:00:00",
-    "image": "/publicassets/github.jpg",
-    "imageCaption": "The network graph of a git repo.",
-    "isStaff": true
   }
 ]
-  

@@ -7,16 +7,32 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import './Expertise.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+
 
 export default function Expertise() {
+  const [search, setSearch] = useState('');
+
   useEffect(() => {
     window.scrollTo(0, 0)
-  })
+    }
+  );
 
+  const filteredItems = expertiseItems.filter((item) => {
+      return item.tags.some((tag) => tag.toLowerCase().includes(search.toLowerCase()));
+    }
+  );
+
+  const searchInputChange = (event) => {
+    setSearch(event.target.value);
+  };
+  
   return (
     <div className='StandalonePageParent d-flex justify-content-center'>
       <div className='Expertise'>
+        <div className='SearchContainer'>
+          <input type="text" placeholder="Search by tags" value={search} onChange={searchInputChange} />
+        </div>
         <TableContainer>
           <Table aria-label="simple table">
             <TableHead>
@@ -29,7 +45,7 @@ export default function Expertise() {
               </TableRow>
             </TableHead>
             <TableBody>
-              {expertiseItems.map((row) => (
+              {filteredItems.map((row) => (
                 <TableRow key={row.description} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
                   <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Client" className="text-center justify-content-center ClientNameCell">
                     {row.client}

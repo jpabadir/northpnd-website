@@ -26,6 +26,25 @@ tr:nth-child(odd) {
     max-width: 1300px;
 }
 
+.SearchContainer {
+    float: right;
+    padding: 12px;
+}
+
+input[type="text"] {
+    background-color: rgb(228, 230, 252);
+    font-size: 18px;
+    border-radius: 20px;
+    max-width: 100%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+}
+
+input[type="text"]:focus {
+   box-shadow: 0 1px 4px rgba(60, 60, 160, 0.5);
+}
+
 table {
     font-size: 18px;
 }

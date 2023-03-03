@@ -2,11 +2,13 @@ import React from "react";
 import "./TeamSection.css";
 import { Row, Col, Container } from "react-bootstrap";
 import JP_Team from "../../assets/JP_Team.jpg";
-import FT_Team from "../../assets/FT_Team.jpg";
 import KM_Team from "../../assets/KM_Team.jpg";
-import AP_Team from "../../assets/AP_Team.jpg";
-import WZ_Team from "../../assets/WZ_Team.jpg";
 import CS_Team from "../../assets/CS_Team.jpg";
+import FT_Team from "../../assets/FT_Team.jpg";
+import AB_Team from "../../assets/AB_Team.png";
+import AP_Team from "../../assets/AP_Team.jpg";
+import ES_Team from "../../assets/ES_Team.jpg";
+import WZ_Team from "../../assets/WZ_Team.jpg";
 import AV_Team from "../../assets/AV_Team.png";
 
 function TeamSection() {
@@ -41,8 +43,13 @@ function TeamSection() {
             <div>Software Engineer Intern</div>
           </div>
           <div className='TeamMember'>
-            <img src={AV_Team} className='TeamHeadshots'/>
+            <img src={AB_Team} className='TeamHeadshots' id='Aseer'/>
             <div className='TeamNames'>Aseer</div>
+            <div>Software Engineer Intern</div>
+          </div>
+          <div className='TeamMember'>
+            <img src={ES_Team} className='TeamHeadshots' id='Erza'/>
+            <div className='TeamNames'>Erza</div>
             <div>Software Engineer Intern</div>
           </div>
           <div className='TeamMember'>

@@ -27,7 +27,8 @@ tr:nth-child(odd) {
 }
 
 .SearchContainer {
-    float: right;
+    display: flex;
+    justify-content: center;
     padding: 12px;
 }
 

@@ -1,15 +1,5 @@
 [
   {
-    "title": "How to Contribute Code to a Repo",
-    "author": "Author Name",
-    "profilePic": "/add/image/directory",
-    "subtitle": "When submitting PRs, it's important to follow specific steps to ensure your code is of the highest quality.",
-    "publishDate": "2023-02-10T00:00:00",
-    "image": "/publicassets/github.jpg",
-    "imageCaption": "The network graph of a git repo.",
-    "isStaff": true
-  },
-  {
     "title": "Getting Started With GitHub",
     "author": "Author Name",
     "profilePic": "/add/image/directory",

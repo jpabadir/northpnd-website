@@ -48,8 +48,8 @@ function TeamSection() {
             <div>Software Engineer Intern</div>
           </div>
           <div className='TeamMember'>
-            <img src={ES_Team} className='TeamHeadshots' id='Erza'/>
-            <div className='TeamNames'>Erza</div>
+            <img src={ES_Team} className='TeamHeadshots' id='Ezra'/>
+            <div className='TeamNames'>Ezra</div>
             <div>Software Engineer Intern</div>
           </div>
           <div className='TeamMember'>

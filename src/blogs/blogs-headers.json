@@ -8,7 +8,8 @@
     "publishDate": "2023-02-28T00:00:00",
     "image": "/publicassets/githubhome.jpg",
     "imageCaption": "",
-    "isStaff": true
+    "isStaff": true,
+    "hide": true
   },
   {
     "title": "How To Submit a Pull Request",
@@ -16,8 +17,8 @@
     "authorTitle": "Founder",
     "profilePic": "/publicassets/JP_Team.jpg",
     "subtitle": "Downloading and preparing everything needed to start contributing to the website.",
-    "publishDate": "2023-02-28T00:00:00",
-    "image": "/publicassets/githubhome.jpg",
+    "publishDate": "2023-03-07T00:00:00",
+    "image": "/publicassets/github.jpg",
     "imageCaption": "",
     "isStaff": true
   }

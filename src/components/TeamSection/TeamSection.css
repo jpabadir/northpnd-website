@@ -3,18 +3,43 @@
   width: 180px;
   border-radius: 100%;
   object-fit: cover;
+  outline: 5px solid #000;
+}
+
+.TeamMember {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.TeamMembers{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .TeamNames{
   font-size: 20px;
   margin-top: 15px;
-
 }
 
 #Katrina{
   object-position: 100% 20%;
 }
 
+#Ayesha{
+  object-position: 0% 0%;
+}
+
+#Claire{
+  object-position: 10% 0%;
+}
+
+#Erza{
+  object-position: 0% 25%;
+}
+
+#Aseer{
+  object-position: 0% 25%;
+}
 
 @media only screen and (max-width:576px) {
   .TeamHeadshots {

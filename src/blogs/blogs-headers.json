@@ -1,6 +1,8 @@
 [
   {
     "title": "Getting Started With GitHub",
+    "author": "Author Name",
+    "profilePic": "/add/image/directory",
     "subtitle": "Downloading and preparing everything needed to start contributing to the website.",
     "publishDate": "2023-02-28T00:00:00",
     "image": "/publicassets/githubhome.jpg",

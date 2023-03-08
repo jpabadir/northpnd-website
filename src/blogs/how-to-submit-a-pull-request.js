@@ -18,7 +18,7 @@ export default function Content() {
         </li>
         <li>Open your PR on GitHub and re-read it thoroughly line by line.
           <ul>
-            <li>Your PR should be clean. Give descriptive names to your variables, make your code is as concise as possible, don't leave random new lines in the code or any extra change that's not needed.</li>
+            <li>Your PR should be clean. Give descriptive names to your variables, make sure your code is as concise as possible, don't leave random new lines in the code or any extra change that's not needed.</li>
             <li>Your PR should be minimalistic. It should be the smallest possible amount of changes to the code which achieves the task's goal. Nothing less, nothing more.</li>
           </ul>
         </li>

@@ -36,8 +36,8 @@ function OurClients() {
           />
           <WorkCard
             link="https://wearetension.com"
-            title="tension consulting"
-            subtitle="Stay tuned for more info on our work with tension!"
+            title="Tension Consulting"
+            subtitle="We help Tension build and deliver outstanding websites."
           />
           <WorkCard 
             link="https://www.minebright.com/" 

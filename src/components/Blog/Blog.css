@@ -35,3 +35,24 @@
 .Blog {
   flex: 1;
 }
+
+.animate-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.animate-underline::before {
+  content: "";
+  position: absolute;
+  bottom: -0.15em;
+  left: 0;
+  width: 0;
+  height: 0.15em;
+  background-color: rgb(62, 62, 62);
+  transition: width 0.3s ease-in-out;
+}
+
+.animate-underline:hover::before {
+  width: 100%;
+}
+/*Pain*/

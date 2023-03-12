@@ -23,13 +23,13 @@ function TeamSection() {
             <div>Founder and Tech Lead</div>
           </div>
           <div className='TeamMember'>
-            <img src={KM_Team} className='TeamHeadshots' id='Katrina' />
-            <div className='TeamNames'>Katrina</div>
+            <img src={CS_Team} className='TeamHeadshots' id='Claire'/>
+            <div className='TeamNames'>Claire</div>
             <div>Software Engineer</div>
           </div>
           <div className='TeamMember'>
-            <img src={CS_Team} className='TeamHeadshots' id='Claire'/>
-            <div className='TeamNames'>Claire</div>
+            <img src={KM_Team} className='TeamHeadshots' id='Katrina' />
+            <div className='TeamNames'>Katrina</div>
             <div>Software Engineer</div>
           </div>
           <div className='TeamMember'>
@@ -48,8 +48,8 @@ function TeamSection() {
             <div>Software Engineer Intern</div>
           </div>
           <div className='TeamMember'>
-            <img src={ES_Team} className='TeamHeadshots' id='Erza'/>
-            <div className='TeamNames'>Erza</div>
+            <img src={ES_Team} className='TeamHeadshots' id='Ezra'/>
+            <div className='TeamNames'>Ezra</div>
             <div>Software Engineer Intern</div>
           </div>
           <div className='TeamMember'>

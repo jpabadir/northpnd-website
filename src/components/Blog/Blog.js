@@ -17,7 +17,7 @@ export default function Blog() {
   return (
     <div className="StandalonePageParent">
       <div className="Blog">
-        {blogsData.map((blog) => (
+        {blogsData.filter(blog => !blog.hide).map((blog) => (
           <div
             key={blog.title}
             onMouseEnter={toggleScaleThumbnail}

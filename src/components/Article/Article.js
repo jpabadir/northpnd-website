@@ -16,6 +16,7 @@ export default function Article(props) {
 
   const ComponentToRender = require("../../blogs/" +
     linkify(props.blog.title)).default;
+
   return (
     <div className="StandalonePageParent">
       <div className="Article">
@@ -26,9 +27,9 @@ export default function Article(props) {
             <div className="Date">
               {new Date(props.blog.publishDate).toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
             </div>
-            <div>
-              <img className="ProfilePicture" src={props.blog.profilePic}/>
-              <p className="Author">{props.blog.author}</p>
+            <div className="d-flex align-items-center">
+              <img className="ProfilePicture" src={props.blog.profilePic} style={{ objectFit: 'cover' }} />
+              <div className="Author">{props.blog.author}</div>
             </div>
           </div>
           <div className="d-flex align-items-center flex-column">

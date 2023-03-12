@@ -17,7 +17,6 @@
   background-position-y: center;
 }
 
-
 .Proximy {
   background-image: url('../../assets/proximy-logo.png');
   border-color: rgb(91, 141, 239);
@@ -29,7 +28,7 @@
   background-color: #19658E;
 }
 
-.tensionconsulting {
+.TensionConsulting {
   background-image: url('../../assets/tension.png');
   background-color: #242424;
 }

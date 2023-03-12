@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4fb20673.css",
-    "main.js": "/static/js/main.efe2d631.js",
+    "main.css": "/static/css/main.212ce889.css",
+    "main.js": "/static/js/main.e7355b04.js",
     "static/js/787.90f9f944.chunk.js": "/static/js/787.90f9f944.chunk.js",
     "static/media/home-background.mp4": "/static/media/home-background.fc0b870534672fee29cd.mp4",
     "static/media/JP_Team.jpg": "/static/media/JP_Team.eac5d59e254233e61a5e.jpg",
@@ -13,18 +13,24 @@
     "static/media/coding-poster.png": "/static/media/coding-poster.6d1e8213385b4778e304.png",
     "static/media/cables-poster.png": "/static/media/cables-poster.16eb148de4e30217b444.png",
     "static/media/FT_Team.jpg": "/static/media/FT_Team.eb466ee712b88a4cf12c.jpg",
+    "static/media/AB_Team.png": "/static/media/AB_Team.458d48de0f539eebaf8b.png",
     "static/media/KM_Team.jpg": "/static/media/KM_Team.8f45f4a319b8876d4667.jpg",
+    "static/media/WZ_Team.jpg": "/static/media/WZ_Team.c2048ca732a4191ecd1d.jpg",
+    "static/media/AP_Team.jpg": "/static/media/AP_Team.2d73ff9c09ecf2ccedba.jpg",
+    "static/media/CS_Team.jpg": "/static/media/CS_Team.44f39a5e766c8211d8e3.jpg",
     "static/media/proximy-logo.png": "/static/media/proximy-logo.485ce016ed99f3abea60.png",
+    "static/media/ES_Team.jpg": "/static/media/ES_Team.7c6a5a4032e2a89c4de1.jpg",
     "static/media/tension.png": "/static/media/tension.e362216575ffbec03444.png",
+    "static/media/minebright-logo.png": "/static/media/minebright-logo.c132d4fc4e1eb8dddf71.png",
     "static/media/transparentLogo.svg": "/static/media/transparentLogo.332c5e16dd0717e02bf6e6137a8a58ce.svg",
     "static/media/layered-waves-haikei.svg": "/static/media/layered-waves-haikei.7cecff5e9dc9f50de7b4.svg",
     "index.html": "/index.html",
-    "main.4fb20673.css.map": "/static/css/main.4fb20673.css.map",
-    "main.efe2d631.js.map": "/static/js/main.efe2d631.js.map",
+    "main.212ce889.css.map": "/static/css/main.212ce889.css.map",
+    "main.e7355b04.js.map": "/static/js/main.e7355b04.js.map",
     "787.90f9f944.chunk.js.map": "/static/js/787.90f9f944.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4fb20673.css",
-    "static/js/main.efe2d631.js"
+    "static/css/main.212ce889.css",
+    "static/js/main.e7355b04.js"
   ]
 }

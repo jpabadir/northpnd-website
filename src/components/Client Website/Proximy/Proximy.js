@@ -3,7 +3,7 @@ import './Proximy.css';
 
 function Proximy() {
   return (
-    <div className="container">
+    <div className="container StandalonePageParent">
       <div className="image-container">
         <img alt="Proximy logo" />
       </div>

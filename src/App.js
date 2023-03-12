@@ -34,9 +34,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Main ref={mainRef} scrollGoal={scrollGoal} />} />
             <Route path="expertise" element={<Expertise />} />
-            <Route path="proximy" element={<Proximy />} />
-            <Route path="midstride" element={<Midstride />} />
-            <Route path="tension" element={<Tension />} />
+            <Route path="clients">
+              <Route path="proximy" element={<Proximy />} />
+              <Route path="midstride" element={<Midstride />} />
+              <Route path="tension" element={<Tension />} />
+            </Route>
             <Route path="articles" element={<Blog />} />
             {blogsData.map((blog) => (
               <Route

@@ -5,9 +5,9 @@ function Minebright() {
   return (
     <div className="container">
       <div className="image-container">
-        <img alt="Minebright logo" />
+        {/* <img alt=""Minebright logo" /> */}
       </div>
-      <div className="right">
+      <div >
         <h2>Minebright</h2>
         <p>We provide Minebright with flexbile, on demand, premium Quality Assurance services in support of their software development efforts.</p>
       </div>

@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 import Expertise from "./components/Expertise/Expertise";
 import Footer from "./components/Footer/Footer";
 import "./hamburgers.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Outlet, Route, Routes } from "react-router-dom";
 import Main from "./components/Main/Main";
 import LocalNavbar from "./components/LocalNavbar/LocalNavbar";
 import Article from "./components/Article/Article";
@@ -34,7 +34,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Main ref={mainRef} scrollGoal={scrollGoal} />} />
             <Route path="expertise" element={<Expertise />} />
-            <Route path="clients">
+            <Route path="clients" element={<div className="StandalonePageParent"><Outlet /></div>}>
               <Route path="proximy" element={<Proximy />} />
               <Route path="midstride" element={<Midstride />} />
               <Route path="tension" element={<Tension />} />

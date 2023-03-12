@@ -45,7 +45,7 @@ export default function Blog() {
                     </div>
                   </div>
                   <div style={{ fontSize: "20px", paddingLeft: '10px' }}>
-                    {blog.title}
+                    <span className="animate-underline">{blog.title}</span>
                   </div>
                 </div>
               </div>

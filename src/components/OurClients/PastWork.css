@@ -8,12 +8,12 @@
 
 .WorkCard {
   padding: 0px 0px 0px 0px;
-  height: 320px;
+  height: 220px;
   border: none;
   border-radius: 10px 0px 10px 0px;
   background-position-x: center;
   background-repeat: no-repeat;
-  background-size: 80%;
+  background-size: 70%;
   background-position-y: center;
 }
 
@@ -29,7 +29,12 @@
   background-color: #19658E;
 }
 
-.tensionconsulting {
+.TensionConsulting {
   background-image: url('../../assets/tension.png');
   background-color: #242424;
+}
+
+.Minebright {
+  background-image: url('../../assets/minebright-logo.png');
+  border: 2px solid rgb(255, 212, 38);
 }

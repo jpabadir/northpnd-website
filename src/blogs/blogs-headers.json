@@ -1,17 +1,24 @@
 [
   {
-    "title": "How to Contribute Code to a Repo",
-    "subtitle": "When submitting PRs, it's important to follow specific steps to ensure your code is of the highest quality.",
-    "publishDate": "2023-02-10T00:00:00",
-    "image": "/publicassets/github.jpg",
-    "imageCaption": "The network graph of a git repo.",
-    "isStaff": true
-  },
-  {
     "title": "Getting Started With GitHub",
+    "author": "Ezra Song",
+    "authorTitle": "Software Engineer Intern",
+    "profilePic": "/publicassets/ES_Team.jpg",
     "subtitle": "Downloading and preparing everything needed to start contributing to the website.",
     "publishDate": "2023-02-28T00:00:00",
     "image": "/publicassets/githubhome.jpg",
+    "imageCaption": "",
+    "isStaff": true,
+    "hide": true
+  },
+  {
+    "title": "How To Submit a Pull Request",
+    "author": "JP Abadir",
+    "authorTitle": "Founder",
+    "profilePic": "/publicassets/JP_Team.jpg",
+    "subtitle": "Downloading and preparing everything needed to start contributing to the website.",
+    "publishDate": "2023-03-07T00:00:00",
+    "image": "/publicassets/github.jpg",
     "imageCaption": "",
     "isStaff": true
   }

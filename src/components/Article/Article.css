@@ -16,6 +16,22 @@
 .Date {
   opacity: 0.6;
   font-size: 15px;
+  padding-bottom: 8px;
+}
+
+.Author {
+  opacity: 0.6;
+  padding-left: 20px;
+  padding-top: 8px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.ProfilePicture {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  float: left;
 }
 
 .ImageCaption {
@@ -26,4 +42,11 @@
 
 .BlogContent {
   font-size: 20px;
+}
+
+code {
+  /* color: white;
+  background-color: darkblue;
+  border-radius: 10px;
+  padding: 5px; */
 }

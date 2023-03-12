@@ -13,8 +13,3 @@ export const items = [
 ]
 
 export const tagColors = { "security": "red", "full-stack web dev": "darkorange", "mobile dev": "blue", "devops": "black", "CI/CD": "green", "automation": "deeppink", "serverless": "grey", "NoSQL": "lightblue" }
-
-
-
-// - blade files 
-// - iter

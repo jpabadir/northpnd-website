@@ -8,6 +8,9 @@ import Main from "./components/Main/Main";
 import LocalNavbar from "./components/LocalNavbar/LocalNavbar";
 import Article from "./components/Article/Article";
 import Blog from "./components/Blog/Blog";
+import Proximy from "./components/Client Website/Proximy/Proximy";
+import Midstride from "./components/Client Website/Midstride/Midstride";
+import Tension from "./components/Client Website/Tension/Tension";
 import blogsData from "./blogs/blogs-headers.json";
 import { linkify } from "./helpers";
 
@@ -31,6 +34,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Main ref={mainRef} scrollGoal={scrollGoal} />} />
             <Route path="expertise" element={<Expertise />} />
+            <Route path="clients">
+              <Route path="proximy" element={<Proximy />} />
+              <Route path="midstride" element={<Midstride />} />
+              <Route path="tension" element={<Tension />} />
+            </Route>
             <Route path="articles" element={<Blog />} />
             {blogsData.map((blog) => (
               <Route

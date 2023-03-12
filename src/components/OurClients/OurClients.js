@@ -3,15 +3,16 @@ import './PastWork.css';
 import { Card } from 'antd';
 import { Row, Col, Container } from 'react-bootstrap';
 import Reviews from '../Reviews/Reviews';
+import { Link } from "react-router-dom";
 
 function WorkCard(props) {
   return (
     <Col className="PastWorkCol" md={3}>
       <div style={{ maxWidth: '250px', width: '100%' }}>
-        <a href={props.link} target="_blank" rel="noreferrer">
+        <Link to={props.link} target="_blank" rel="noopener noreferrer">
           <Card className={`WorkCard ${props.title.replace(/\s/g, '')}`} />
           <div className="CardTitle">{props.title}</div>
-        </a>
+        </Link>
         <div>{props.subtitle}</div>
       </div>
     </Col>
@@ -25,22 +26,22 @@ function OurClients() {
         <div className="Subtitle">Our Clients</div>
         <Row>
           <WorkCard
-            link="https://proximy.ca/"
+            link="clients/proximy"
             title="Proximy"
             subtitle="We helped Proximy build their cross-platform mobile app using Flutter, Cloud Firestore, and Google Cloud Functions."
           />
           <WorkCard
-            link="https://midstride.com"
+            link="clients/midstride"
             title="Midstride Technologies"
             subtitle="We work closely with Midstride's team by communicating directly with its clients and getting a thorough understanding of their requirements before building out full-stack features on their products."
           />
           <WorkCard
-            link="https://wearetension.com"
+            link="clients/tension"
             title="Tension Consulting"
             subtitle="We help Tension build and deliver outstanding websites."
           />
           <WorkCard 
-            link="https://www.minebright.com/" 
+            link="clients/minebright" 
             title="Minebright" 
             subtitle="We provide Minebright with flexbile, on demand, premium Quality Assurance services in support of their software development efforts.">
           </WorkCard>

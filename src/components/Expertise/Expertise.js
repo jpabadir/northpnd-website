@@ -1,5 +1,6 @@
 import { items as expertiseItems, tagColors } from './expertise-items';
 import * as React from 'react';
+import { Link } from 'react-router-dom'
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -32,7 +33,7 @@ export default function Expertise() {
               {expertiseItems.map((row) => (
                 <TableRow key={row.description} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
                   <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Client" className="text-center justify-content-center ClientNameCell">
-                    {row.client}
+                    <Link to={`/clients/${row['client-id']}`}>{row.client}</Link>
                   </TableCell>
                   <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Tech Used" className="text-center justify-content-center">
                     {row.tech.map((tech) => (<span key={tech} className='pill darkpill'>{tech}</span>))}

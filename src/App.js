@@ -11,6 +11,7 @@ import Blog from "./components/Blog/Blog";
 import Proximy from "./components/Client Website/Proximy/Proximy";
 import Midstride from "./components/Client Website/Midstride/Midstride";
 import Tension from "./components/Client Website/Tension/Tension";
+import Minebright from "./components/Client Website/Minebright/Minebright";
 import blogsData from "./blogs/blogs-headers.json";
 import { linkify } from "./helpers";
 
@@ -34,10 +35,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Main ref={mainRef} scrollGoal={scrollGoal} />} />
             <Route path="expertise" element={<Expertise />} />
-            <Route path="clients" element={<div className="StandalonePageParent"><Outlet /></div>}>
+            <Route path="clients" element={<div className="StandalonePageParent" style={{ fontSize: '18px' }}><Outlet /></div>}>
               <Route path="proximy" element={<Proximy />} />
               <Route path="midstride" element={<Midstride />} />
               <Route path="tension" element={<Tension />} />
+              <Route path="minebright" element={<Minebright />} />
             </Route>
             <Route path="articles" element={<Blog />} />
             {blogsData.map((blog) => (
@@ -48,7 +50,7 @@ function App() {
               />
             ))}
           </Routes>
-        </div>
+        </div >
         <div
           style={{
             width: "100%",
@@ -69,8 +71,8 @@ function App() {
             <Footer />
           </div>
         </div>
-      </Router>
-    </div>
+      </Router >
+    </div >
   );
 }
 

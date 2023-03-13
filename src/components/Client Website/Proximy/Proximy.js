@@ -16,3 +16,6 @@ function Proximy() {
 }
 
 export default Proximy;
+
+
+// { "client": "Proximy", "tech": ["Flutter", "Google Cloud Functions"], "description": "Built many cross-platform mobile app features.", "tags": ["mobile dev", "serverless"], "dates": "May 2021 - December 2021" },

@@ -33,15 +33,20 @@ export default function Expertise() {
               {expertiseItems.map((row) => (
                 <TableRow key={row.description} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
                   <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Client" className="text-center justify-content-center ClientNameCell">
-                    <Link to={`/clients/${row['client-id']}`}>{row.client}</Link>
+                    {row.client}
+                    {/* <Link to={`/clients/${row['client-id']}`}>{row.client}</Link> */}
                   </TableCell>
                   <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Tech Used" className="text-center justify-content-center">
-                    {row.tech.map((tech) => (<span key={tech} className='pill darkpill'>{tech}</span>))}
+                    <div className='d-flex justify-content-center' style={{ flexWrap: 'wrap', maxWidth: '400px' }}>
+                      {row.tech.map((tech) => (<span key={tech} className='pill darkpill'>{tech}</span>))}
+                    </div>
                   </TableCell>
-                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Description" dangerouslySetInnerHTML={{__html: row.description}}>
+                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Description" dangerouslySetInnerHTML={{ __html: row.description }}>
                   </TableCell>
-                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Tags" className="text-center justify-content-center">
-                    {row.tags.map((tag) => (<span key={tag} className='pill' style={{ background: tagColors[tag] }}>{tag}</span>))}
+                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit', maxWidth: '300px' }} label="Tags" className="text-center justify-content-center align-items-center">
+                    <div className='d-flex justify-content-center' style={{ flexWrap: 'wrap', maxWidth: '200px' }}>
+                      {row.tags.map((tag) => (<span key={tag} className='pill' style={{ background: tagColors[tag] }}>{tag}</span>))}
+                    </div>
                   </TableCell>
                   <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Dates" className="text-center justify-content-center">
                     {row.dates}

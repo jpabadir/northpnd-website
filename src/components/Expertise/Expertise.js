@@ -43,7 +43,7 @@ export default function Expertise() {
                   </TableCell>
                   <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Description" dangerouslySetInnerHTML={{ __html: row.description }}>
                   </TableCell>
-                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit', maxWidth: '300px' }} label="Tags" className="text-center justify-content-center align-items-center">
+                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Tags" className="text-center justify-content-center">
                     <div className='d-flex justify-content-center' style={{ flexWrap: 'wrap', maxWidth: '200px' }}>
                       {row.tags.map((tag) => (<span key={tag} className='pill' style={{ background: tagColors[tag] }}>{tag}</span>))}
                     </div>

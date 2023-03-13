@@ -38,14 +38,14 @@ export default function Expertise() {
                   </TableCell>
                   <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Tech Used" className="text-center justify-content-center">
                     <div className='d-flex justify-content-center' style={{ flexWrap: 'wrap', maxWidth: '400px' }}>
-                      {row.tech.map((tech) => (<span key={tech} className='pill darkpill'>{tech}</span>))}
+                      {row.tech ? row.tech.map((tech) => (<span key={tech} className='pill darkpill'>{tech}</span>)) : '-'}
                     </div>
                   </TableCell>
                   <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Description" dangerouslySetInnerHTML={{ __html: row.description }}>
                   </TableCell>
                   <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Tags" className="text-center justify-content-center">
                     <div className='d-flex justify-content-center' style={{ flexWrap: 'wrap', maxWidth: '200px' }}>
-                      {row.tags.map((tag) => (<span key={tag} className='pill' style={{ background: tagColors[tag] }}>{tag}</span>))}
+                      {row.tags ? row.tags.map((tag) => (<span key={tag} className='pill' style={{ background: tagColors[tag] }}>{tag}</span>)) : '-'}
                     </div>
                   </TableCell>
                   <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Dates" className="text-center justify-content-center">

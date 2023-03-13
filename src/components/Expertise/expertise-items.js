@@ -10,7 +10,7 @@ export const items = [
   { "client-id": "midstride", client: "Midstride Technologies", "tech": ["PHP", "Laravel", "MySQL", "Vue", "JS"], "description": "Identified and fixed a stored XSS vulnerability.", "tags": ["security", "full-stack web dev"], "dates": "August 2022" },
   { "client-id": "midstride", client: "Midstride Technologies", "tech": ["Bash"], "description": "Wrote a script to facilitate the detection of broken links in hundreds of blog articles, avoiding many hours of manual checking.", "tags": ["automation"], "dates": "September 2022" },
   { "client-id": "internal", client: "Internal Project", "tech": ["React", "CSS", "Bootstrap", "DNS Configuration"], "description": "Currently building this website!", "tags": ["full-stack web dev"], "dates": "May 2021 - Ongoing" },
-  { "client-id": "minebright", client: "Minebright", "tech": ["Confidential Tech Stack"], "description": "We provide Minebright with flexible, on demand, premium Quality Assurance services in support of their software development efforts.", "tags": [""], "dates": "May 2021 - Ongoing" }
+{ "client-id": "minebright", client: "Minebright", "description": "We provide Minebright with flexible, on demand, premium Quality Assurance services in support of their software development efforts.", "tags": ["Quality Assurance"], "dates": "May 2021 - Ongoing" }
 ]
 
-export const tagColors = { "security": "red", "full-stack web dev": "darkorange", "mobile dev": "blue", "devops": "black", "CI/CD": "green", "automation": "deeppink", "serverless": "grey", "NoSQL": "lightblue" }
+export const tagColors = { "security": "red", "full-stack web dev": "darkorange", "mobile dev": "blue", "devops": "black", "CI/CD": "green", "automation": "deeppink", "serverless": "grey", "NoSQL": "lightblue", "Quality Assurance": "purple" }

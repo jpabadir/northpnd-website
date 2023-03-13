@@ -43,7 +43,7 @@ function OurClients() {
           <WorkCard
             link="minebright.com"
             title="Minebright"
-            subtitle="We provide Minebright with flexbile, on demand, premium Quality Assurance services in support of their software development efforts.">
+            subtitle="We provide Minebright with flexible, on demand, premium Quality Assurance services in support of their software development efforts.">
           </WorkCard>
         </Row>
         <Reviews />

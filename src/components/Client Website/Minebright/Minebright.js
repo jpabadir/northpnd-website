@@ -9,7 +9,7 @@ function Minebright() {
       </div>
       <div >
         <h2>Minebright</h2>
-        <p>We provide Minebright with flexbile, on demand, premium Quality Assurance services in support of their software development efforts.</p>
+        <p>We provide Minebright with flexible, on demand, premium Quality Assurance services in support of their software development efforts.</p>
       </div>
     </div>
   );

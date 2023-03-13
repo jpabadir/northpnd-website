@@ -49,7 +49,9 @@ export default function Expertise() {
                     </div>
                   </TableCell>
                   <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Dates" className="text-center justify-content-center">
-                    {row.dates}
+                    <div className='d-flex justify-content-center' style={{ flexWrap: 'wrap', maxWidth: '400px' }}>
+                      {row.dates}
+                    </div>
                   </TableCell>
                 </TableRow>
               ))}

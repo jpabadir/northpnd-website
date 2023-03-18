@@ -1,6 +1,6 @@
 [
   {
-    "kind": "article",
+    "kind": "Article",
     "title": "Getting Started With GitHub",
     "author": "Ezra Song",
     "authorTitle": "Software Engineer Intern",
@@ -13,7 +13,7 @@
     "hide": true
   },
   {
-    "kind": "article",
+    "kind": "Article",
     "title": "How To Submit a Pull Request",
     "author": "JP Abadir",
     "authorTitle": "Founder",
@@ -25,7 +25,7 @@
     "isStaff": true
   },
   {
-    "kind": "article",
+    "kind": "Article",
     "title": "Tech Glossary",
     "author": "JP Abadir",
     "authorTitle": "Founder",
@@ -37,9 +37,16 @@
     "isStaff": true
   },
   {
-    "kind": "video",
-    "title": "Introduction à GitHub Actions",
+    "kind": "Video",
+    "title": "Introduction to GitHub Actions",
     "link": "https://www.youtube.com/live/XRUPBaHngpc?feature=share",
-    "image": "https://img.youtube.com/vi/XRUPBaHngpc/hqdefault.jpg"
+    "image": "https://img.youtube.com/vi/XRUPBaHngpc/hqdefault.jpg",
+    "isFrench": true
+  },
+  {
+    "kind": "Video",
+    "title": "Greater Toronto Area High School Tech Talk",
+    "link": "https://youtu.be/7WmeBJ9Q5z4",
+    "image": "https://img.youtube.com/vi/7WmeBJ9Q5z4/hqdefault.jpg"
   }
 ]

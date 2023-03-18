@@ -38,7 +38,7 @@ function LocalNavbar(props) {
   }
 
   function getClasses() {
-    return `${myScrollY > scrollAnimationTrigger || isToggleOpen || location.pathname == "/expertise" || window.location.pathname.includes("articles") || window.location.pathname.includes("clients")
+    return `${myScrollY > scrollAnimationTrigger || isToggleOpen || location.pathname == "/expertise" || window.location.pathname.includes("resources") || window.location.pathname.includes("clients")
       ? "GreyNavbar"
       : "TransparentNavbar"
       } ${isToggleOpen ? "FullNav" : "TopNav"} Navbar`
@@ -130,12 +130,12 @@ function LocalNavbar(props) {
             <li>
               <Link
                 className="Link WhiteLink"
-                to="articles"
+                to="resources"
                 style={{ display: "inline-block", margin: "20px" }}
                 onClick={handleNavLinkClick}
                 offset={-80}
               >
-                Articles
+                Resources
               </Link>
             </li>
           </Nav>

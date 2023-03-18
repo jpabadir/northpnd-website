@@ -11,7 +11,7 @@ function About() {
           <Col l={8}>
             <div className="Subtitle">Hi! I'm JP.</div>
             <div className="Subtitle" style={{ fontSize: '25px' }}>
-              I am North P&amp;D's founder and main developer.
+              I am North P&amp;D's founder and technical lead.
             </div>
             <div style={{ fontSize: '20px' }}>
               <br />

@@ -1,5 +1,6 @@
 [
   {
+    "kind": "article",
     "title": "Getting Started With GitHub",
     "author": "Ezra Song",
     "authorTitle": "Software Engineer Intern",
@@ -12,6 +13,7 @@
     "hide": true
   },
   {
+    "kind": "article",
     "title": "How To Submit a Pull Request",
     "author": "JP Abadir",
     "authorTitle": "Founder",
@@ -21,5 +23,23 @@
     "image": "/publicassets/github.jpg",
     "imageCaption": "",
     "isStaff": true
+  },
+  {
+    "kind": "article",
+    "title": "Tech Glossary",
+    "author": "JP Abadir",
+    "authorTitle": "Founder",
+    "profilePic": "/publicassets/JP_Team.jpg",
+    "subtitle": "Some terminology you should be familiar with.",
+    "publishDate": "2023-03-17T00:00:00",
+    "image": "/publicassets/dictionary.jpg",
+    "imageCaption": "",
+    "isStaff": true
+  },
+  {
+    "kind": "video",
+    "title": "Introduction à GitHub Actions",
+    "link": "https://www.youtube.com/live/XRUPBaHngpc?feature=share",
+    "image": "https://img.youtube.com/vi/XRUPBaHngpc/hqdefault.jpg"
   }
 ]

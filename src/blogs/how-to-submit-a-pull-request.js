@@ -13,7 +13,7 @@ export default function Content() {
         <li>Complete the task (build the feature or fix the bug.)</li>
         <li>QA extensively.
           <ul>
-            <li>QAing (Quality Assurance-ing) means you're manually testing your code to make sure your feature works, handles edge cases gracefully, and does not introduce new bugs to the existing codebase. Edge cases are use cases which are different from the exact way your feature is supposed to be used, but could still potentially happen. For instance, what if the user tries to submit a form without the required data? What if the user is running the code on a gigantic monitor?</li>
+            <li>QAing (quality assurance-ing) means you're manually testing your code to make sure your feature works, handles edge cases gracefully, and does not introduce new bugs to the existing codebase. Edge cases are use cases which are different from the exact way your feature is supposed to be used, but could still potentially happen. For instance, what if the user tries to submit a form without the required data? What if the user is running the code on a gigantic monitor?</li>
           </ul>
         </li>
         <li>Open your PR on GitHub and re-read it thoroughly line by line.

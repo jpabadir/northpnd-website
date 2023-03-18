@@ -16,8 +16,7 @@ function About() {
             <div style={{ fontSize: '20px' }}>
               <br />
               After working at Amazon Web Services and RBC as a software engineer intern, I started North P&amp;D in May of 2021 with the goal of
-              providing high-quality software development and technology services to both technical and non-technical businesses and
-              individuals.
+              providing high-quality software development and technology services to both technical and non-technical businesses.
             </div>
           </Col>
           <Col l={4} className="d-flex justify-content-center JpHeadshotParent">

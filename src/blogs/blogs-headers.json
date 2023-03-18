@@ -38,7 +38,7 @@
   },
   {
     "kind": "Video",
-    "title": "Introduction to GitHub Actions",
+    "title": "Microsoft Reactor - Introduction to GitHub Actions",
     "link": "https://www.youtube.com/live/XRUPBaHngpc?feature=share",
     "image": "https://img.youtube.com/vi/XRUPBaHngpc/hqdefault.jpg",
     "isFrench": true
@@ -46,7 +46,7 @@
   {
     "kind": "Video",
     "title": "Greater Toronto Area High School Tech Talk",
-    "link": "https://youtu.be/7WmeBJ9Q5z4",
-    "image": "https://img.youtube.com/vi/7WmeBJ9Q5z4/hqdefault.jpg"
+    "link": "https://youtu.be/ai0FCWIGqk0",
+    "image": "https://img.youtube.com/vi/ai0FCWIGqk0/hqdefault.jpg"
   }
 ]

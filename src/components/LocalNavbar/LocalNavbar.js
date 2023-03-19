@@ -128,7 +128,7 @@ function LocalNavbar(props) {
               </Link>
             </li>
             <li>
-              <Link
+              <NavLink
                 className="Link WhiteLink"
                 to="resources"
                 style={{ display: "inline-block", margin: "20px" }}
@@ -136,7 +136,7 @@ function LocalNavbar(props) {
                 offset={-80}
               >
                 Resources
-              </Link>
+              </NavLink>
             </li>
           </Nav>
         </Navbar.Collapse>

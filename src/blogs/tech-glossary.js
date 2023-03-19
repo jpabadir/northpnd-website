@@ -8,7 +8,7 @@ export default function Content() {
       </head>
       <h2>Some terminology you should be familiar with.</h2>
       <ul>
-        <li><i>Environment</i><br/>This is the env.</li>
+        <li><i>Environment</i><br/>When we talk about the "environment", we mean the specific machine and set of </li>
         {/* <li><i>Production</i>
         <li><i>Local</i>
         <li><i>Staging</i>

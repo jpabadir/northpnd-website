@@ -37,6 +37,18 @@
     "isStaff": true
   },
   {
+    "kind": "Article",
+    "title": "Tech Glossary",
+    "author": "JP Abadir",
+    "authorTitle": "Founder",
+    "profilePic": "/publicassets/JP_Team.jpg",
+    "subtitle": "How to ask for help as a software engineer.",
+    "publishDate": "2023-03-17T00:00:00",
+    "image": "/publicassets/dictionary.jpg",
+    "imageCaption": "",
+    "isStaff": true
+  },
+  {
     "kind": "Video",
     "title": "Microsoft Reactor - Introduction to GitHub Actions",
     "link": "https://www.youtube.com/live/XRUPBaHngpc?feature=share",

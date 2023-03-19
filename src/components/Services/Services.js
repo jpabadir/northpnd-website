@@ -70,7 +70,7 @@ function Services() {
             videoSrc={coding}
             posterSrc={codingPoster}
             title="Technical businesses"
-            subtitle="We'll deal with your hosting and domain name so you only have one tech bill to pay - ours."
+            subtitle="We offer staff augmentation to our technical clients. We integrate closely with function as part of their team and work in close collaboration with the other developers. We pride ourselves in working with a deep sense of owernship towards the outcome "
             subtitleDisplay={subtitleDisplay}
             setSubtitleDisplay={setSubtitleDisplay}
           />
@@ -79,7 +79,7 @@ function Services() {
             videoSrc={discussion}
             posterSrc={discussionPoster}
             title="Non-techical businesses"
-            subtitle="Whether you have a unique business problem that can be solved with tech, or you need a consultant to speed up a project's development, we can help."
+            subtitle="We'll deal with your hosting and domain name so you only have one tech bill to pay - ours."
             subtitleDisplay={subtitleDisplay}
             setSubtitleDisplay={setSubtitleDisplay}
           />

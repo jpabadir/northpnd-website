@@ -27,7 +27,6 @@ function ServicesCard(props) {
           <video
             className="ServicesVideo"
             src={props.videoSrc}
-            height="250"
             type="video/mov"
             onMouseOver={() => {
               if (!isMobile) props.setSubtitleDisplay(props.index);
@@ -66,22 +65,13 @@ function Services() {
     <div className="MainElementPadding">
       <Container fluid>
         <div className="Subtitle">How we can help you</div>
-        <div style={{ fontSize: '25px' }}>We take care of your technology needs so you can focus on your business.</div>
+        <div style={{ fontSize: '25px' }}>There are two types of businesses we help.</div>
         <Row className="ServicesCardsRow">
           <ServicesCard
-            index={0}
+            index={1}
             videoSrc={coding}
             posterSrc={codingPoster}
-            title="Web &amp; Mobile Development"
-            subtitle="We'll work with you to design, develop, and deploy your website or mobile app."
-            subtitleDisplay={subtitleDisplay}
-            setSubtitleDisplay={setSubtitleDisplay}
-          />
-          <ServicesCard
-            index={1}
-            videoSrc={cables}
-            posterSrc={cablesPoster}
-            title="Hosting"
+            title="Technical businesses"
             subtitle="We'll deal with your hosting and domain name so you only have one tech bill to pay - ours."
             subtitleDisplay={subtitleDisplay}
             setSubtitleDisplay={setSubtitleDisplay}
@@ -90,14 +80,14 @@ function Services() {
             index={2}
             videoSrc={discussion}
             posterSrc={discussionPoster}
-            title="Consulting"
+            title="Non-techical businesses"
             subtitle="Whether you have a unique business problem that can be solved with tech, or you need a consultant to speed up a project's development, we can help."
             subtitleDisplay={subtitleDisplay}
             setSubtitleDisplay={setSubtitleDisplay}
           />
         </Row>
-      </Container>
-    </div>
+      </Container >
+    </div >
   );
 }
 

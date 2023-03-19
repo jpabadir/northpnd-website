@@ -38,13 +38,12 @@
   },
   {
     "kind": "Article",
-    "title": "Tech Glossary",
+    "title": "How to Ask for Help as a Software Engineer",
     "author": "JP Abadir",
     "authorTitle": "Founder",
     "profilePic": "/publicassets/JP_Team.jpg",
-    "subtitle": "How to ask for help as a software engineer.",
-    "publishDate": "2023-03-17T00:00:00",
-    "image": "/publicassets/dictionary.jpg",
+    "publishDate": "2023-03-19T00:00:00",
+    "image": "/publicassets/question.jpg",
     "imageCaption": "",
     "isStaff": true
   },

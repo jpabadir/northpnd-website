@@ -35,7 +35,7 @@ export const items = [{
   tech: ["PHP", "Laravel", "MySQL", "Vue", "JS", "SASS", "Docker"]
 }, {
   client: "Midstride Technologies",
-  dates: "April 2022 - December 2022",
+  dates: "April - December 2022",
   description: "Wrote many customizations for &lt;a href='https://quilljs.com/' target='_blank' rel='noopener noreferrer'&gt;Quill.js&lt;/a&gt; to give the client's team more flexibility in the content of the blog posts they create. Namely, we added built, from scratch, support for adding CTA buttons, a references table, rich images with a caption and an alt tag, product advertisements, tables, and collapsible animated content. This involved writing and maintaining a lot of custom JavaScript to interact with Quill's API extensively.",
   key: 11,
   tags: ["full-stack web dev"],
@@ -140,7 +140,7 @@ export const items = [{
   tech: ["Laravel", "Eloquent"]
 }, {
   client: "Proximy",
-  dates: "May 2021 - December 2021",
+  dates: "May - December 2021",
   description: "Built many cross-platform mobile app features.",
   key: 1,
   tags: ["mobile dev", "serverless"],

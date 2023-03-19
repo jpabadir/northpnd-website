@@ -1,16 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.b400abfa.css",
-    "main.js": "/static/js/main.bc31e8f4.js",
+    "main.css": "/static/css/main.29a81fd5.css",
+    "main.js": "/static/js/main.c2e42cbd.js",
     "static/media/home-background.mp4": "/static/media/home-background.fc0b870534672fee29cd.mp4",
     "static/media/JP_Team.jpg": "/static/media/JP_Team.eac5d59e254233e61a5e.jpg",
     "static/media/discussion-light.mov": "/static/media/discussion-light.4350386319ae3b602f16.mov",
     "static/media/discussion-poster.png": "/static/media/discussion-poster.a640fb181399997d1a68.png",
     "static/media/coding-light.mov": "/static/media/coding-light.4a0c2f02d88e984f354d.mov",
-    "static/media/cables-light.mov": "/static/media/cables-light.828b15eea1c3d6ad65b7.mov",
     "static/media/jp-headshot.png": "/static/media/jp-headshot.10fc4b8ff61335f87ca2.png",
     "static/media/coding-poster.png": "/static/media/coding-poster.6d1e8213385b4778e304.png",
-    "static/media/cables-poster.png": "/static/media/cables-poster.16eb148de4e30217b444.png",
     "static/media/FT_Team.jpg": "/static/media/FT_Team.eb466ee712b88a4cf12c.jpg",
     "static/media/AB_Team.png": "/static/media/AB_Team.458d48de0f539eebaf8b.png",
     "static/media/KM_Team.jpg": "/static/media/KM_Team.8f45f4a319b8876d4667.jpg",
@@ -24,11 +22,11 @@
     "static/media/transparentLogo.svg": "/static/media/transparentLogo.332c5e16dd0717e02bf6e6137a8a58ce.svg",
     "static/media/layered-waves-haikei.svg": "/static/media/layered-waves-haikei.7cecff5e9dc9f50de7b4.svg",
     "index.html": "/index.html",
-    "main.b400abfa.css.map": "/static/css/main.b400abfa.css.map",
-    "main.bc31e8f4.js.map": "/static/js/main.bc31e8f4.js.map"
+    "main.29a81fd5.css.map": "/static/css/main.29a81fd5.css.map",
+    "main.c2e42cbd.js.map": "/static/js/main.c2e42cbd.js.map"
   },
   "entrypoints": [
-    "static/css/main.b400abfa.css",
-    "static/js/main.bc31e8f4.js"
+    "static/css/main.29a81fd5.css",
+    "static/js/main.c2e42cbd.js"
   ]
 }

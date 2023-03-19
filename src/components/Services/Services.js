@@ -2,10 +2,8 @@ import React, { useState, useLayoutEffect } from 'react';
 import './Services.css';
 import { Row, Col, Container } from 'react-bootstrap';
 import coding from '../../assets/coding-light.mov';
-import cables from '../../assets/cables-light.mov';
 import discussion from '../../assets/discussion-light.mov';
 import codingPoster from '../../assets/coding-poster.png';
-import cablesPoster from '../../assets/cables-poster.png';
 import discussionPoster from '../../assets/discussion-poster.png';
 
 function ServicesCard(props) {
@@ -65,7 +63,7 @@ function Services() {
     <div className="MainElementPadding">
       <Container fluid>
         <div className="Subtitle">How we can help you</div>
-        <div style={{ fontSize: '25px' }}>There are two types of businesses we help.</div>
+        <div style={{ fontSize: '25px' }}>There are two types of clients we help.</div>
         <Row className="ServicesCardsRow">
           <ServicesCard
             index={1}

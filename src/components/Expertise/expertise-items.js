@@ -1,175 +1,150 @@
 export const items = [{
   client: "Midstride Technologies",
-  dates: "December 2023",
-  description: "Built a system which reads email template blade files from the codebase and renders them dynamically with user-chosen data pulled from the database, allowing admin to preview emails being sent to specific customers under specific circumstances. In order to maximize maintainability and code-conciseness, we leveraged PHP's built-in iterators to read the files while only listing their parent folder.",
-  key: 4,
+  dates: "December 2022",
+  description: "Built a system which reads email template blade files from the codebase and renders them dynamically with user-chosen database records, allowing the admin team to preview emails being sent to specific customers under specific circumstances. In order to maximize maintainability and code-conciseness, we leveraged PHP's built-in iterators to read the files while only hard coding their parent folder's name.",
   tags: ["full-stack web dev"],
   tech: ["PHP", "Laravel", "MySQL"]
 }, {
   client: "Midstride Technologies",
-  dates: "November 2023",
-  description: "Took full ownership of the design and implementation of a system allowing to differentiate various backend objects by a parent category, and to take different actions based on the object' parent category. Among the different actions, we buit support for sending emails from a different email address and domain depending on customer attributes. This was technically challenging because it involves updating Laravel's MailgunTransport's config at runtime, which requires creating a new instance of MailgunTransport and binding it into the service container.",
-  key: 5,
+  dates: "November 2022",
+  description: "As the client's project evolved, they decided to spin off a new project in the same industry as their main project. The new project had a different frontend, but shared a lot of its backend with the client's main project. In support of this endeavour, we took full ownership of the design and implementation of a system allowing to differentiate various backend objects (such as users, orders or emails) by their parent project, and to automatically take different actions based on the object's parent project. Among the different actions, we buit support for sending emails from a different email address and domain depending on the parent project. This was technically challenging because it involves updating Laravel's MailgunTransport's configuration at runtime, which requires creating a new instance of MailgunTransport and binding it into the service container. To build this, we leveraged Laravel's Tinker tool to efficienly iterate on our code and test it.",
   tags: ["full-stack web dev"],
   tech: ["PHP", "Laravel", "MySQL"]
 }, {
   client: "Midstride Technologies",
   dates: "February 2023",
   description: "Built a CI/CD pipeline which periodically backs up the project's git repo to AWS S3, always maintaining the latest two backup versions in an S3 bucket. Leveraged AWS IAM to ensure only minimal security permissions were granted to the GitHub Actions runner.",
-  key: 7,
-  tags: ["devops", "CI/CD", "automation"],
+  tags: ["devops", "CI/CD", "automation", "security"],
   tech: ["GitHub Actions", "AWS IAM", "AWS S3", "AWS CLI"]
 }, {
   client: "Midstride Technologies",
   dates: "February 2022 - Ongoing",
-  description: "Currently building and maintaining a CI/CD pipeline allowing to automatically test and lint code before any PR gets merged. Implemented caching of node dependencies in order to reduce CI/CD compute time, resulting in faster checks status reports and monthly savings on compute time.",
-  key: 6,
+  description: "Currently building and maintaining a CI/CD pipeline allowing to automatically test and lint code before any PR gets merged. Implemented caching of node dependencies to reduce CI/CD compute time, resulting in faster status reports and monthly savings on the GitHub Actions bill for our client.",
   tags: ["devops", "CI/CD", "automation"],
-  tech: ["GitHub Actions"]
+  tech: ["GitHub Actions", "npm"]
 }, {
   client: "Midstride Technologies",
   dates: "Jan 2022 - Ongoing",
   description: "Currently building many full-stack features (167 pull requests merged to date).",
-  key: 3,
   tags: ["full-stack web dev"],
   tech: ["PHP", "Laravel", "MySQL", "Vue", "JS", "SASS", "Docker"]
 }, {
   client: "Midstride Technologies",
   dates: "April - December 2022",
-  description: "Wrote many customizations for <a href='https://quilljs.com/' target='_blank' rel='noopener noreferrer'>Quill.js</a> to give the client's team more flexibility in the content of the blog posts they create. Namely, we added built, from scratch, support for adding CTA buttons, a references table, rich images with a caption and an alt tag, product advertisements, tables, and collapsible animated content. This involved writing and maintaining a lot of custom JavaScript to interact with Quill's API extensively.",
-  key: 11,
-  tags: ["full-stack web dev"],
+  description: "Wrote many customizations for <a href='https://quilljs.com/' target='_blank' rel='noopener noreferrer'>Quill.js</a> to give the client's team more flexibility in the content of the blog posts they create. Namely, we built, from scratch, support for adding CTA buttons, a references table, rich images with a caption and an alt tag, custom product advertisements, tables, and collapsible animated content. This involved writing and maintaining a lot of custom JavaScript to interact with Quill's API extensively.",
+  tags: ["frontend web dev"],
   tech: ["Vue", "JS"]
 }, {
   client: "Midstride Technologies",
   dates: "August 2022",
   description: "Identified and fixed a major stored XSS vulnerability which could have resulted in unauthorized access to administator accounts.",
-  key: 8,
   tags: ["security", "full-stack web dev"],
   tech: ["PHP", "Laravel", "MySQL", "Vue", "JS"]
 }, {
   client: "Midstride Technologies",
   dates: "September 2022",
   description: "Wrote a script to facilitate the detection of broken links in hundreds of blog articles, avoiding many hours of manual checking.",
-  key: 9,
   tags: ["automation"],
   tech: ["Bash"]
 }, {
   client: "Midstride Technologies",
   dates: "January 2022 - Ongoing",
-  description: "Fixed many issues with complex Eloquent queries. As the client's requests for data filtering functionality increased in complexity, so did the sophistication of the eloquent queries we had to write in order to support the powerful filtering. As a result, the client would often encouter issues where the data didn't match the filters. We were always able to successfully fix the queries, resulting in reliably-correct data-filtering results.",
-  key: 12,
+  description: "Fixed many issues occuring with complex Eloquent queries. As the client's requests for data filtering functionality increased in complexity, so did the sophistication of the queries we had to write in order to support the desired filtering. As a result, the client would often encouter issues where the data returned didn't match the filters they set. We were consistently able to successfully fix the queries, resulting in reliably-correct data-filtering results.",
   tags: ["backend"],
   tech: ["Laravel", "MySQL"]
 }, {
   client: "Midstride Technologies",
   dates: "January 2022 - Ongoing",
-  description: "Communicated directly with our client's client to get a thorough understanding of their desired requirements on many complex features, such as user \&quot;flagging\&quot; logic, sending text messages to users based on very specific conditions and actions taken by users and admins, or grouping different users's orders' repeat dates in the system for processing efficiency. Then, we took owernship of the design and implementation of the solution. This type of task is where our team's capabilities are most valuable to our client. Indeed, our combination of excellent communication skills and deep technical expertise allow us to truly alleviate the rest of the team's workload as we collaborate directly with the feature's final stakeholders.",
-  key: 13,
+  description: "Communicated directly with our client's client to get a thorough understanding of their desired requirements on many complex features, such as user \&quot;flagging\&quot; logic, sending text messages to users based on very specific conditions and actions taken by users and admins, or grouping different user orders' repeat dates in the system for efficiency of processing. Then, we took owernship of the design and implementation of the solution. This type of task is where our team's capabilities are most valuable to our client, as our combination of excellent communication skills and deep technical expertise allow us to collaborate with the client's client in almost complete autonomy, alleviating the rest of the team's workload.",
   tags: ["full-stack web dev"],
   tech: ["PHP", "Laravel", "MySQL", "Vue", "JS", "SASS", "Docker"]
 }, {
   client: "Midstride Technologies",
   dates: "January 2022",
-  description: "Improved internal documentation as we onboarded to help future developers get set up faster. This is particularly relevant in our client's team's context as it is fully remote and only comprises independent contractors who are expected to be able to set up their local stack in near full autonomy.",
-  key: 10,
+  description: "Improved internal documentation as we onboarded onto the client's codebase to help future developers get set up faster. This is particularly relevant in our client's context as its team is fully remote and only comprises independent contractors who are expected to be able to set up their local stack in near full autonomy.",
   tags: ["documentation"],
   tech: ["Markdown"]
 }, {
   client: "Midstride Technologies",
-  dates: "January 2022",
-  description: "Took full owernship of the design and implementation of a system allowing to export an Excel file showing a report of users with abandoned orders, allowing the admin team to take action to improve conversions.",
-  key: 14,
+  dates: "August 2022",
+  description: "Took full owernship of the design and implementation of a system allowing to export an Excel file showing a report of users with abandoned orders for products, allowing the admin team to take action to improve conversions.",
   tags: ["full-stack web dev"],
-  tech: ["Laravel", "Eloquent"]
+  tech: ["Laravel"]
 }, {
   client: "Midstride Technologies",
-  dates: "January 2022",
-  description: "Implemented one-time password phone login using the Twilio API. This enables users to immediately log in to their account using their mobile phone if they forget their password.",
-  key: 15,
+  dates: "January 2023",
+  description: "Implemented one-time password phone login functionality using the Twilio API. This enables users to immediately log in to their account using their mobile phone if they forget their password.",
   tags: ["full-stack web dev"],
-  tech: ["Laravel", "Eloquent"]
+  tech: ["Laravel"]
 }, {
   client: "Midstride Technologies",
-  dates: "January 2022",
+  dates: "October 2022",
   description: "Implemented a system to manage failed Laravel queued jobs, allowing our client to easily monitor and retry failed jobs.",
-  key: 16,
   tags: ["full-stack web dev"],
-  tech: ["Laravel", "Eloquent"]
+  tech: ["Laravel"]
 }, {
   client: "Midstride Technologies",
-  dates: "January 2022",
+  dates: "October 2022",
   description: "Implemented a system which leverages the Mailgun API to generate a list of emails which failed to send, providing our client and the admin team with actionable information regarding their communication endeavours with customers.",
-  key: 17,
   tags: ["full-stack web dev"],
-  tech: ["Laravel", "Eloquent"]
+  tech: ["Laravel"]
 }, {
   client: "Midstride Technologies",
-  dates: "January 2022",
-  description: "Leveraged the Mailgun and Mailchimp APIs to allow admins to manage users' subscription status to their various newsletters.",
-  key: 18,
+  dates: "November 2022",
+  description: "Leveraged the Mailgun and Mailchimp APIs to allow admins to manage users' subscription status to the client's two newsletters.",
   tags: ["full-stack web dev"],
-  tech: ["Laravel", "Eloquent"]
+  tech: ["Laravel"]
 }, {
   client: "Midstride Technologies",
-  dates: "January 2022",
-  description: "Implemented a system which allowed to automatically redirect blog URLs containing uppercase letters to their full lowercase versions. This was challenging because the determining factor in whether or not a given URL had to be redirected was whether its route name, not the URL itself, contained a specific string. Thus, we had to add a catch-all route with a middleware and have the middleware compute the route name for the all-lowercase equivalent of the URL, and then redirect the URL if its route matches the condition.",
-  key: 19,
+  dates: "July 2022",
+  description: "Implemented a system which allowed to automatically redirect specific groups of URLs containing uppercase letters to their fully-lowercase versions. This was challenging because the determining factor in whether or not a given URL had to be redirected was whether its route name, not the URL itself, contained a specific string. Thus, we had to add a catch-all route with a middleware and have the middleware compute the route name for the all-lowercase equivalent of the accessed URL, and then redirect the URL if its route matched the criteria.",
   tags: ["backend"],
-  tech: ["Laravel", "Eloquent"]
+  tech: ["Laravel"]
 }, {
   client: "Midstride Technologies",
   dates: "January 2022",
-  description: "Added support for upload of HEIC images. Since the libraries we used didn't support this out of the box, we had to convert the image to JPG before storing it.",
-  key: 20,
+  description: "Added support for the upload of HEIC images by customers. Since the libraries we used didn't support this out of the box, we had to convert the images to JPG before storing them.",
   tags: ["full-stack web dev"],
-  tech: ["Laravel", "Eloquent"]
+  tech: ["Laravel", "Vue", "JS"]
 }, {
   client: "Midstride Technologies",
-  dates: "January 2022",
+  dates: "August 2022",
   description: "Fixed npm dependency issue affecting admin-facing tools. This involed updating a faulty package and doing the necessary updates in the code to match the new version's syntax and usage.",
-  key: 21,
   tags: ["frontend web dev"],
-  tech: ["Laravel", "Eloquent"]
+  tech: ["npm", "Vue", "JS"]
 }, {
   client: "Midstride Technologies",
-  dates: "January 2022",
-  description: "Wrote documentation to help the rest of the team get set up with Xdebug step debugging on VSCode + Docker. This is challenging because it involves publishing the docker files and doing quite a big of config.",
-  key: 22,
+  dates: "March 2023",
+  description: "Wrote documentation to help the rest of the team get set up with Xdebug step debugging on VSCode + Docker. This is challenging because it involves publishing the Docker files and doing quite a big of config to ensure it works properly.",
   tags: ["documentation"],
-  tech: ["Laravel", "Eloquent"]
-}, {
-  client: "Proximy",
-  dates: "May - December 2021",
-  description: "Built many cross-platform mobile app features.",
-  key: 1,
-  tags: ["mobile dev", "serverless"],
-  tech: ["Flutter", "Google Cloud Functions"]
+  tech: ["PHP", "Laravel", "Docker"]
 }, {
   client: "Internal Project",
   dates: "May 2021 - Ongoing",
   description: "Currently building this website!",
-  key: 23,
   tags: ["frontend web dev"],
-  tech: ["React", "CSS", "DNS Configuration", "GitHub Pages"]
+  tech: ["React", "CSS", "DNS", "GitHub Pages"]
 }, {
   client: "Minebright",
-  dates: "May 2021 - Ongoing",
-  description: "As a result of their ongoing partnership with North P&amp;D, Minebright is able to immediately obtain, without prior notice nor any minimum commitment, help with quality assurance from one of our team members in support of their software development team.",
-  key: 24,
+  dates: "February 2023 - Ongoing",
+  description: "As a result of their partnership with North P&amp;D, Minebright is able to obtain, without prior notice nor any minimum commitment, help with quality assurance from one of our team members in support of their software development team.",
   tags: ["quality assurance"]
 }, {
   client: "Tension",
-  dates: "May 2021 - Ongoing",
-  description: "We built the <a href='https://rockmass.webflow.io' target='_blank' rel='noopener noreferrer'>Rockmass</a> website for Tension based on their design.",
-  key: 25,
+  dates: "February - March 2023",
+  description: "Built the <a href='https://rockmass.webflow.io' target='_blank' rel='noopener noreferrer'>Rockmass</a> website for Tension based on their design.",
   tags: ["frontend web dev"],
   tech: ["Webflow"]
 }, {
   client: "Proximy",
+  dates: "May - December 2021",
+  description: "Built many cross-platform mobile app features.",
+  tags: ["mobile dev", "serverless", "NoSQL"],
+  tech: ["Flutter", "Google Cloud Functions", "Cloud Firestore"]
+}, {
+  client: "Proximy",
   dates: "June 2021",
-  description: "Secured Cloud Firestore database by writing security rules.",
-  key: 2,
+  description: "Secured Cloud Firestore database by writing security rules. This was quite challenging because the Proximy app stores a lot of personal data which must be protected, but also involves a lot of interaction between users. As a result, we had to write rules that were both secure, but also allowed for users involved in specific interactions to access and update the data relevant to those interaction.",
   tags: ["security", "NoSQL"],
   tech: ["Cloud Firestore"]
 }]

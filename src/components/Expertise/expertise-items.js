@@ -129,7 +129,7 @@ export const items = [{
   dates: "January 2022",
   description: "Fixed npm dependency issue affecting admin-facing tools. This involed updating a faulty package and doing the necessary updates in the code to match the new version's syntax and usage.",
   key: 21,
-  tags: ["front-end web dev"],
+  tags: ["frontend web dev"],
   tech: ["Laravel", "Eloquent"]
 }, {
   client: "Midstride Technologies",
@@ -174,4 +174,4 @@ export const items = [{
   tech: ["Cloud Firestore"]
 }]
 
-export const tagColors = { "security": "red", "full-stack web dev": "royalblue", "mobile dev": "orange", "devops": "black", "CI/CD": "green", "automation": "deeppink", "serverless": "grey", "NoSQL": "coral", "quality assurance": "purple", "backend": "darkred", "frontend web dev": "sienna" }
+export const tagColors = { "security": "red", "full-stack web dev": "royalblue", "mobile dev": "orange", "devops": "black", "CI/CD": "green", "automation": "deeppink", "serverless": "grey", "NoSQL": "coral", "quality assurance": "purple", "backend": "darkred", "frontend web dev": "mediumvioletred" }

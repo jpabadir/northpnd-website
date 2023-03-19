@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.296e5df4.css",
-    "main.js": "/static/js/main.515cc079.js",
+    "main.js": "/static/js/main.dd67d174.js",
     "static/media/home-background.mp4": "/static/media/home-background.fc0b870534672fee29cd.mp4",
     "static/media/discussion-light.mov": "/static/media/discussion-light.4350386319ae3b602f16.mov",
     "static/media/discussion-poster.png": "/static/media/discussion-poster.a640fb181399997d1a68.png",
@@ -20,10 +20,10 @@
     "static/media/layered-waves-haikei.svg": "/static/media/layered-waves-haikei.7cecff5e9dc9f50de7b4.svg",
     "index.html": "/index.html",
     "main.296e5df4.css.map": "/static/css/main.296e5df4.css.map",
-    "main.515cc079.js.map": "/static/js/main.515cc079.js.map"
+    "main.dd67d174.js.map": "/static/js/main.dd67d174.js.map"
   },
   "entrypoints": [
     "static/css/main.296e5df4.css",
-    "static/js/main.515cc079.js"
+    "static/js/main.dd67d174.js"
   ]
 }

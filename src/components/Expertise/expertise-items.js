@@ -1,13 +1,13 @@
 export const items = [{
   client: "Midstride Technologies",
   dates: "December 2022",
-  description: "Built a system which reads email template blade files from the codebase and renders them dynamically with user-chosen database records, allowing the admin team to preview emails being sent to specific customers under specific circumstances. In order to maximize maintainability and code-conciseness, we leveraged PHP's built-in iterators to read the files while only hard coding their parent folder's name.",
+  description: "Built a system which reads email template blade files from the codebase and renders them dynamically with user-chosen database records, allowing the admin team to preview emails being sent to specific customers under specific circumstances. In order to maximize maintainability and code-conciseness, we used PHP's built-in iterators to read the files while only specifying their parent folder's name.",
   tags: ["full-stack web dev"],
   tech: ["PHP", "Laravel", "MySQL"]
 }, {
   client: "Midstride Technologies",
   dates: "November 2022",
-  description: "As the client's project evolved, they decided to spin off a new project in the same industry as their main project. The new project had a different frontend, but shared a lot of its backend with the client's main project. In support of this endeavour, we took full ownership of the design and implementation of a system allowing to differentiate various backend objects (such as users, orders or emails) by their parent project, and to automatically take different actions based on the object's parent project. Among the different actions, we buit support for sending emails from a different email address and domain depending on the parent project. This was technically challenging because it involves updating Laravel's MailgunTransport's configuration at runtime, which requires creating a new instance of MailgunTransport and binding it into the service container. To build this, we leveraged Laravel's Tinker tool to efficienly iterate on our code and test it.",
+  description: "As the client's project evolved, they decided to spin off a new project in the same industry as their main product. The new project had a different frontend, but shared a lot of its backend with the client's main product. In support of this endeavour, we took full ownership of the design and implementation of a system allowing to differentiate various backend objects (such as users, orders or emails) by their parent project, and to automatically take different actions based on the object's parent project. Among the various actions, we buit support for sending emails from a different email address and domain depending on the parent project. This was technically challenging because it involves updating Laravel's MailgunTransport's configuration at runtime, which requires creating a new instance of MailgunTransport and binding it into the service container. To build this, we made heavy use of Laravel's Tinker tool to efficienly iterate on our code and test it.",
   tags: ["full-stack web dev"],
   tech: ["PHP", "Laravel", "MySQL"]
 }, {

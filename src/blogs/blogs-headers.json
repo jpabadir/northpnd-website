@@ -45,7 +45,8 @@
     "publishDate": "2023-03-19T00:00:00",
     "image": "/publicassets/question.jpg",
     "imageCaption": "",
-    "isStaff": true
+    "isStaff": true, 
+    "hide": true
   },
   {
     "kind": "Video",

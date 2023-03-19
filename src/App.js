@@ -20,7 +20,7 @@ function App() {
   const mainRef = useRef();
 
   function updateScrollPath(path) {
-    if (window.location.pathname !== "/expertise" && window.location.pathname !== "/articles") {
+    if (window.location.pathname !== "/expertise" && !window.location.pathname.includes("resources")) {
       mainRef.current.scrollTo(path);
     } else {
       setScrollGoal(path);

@@ -69,7 +69,7 @@ function Services() {
             index={1}
             videoSrc={coding}
             posterSrc={codingPoster}
-            title="Technical businesses"
+            title="Technical teams"
             subtitle="We offer staff augmentation to our technical clients. We integrate closely with function as part of their team and work in close collaboration with the other developers. We pride ourselves in working with a deep sense of owernship towards the outcome "
             subtitleDisplay={subtitleDisplay}
             setSubtitleDisplay={setSubtitleDisplay}

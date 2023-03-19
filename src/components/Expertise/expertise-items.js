@@ -36,7 +36,7 @@ export const items = [{
 }, {
   client: "Midstride Technologies",
   dates: "April - December 2022",
-  description: "Wrote many customizations for &lt;a href='https://quilljs.com/' target='_blank' rel='noopener noreferrer'&gt;Quill.js&lt;/a&gt; to give the client's team more flexibility in the content of the blog posts they create. Namely, we added built, from scratch, support for adding CTA buttons, a references table, rich images with a caption and an alt tag, product advertisements, tables, and collapsible animated content. This involved writing and maintaining a lot of custom JavaScript to interact with Quill's API extensively.",
+  description: "Wrote many customizations for <a href='https://quilljs.com/' target='_blank' rel='noopener noreferrer'>Quill.js</a> to give the client's team more flexibility in the content of the blog posts they create. Namely, we added built, from scratch, support for adding CTA buttons, a references table, rich images with a caption and an alt tag, product advertisements, tables, and collapsible animated content. This involved writing and maintaining a lot of custom JavaScript to interact with Quill's API extensively.",
   key: 11,
   tags: ["full-stack web dev"],
   tech: ["Vue", "JS"]

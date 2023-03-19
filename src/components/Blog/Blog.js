@@ -41,26 +41,28 @@ export default function Blog() {
                   </div>
                   <div className="col-lg-5 d-flex align-items-center justify-content-center">
                     <div>
-                      <div className="pill darkpill text-center" style={{ color: 'purple', borderColor: 'purple' }}>
-                        {blog.kind}
+                      <div>
+                        <div className="pill darkpill text-center" style={{ color: 'purple', borderColor: 'purple' }}>
+                          {blog.kind}
+                        </div>
                       </div>
+                      {
+                        blog.isStaff &&
+                        <div>
+                          <div className="pill darkpill text-center" style={{ color: 'red', borderColor: 'red' }}>
+                            Internal
+                          </div>
+                        </div>
+                      }
+                      {
+                        blog.isFrench &&
+                        <div>
+                          <div className="pill darkpill text-center" style={{ color: 'darkblue', borderColor: 'darkblue' }}>
+                            French Language
+                          </div>
+                        </div>
+                      }
                     </div>
-                    {
-                      blog.isStaff &&
-                    <div>
-                      <div className="pill darkpill text-center" style={{ color: 'red', borderColor: 'red' }}>
-                        Internal
-                      </div>
-                    </div>
-                    }
-                    {
-                      blog.isFrench &&
-                    <div>
-                      <div className="pill darkpill text-center" style={{ color: 'darkblue', borderColor: 'darkblue' }}>
-                        French Language
-                      </div>
-                    </div>
-                    }
                     <div style={{ fontSize: "20px", paddingLeft: '10px' }}>
                       <span className="animate-underline">{blog.title}</span>
                     </div>
@@ -80,26 +82,28 @@ export default function Blog() {
                   </div>
                   <div className="col-lg-5 d-flex align-items-center justify-content-center">
                     <div>
-                      <div className="pill darkpill text-center" style={{ color: 'purple', borderColor: 'purple' }}>
-                        {blog.kind}
+                      <div>
+                        <div className="pill darkpill text-center" style={{ color: 'purple', borderColor: 'purple' }}>
+                          {blog.kind}
+                        </div>
                       </div>
+                      {
+                        blog.isStaff &&
+                        <div>
+                          <div className="pill darkpill text-center" style={{ color: 'red', borderColor: 'red' }}>
+                            Internal
+                          </div>
+                        </div>
+                      }
+                      {
+                        blog.isFrench &&
+                        <div>
+                          <div className="pill darkpill text-center" style={{ color: 'darkblue', borderColor: 'darkblue' }}>
+                            French Language
+                          </div>
+                        </div>
+                      }
                     </div>
-                    {
-                      blog.isStaff &&
-                    <div>
-                      <div className="pill darkpill text-center" style={{ color: 'red', borderColor: 'red' }}>
-                        Internal
-                      </div>
-                    </div>
-                    }
-                    {
-                      blog.isFrench &&
-                    <div>
-                      <div className="pill darkpill text-center" style={{ color: 'darkblue', borderColor: 'darkblue' }}>
-                        French Language
-                      </div>
-                    </div>
-                    }
                     <div style={{ fontSize: "20px", paddingLeft: '10px' }}>
                       <span className="animate-underline">{blog.title}</span>
                     </div>

@@ -8,7 +8,7 @@ export const items = [
   }, {
     client: "Midstride Technologies",
     dates: "March 2023",
-    description: "Fixed an issue where users were able to set the database in a state which should have been impossible. After investigating the issue, we found out that users were able to exploit the fact that if they saved the URL of that confirmation page we show at the end of a specific flow and loaded it before the end of the flow, it would prematurely submit the \"completion\" request and set the database in the faulty state. We added extra checks to ensure this couldn't happen.",
+    description: "Fixed an issue where users were able to set the database in a state which should have been impossible. After investigating the issue, we found out that users were able to exploit the fact that if they saved the URL of the confirmation page we show at the end of a specific flow and loaded it before the end of the flow, it would prematurely submit the \"completion\" request and set the database in the faulty state. We added extra checks to ensure this couldn't happen.",
     tags: ["backend"],
     tech: ["PHP", "Laravel", "Docker"]
   }, {

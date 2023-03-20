@@ -9,6 +9,7 @@ import OurClients from "../OurClients/OurClients";
 import TeamSection from "../TeamSection/TeamSection";
 import "../../hamburgers.css";
 import homeBackground from "../../assets/home-background.mp4";
+import homeBackgroundPoster from '../../assets/home-background-poster.jpg';
 
 const bodyScrollLock = require("body-scroll-lock");
 const disableBodyScroll = bodyScrollLock.disableBodyScroll;
@@ -58,6 +59,7 @@ const Main = forwardRef((props, ref) => {
             loop
             autoPlay
             muted
+            poster={homeBackgroundPoster}
           />
           <div className="Overlay DarkOverlay" />
           <div

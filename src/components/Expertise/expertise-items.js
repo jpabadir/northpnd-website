@@ -119,7 +119,6 @@ export const items = [{
   tags: ["documentation"],
   tech: ["PHP", "Laravel"]
 }, {
-}, {
   client: "Midstride Technologies",
   dates: "March 2023",
   description: "Fixed an issue where users were able to set the database in a state which should have been impossible. After investigating the issue, we found out that users were able to exploit the fact that as they placed orders, we persist some data using HTTP sessions, which they were able to retrieve before the end of the ordering flow in order to submit forbidden requests. Since the HTTP sessions mechanism was necessary, we added extra checks to the part of the app responsible for submitting the faulty data to ensure this couldn't happen.",

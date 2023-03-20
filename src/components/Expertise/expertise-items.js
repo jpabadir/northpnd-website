@@ -51,7 +51,7 @@ export const items = [{
   dates: "January 2022 - Ongoing",
   description: "Fixed many issues occuring with complex Eloquent queries. As the client's requests for data filtering functionality increased in complexity, so did the sophistication of the queries we had to write in order to support the desired filtering. As a result, the client would often encouter issues where the data returned didn't match the filters they set. We were consistently able to successfully fix the queries, resulting in reliably-correct data-filtering results.",
   tags: ["backend"],
-  tech: ["Laravel", "MySQL"]
+  tech: ["PHP", "Laravel", "MySQL"]
 }, {
   client: "Midstride Technologies",
   dates: "January 2022 - Ongoing",
@@ -69,43 +69,43 @@ export const items = [{
   dates: "August 2022",
   description: "Took full owernship of the design and implementation of a system allowing to export an Excel file showing a report of users with abandoned orders for products, allowing the admin team to take action to improve conversions.",
   tags: ["full-stack web dev"],
-  tech: ["Laravel"]
+  tech: ["PHP", "Laravel"]
 }, {
   client: "Midstride Technologies",
   dates: "January 2023",
   description: "Implemented one-time password phone login functionality using the Twilio API. This enables users to immediately log in to their account using their mobile phone if they forget their password.",
   tags: ["full-stack web dev"],
-  tech: ["Laravel"]
+  tech: ["PHP", "Laravel"]
 }, {
   client: "Midstride Technologies",
   dates: "October 2022",
   description: "Implemented a system to manage failed Laravel queued jobs, allowing our client to easily monitor and retry failed jobs.",
   tags: ["full-stack web dev"],
-  tech: ["Laravel"]
+  tech: ["PHP", "Laravel"]
 }, {
   client: "Midstride Technologies",
   dates: "October 2022",
   description: "Implemented a system which leverages the Mailgun API to generate a list of emails which failed to send, providing our client and the admin team with actionable information regarding their communication endeavours with customers.",
   tags: ["full-stack web dev"],
-  tech: ["Laravel"]
+  tech: ["PHP", "Laravel"]
 }, {
   client: "Midstride Technologies",
   dates: "November 2022",
   description: "Leveraged the Mailgun and Mailchimp APIs to allow admins to manage users' subscription status to the client's two newsletters.",
   tags: ["full-stack web dev"],
-  tech: ["Laravel"]
+  tech: ["PHP", "Laravel"]
 }, {
   client: "Midstride Technologies",
   dates: "July 2022",
   description: "Implemented a system which allowed to automatically redirect specific groups of URLs containing uppercase letters to their fully-lowercase versions. This was challenging because the determining factor in whether or not a given URL had to be redirected was whether its route name, not the URL itself, contained a specific string. Thus, we had to add a catch-all route with a middleware and have the middleware compute the route name for the all-lowercase equivalent of the accessed URL, and then redirect the URL if its route matched the criteria.",
   tags: ["backend"],
-  tech: ["Laravel"]
+  tech: ["PHP", "Laravel"]
 }, {
   client: "Midstride Technologies",
   dates: "January 2022",
   description: "Added support for the upload of HEIC images by customers. Since the libraries we used didn't support this out of the box, we had to convert the images to JPG before storing them.",
   tags: ["full-stack web dev"],
-  tech: ["Laravel", "Vue", "JS"]
+  tech: ["PHP", "Laravel", "Vue", "JS"]
 }, {
   client: "Midstride Technologies",
   dates: "August 2022",
@@ -116,6 +116,13 @@ export const items = [{
   client: "Midstride Technologies",
   dates: "March 2023",
   description: "Wrote documentation to help the rest of the team get set up with Xdebug step debugging on VSCode + Docker. This is challenging because it involves publishing the Docker files and doing quite a big of config to ensure it works properly.",
+  tags: ["documentation"],
+  tech: ["PHP", "Laravel"]
+}, {
+}, {
+  client: "Midstride Technologies",
+  dates: "March 2023",
+  description: "Fixed an issue where users were able to set the database in a state which should have been impossible. After investigating the issue, we found out that users were able to exploit the fact that as they placed orders, we persist some data using HTTP sessions, which they were able to retrieve before the end of the ordering flow in order to submit forbidden requests. Since the HTTP sessions mechanism was necessary, we added extra checks to the part of the app responsible for submitting the faulty data to ensure this couldn't happen.",
   tags: ["documentation"],
   tech: ["PHP", "Laravel", "Docker"]
 }, {
@@ -138,7 +145,7 @@ export const items = [{
 }, {
   client: "Proximy",
   dates: "May - December 2021",
-  description: "Built many cross-platform mobile app features.",
+  description: "Built many customer-facing, cross-platform mobile app features on Proximy's mobile app. For instance, we built the \"add as a friend\" feature. This was technically challenging because, in order to ensure the feature worked robustly, we had to handle the case where both users clicked on the \"add as a friend\" button at the same time, which would have resulted in the creation of two separate friend requests, which would have been a forbidden state. To solve this, we utilized Cloud Firestore transactions to ensure that when we handled friend requests, we did so in a way which always resulted in a valid state. In this case, for instance, the two users would become friends. Our client appreciated our attention to detail and concern with quality.",
   tags: ["mobile dev", "serverless", "NoSQL"],
   tech: ["Flutter", "Google Cloud Functions", "Cloud Firestore"]
 }, {

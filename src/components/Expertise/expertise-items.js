@@ -8,8 +8,8 @@ export const items = [
   }, {
     client: "Midstride Technologies",
     dates: "March 2023",
-    description: "Fixed an issue where users were able to set the database in a state which should have been impossible. After investigating the issue, we found out that users were able to exploit the fact that as they placed orders, we persist some data using HTTP sessions, which they were able to retrieve before the end of the ordering flow in order to submit forbidden requests. Since the HTTP sessions mechanism was necessary, we added extra checks to the part of the app responsible for submitting the faulty data to ensure this couldn't happen.",
-    tags: ["documentation"],
+    description: "Fixed an issue where users were able to set the database in a state which should have been impossible. After investigating the issue, we found out that users were able to exploit the fact that if they saved the URL of that confirmation page we show at the end of a specific flow and loaded it before the end of the flow, it would prematurely submit the \"completion\" request and set the database in the faulty state. We added extra checks to ensure this couldn't happen.",
+    tags: ["backend"],
     tech: ["PHP", "Laravel", "Docker"]
   }, {
     client: "Minebright",

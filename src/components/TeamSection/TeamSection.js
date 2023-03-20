@@ -10,8 +10,8 @@ import AP_Team from "../../assets/AP_Team.jpg";
 import ES_Team from "../../assets/ES_Team.jpg";
 import WZ_Team from "../../assets/WZ_Team.jpg";
 import AV_Team from "../../assets/AV_Team.png";
-import WKC_Team from "../../assets/WKC_Team.png";
-import LK_Team from "../../assets/LK_Team.png";
+import WKC_Team from "../../assets/WKC_Team.jpg";
+import LK_Team from "../../assets/LK_Team.jpg";
 
 function TeamSection() {
   return (

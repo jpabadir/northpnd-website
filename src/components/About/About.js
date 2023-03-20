@@ -18,7 +18,7 @@ function About() {
               After completing software engineering internships at Amazon Web Services and RBC, I established North P&D in May 2021 with the objective of delivering exceptional software development and technology services to businesses. 
               <br />
               <br />
-              Click <a href="https://github.com/jpabadir" target="_blank" rel="noreferrer">here</a> to view my GitHub profile, and <a href="expertise" target="_blank" rel="noreferrer">here</a> to learn more about our team's expertise.
+              Click <a href="https://github.com/jpabadir" target="_blank" rel="noreferrer">here</a> to view my GitHub profile, <a href="https://www.linkedin.com/in/jean-philippe-abadir-2a931a157/" target="_blank" rel="noreferrer">here</a> to view my LinkedIn profile, and <a href="expertise" target="_blank" rel="noreferrer">here</a> to learn more about our team's expertise.
             </div>
           </Col>
           <Col l={4} className="d-flex justify-content-center JpHeadshotParent">

@@ -4,13 +4,13 @@ export const items = [
     dates: "March 2023",
     description: "Wrote documentation to help the rest of the team get set up with Xdebug step debugging on VSCode + Docker. This is challenging because it involves publishing the Docker files and doing quite a big of config to ensure it works properly.",
     tags: ["documentation"],
-    tech: ["PHP", "Laravel"]
+    tech: ["PHP", "Laravel", "Docker"]
   }, {
     client: "Midstride Technologies",
     dates: "March 2023",
     description: "Fixed an issue where users were able to set the database in a state which should have been impossible. After investigating the issue, we found out that users were able to exploit the fact that if they saved the URL of the confirmation page we show at the end of a specific flow and loaded it before the end of the flow, it would prematurely submit the \"completion\" request and set the database in the faulty state. We added extra checks to ensure this couldn't happen.",
     tags: ["backend"],
-    tech: ["PHP", "Laravel", "Docker"]
+    tech: ["PHP", "Laravel", "MySQL"]
   }, {
     client: "Minebright",
     dates: "February 2023 - Ongoing",

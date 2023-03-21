@@ -1,7 +1,8 @@
 import React from 'react';
 import './About.css';
 import { Row, Col, Container } from 'react-bootstrap';
-import jpHeadshot from '../../assets/jp-headshot.png';
+import ReactPlayer from 'react-player';
+import aboutVideo from '../../assets/about-video.mp4';
 
 function About() {
   return (
@@ -20,8 +21,8 @@ function About() {
               individuals.
             </div>
           </Col>
-          <Col l={4} className="d-flex justify-content-center JpHeadshotParent">
-            <img src={jpHeadshot} className="JpHeadshot" />
+          <Col l={4} className="d-flex justify-content-center aboutVideoParent">
+            <ReactPlayer url={aboutVideo} controls={true} onPlay={() => console.log('video is playing')} onPause={() => console.log('video is paused')} className="aboutVideo" />
           </Col>
         </Row>
       </Container>

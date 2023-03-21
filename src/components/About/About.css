@@ -12,19 +12,18 @@
   }
 }
 
-.JpHeadshot {
-  max-width: min(95vw, 400px);
-  border-radius: 10px;
+.aboutVideo {
+  margin-left: 60px !important;
 }
 
 @media only screen and (max-width: 992px) {
-  .JpHeadshot {
-    margin-top: 15px;
+  .aboutVideo {
+    margin-top: 30px;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  .JpHeadshotParent {
+  .aboutVideoParent {
     display: none !important;
   }
 }

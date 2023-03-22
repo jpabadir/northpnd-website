@@ -23,7 +23,7 @@ function About() {
             </div>
           </Col>
           <Col l={4} className="d-flex justify-content-center aboutVideoParent">
-            <ReactPlayer url={aboutVideo} controls={true} onPlay={() => console.log('video is playing')} onPause={() => console.log('video is paused')} className="aboutVideo" />
+            <ReactPlayer url={aboutVideo} width={'620px'} height={'400px'} controls={true} onPlay={() => console.log('video is playing')} onPause={() => console.log('video is paused')} className="aboutVideo" />
           </Col>
         </Row>
       </Container>

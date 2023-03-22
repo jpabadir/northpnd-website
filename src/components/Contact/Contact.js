@@ -31,7 +31,7 @@ function Contact() {
       <Container fluid className="ContactContainer">
         <div className="Subtitle">Contact Us</div>
         <Row className='ContactRow'>
-          <Col xl={6} className="ContactCol">
+          <Col xl={6} className="ContactCol px-0">
             <div style={{ fontSize: '18px' }}>
               We're delighted you're interested in working with us! To get in touch, you
               can either book a free consultation using the form {isMobile ? 'below' : 'on the right'}, email us at <a href="mailto:hello@northpnd.com">hello@northpnd.com</a>, or give us a call at <a href='tel:6475767112'>647-576-7112</a>.

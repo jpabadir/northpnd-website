@@ -1,14 +1,14 @@
 import React from 'react';
 import './About.css';
 import { Row, Col, Container } from 'react-bootstrap';
-import jpHeadshot from '../../assets/jp-headshot.png';
+import AboutVideo from '../../assets/about-video.webm';
 
 function About() {
   return (
     <div className="MainElementPadding">
       <Container fluid className="AboutContainer">
         <Row className="AboutRow">
-          <Col l={8}>
+          <Col lg={6}>
             <div className="Subtitle">Hi! I'm JP.</div>
             <div className="Subtitle" style={{ fontSize: '25px' }}>
               I am North P&amp;D's founder and technical lead.
@@ -21,8 +21,10 @@ function About() {
               Click <a href="https://github.com/jpabadir" target="_blank" rel="noreferrer">here</a> to view my GitHub profile, <a href="https://www.linkedin.com/in/jean-philippe-abadir-2a931a157/" target="_blank" rel="noreferrer">here</a> to view my LinkedIn profile, and <a href="expertise" target="_blank" rel="noreferrer">here</a> to learn more about our team's expertise.
             </div>
           </Col>
-          <Col l={4} className="d-flex justify-content-center JpHeadshotParent">
-            <img src={jpHeadshot} className="JpHeadshot" />
+          <Col lg={6} className="d-flex justify-content-center AboutVideoParent">
+            <video controls disablePictureInPicture controlslist="nodownload noremoteplayback noplaybackrate" className="AboutVideo">
+              <source src={AboutVideo} type="video/webm"/>
+            </video>
           </Col>
         </Row>
       </Container>

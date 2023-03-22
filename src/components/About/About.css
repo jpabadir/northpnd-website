@@ -12,19 +12,19 @@
   }
 }
 
-.aboutVideo {
+.AboutVideo {
   margin-left: 60px !important;
 }
 
-@media only screen and (max-width: 1000px) {
-  .aboutVideo {
-    margin-top: 30px;
+@media only screen and (max-width: 992px) {
+  .AboutVideo {
+    margin-top: 30px !important;
     margin-left: 0px !important;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  .aboutVideoParent {
+  .AboutVideoParent {
     display: none !important;
   }
 }

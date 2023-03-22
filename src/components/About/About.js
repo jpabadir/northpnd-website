@@ -2,7 +2,7 @@ import React from 'react';
 import './About.css';
 import { Row, Col, Container } from 'react-bootstrap';
 import ReactPlayer from 'react-player';
-import aboutVideo from '../../assets/about-video.mp4';
+import AboutVideo from '../../assets/about-video.webm';
 
 function About() {
   return (
@@ -23,7 +23,7 @@ function About() {
             </div>
           </Col>
           <Col l={4} className="d-flex justify-content-center aboutVideoParent">
-            <ReactPlayer url={aboutVideo} width={'620px'} height={'400px'} controls={true} onPlay={() => console.log('video is playing')} onPause={() => console.log('video is paused')} className="aboutVideo" />
+            <ReactPlayer url={AboutVideo} width={'620px'} height={'400px'} controls={true} className="AboutVideo" />
           </Col>
         </Row>
       </Container>

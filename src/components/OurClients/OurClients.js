@@ -13,7 +13,7 @@ function WorkCard(props) {
           <Card className={`WorkCard ${props.title.replace(/\s/g, '')}`} />
           <div className="CardTitle">{props.title}</div>
         </a>
-        <div>{props.subtitle}</div>
+        <div dangerouslySetInnerHTML={{__html: props.subtitle}} />
       </div>
     </Col>
   );
@@ -38,12 +38,12 @@ function OurClients() {
           <WorkCard
             link="wearetension.com"
             title="Tension Consulting"
-            subtitle="We help Tension build and deliver outstanding websites."
+            subtitle="We built the <a href='https://rockmass.webflow.io' target='_blank' rel='noopener noreferrer'>Rockmass</a> website for Tension based on their design."
           />
           <WorkCard
             link="minebright.com"
             title="Minebright"
-            subtitle="We provide Minebright with flexible, on demand, premium Quality Assurance services in support of their software development efforts.">
+            subtitle="We provide Minebright with flexible, on demand, premium quality assurance services in support of their software development efforts.">
           </WorkCard>
         </Row>
         <Reviews />

@@ -2,10 +2,8 @@ import React, { useState, useLayoutEffect } from 'react';
 import './Services.css';
 import { Row, Col, Container } from 'react-bootstrap';
 import coding from '../../assets/coding-light.mov';
-import cables from '../../assets/cables-light.mov';
 import discussion from '../../assets/discussion-light.mov';
 import codingPoster from '../../assets/coding-poster.png';
-import cablesPoster from '../../assets/cables-poster.png';
 import discussionPoster from '../../assets/discussion-poster.png';
 
 function ServicesCard(props) {
@@ -27,7 +25,6 @@ function ServicesCard(props) {
           <video
             className="ServicesVideo"
             src={props.videoSrc}
-            height="250"
             type="video/mov"
             onMouseOver={() => {
               if (!isMobile) props.setSubtitleDisplay(props.index);
@@ -66,23 +63,14 @@ function Services() {
     <div className="MainElementPadding">
       <Container fluid>
         <div className="Subtitle">How we can help you</div>
-        <div style={{ fontSize: '25px' }}>We take care of your technology needs so you can focus on your business.</div>
+        <div style={{ fontSize: '25px' }}>There are two types of clients we work with.</div>
         <Row className="ServicesCardsRow">
           <ServicesCard
-            index={0}
+            index={1}
             videoSrc={coding}
             posterSrc={codingPoster}
-            title="Web &amp; Mobile Development"
-            subtitle="We'll work with you to design, develop, and deploy your website or mobile app."
-            subtitleDisplay={subtitleDisplay}
-            setSubtitleDisplay={setSubtitleDisplay}
-          />
-          <ServicesCard
-            index={1}
-            videoSrc={cables}
-            posterSrc={cablesPoster}
-            title="Hosting"
-            subtitle="We'll deal with your hosting and domain name so you only have one tech bill to pay - ours."
+            title="Technical teams"
+            subtitle="We provide staff augmentation services to our technical clients. We function as an integral part of their team, working closely with their developers, prioritizing collaboration, communication and code quality. We pride ourselves in working with a deep sense of owernship towards the outcome of the tech we build and strive to create maintainable, robust, and scalable solutions that exceed expectations."
             subtitleDisplay={subtitleDisplay}
             setSubtitleDisplay={setSubtitleDisplay}
           />
@@ -90,14 +78,14 @@ function Services() {
             index={2}
             videoSrc={discussion}
             posterSrc={discussionPoster}
-            title="Consulting"
-            subtitle="Whether you have a unique business problem that can be solved with tech, or you need a consultant to speed up a project's development, we can help."
+            title="Non-techical businesses"
+            subtitle="We help non-technical companies with strategy, design and development of their digital products. We work with our clients to understand their business and their users, and help them build products that are not only functional but also highly enjoyable to use."
             subtitleDisplay={subtitleDisplay}
             setSubtitleDisplay={setSubtitleDisplay}
           />
         </Row>
-      </Container>
-    </div>
+      </Container >
+    </div >
   );
 }
 

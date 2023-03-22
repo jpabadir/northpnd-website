@@ -10,6 +10,8 @@ import AP_Team from "../../assets/AP_Team.jpg";
 import ES_Team from "../../assets/ES_Team.jpg";
 import WZ_Team from "../../assets/WZ_Team.jpg";
 import AV_Team from "../../assets/AV_Team.png";
+import WKC_Team from "../../assets/WKC_Team.jpg";
+import LK_Team from "../../assets/LK_Team.jpg";
 
 function TeamSection() {
   return (
@@ -55,6 +57,16 @@ function TeamSection() {
           <div className='TeamMember'>
             <img src={WZ_Team} className='TeamHeadshots'/>
             <div className='TeamNames'>William</div>
+            <div>Software Engineer Intern</div>
+          </div>
+          <div className='TeamMember'>
+            <img src={WKC_Team} className='TeamHeadshots'/>
+            <div className='TeamNames'>Wing</div>
+            <div>Software Engineer Intern</div>
+          </div>
+          <div className='TeamMember'>
+            <img src={LK_Team} className='TeamHeadshots'/>
+            <div className='TeamNames'>Lucas</div>
             <div>Software Engineer Intern</div>
           </div>
           <div className='TeamMember'>

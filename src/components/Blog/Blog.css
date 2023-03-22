@@ -26,6 +26,7 @@
   height: 190px;
   border-radius: 10px;
   transition: 300ms;
+  object-fit: cover;
 }
 
 .BlogThumbnailScaled {

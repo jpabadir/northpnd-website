@@ -20,7 +20,7 @@ function App() {
   const mainRef = useRef();
 
   function updateScrollPath(path) {
-    if (window.location.pathname !== "/expertise" && window.location.pathname !== "/articles") {
+    if (window.location.pathname !== "/expertise" && !window.location.pathname.includes("resources")) {
       mainRef.current.scrollTo(path);
     } else {
       setScrollGoal(path);
@@ -41,11 +41,11 @@ function App() {
               <Route path="tension" element={<Tension />} />
               <Route path="minebright" element={<Minebright />} />
             </Route>
-            <Route path="articles" element={<Blog />} />
+            <Route path="resources" element={<Blog />} />
             {blogsData.map((blog) => (
               <Route
                 key={blog.title}
-                path={`articles/${linkify(blog.title)}`}
+                path={`resources/${linkify(blog.title)}`}
                 element={<Article blog={blog} />}
               />
             ))}

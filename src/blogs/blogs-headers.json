@@ -1,5 +1,6 @@
 [
   {
+    "kind": "Article",
     "title": "Getting Started With GitHub",
     "author": "Ezra Song",
     "authorTitle": "Software Engineer Intern",
@@ -12,6 +13,7 @@
     "hide": true
   },
   {
+    "kind": "Article",
     "title": "How To Submit a Pull Request",
     "author": "JP Abadir",
     "authorTitle": "Founder",
@@ -21,5 +23,42 @@
     "image": "/publicassets/github.jpg",
     "imageCaption": "",
     "isStaff": true
+  },
+  {
+    "kind": "Article",
+    "title": "Tech Glossary",
+    "author": "JP Abadir",
+    "authorTitle": "Founder",
+    "profilePic": "/publicassets/JP_Team.jpg",
+    "subtitle": "Some terminology you should be familiar with.",
+    "publishDate": "2023-03-17T00:00:00",
+    "image": "/publicassets/dictionary.jpg",
+    "imageCaption": "",
+    "isStaff": true
+  },
+  {
+    "kind": "Article",
+    "title": "How to Ask for Help as a Software Engineer",
+    "author": "JP Abadir",
+    "authorTitle": "Founder",
+    "profilePic": "/publicassets/JP_Team.jpg",
+    "publishDate": "2023-03-19T00:00:00",
+    "image": "/publicassets/question.jpg",
+    "imageCaption": "",
+    "isStaff": true, 
+    "hide": true
+  },
+  {
+    "kind": "Video",
+    "title": "Microsoft Reactor - Introduction to GitHub Actions",
+    "link": "https://www.youtube.com/live/XRUPBaHngpc?feature=share",
+    "image": "https://img.youtube.com/vi/XRUPBaHngpc/hqdefault.jpg",
+    "isFrench": true
+  },
+  {
+    "kind": "Video",
+    "title": "Greater Toronto Area High School Tech Talk",
+    "link": "https://youtu.be/ai0FCWIGqk0",
+    "image": "https://img.youtube.com/vi/ai0FCWIGqk0/hqdefault.jpg"
   }
 ]

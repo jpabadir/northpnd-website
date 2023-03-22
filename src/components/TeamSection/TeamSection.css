@@ -2,8 +2,10 @@
   height: 180px;
   width: 180px;
   border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
   object-fit: cover;
-  outline: 5px solid #000;
+  border: 3px solid #000;
 }
 
 .TeamMember {
@@ -13,7 +15,7 @@
 
 .TeamMembers{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .TeamNames{

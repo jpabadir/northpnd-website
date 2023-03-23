@@ -1,4 +1,5 @@
 import "./BlogStyles.css";
+import bootstrap from "bootstrap";
 
 export default function Content() {
   return (
@@ -44,11 +45,33 @@ export default function Content() {
         pop-up with your key, you won't be able to access it again.</strong> Copy it somewhere safe, such as 
         Notepad. Don't share your API key with anyone.
       </p>
-      <div style={{display: "flex", border: "1px solid black", justifyContent: "center", flexWrap: "wrap", alignItems: "flex-start"}}>
-        <img alt="Click View API Keys" style={{margin: "20px", height: "200px"}} src="/publicassets/Using the ChatGPT API Images/view-api-keys.jpg" />
-        <img alt="Create new API key" style={{margin: "20px", height: "200px"}} src="/publicassets/Using the ChatGPT API Images/create-new-secret-key.jpg" />
-        <img alt="Generated API key" style={{margin: "20px", height: "200px"}} src="/publicassets/Using the ChatGPT API Images/api-key-generated.jpg" />
+      <div id="apiKeyCarousel" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#apiKeyCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#apiKeyCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#apiKeyCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block m-auto" style={{height: "35vw", maxHeight: "400px"}} src="/publicassets/Using the ChatGPT API Images/view-api-keys.jpg" alt="Click View API keys" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block m-auto" style={{height: "35vw", maxHeight: "400px"}} src="/publicassets/Using the ChatGPT API Images/create-new-secret-key.jpg" alt="Create new API key" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block m-auto" style={{height: "35vw", maxHeight: "400px"}} src="/publicassets/Using the ChatGPT API Images/api-key-generated.jpg" alt="Generated API key" />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#apiKeyCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#apiKeyCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+      
       <p className="Caption">
         Create a new API key and make sure to copy it to somewhere safe.
       </p>
@@ -56,7 +79,7 @@ export default function Content() {
       <p>If you installed Jupyter with Anaconda:</p>
       <ul>
         <li><strong>Windows</strong>: Open the Start menu and search for Anaconda Navigator.</li>
-        <li><strong>MacOS</strong>: Use Cmd+Space and search for Navigator.</li>
+        <li><strong>MacOS</strong>: Press <kbd>Cmd+Space</kbd> and search for Navigator.</li>
         <li><strong>Linux</strong>: Open a terminal window and type <code>anaconda-navigator</code>.</li>
       </ul>
       <p>Once you have Anaconda Navigator running, launch Jupyter Notebook.</p>
@@ -67,13 +90,13 @@ export default function Content() {
       </p>
       <img alt="Create new notebook" src="/publicassets/Using the ChatGPT API Images/new-notebook.jpg" />
       <p>
-        Note that Jupyter Notebook does not autosave; make sure to save (Ctrl+S or Cmd+S) frequently when 
-        writing the following code.
+        Note that Jupyter Notebook does not autosave; make sure to save (<kbd>Ctrl+S</kbd> or <kbd>Cmd+S</kbd>) 
+        frequently when writing the following code.
       </p>
       <p>
-        For your first line of code, type <code>!pip install openai</code> then press Shift+Enter (or Cell &gt; Run 
-        Cells and Select Below) to run it. This will install the OpenAI Python library. Then, you can comment it out 
-        by adding <code>#</code> to the beginning of the line.
+        For your first line of code, type <code>!pip install openai</code> then press <kbd>Shift+Enter</kbd> (or 
+        Cell &gt; Run Cells and Select Below) to run it. This will install the OpenAI Python library. Then, you 
+        can comment it out by adding <code>#</code> to the beginning of the line.
       </p>
       <p>In the box below, type <code>import openai</code> to import the library. Run this line of code.</p>
       <p>

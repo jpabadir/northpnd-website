@@ -66,6 +66,7 @@ table {
   
   .TagFilter label {
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     font-size: 14px;
     margin: 12px 10px;

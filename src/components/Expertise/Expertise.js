@@ -1,6 +1,5 @@
 import { items as expertiseItems, tagColors } from './expertise-items';
 import * as React from 'react';
-import { Link } from 'react-router-dom'
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -8,16 +7,55 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import './Expertise.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Expertise() {
+  const [selectedTags, setSelectedTags] = useState([]);
+  const [showFilter, setShowFilter] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0)
   })
 
+  const showFilterMenu = () => {
+    setShowFilter(!showFilter);
+  };
+  
+  const filterByTags = (checked, tag) => {
+    if (checked) {
+      setSelectedTags([...selectedTags, tag]);
+    } else {
+      setSelectedTags(selectedTags.filter((t) => t !== tag));
+    }
+  };
+
+  const filteredItems = expertiseItems.filter((item) => {
+    if (selectedTags.length === 0) {
+      return true;
+    }
+    return selectedTags.every((tag) => item.tags && item.tags.includes(tag));
+  });
+  
   return (
-    <div className='StandalonePageParent d-flex justify-content-center'>
+     <div className='StandalonePageParent d-flex justify-content-center'>
       <div className='Expertise'>
+        <div className="TagFilter">
+          <div className="FilterArrow" onClick={showFilterMenu}>Filter options {showFilter ? '✕' : '≡'}</div>
+          <div className="TagOptionsContainer" style={{ display: showFilter ? 'flex' : 'none' }}>
+            {Object.keys(tagColors).map((tag) => (
+              <label key={tag}>
+                <input
+                  type="checkbox"
+                  value={tag}
+                  checked={selectedTags.includes(tag)}
+                  onChange={(e) =>
+                    filterByTags(e.target.checked, e.target.value)}/>
+                <span className="checkmark" style={{ background: tagColors[tag] ?? 'grey' }}></span>
+                {tag}
+              </label>
+            ))}
+          </div>
+        </div>
         <TableContainer>
           <Table aria-label="simple table">
             <TableHead>
@@ -30,7 +68,7 @@ export default function Expertise() {
               </TableRow>
             </TableHead>
             <TableBody>
-              {expertiseItems.map((row) => (
+              {filteredItems.map((row) => (
                 <TableRow key={row.description} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
                   <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Client" className="text-center justify-content-center ClientNameCell">
                     {row.client}

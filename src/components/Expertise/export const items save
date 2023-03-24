@@ -12,5 +12,5 @@ export const items = [
     { "client": "Internal Project", "tech": ["React", "CSS", "Bootstrap", "DNS Configuration"], "description": "Currently building this website!", "tags": ["full-stack web dev"], "dates": "May 2021 - Ongoing" }
   ]
   
-  export const tagColors = { "security": "red", "full-stack web dev": "darkorange", "mobile dev": "blue", "devops": "black", "CI/CD": "green", "automation": "deeppink", "serverless": "grey", "NoSQL": "lightblue" }
+  export const tagColors = {"security": "red", "full-stack web dev": "darkorange", "mobile dev": "blue", "devops": "black", "CI/CD": "green", "automation": "deeppink", "serverless": "grey", "NoSQL": "lightblue" }
   

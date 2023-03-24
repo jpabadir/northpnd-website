@@ -11,12 +11,17 @@ import { useEffect, useState } from 'react';
 
 export default function Expertise() {
   const [selectedTags, setSelectedTags] = useState([]);
+  const [showFilter, setShowFilter] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0)
   })
 
-  const handleTagChange = (checked, tag) => {
+  const showFilterMenu = () => {
+    setShowFilter(!showFilter);
+  };
+  
+  const filterByTags = (checked, tag) => {
     if (checked) {
       setSelectedTags([...selectedTags, tag]);
     } else {
@@ -32,17 +37,25 @@ export default function Expertise() {
   });
   
   return (
-    <div className='StandalonePageParent d-flex justify-content-center'>
+     <div className='StandalonePageParent d-flex justify-content-center'>
       <div className='Expertise'>
-      <div className="TagFilter">
-        {Object.keys(tagColors).map((tag) => (
-          <label key={tag}>
-            <input type="checkbox" value={tag} checked={selectedTags.includes(tag)} onChange={(e) => handleTagChange(e.target.checked, e.target.value)} />
-            <span className="checkmark"></span>
-            {tag}
-          </label>
-        ))}
-      </div>
+        <div className="TagFilter">
+          <div className="FilterArrow" onClick={showFilterMenu}>Filter options {showFilter ? '✕' : '≡'}</div>
+          <div className="TagOptionsContainer" style={{ display: showFilter ? 'flex' : 'none' }}>
+            {Object.keys(tagColors).map((tag) => (
+              <label key={tag}>
+                <input
+                  type="checkbox"
+                  value={tag}
+                  checked={selectedTags.includes(tag)}
+                  onChange={(e) =>
+                    filterByTags(e.target.checked, e.target.value)}/>
+                <span className="checkmark" style={{ background: tagColors[tag] ?? 'grey' }}></span>
+                {tag}
+              </label>
+            ))}
+          </div>
+        </div>
         <TableContainer>
           <Table aria-label="simple table">
             <TableHead>

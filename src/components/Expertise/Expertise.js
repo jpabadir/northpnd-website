@@ -40,7 +40,7 @@ export default function Expertise() {
      <div className='StandalonePageParent d-flex justify-content-center'>
       <div className='Expertise'>
         <div className="TagFilter">
-          <div className="FilterArrow" onClick={showFilterMenu}>Filter options {showFilter ? '✕' : '≡'}</div>
+          <div className="FilterButton" onClick={showFilterMenu}>Filter options {showFilter ? '▲' : '▼'}</div>
           <div className="TagOptionsContainer" style={{ display: showFilter ? 'flex' : 'none' }}>
             {Object.keys(tagColors).map((tag) => (
               <label key={tag}>

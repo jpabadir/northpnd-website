@@ -79,7 +79,7 @@ function Services() {
             videoSrc={discussion}
             posterSrc={discussionPoster}
             title="Non-technical businesses"
-            subtitle="We help our clients design, develop and maintain customized digital products. We work with them to understand their business and their users, and help them build solutions that are not only functional but also highly enjoyable to use."
+            subtitle="We help our clients design, develop and maintain high-quality, customized digital products. We work with them to understand their business and their users, and help them build solutions that are not only functional but also highly enjoyable to use."
             subtitleDisplay={subtitleDisplay}
             setSubtitleDisplay={setSubtitleDisplay}
           />

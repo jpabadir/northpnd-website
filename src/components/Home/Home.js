@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className="HomeMain" style={{ width: `${Math.min(document.documentElement.clientWidth, 1500)}px` }}>
       <div className="HomeContent">
-        <h1 className="HomeMainTitle">We are a Toronto-based technology consultancy providing high-quality software engineering services since 2021.</h1>
+        <h1 className="HomeMainTitle">We are a Toronto-based technology consultancy providing high-quality software development services since 2021.</h1>
         <div className="TellMeMoreParent">
           <div
             className="TellMeMore"

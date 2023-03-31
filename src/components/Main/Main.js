@@ -5,6 +5,7 @@ import About from "../About/About";
 import Home from "../Home/Home";
 import Contact from "../Contact/Contact";
 import Services from "../Services/Services";
+import FAQ from "../FAQ/FAQ";
 import OurClients from "../OurClients/OurClients";
 import TeamSection from "../TeamSection/TeamSection";
 import "../../hamburgers.css";
@@ -142,6 +143,21 @@ const Main = forwardRef((props, ref) => {
                 style={{ width: "100%" }}
               >
                 <Services />
+              </Element>
+            </div>
+            <div
+              style={{
+                width: "100%",
+                justifyContent: "center",
+                display: "flex",
+              }}
+            >
+              <Element
+                name="faq"
+                className="element"
+                style={{ width: "100%" }}
+              >
+                <FAQ />
               </Element>
             </div>
             <div id="bottomPart">

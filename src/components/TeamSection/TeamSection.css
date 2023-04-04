@@ -1,6 +1,6 @@
 .TeamHeadshots {
-  height: 180px;
-  width: 180px;
+  height: 300px;
+  width: 300px;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -19,8 +19,12 @@
 }
 
 .TeamNames{
-  font-size: 20px;
+  font-size: 25px;
   margin-top: 15px;
+}
+
+.TeamRoles{
+  font-size: 20px;
 }
 
 #Katrina{

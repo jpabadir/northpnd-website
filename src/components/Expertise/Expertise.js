@@ -104,6 +104,15 @@ export default function Expertise() {
                     Dates
                   </TableSortLabel>
                 </TableCell>
+                <TableCell className="text-center" sx={{ color: 'inherit', fontSize: 'inherit', fontWeight: 'bold' }}>
+                  <TableSortLabel
+                    active={orderBy === 'dates'}
+                    direction={orderBy === 'dates' ? order : 'asc'}
+                    onClick={() => handleSortRequest('dates')}
+                  >
+                    Team
+                  </TableSortLabel>
+                </TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -130,6 +139,11 @@ export default function Expertise() {
                       {row.dates}
                     </div>
                   </TableCell>
+                  <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Team" className="text-center justify-content-center">
+                    <div className='d-flex justify-content-center' style={{ flexWrap: 'wrap', maxWidth: '100px' }}>
+                      {row.team.map((person) => (<Pfp info={person}/>))}
+                    </div>
+                  </TableCell>
                 </TableRow>
               ))}
             </TableBody>
@@ -138,4 +152,10 @@ export default function Expertise() {
       </div>
     </div>
   );
+}
+
+function Pfp (props){
+  return(
+    <img className="pfp" src={props.info.image} title={props.info.name}/>
+  )
 }

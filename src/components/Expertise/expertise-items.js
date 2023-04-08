@@ -2,7 +2,7 @@ export const items = [
   {
     client: "Midstride Technologies",
     dates: "March 2023",
-    description: "Wrote documentation to help the rest of the team get set up with Xdebug step debugging on VSCode + Docker. This is challenging because it involves publishing the Docker files and doing quite a big of config to ensure it works properly.",
+    description: "Wrote documentation to help the rest of the team get set up with Xdebug step debugging on VSCode + Docker. This is challenging because it involves publishing the Docker files and doing quite a bit of config to ensure it works properly.",
     tags: ["documentation"],
     tech: ["PHP", "Laravel", "Docker"]
   }, {

@@ -1,7 +1,6 @@
 import React from 'react';
 import './About.css';
 import { Row, Col, Container } from 'react-bootstrap';
-import AboutVideo from '../../assets/about-video.webm';
 
 function About() {
   return (
@@ -22,9 +21,7 @@ function About() {
             </div>
           </Col>
           <Col lg={6} className="d-flex justify-content-center AboutVideoParent">
-            <video controls disablePictureInPicture controlslist="nodownload noremoteplayback noplaybackrate" className="AboutVideo">
-              <source src={AboutVideo} type="video/webm"/>
-            </video>
+            <iframe className="AboutVideo" src="https://www.youtube.com/embed/Wn4W5ROX9aw" frameborder="0"></iframe>
           </Col>
         </Row>
       </Container>

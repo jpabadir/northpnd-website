@@ -1,19 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 import './About.css';
 import { Row, Col, Container } from 'react-bootstrap';
+import YouTubeFacade from '../YouTubeFacade/YouTubeFacade';
 
 function About() {
-  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
-
-  useEffect(() => {
-    const onLoad = () => setIsVideoLoaded(true)
-    if (document.readyState === "complete") {
-      onLoad();
-    } else {
-      window.onload = onLoad;
-    }
-  }, [])
-
   return (
     <div className="MainElementPadding">
       <Container fluid className="AboutContainer">
@@ -32,7 +22,7 @@ function About() {
             </div>
           </Col>
           <Col lg={6} className="d-flex justify-content-center AboutVideoParent">
-            <iframe className="AboutVideo" src={isVideoLoaded ? "https://www.youtube.com/embed/Wn4W5ROX9aw" : ""} frameborder="0"></iframe>
+            <YouTubeFacade className="AboutVideo" videoId="Wn4W5ROX9aw" />
           </Col>
         </Row>
       </Container>

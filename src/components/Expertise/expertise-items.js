@@ -18,8 +18,8 @@ export const items = [
     tags: ["quality assurance"]
   }, {
     client: "Tension",
-    dates: "February - March 2023",
-    description: "Built the <a href='https://rockmass.webflow.io' target='_blank' rel='noopener noreferrer'>Rockmass</a> website for Tension based on their design.",
+    dates: "February - Ongoing",
+    description: "Currently building the <a href='https://rockmass.webflow.io' target='_blank' rel='noopener noreferrer'>Rockmass</a> website for Tension based on their design.",
     tags: ["frontend web dev"],
     tech: ["Webflow"]
   }, {

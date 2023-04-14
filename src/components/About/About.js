@@ -21,7 +21,7 @@ function About() {
             </div>
           </Col>
           <Col lg={6} className="d-flex justify-content-center AboutVideoParent">
-            <iframe className="AboutVideo" src="https://www.youtube.com/watch?v=otkSYg5zW_Q" frameborder="0"></iframe>
+            <iframe className="AboutVideo" src="https://www.youtube.com/embed/otkSYg5zW_Q" frameborder="0"></iframe>
           </Col>
         </Row>
       </Container>

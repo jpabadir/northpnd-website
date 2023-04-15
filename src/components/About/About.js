@@ -18,7 +18,7 @@ function About() {
               After completing software engineering internships at Amazon Web Services and RBC, I established North P&D in May 2021 with the objective of delivering exceptional software development and technology services to businesses.
               <br />
               <br />
-              Since then, North P&D has grown and we're now a small team of two passionate, hard-working dedicated developers who are committed to delivering high-quality software solutions to our clients. We are physically located in Toronto, and we build all your software locally, without offshore outsourcing. We are located at 1 Dundas St W, suite 2500. Come visit us!
+              Since then, North P&D has grown and we're now a small team of two passionate and dedicated developers who are committed to delivering high-quality software solutions to our clients. We are physically located in Toronto, and we build all your software locally, without offshore outsourcing. We are located at 1 Dundas St W, suite 2500. Come visit us!
               <br />
               <br />
               Click <a href="https://github.com/jpabadir" target="_blank" rel="noreferrer">here</a> to view my GitHub profile, <a href="https://www.linkedin.com/in/jean-philippe-abadir-2a931a157/" target="_blank" rel="noreferrer">here</a> to view my LinkedIn profile, and <a href="expertise" target="_blank" rel="noreferrer">here</a> to learn more about our team's expertise.

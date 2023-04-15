@@ -13,9 +13,6 @@ function About() {
             <div className="Subtitle" style={{ fontSize: '25px' }}>
               I am North P&amp;D's founder and technical lead.
             </div>
-            <div className='d-flex justify-content-center pt-4 JPHeadshotMobileParent'>
-              <img src={JP_Team} className='JPHeadshot' />
-            </div>
             <div style={{ fontSize: '20px' }}>
               <br />
               After completing software engineering internships at Amazon Web Services and RBC, I established North P&D in May 2021 with the objective of delivering exceptional software development and technology services to businesses.

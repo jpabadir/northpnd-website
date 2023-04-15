@@ -2,6 +2,11 @@
   align-items: center;
 }
 
+.JPHeadshot {
+  width: 320px;
+  border-radius: 15px;
+}
+
 @media only screen and (max-width: 1200px) {
   .VideoParent {
     padding-top: 60px;
@@ -18,10 +23,26 @@
   aspect-ratio: 31 / 20;
 }
 
+.JPHeadshotMobileParent {
+  display: none !important;
+}
+
 @media only screen and (max-width: 992px) {
   .AboutVideo {
     margin-top: 30px !important;
     margin-left: 0px !important;
   }
-}
 
+  .JPHeadshotMobileParent {
+    display: flex !important;
+  }
+
+  .JPHeadshot {
+    width: 200px;
+    border-radius: 15px;
+  }
+
+  .JPHeadshotDesktopParent {
+    display: none !important;
+  }
+}

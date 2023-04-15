@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.067e3f0e.css",
-    "main.js": "/static/js/main.8e10dff7.js",
+    "main.css": "/static/css/main.6255b8db.css",
+    "main.js": "/static/js/main.19dd82ee.js",
     "static/media/home-background.mp4": "/static/media/home-background.f6e28b1a62bc7cd61404.mp4",
     "static/media/discussion-light.mov": "/static/media/discussion-light.4350386319ae3b602f16.mov",
     "static/media/discussion-poster.png": "/static/media/discussion-poster.a640fb181399997d1a68.png",
@@ -16,11 +16,11 @@
     "static/media/transparentLogo.svg": "/static/media/transparentLogo.332c5e16dd0717e02bf6e6137a8a58ce.svg",
     "static/media/layered-waves-haikei.svg": "/static/media/layered-waves-haikei.7cecff5e9dc9f50de7b4.svg",
     "index.html": "/index.html",
-    "main.067e3f0e.css.map": "/static/css/main.067e3f0e.css.map",
-    "main.8e10dff7.js.map": "/static/js/main.8e10dff7.js.map"
+    "main.6255b8db.css.map": "/static/css/main.6255b8db.css.map",
+    "main.19dd82ee.js.map": "/static/js/main.19dd82ee.js.map"
   },
   "entrypoints": [
-    "static/css/main.067e3f0e.css",
-    "static/js/main.8e10dff7.js"
+    "static/css/main.6255b8db.css",
+    "static/js/main.19dd82ee.js"
   ]
 }

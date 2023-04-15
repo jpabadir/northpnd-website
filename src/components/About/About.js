@@ -8,7 +8,7 @@ function About() {
     <div className="MainElementPadding">
       <Container fluid className="AboutContainer">
         <Row className="AboutRow">
-          <Col lg={6}>
+          <Col>
             <div className="Subtitle">Hi! I'm JP Abadir.</div>
             <div className="Subtitle" style={{ fontSize: '25px' }}>
               I am North P&amp;D's founder and technical lead.
@@ -26,9 +26,6 @@ function About() {
               <br />
               Click <a href="https://github.com/jpabadir" target="_blank" rel="noreferrer">here</a> to view my GitHub profile, <a href="https://www.linkedin.com/in/jean-philippe-abadir-2a931a157/" target="_blank" rel="noreferrer">here</a> to view my LinkedIn profile, and <a href="expertise" target="_blank" rel="noreferrer">here</a> to learn more about our team's expertise.
             </div>
-          </Col>
-          <Col lg={6} className="d-flex justify-content-center AboutVideoParent JPHeadshotDesktopParent">
-            <img src={JP_Team} className='JPHeadshot' />
           </Col>
         </Row>
       </Container>

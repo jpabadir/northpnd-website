@@ -13,25 +13,15 @@ function TeamSection() {
         <div className='Subtitle'>Our Team</div>
         <div className='TeamMembers'>
           <div className='TeamMember'>
-            <img src={JP_Team} className='TeamHeadshots' />
+            <img src={JP_Team} className='TeamHeadshots' alt="Headshot of JP"/>
             <div className='TeamNames'>JP Abadir</div>
             <div className='TeamRoles'> Founder and Tech Lead</div>
           </div>
           <div className='TeamMember'>
-            <img src={CS_Team} className='TeamHeadshots' id='Claire'/>
+            <img src={CS_Team} className='TeamHeadshots' id='Claire'alt="Headshot of Claire"/>
             <div className='TeamNames'>Claire Song</div>
             <div className='TeamRoles'>Software Engineer</div>
           </div>
-          {/* <div className='TeamMember'>
-            <img src={KM_Team} className='TeamHeadshots' id='Katrina' />
-            <div className='TeamNames'>Katrina</div>
-            <div>Software Engineer</div>
-          </div>
-          <div className='TeamMember'>
-            <img src={FT_Team} className='TeamHeadshots' />
-            <div className='TeamNames'>Fabien</div>
-            <div>Junior Software Engineer</div>
-          </div> */}
         </div>
       </Container>
     </div>

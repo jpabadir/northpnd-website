@@ -21,7 +21,7 @@ function About() {
               Since then, North P&D has grown and we are now a team of two passionate and dedicated developers. We are physically located in Toronto and, as part of our committment to quality and IP protection, we build all of our clients' software locally, without any offshore outsourcing. We are located at 1 Dundas St W, Suite 2500. Come visit us!
               <br />
               <br />
-              Check out my <a href="https://github.com/jpabadir" target="_blank" rel="noreferrer">GitHub profile</a>, my <a href="https://www.linkedin.com/in/jean-philippe-abadir-2a931a157/" target="_blank" rel="noreferrer">LinkedIn profile</a>, and learn more about <a href="expertise" target="_blank" rel="noreferrer">our team's expertise</a>.
+              To learn more, you can visit my <a href="https://github.com/jpabadir" target="_blank" rel="noreferrer">GitHub profile</a>, my <a href="https://www.linkedin.com/in/jpabadir/" target="_blank" rel="noreferrer">LinkedIn profile</a>, or read about <a href="expertise" target="_blank" rel="noreferrer">our team's expertise</a>.
             </div>
           </Col>
         </Row>

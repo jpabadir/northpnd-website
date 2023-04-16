@@ -15,7 +15,7 @@ function Home() {
               scroller.scrollTo('about', { duration: 0, smooth: true, spy: true, offset: -80 });
             }}
           >
-            Tell me more
+            Learn more
             <br />
             <div style={{ justifyContent: 'center', display: 'flex' }}>
               <img

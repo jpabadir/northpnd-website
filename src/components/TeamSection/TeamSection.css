@@ -1,11 +1,10 @@
 .TeamHeadshots {
-  height: 180px;
-  width: 180px;
+  height: 300px;
+  width: 300px;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   object-fit: cover;
-  border: 3px solid #000;
 }
 
 .TeamMember {
@@ -19,28 +18,12 @@
 }
 
 .TeamNames{
-  font-size: 20px;
+  font-size: 25px;
   margin-top: 15px;
 }
 
-#Katrina{
-  object-position: 100% 20%;
-}
-
-#Ayesha{
-  object-position: 0% 0%;
-}
-
-#Claire{
-  object-position: 10% 0%;
-}
-
-#Erza{
-  object-position: 0% 25%;
-}
-
-#Aseer{
-  object-position: 0% 25%;
+.TeamRoles{
+  font-size: 20px;
 }
 
 @media only screen and (max-width:576px) {

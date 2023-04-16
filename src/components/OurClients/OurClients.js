@@ -38,7 +38,7 @@ function OurClients() {
           <WorkCard
             link="wearetension.com"
             title="Tension Consulting"
-            subtitle="We built the <a href='https://rockmass.webflow.io' target='_blank' rel='noopener noreferrer'>Rockmass</a> website for Tension based on their design."
+            subtitle="We are currently building the <a href='https://rockmass.webflow.io' target='_blank' rel='noopener noreferrer'>Rockmass</a> website for Tension based on their design."
           />
           <WorkCard
             link="minebright.com"

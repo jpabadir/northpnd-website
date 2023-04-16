@@ -50,7 +50,7 @@ export default function Article(props) {
                 </div>
               </div>
               <div style={{ opacity: 0.7, paddingLeft: '10px' }}>
-                This is an inertal article, intended to provide North P&D's developers with guidance about company processes. If someone outside of our company happens to find value in this article, that's great, but that's not its primary purpose.
+                This is an internal article, intended to provide North P&D's developers with guidance about company processes. If someone outside of our company happens to find value in this article, that's great, but that's not its primary purpose.
               </div>
             </div>
             )}

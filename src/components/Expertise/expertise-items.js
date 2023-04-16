@@ -2,7 +2,7 @@ export const items = [
   {
     client: "Midstride Technologies",
     dates: "March 2023",
-    description: "Wrote documentation to help the rest of the team get set up with Xdebug step debugging on VSCode + Docker. This is challenging because it involves publishing the Docker files and doing quite a big of config to ensure it works properly.",
+    description: "Wrote documentation to help the rest of the team get set up with Xdebug step debugging on VSCode + Docker. This is challenging because it involves publishing the Docker files and doing quite a bit of config to ensure it works properly.",
     tags: ["documentation"],
     tech: ["PHP", "Laravel", "Docker"]
   }, {
@@ -18,8 +18,8 @@ export const items = [
     tags: ["quality assurance"]
   }, {
     client: "Tension",
-    dates: "February - March 2023",
-    description: "Built the <a href='https://rockmass.webflow.io' target='_blank' rel='noopener noreferrer'>Rockmass</a> website for Tension based on their design.",
+    dates: "February - Ongoing",
+    description: "Currently building the <a href='https://rockmass.webflow.io' target='_blank' rel='noopener noreferrer'>Rockmass</a> website for Tension based on their design.",
     tags: ["frontend web dev"],
     tech: ["Webflow"]
   }, {
@@ -43,7 +43,7 @@ export const items = [
   }, {
     client: "Midstride Technologies",
     dates: "November 2022",
-    description: "As the client's project evolved, they decided to spin off a new project in the same industry as their main product. The new project had a different frontend, but shared a lot of its backend with the client's main product. In support of this endeavour, we took full ownership of the design and implementation of a system allowing to differentiate various backend objects (such as users, orders or emails) by their parent project, and to automatically take different actions based on the object's parent project. Among the various actions, we buit support for sending emails from a different email address and domain depending on the parent project. This was technically challenging because it involves updating Laravel's MailgunTransport's configuration at runtime, which requires creating a new instance of MailgunTransport and binding it into the service container. To build this, we made heavy use of Laravel's Tinker tool to efficienly iterate on our code and test it.",
+    description: "As the client's project evolved, they decided to spin off a new project in the same industry as their main product. The new project had a different frontend, but shared a lot of its backend with the client's main product. In support of this endeavour, we took full ownership of the design and implementation of a system allowing to differentiate various backend objects (such as users, orders or emails) by their parent project, and to automatically take different actions based on the object's parent project. Among the various actions, we buit support for sending emails from a different email address and domain depending on the parent project. This was technically challenging because it involves updating Laravel's <code>MailgunTransport</code>'s configuration at runtime, which requires creating a new instance of <code>MailgunTransport</code> and binding it into the service container. To build this, we made heavy use of Laravel's Tinker tool to efficiently iterate on our code and test it.",
     tags: ["full-stack web dev"],
     tech: ["PHP", "Laravel", "MySQL"]
   }, {
@@ -73,19 +73,19 @@ export const items = [
   }, {
     client: "Midstride Technologies",
     dates: "August 2022",
-    description: "Identified and fixed a major stored XSS vulnerability which could have resulted in unauthorized access to administator accounts.",
+    description: "Identified and fixed a major stored XSS vulnerability which could have resulted in unauthorized access to administrator accounts.",
     tags: ["security", "full-stack web dev"],
     tech: ["PHP", "Laravel", "MySQL", "Vue", "JS"]
   }, {
     client: "Midstride Technologies",
     dates: "August 2022",
-    description: "Took full owernship of the design and implementation of a system allowing to export an Excel file showing a report of users with abandoned orders for products, allowing the admin team to take action to improve conversions.",
+    description: "Took full ownership of the design and implementation of a system allowing to export an Excel file showing a report of users with abandoned orders for products, allowing the admin team to take action to improve conversions.",
     tags: ["full-stack web dev"],
     tech: ["PHP", "Laravel"]
   }, {
     client: "Midstride Technologies",
     dates: "August 2022",
-    description: "Fixed npm dependency issue affecting admin-facing tools. This involed updating a faulty package and doing the necessary updates in the code to match the new version's syntax and usage.",
+    description: "Fixed npm dependency issue affecting admin-facing tools. This involved updating a faulty package and doing the necessary updates in the code to match the new version's syntax and usage.",
     tags: ["frontend web dev"],
     tech: ["npm", "Vue", "JS"]
   }, {
@@ -115,13 +115,13 @@ export const items = [
   }, {
     client: "Midstride Technologies",
     dates: "January 2022 - Ongoing",
-    description: "Fixed many issues occuring with complex Eloquent queries. As the client's requests for data filtering functionality increased in complexity, so did the sophistication of the queries we had to write in order to support the desired filtering. As a result, the client would often encouter issues where the data returned didn't match the filters they set. We were consistently able to successfully fix the queries, resulting in reliably-correct data-filtering results.",
+    description: "Fixed many issues occurring with complex Eloquent queries. As the client's requests for data filtering functionality increased in complexity, so did the sophistication of the queries we had to write in order to support the desired filtering. As a result, the client would often encounter issues where the data returned didn't match the filters they set. We were consistently able to successfully fix the queries, resulting in reliably-correct data-filtering results.",
     tags: ["backend"],
     tech: ["PHP", "Laravel", "MySQL"]
   }, {
     client: "Midstride Technologies",
     dates: "January 2022 - Ongoing",
-    description: "Communicated directly with our client's client to get a thorough understanding of their desired requirements on many complex features, such as user \&quot;flagging\&quot; logic, sending text messages to users based on very specific conditions and actions taken by users and admins, or grouping different user orders' repeat dates in the system for efficiency of processing. Then, we took owernship of the design and implementation of the solution. This type of task is where our team's capabilities are most valuable to our client, as our combination of excellent communication skills and deep technical expertise allow us to collaborate with the client's client in almost complete autonomy, alleviating the rest of the team's workload.",
+    description: "Communicated directly with our client's client to get a thorough understanding of their desired requirements on many complex features, such as user \&quot;flagging\&quot; logic, sending text messages to users based on very specific conditions and actions taken by users and admins, or grouping different user orders' repeat dates in the system for efficiency of processing. Then, we took ownership of the design and implementation of the solution. This type of task is where our team's capabilities are most valuable to our client, as our combination of excellent communication skills and deep technical expertise allow us to collaborate with the client's client in almost complete autonomy, alleviating the rest of the team's workload.",
     tags: ["full-stack web dev"],
     tech: ["PHP", "Laravel", "MySQL", "Vue", "JS", "SASS", "Docker"]
   }, {

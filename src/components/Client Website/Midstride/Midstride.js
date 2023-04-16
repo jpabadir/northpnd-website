@@ -17,7 +17,7 @@ function Midstride() {
           {/* "tech": ["PHP", "Laravel"],  */}
           <li>Built a system which reads email <code>blade</code> files from the codebase and renders them with data chosen dynamically by the user, allowing admin to preview emails being sent to customers.</li>
           {/* "tech": ["PHP", "Laravel"],  */}
-          <li>Took full ownership of the design and implementation of a system allowing to differententiate users by their parent category on the backend, and to take different backend actions depending on the user's parent category. Among the different actions, we buit support for sending emails from a different email address and domain depending on customer attributes. This was technically challenging because it involves updating Larave's <code>MailgunTransport</code>'s config at runtime, which requires creating a new instance of <code>MailgunTransport</code> and binding it into the service container.</li>
+          <li>Took full ownership of the design and implementation of a system allowing to differentiate users by their parent category on the backend, and to take different backend actions depending on the user's parent category. Among the different actions, we built support for sending emails from a different email address and domain depending on customer attributes. This was technically challenging because it involves updating Laravel's <code>MailgunTransport</code>'s config at runtime, which requires creating a new instance of <code>MailgunTransport</code> and binding it into the service container.</li>
           {/* "tech": ["PHP", "Laravel", "MySQL", "Vue", "JS", "SASS", "Bootstrap"],  */}
           <li>Built a system which </li>
           {/* "tech": ["GitHub Actions", "Prettier"],  */}

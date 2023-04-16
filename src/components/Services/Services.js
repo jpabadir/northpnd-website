@@ -70,7 +70,7 @@ function Services() {
             videoSrc={coding}
             posterSrc={codingPoster}
             title="Technical teams"
-            subtitle="We provide staff augmentation services to our technical clients. We function as an integral part of their team, working closely with their developers, prioritizing collaboration, communication and code quality. We pride ourselves in working with a deep sense of owernship towards the outcome of the tech we build and strive to create maintainable, robust, and scalable solutions that exceed expectations."
+            subtitle="We provide staff augmentation services to our technical clients. We function as an integral part of their team, working closely with their developers. We emphasize collaboration, communication, and code quality. We pride ourselves in working with a deep sense of ownership towards the outcome of the tech we build and strive to create maintainable, robust, and scalable solutions that exceed expectations."
             subtitleDisplay={subtitleDisplay}
             setSubtitleDisplay={setSubtitleDisplay}
           />
@@ -78,8 +78,8 @@ function Services() {
             index={2}
             videoSrc={discussion}
             posterSrc={discussionPoster}
-            title="Non-techical businesses"
-            subtitle="We help non-technical companies with strategy, design and development of their digital products. We work with our clients to understand their business and their users, and help them build products that are not only functional but also highly enjoyable to use."
+            title="Non-technical businesses"
+            subtitle="We help our clients design, develop and maintain high-quality, customized digital products. We work with them to understand their business and their users, and help them build solutions that are not only functional but also highly enjoyable to use."
             subtitleDisplay={subtitleDisplay}
             setSubtitleDisplay={setSubtitleDisplay}
           />

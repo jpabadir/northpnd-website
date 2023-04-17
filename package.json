@@ -51,7 +51,6 @@
     ]
   },
   "devDependencies": {
-    "@craco/craco": "^7.1.0",
     "@fullhuman/postcss-purgecss": "^5.0.0"
   }
 }

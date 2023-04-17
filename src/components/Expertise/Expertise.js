@@ -15,15 +15,13 @@ export default function Expertise() {
   const [showFilter, setShowFilter] = useState(false);
 
   useEffect(() => {
-    window.scrollTo(0, 0)
-  })
-  
+    window.scrollTo(0, 0);
+  }, []);
+
   const showFilterMenu = () => {
     setShowFilter(!showFilter);
-    setSelectedTags([]);
-    setSelectedTech([]);
   };
-    
+
   const filterByTags = (checked, tag) => {
     if (checked) {
       setSelectedTags([...selectedTags, tag]);
@@ -38,74 +36,68 @@ export default function Expertise() {
     } else {
       setSelectedTech(selectedTech.filter((t) => t !== tech));
     }
-  };  
+  };
 
   const filteredItems = expertiseItems.filter((item) => {
     if (selectedTags.length === 0 && selectedTech.length === 0) {
       return true;
     }
-    return (
-      selectedTags.every(
-        (tag) => item.tags && item.tags.includes(tag)
-      ) &&
-      selectedTech.every(
-        (tech) => item.tech && item.tech.includes(tech)
-      )
-    );
-  });  
+    const tagFilter = selectedTags.every((tag) => item.tags && item.tags.includes(tag));
+    const techFilter = selectedTech.every((tech) => item.tech && item.tech.includes(tech));
+    return tagFilter && techFilter;
+  });
   
   return (
-     <div className='StandalonePageParent d-flex justify-content-center'>
-      <div className='Expertise'>
-        <div className="TagFilter">
-          <div className="FilterButton" onClick={showFilterMenu}>Filter options {showFilter ? '▲' : '▼'}</div>
-          <div className="TagOptionsContainer" style={{ display: showFilter ? 'flex' : 'none' }}>
-            <div>
-              <h4>Tags</h4>
-              {Object.keys(tagColors).map((tag) => (
-                <label key={tag}>
+    <div className="StandalonePageParent d-flex justify-content-center">
+    <div className="Expertise">
+      <div className="TagFilter">
+        <div className="FilterButton" onClick={showFilterMenu}>
+          Filter options {showFilter ? '▲' : '▼'}
+        </div>
+        <div className="TagOptionsContainer" style={{ display: showFilter ? 'flex' : 'none' }}>
+          <div className="FilterGroup">
+            <div className="FilterGroupTitle">Tags</div>
+            {Object.keys(tagColors).map((tag) => (
+              <label key={tag}>
+                <input
+                  type="checkbox"
+                  value={tag}
+                  checked={selectedTags.includes(tag)}
+                  onChange={(e) => filterByTags(e.target.checked, e.target.value)}
+                />
+                <span className="checkmark" style={{ background: tagColors[tag] ?? 'grey' }}></span>
+                {tag}
+              </label>
+            ))}
+          </div>
+          <div className="FilterGroup">
+            <div className="FilterGroupTitle">Tech</div>
+            {expertiseItems
+              .reduce((techs, item) => {
+                if (item.tech) {
+                  item.tech.forEach((tech) => {
+                    if (!techs.includes(tech)) {
+                      techs.push(tech);
+                    }
+                  });
+                }
+                return techs;
+              }, [])
+              .map((tech) => (
+                <label key={tech}>
                   <input
                     type="checkbox"
-                    value={tag}
-                    checked={selectedTags.includes(tag)}
-                    onChange={(e) =>
-                      filterByTags(e.target.checked, e.target.value)
-                    }
+                    value={tech}
+                    checked={selectedTech.includes(tech)}
+                    onChange={(e) => filterByTech(e.target.checked, e.target.value)}
                   />
-                  <span
-                    className="checkmark"
-                    style={{ background: tagColors[tag] ?? 'grey' }}
-                  ></span>
-                  {tag}
-                </label>
-              ))}
-            </div>
-            <div>
-              <h4>Tech</h4>
-                {expertiseItems.reduce((acc, item) => {
-                  if (item.tech) {
-                    item.tech.forEach((tech) => {
-                      if (!acc.includes(tech)) {
-                        acc.push(tech);
-                      }});
-                  }
-                  return acc;
-                }, []).map((tech) => (
-                  <label key={tech}>
-                    <input
-                      type="checkbox"
-                      value={tech}
-                      checked={selectedTech.includes(tech)}
-                      onChange={(e) =>
-                        filterByTech(e.target.checked, e.target.value)
-                      }
-                    />
+                  <span className="checkmark2"></span>
                   {tech}
                 </label>
               ))}
-            </div>
           </div>
         </div>
+      </div>
         <TableContainer>
           <Table aria-label="simple table">
             <TableHead>

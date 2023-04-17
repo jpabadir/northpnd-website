@@ -1,151 +1,168 @@
 @media screen and (max-width: 600px) {
-    table thead {
-        display: none !important;
-    }
+  table thead {
+      display: none !important;
+  }
 
-    table td {
-        display: flex !important;
-        flex-wrap: wrap;
-    }
+  table td {
+      display: flex !important;
+      flex-wrap: wrap;
+  }
 
-    .ClientNameCell {
-        font-weight: bold !important;
-    }
-    
-    .FilterButton:not(hover) {
-        font-weight: bold;
-        animation: none !important;
-    }
+  .ClientNameCell {
+      font-weight: bold !important;
+  }
+  
+  .FilterButton:not(hover) {
+      font-weight: bold;
+      animation: none !important;
+  }
 }
 
 tr:nth-child(even) {
-    background: rgb(228, 230, 252);
+  background: rgb(228, 230, 252);
 }
 
 tr:nth-child(odd) {
-    background: #fff;
+  background: #fff;
 }
 
 .Expertise {
-    flex: 1;
-    max-width: 1500px;
+  flex: 1;
+  max-width: 1500px;
 }
 
 table {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .pill {
-    padding: 8px 10px;
-    border-radius: 15px;
-    color: white;
-    font-size: 14px;
-    white-space: nowrap;
-    margin: 2px;
-    text-decoration: none !important;
+  padding: 8px 10px;
+  border-radius: 15px;
+  color: white;
+  font-size: 14px;
+  white-space: nowrap;
+  margin: 2px;
+  text-decoration: none !important;
 }
 
 .darkpill {
-    border: 1px solid;
-    color: black;
-    border-color: black;
+  border: 1px solid;
+  color: black;
+  border-color: black;
 }
 
 .FilterButton {
-    justify-content: center;
-    font-size: 18px;
-    margin-bottom: 8px;
-    cursor:pointer;
+  justify-content: center;
+  font-size: 18px;
+  margin-bottom: 8px;
+  cursor:pointer;
 }
 
 .TagFilter {
-    user-select: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .TagFilter label {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    margin: 6px 8px;
-    cursor:pointer;
-  }
+.TagFilter label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin: 6px 8px;
+  cursor:pointer;
+}
 
-  .FilterButton:hover {
-    animation: ease-in-out filterButtonHover 0.2s;
-    animation-fill-mode: both;
-  }
+.FilterButton:hover {
+  animation: ease-in-out filterButtonHover 0.2s;
+  animation-fill-mode: both;
+}
 
-  .FilterButton:not(hover) {
-    animation: ease-in-out filterButtonUnhover 0.1s;
-    animation-fill-mode: both;
-  }
+.FilterButton:not(hover) {
+  animation: ease-in-out filterButtonUnhover 0.1s;
+  animation-fill-mode: both;
+}
 
-  .TagOptionsContainer {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    animation: ease-in-out tagFilterRender 0.2s;
-  }
-  
-  .TagFilter input[type="checkbox"] {
-    display: none;
-  }
-  
-  .TagFilter .checkmark {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .TagFilter input[type="checkbox"]:checked + .checkmark::before {
-    content: "\2714";
-    font-size: 12px;
-    color: white;
-  }
+.TagOptionsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: ease-in-out tagFilterRender 0.2s;
+}
 
-  @keyframes tagFilterRender {
-    0% {
-      transform: scale(0.9, 0.9);
-      opacity: 0%;
-    }
-    50% {
-      transform: scale(1.01, 1.01);
-      opacity: 50%;
-    }
-    100% {
-      transform: scale(1, 1);
-      opacity: 100%;
-    }  
-  }
-  
-  @keyframes filterButtonHover {
-    0% {
-      transform: scale(1, 1);
-      font-weight: normal;
-    } 50% {
-      font-weight: bold;
-    } 100% {
-      transform: scale(1.05, 1.05);
-      font-weight: bolder;
-    }  
-  }
+.TagFilter input[type="checkbox"] {
+  display: none;
+}
 
-  @keyframes filterButtonUnhover {
-    0% {
-      transform: scale(1.05, 1.05);
-      font-weight: bolder;
-    } 50% {
-      font-weight: bold;
-    } 100% {
-      transform: scale(1, 1);
-      font-weight: normal;
-    }  
+.TagFilter .checkmark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.checkmark2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 1px solid black;
+}
+
+.TagFilter input[type="checkbox"]:checked + .checkmark::before {
+  content: "\2714";
+  font-size: 12px;
+  color: white;
+}
+
+.TagFilter input[type="checkbox"]:checked + .checkmark2::before {
+  content: "\2714";
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+}
+
+@keyframes tagFilterRender {
+  0% {
+    transform: scale(0.9, 0.9);
+    opacity: 0%;
   }
+  50% {
+    transform: scale(1.01, 1.01);
+    opacity: 50%;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 100%;
+  }  
+}
+
+@keyframes filterButtonHover {
+  0% {
+    transform: scale(1, 1);
+    font-weight: normal;
+  } 50% {
+    font-weight: bold;
+  } 100% {
+    transform: scale(1.05, 1.05);
+    font-weight: bolder;
+  }  
+}
+
+@keyframes filterButtonUnhover {
+  0% {
+    transform: scale(1.05, 1.05);
+    font-weight: bolder;
+  } 50% {
+    font-weight: bold;
+  } 100% {
+    transform: scale(1, 1);
+    font-weight: normal;
+  }  
+}

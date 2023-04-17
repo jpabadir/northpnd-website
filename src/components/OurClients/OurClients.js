@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 function WorkCard(props) {
   return (
-    <Col className="PastWorkCol" md={3}>
+    <Col className="PastWorkCol" md={4}>
       <div style={{ maxWidth: '250px', width: '100%' }}>
         <a href={`https://${props.link}`} target="_blank" rel="noreferrer">
           <Card className={`WorkCard ${props.title.replace(/\s/g, '')}`} />

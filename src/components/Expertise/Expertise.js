@@ -11,16 +11,19 @@ import { useEffect, useState } from 'react';
 
 export default function Expertise() {
   const [selectedTags, setSelectedTags] = useState([]);
+  const [selectedTech, setSelectedTech] = useState([]);
   const [showFilter, setShowFilter] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0)
   })
-
+  
   const showFilterMenu = () => {
     setShowFilter(!showFilter);
+    setSelectedTags([]);
+    setSelectedTech([]);
   };
-  
+    
   const filterByTags = (checked, tag) => {
     if (checked) {
       setSelectedTags([...selectedTags, tag]);
@@ -29,12 +32,27 @@ export default function Expertise() {
     }
   };
 
+  const filterByTech = (checked, tech) => {
+    if (checked) {
+      setSelectedTech([...selectedTech, tech]);
+    } else {
+      setSelectedTech(selectedTech.filter((t) => t !== tech));
+    }
+  };  
+
   const filteredItems = expertiseItems.filter((item) => {
-    if (selectedTags.length === 0) {
+    if (selectedTags.length === 0 && selectedTech.length === 0) {
       return true;
     }
-    return selectedTags.every((tag) => item.tags && item.tags.includes(tag));
-  });
+    return (
+      selectedTags.every(
+        (tag) => item.tags && item.tags.includes(tag)
+      ) &&
+      selectedTech.every(
+        (tech) => item.tech && item.tech.includes(tech)
+      )
+    );
+  });  
   
   return (
      <div className='StandalonePageParent d-flex justify-content-center'>
@@ -42,18 +60,50 @@ export default function Expertise() {
         <div className="TagFilter">
           <div className="FilterButton" onClick={showFilterMenu}>Filter options {showFilter ? '▲' : '▼'}</div>
           <div className="TagOptionsContainer" style={{ display: showFilter ? 'flex' : 'none' }}>
-            {Object.keys(tagColors).map((tag) => (
-              <label key={tag}>
-                <input
-                  type="checkbox"
-                  value={tag}
-                  checked={selectedTags.includes(tag)}
-                  onChange={(e) =>
-                    filterByTags(e.target.checked, e.target.value)}/>
-                <span className="checkmark" style={{ background: tagColors[tag] ?? 'grey' }}></span>
-                {tag}
-              </label>
-            ))}
+            <div>
+              <h4>Tags</h4>
+              {Object.keys(tagColors).map((tag) => (
+                <label key={tag}>
+                  <input
+                    type="checkbox"
+                    value={tag}
+                    checked={selectedTags.includes(tag)}
+                    onChange={(e) =>
+                      filterByTags(e.target.checked, e.target.value)
+                    }
+                  />
+                  <span
+                    className="checkmark"
+                    style={{ background: tagColors[tag] ?? 'grey' }}
+                  ></span>
+                  {tag}
+                </label>
+              ))}
+            </div>
+            <div>
+              <h4>Tech</h4>
+                {expertiseItems.reduce((acc, item) => {
+                  if (item.tech) {
+                    item.tech.forEach((tech) => {
+                      if (!acc.includes(tech)) {
+                        acc.push(tech);
+                      }});
+                  }
+                  return acc;
+                }, []).map((tech) => (
+                  <label key={tech}>
+                    <input
+                      type="checkbox"
+                      value={tech}
+                      checked={selectedTech.includes(tech)}
+                      onChange={(e) =>
+                        filterByTech(e.target.checked, e.target.value)
+                      }
+                    />
+                  {tech}
+                </label>
+              ))}
+            </div>
           </div>
         </div>
         <TableContainer>

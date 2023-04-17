@@ -91,7 +91,7 @@ function YouTubeFacade(props) {
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen={true}
           src={`https://www.youtube-nocookie.com/embed/${encodeURIComponent(props.videoId)}?${params.toString()}`}
-          onLoad={(event) => {event.target.focus(); console.log("focused")}}
+          onLoad={(event) => event.target.focus()}
         ></iframe>
       )}
     </div>

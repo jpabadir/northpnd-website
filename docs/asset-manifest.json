@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.e00173b6.css",
-    "main.js": "/static/js/main.146194f2.js",
+    "main.js": "/static/js/main.44a24141.js",
     "static/css/984.ca29b40c.chunk.css": "/static/css/984.ca29b40c.chunk.css",
-    "static/js/984.f030424b.chunk.js": "/static/js/984.f030424b.chunk.js",
+    "static/js/984.7fa3c3c1.chunk.js": "/static/js/984.7fa3c3c1.chunk.js",
     "static/css/721.8206a32d.chunk.css": "/static/css/721.8206a32d.chunk.css",
     "static/js/721.eedae777.chunk.js": "/static/js/721.eedae777.chunk.js",
     "static/css/677.73fb947d.chunk.css": "/static/css/677.73fb947d.chunk.css",
@@ -34,9 +34,9 @@
     "static/media/layered-waves-haikei.svg": "/static/media/layered-waves-haikei.7cecff5e9dc9f50de7b4.svg",
     "index.html": "/index.html",
     "main.e00173b6.css.map": "/static/css/main.e00173b6.css.map",
-    "main.146194f2.js.map": "/static/js/main.146194f2.js.map",
+    "main.44a24141.js.map": "/static/js/main.44a24141.js.map",
     "984.ca29b40c.chunk.css.map": "/static/css/984.ca29b40c.chunk.css.map",
-    "984.f030424b.chunk.js.map": "/static/js/984.f030424b.chunk.js.map",
+    "984.7fa3c3c1.chunk.js.map": "/static/js/984.7fa3c3c1.chunk.js.map",
     "721.8206a32d.chunk.css.map": "/static/css/721.8206a32d.chunk.css.map",
     "721.eedae777.chunk.js.map": "/static/js/721.eedae777.chunk.js.map",
     "677.73fb947d.chunk.css.map": "/static/css/677.73fb947d.chunk.css.map",
@@ -53,6 +53,6 @@
   },
   "entrypoints": [
     "static/css/main.e00173b6.css",
-    "static/js/main.146194f2.js"
+    "static/js/main.44a24141.js"
   ]
 }

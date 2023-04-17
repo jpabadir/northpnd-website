@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
 import { Row, Col, Container } from 'react-bootstrap';
-import JP_Team from "../../assets/JP_Team.jpg";
+import JP_Team from "../../assets/jp-headshot.jpg";
 
 function About() {
   return (

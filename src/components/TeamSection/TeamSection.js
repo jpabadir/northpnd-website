@@ -1,9 +1,9 @@
 import React from "react";
 import "./TeamSection.css";
 import { Row, Col, Container } from "react-bootstrap";
-import JP_Team from "../../assets/JP_Team.jpg";
+import JP_Team from "../../assets/jp-headshot.jpg";
 // import KM_Team from "../../assets/KM_Team.jpg";
-import CS_Team from "../../assets/CS_Team.jpg";
+import CS_Team from "../../assets/claire-headshot.jpg";
 // import FT_Team from "../../assets/FT_Team.jpg";
 
 function TeamSection() {

@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/static/css/main.aeddd890.css",
-    "main.js": "/static/js/main.53481511.js",
+    "main.js": "/static/js/main.92ad0a12.js",
     "static/media/home-background.mp4": "/static/media/home-background.f6e28b1a62bc7cd61404.mp4",
     "static/media/discussion-light.mov": "/static/media/discussion-light.4350386319ae3b602f16.mov",
     "static/media/discussion-poster.png": "/static/media/discussion-poster.a640fb181399997d1a68.png",
     "static/media/coding-light.mov": "/static/media/coding-light.4a0c2f02d88e984f354d.mov",
     "static/media/coding-poster.png": "/static/media/coding-poster.6d1e8213385b4778e304.png",
-    "static/media/JP_Team.jpg": "/static/media/JP_Team.625632ae311740e61996.jpg",
+    "static/media/jp-headshot.jpg": "/static/media/jp-headshot.4b0e0623f9e3d9615844.jpg",
+    "static/media/claire-headshot.jpg": "/static/media/claire-headshot.a8581840518e98549881.jpg",
     "static/media/home-background-poster.jpg": "/static/media/home-background-poster.29625206dfdb48e0df6c.jpg",
     "static/media/proximy-logo.png": "/static/media/proximy-logo.485ce016ed99f3abea60.png",
-    "static/media/CS_Team.jpg": "/static/media/CS_Team.798822d0e04273b71db3.jpg",
     "static/media/tension.png": "/static/media/tension.e362216575ffbec03444.png",
     "static/media/minebright-logo.png": "/static/media/minebright-logo.c132d4fc4e1eb8dddf71.png",
     "static/media/transparentLogo.svg": "/static/media/transparentLogo.332c5e16dd0717e02bf6e6137a8a58ce.svg",
     "static/media/layered-waves-haikei.svg": "/static/media/layered-waves-haikei.7cecff5e9dc9f50de7b4.svg",
     "index.html": "/index.html",
     "main.aeddd890.css.map": "/static/css/main.aeddd890.css.map",
-    "main.53481511.js.map": "/static/js/main.53481511.js.map"
+    "main.92ad0a12.js.map": "/static/js/main.92ad0a12.js.map"
   },
   "entrypoints": [
     "static/css/main.aeddd890.css",
-    "static/js/main.53481511.js"
+    "static/js/main.92ad0a12.js"
   ]
 }

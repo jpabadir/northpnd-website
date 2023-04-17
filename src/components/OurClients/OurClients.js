@@ -10,7 +10,7 @@ function WorkCard(props) {
     <Col className="PastWorkCol" md={3}>
       <div style={{ maxWidth: '250px', width: '100%' }}>
         <a href={`https://${props.link}`} target="_blank" rel="noreferrer">
-          <Card className={`WorkCard ${props.title.replace(/\s/g, '')}`} />
+          <Card className={`WorkCard ${props.title.trim().split(/\s+/)[0]}`} />
           <div className="CardTitle">{props.title}</div>
         </a>
         <div dangerouslySetInnerHTML={{__html: props.subtitle}} />

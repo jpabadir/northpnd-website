@@ -149,6 +149,9 @@ export default function Expertise() {
             </TableBody>
           </Table>
         </TableContainer>
+        <div className='d-flex justify-content-center'>
+          <ExpertiseList rows={sortedItems}/>
+        </div>
       </div>
     </div>
   );
@@ -157,5 +160,42 @@ export default function Expertise() {
 function Pfp (props){
   return(
     <img className="pfp" src={props.info.image} title={props.info.name}/>
+  )
+}
+
+function ExpertiseList(props){
+  const expertiseList = new Set();
+  let message = "";
+  //Add items here
+  const extraitems = ["XML", "sitemaps"];
+  //Add items from tech and tags
+  for(let i=0; i<props.rows.length; i++){
+    if(props.rows[i].tech){
+      for(let j=0; j<props.rows[i].tech.length; j++){
+        if(!expertiseList.has(props.rows[i].tech[j])){
+          expertiseList.add(props.rows[i].tech[j]);
+          message += props.rows[i].tech[j] + ", ";
+        }
+      }
+    }
+    if(props.rows[i].tags){
+      for(let j=0; j<props.rows[i].tags.length; j++){
+        if(!expertiseList.has(props.rows[i].tags[j])){
+          expertiseList.add(props.rows[i].tags[j]);
+          message += props.rows[i].tags[j] + ", ";
+        }
+      }
+    }
+  }
+  for(let i=0; i<extraitems.length; i++){
+    expertiseList.add(extraitems[i]);
+    message += extraitems[i] + ", ";
+  }
+  message=message.slice(0, -2)+".";
+  return(
+    <div className='MainElementPadding'>
+      <div className='Subtitle'>What we know about</div>
+      <div className = 'expertiseList'>{message}</div>
+    </div>
   )
 }

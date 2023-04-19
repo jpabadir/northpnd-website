@@ -54,47 +54,51 @@ export default function Expertise() {
         <div className="FilterButton" onClick={showFilterMenu}>
           Filter options {showFilter ? '▲' : '▼'}
         </div>
-        <div className="TagOptionsContainer" style={{ display: showFilter ? 'flex' : 'none' }}>
-          <div className="FilterGroup">
+        <div className="OptionsContainer" style={{ display: showFilter ? 'flex' : 'none' }}>
+           <div className='OptionGroup'> 
             <div className="FilterGroupTitle">Tags</div>
-            {Object.keys(tagColors).map((tag) => (
-              <label key={tag}>
-                <input
-                  type="checkbox"
-                  value={tag}
-                  checked={selectedTags.includes(tag)}
-                  onChange={(e) => filterByTags(e.target.checked, e.target.value)}
-                />
-                <span className="checkmark" style={{ background: tagColors[tag] ?? 'grey' }}></span>
-                {tag}
-              </label>
-            ))}
-          </div>
-          <div className="FilterGroup">
-            <div className="FilterGroupTitle">Tech</div>
-            {expertiseItems
-              .reduce((techs, item) => {
-                if (item.tech) {
-                  item.tech.forEach((tech) => {
-                    if (!techs.includes(tech)) {
-                      techs.push(tech);
-                    }
-                  });
-                }
-                return techs;
-              }, [])
-              .map((tech) => (
-                <label key={tech}>
+            <div className="FilterGroup">
+              {Object.keys(tagColors).map((tag) => (
+                <label key={tag}>
                   <input
                     type="checkbox"
-                    value={tech}
-                    checked={selectedTech.includes(tech)}
-                    onChange={(e) => filterByTech(e.target.checked, e.target.value)}
+                    value={tag}
+                    checked={selectedTags.includes(tag)}
+                    onChange={(e) => filterByTags(e.target.checked, e.target.value)}
                   />
-                  <span className="checkmark2"></span>
-                  {tech}
+                  <span className="checkmark" style={{ background: tagColors[tag] ?? 'grey' }}></span>
+                  {tag}
                 </label>
               ))}
+            </div>
+          </div>
+          <div className='OptionGroup'>
+            <div className="FilterGroupTitle">Tech</div>
+            <div className="FilterGroup">
+              {expertiseItems
+                .reduce((techs, item) => {
+                  if (item.tech) {
+                    item.tech.forEach((tech) => {
+                      if (!techs.includes(tech)) {
+                        techs.push(tech);
+                      }
+                    });
+                  }
+                  return techs;
+                }, [])
+                .map((tech) => (
+                  <label key={tech}>
+                    <input
+                      type="checkbox"
+                      value={tech}
+                      checked={selectedTech.includes(tech)}
+                      onChange={(e) => filterByTech(e.target.checked, e.target.value)}
+                    />
+                    <span className="checkmark2"></span>
+                    {tech}
+                  </label>
+                ))}
+            </div>
           </div>
         </div>
       </div>

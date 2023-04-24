@@ -19,7 +19,7 @@ export const items = [
   }, {
     client: "Tension",
     dates: "February - Ongoing",
-    description: "Currently building the <a href='https://rockmass.webflow.io' target='_blank' rel='noopener noreferrer'>Rockmass</a> website for Tension based on their design.",
+    description: "We are currently assisting Tension in constructing a high-quality digital product in accordance with their design specifications.",
     tags: ["frontend web dev"],
     tech: ["Webflow"]
   }, {

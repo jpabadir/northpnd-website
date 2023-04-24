@@ -38,7 +38,7 @@ function OurClients() {
           <WorkCard
             link="wearetension.com"
             title="Tension Consulting"
-            subtitle="We are currently assisting Tension in constructing a digital product in accordance with their design specifications."
+            subtitle="We are currently assisting Tension in constructing a high-quality digital product in accordance with their design specifications."
           />
           <WorkCard
             link="minebright.com"

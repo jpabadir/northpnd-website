@@ -13,7 +13,7 @@ function WorkCard(props) {
           <Card className={`WorkCard ${props.title.replace(/\s/g, '')}`} />
           <div className="CardTitle">{props.title}</div>
         </a>
-        <div dangerouslySetInnerHTML={{__html: props.subtitle}} />
+        <div dangerouslySetInnerHTML={{ __html: props.subtitle }} />
       </div>
     </Col>
   );
@@ -24,31 +24,31 @@ function OurClients() {
     <div className="MainElementPadding">
       <Container fluid>
         <div className="Subtitle">Our Clients</div>
-        <Row>
+        <Row className="justify-content-center">
           <WorkCard
             link="proximy.ca"
             title="Proximy"
-            subtitle="We helped Proximy build their cross-platform mobile app using Flutter, Cloud Firestore, and Google Cloud Functions."
+            subtitle="We assisted Proximy in developing their cross-platform mobile application by utilizing a combination of Flutter, Cloud Firestore, and     Google Cloud Functions."
           />
           <WorkCard
             link="midstride.com"
             title="Midstride Technologies"
-            subtitle="We work closely with Midstride's team by communicating directly with its clients and getting a thorough understanding of their requirements before building out full-stack features on their products."
+            subtitle="We collaborate closely with Midstride's team by engaging directly with their clients to gain a comprehensive understanding of their requirements, prior to constructing full-stack features for their products."
           />
           <WorkCard
             link="wearetension.com"
             title="Tension Consulting"
-            subtitle="We are currently building the <a href='https://rockmass.webflow.io' target='_blank' rel='noopener noreferrer'>Rockmass</a> website for Tension based on their design."
+            subtitle="We are currently assisting Tension in constructing a digital product in accordance with their design specifications."
           />
           <WorkCard
             link="minebright.com"
             title="Minebright"
-            subtitle="We provide Minebright with flexible, on demand, premium quality assurance services in support of their software development efforts.">
+            subtitle="We provide Minebright with adaptable and premium quality assurance services on an as-needed basis to complement their software development endeavors.">
           </WorkCard>
           <WorkCard
             link="digitalrise.be"
             title="Digital Rise"
-            subtitle="We are currently working with Digital Rise.">
+            subtitle="We assisted Digital Rise in constructing an interactive prototype for their ongoing digital project. Due to their impending user testing requirements, Digital Rise sought expedited development, and our collaboration enabled them to obtain a functional prototype within a week.">
           </WorkCard>
         </Row>
         <Reviews />

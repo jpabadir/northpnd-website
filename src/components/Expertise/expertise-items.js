@@ -1,5 +1,12 @@
 export const items = [
   {
+    client: "Digital Rise",
+    dates: "April 2023",
+    description: "Built a mobile application prototype.",
+    tags: ["frontend web dev"],
+    tech: ["Webflow"]
+  },
+  {
     client: "Midstride Technologies",
     dates: "March 2023",
     description: "Wrote documentation to help the rest of the team get set up with Xdebug step debugging on VSCode + Docker. This is challenging because it involves publishing the Docker files and doing quite a bit of config to ensure it works properly.",

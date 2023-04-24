@@ -92,13 +92,13 @@ const Main = forwardRef((props, ref) => {
               <About />
             </Element>
           </div>
-          <div
+          {/* <div
             style={{ width: "100%", justifyContent: "center", display: "flex" }}
           >
             <Element name="TeamSection" className="element" style={{ width: "100%" }}>
               <TeamSection />
             </Element>
-          </div>
+          </div> */}
           <div
             style={{ width: "100%", justifyContent: "center", display: "flex" }}
           >

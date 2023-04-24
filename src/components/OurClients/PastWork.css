@@ -39,6 +39,6 @@
 }
 
 .DigitalRise {
-  background-image: url('../../assets/DR-logo.png');
-  border: 2px solid rgb(0, 0, 0);
+  background-image: url('../../assets/digitalrise-logo.svg');
+  background-color: #0666c2;
 }

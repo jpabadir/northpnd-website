@@ -46,7 +46,7 @@ function OurClients() {
             subtitle="We provide Minebright with flexible, on demand, premium quality assurance services in support of their software development efforts.">
           </WorkCard>
           <WorkCard
-            link="digital-rise.com"
+            link="digitalrise.be"
             title="Digital Rise"
             subtitle="We are currently working with Digital Rise.">
           </WorkCard>

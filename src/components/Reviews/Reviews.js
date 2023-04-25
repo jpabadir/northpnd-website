@@ -31,9 +31,17 @@ function Reviews() {
       "author_name": "Khody Miller",
       "rating": 5,
       "text": "JP truly cares for properly serving his customers. After our initial consultation, JP went the extra mile and gave me a comprehensive email of valuable recommendations on considerations for my business.",
-    }
+    },
+    {
+      "author_name": "Jeremy Goldyn",
+      "rating": 5,
+      "text": "We work with North P&D for a Webflow project. \
+      It was challenging in terms of timeline but the work has been done in only 1 week 🔥 \
+      The guys are very efficient, professional and very friendly. \
+      Very recommended 👍",
+    },
   ];
-  const companies = ["Proximy", "Midstride Technologies", "Khody Miller Enterprises"]
+  const companies = ["Proximy", "Midstride Technologies", "Khody Miller Enterprises", "Digital Rise"]
 
   // useEffect(() => {
   //   const googleMapsScript = document.createElement('script');

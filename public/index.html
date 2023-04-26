@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8" />
   <link rel="icon" href="%PUBLIC_URL%/favicon.svg" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Toronto-based software development contractors" />
@@ -27,6 +28,8 @@
     -->
   <title>North P&amp;D: Toronto-based technology consultancy</title>
   <!-- Global site tag (gtag.js) - Google Analytics -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-98KDQ7WEWP"></script>
   <script>
     window.dataLayer = window.dataLayer || [];

@@ -1,5 +1,5 @@
 import "./App.css";
-import { useRef, useState } from "react";
+import { useRef, useState, lazy, Suspense } from "react";
 import Expertise from "./components/Expertise/Expertise";
 import Footer from "./components/Footer/Footer";
 import "./hamburgers.css";

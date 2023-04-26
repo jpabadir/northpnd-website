@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkbrackets_website=self.webpackChunkbrackets_website||[]).push([[26],{2026:function(e,s,i){i.r(s),i.d(s,{default:function(){return n}});i(2791);var r=i(184);var n=function(){return(0,r.jsxs)("div",{className:"container",children:[(0,r.jsx)("div",{className:"image-container"}),(0,r.jsxs)("div",{children:[(0,r.jsx)("h2",{children:"Proximy"}),(0,r.jsx)("p",{children:"We helped Proximy build their cross-platform mobile app using Flutter, Cloud Firestore, and Google Cloud Functions."})]})]})}}}]);
-//# sourceMappingURL=26.81f5f873.chunk.js.map

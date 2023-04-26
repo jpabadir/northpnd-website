@@ -18,27 +18,27 @@
 }
 
 .Proximy {
-  background-image: url('../../assets/proximy-logo.png');
+  background-image: url("../../assets/proximy-logo.png");
   border-color: rgb(91, 141, 239);
   border: 2px solid rgb(91, 141, 239);
 }
 
-.Midstride {
-  background-image: url('../../assets/midstride-white.png');
-  background-color: #19658E;
+.MidstrideTechnologies {
+  background-image: url("../../assets/midstride-white.png");
+  background-color: #19658e;
 }
 
-.Tension {
-  background-image: url('../../assets/tension.png');
+.TensionConsulting {
+  background-image: url("../../assets/tension.png");
   background-color: #242424;
 }
 
 .Minebright {
-  background-image: url('../../assets/minebright-logo.png');
+  background-image: url("../../assets/minebright-logo.png");
   border: 2px solid rgb(255, 212, 38);
 }
 
 .DigitalRise {
-  background-image: url('../../assets/digitalrise-logo.svg');
+  background-image: url("../../assets/digitalrise-logo.svg");
   background-color: #0666c2;
 }

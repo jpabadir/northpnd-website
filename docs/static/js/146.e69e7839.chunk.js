@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkbrackets_website=self.webpackChunkbrackets_website||[]).push([[146],{6146:function(e,n,s){s.r(n),s.d(n,{default:function(){return r}});s(2791);var i=s(184);var r=function(){return(0,i.jsxs)("div",{className:"container",children:[(0,i.jsx)("div",{className:"image-container"}),(0,i.jsxs)("div",{children:[(0,i.jsx)("h2",{children:"Tension"}),(0,i.jsx)("p",{children:"Stay tuned for more info on our work with tension!"})]})]})}}}]);
-//# sourceMappingURL=146.e69e7839.chunk.js.map

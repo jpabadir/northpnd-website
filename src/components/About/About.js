@@ -1,7 +1,8 @@
 import React from 'react';
 import './About.css';
 import { Row, Col, Container } from 'react-bootstrap';
-import JP_Team from "../../assets/jp-headshot.jpg";
+import JP_Team_jpg from "../../assets/jp-headshot.jpg";
+import JP_Team from "../../assets/jp-headshot.avif";
 
 function About() {
   return (
@@ -48,7 +49,10 @@ function About() {
             </div>
           </Col>
           <Col lg={4} className='d-flex justify-content-center'>
-            <img src={JP_Team} alt="JP Abadir" className="TeamHeadshots" />
+            <picture>
+              <source srcSet={JP_Team} type="image/avif" />
+              <img src={JP_Team_jpg} alt="JP Abadir" className="TeamHeadshots" />
+            </picture>
           </Col>
         </Row >
       </Container >

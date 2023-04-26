@@ -37,3 +37,8 @@
   background-image: url('../../assets/minebright-logo.png');
   border: 2px solid rgb(255, 212, 38);
 }
+
+.DigitalRise {
+  background-image: url('../../assets/digitalrise-logo.svg');
+  background-color: #0666c2;
+}

@@ -3,6 +3,7 @@ import "./BlogStyles.css";
 export default function Content() {
   return (
     <div>
+      <h2>Steps to follow while submitting a PR (an internal guide)</h2>
       <p>
         When you ask others to review your code, you should have first made sure that it's as good as you can possibly make it on your own.
       </p>

@@ -1,6 +1,6 @@
 .TeamHeadshots {
-  height: 300px;
-  width: 300px;
+  height: 280px;
+  width: 280px;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -12,23 +12,29 @@
   text-align: center;
 }
 
-.TeamMembers{
+.TeamMembers {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
-.TeamNames{
+.TeamNames {
   font-size: 25px;
   margin-top: 15px;
 }
 
-.TeamRoles{
+.TeamRoles {
   font-size: 20px;
+}
+
+@media only screen and (max-width:992px) {
+  .TeamHeadshots {
+    margin-top: 30px;
+  }
 }
 
 @media only screen and (max-width:576px) {
   .TeamHeadshots {
-    width: 130px !important;
-    height: 130px !important;
+    width: 180px !important;
+    height: 180px !important;
   }
 }

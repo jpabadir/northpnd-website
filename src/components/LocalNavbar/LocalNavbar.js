@@ -104,7 +104,7 @@ function LocalNavbar(props) {
                 onClick={handleNavLinkClick}
                 className="Link WhiteLink"
               >
-                Our Clients
+                Clients
               </Link>
             </li>
             <li>
@@ -124,10 +124,10 @@ function LocalNavbar(props) {
                 onClick={handleNavLinkClick}
                 className="Link WhiteLink"
               >
-                Contact Us
+                Contact
               </Link>
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 className="Link WhiteLink"
                 to="resources"
@@ -137,7 +137,7 @@ function LocalNavbar(props) {
               >
                 Resources
               </NavLink>
-            </li>
+            </li> */}
           </Nav>
         </Navbar.Collapse>
       </Navbar >

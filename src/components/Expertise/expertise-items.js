@@ -1,5 +1,12 @@
 export const items = [
   {
+    client: "Digital Rise",
+    dates: "April 2023",
+    description: "Built a mobile application prototype.",
+    tags: ["frontend web dev"],
+    tech: ["Webflow"]
+  },
+  {
     client: "Midstride Technologies",
     dates: "March 2023",
     description: "Wrote documentation to help the rest of the team get set up with Xdebug step debugging on VSCode + Docker. This is challenging because it involves publishing the Docker files and doing quite a bit of config to ensure it works properly.",
@@ -19,7 +26,7 @@ export const items = [
   }, {
     client: "Tension",
     dates: "February - Ongoing",
-    description: "Currently building the <a href='https://rockmass.webflow.io' target='_blank' rel='noopener noreferrer'>Rockmass</a> website for Tension based on their design.",
+    description: "We are currently assisting Tension in constructing a high-quality digital product in accordance with their design specifications.",
     tags: ["frontend web dev"],
     tech: ["Webflow"]
   }, {

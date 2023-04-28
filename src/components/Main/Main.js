@@ -11,14 +11,7 @@ import "../../hamburgers.css";
 import homeBackground from "../../assets/home-background.mp4";
 import homeBackgroundPoster from '../../assets/home-background-poster.jpg';
 
-const bodyScrollLock = require("body-scroll-lock");
-const disableBodyScroll = bodyScrollLock.disableBodyScroll;
-const enableBodyScroll = bodyScrollLock.enableBodyScroll;
-
 const Main = forwardRef((props, ref) => {
-  const refContainer = useRef(null);
-  const [isToggleOpen, setIsToggleOpen] = useState(false);
-
   useImperativeHandle(ref, () => ({
     scrollTo(scrollPath) {
       scroller.scrollTo(scrollPath, {
@@ -29,26 +22,16 @@ const Main = forwardRef((props, ref) => {
   }));
 
   useEffect(() => {
-    if (isToggleOpen) disableBodyScroll(refContainer.current);
-    else enableBodyScroll(refContainer.current);
-  }, [isToggleOpen]);
-
-  useEffect(() => {
     scroller.scrollTo(props.scrollGoal, {
       duration: 300,
       offset: -80,
     });
   }, [props.scrollGoal]);
 
-  function closeToggle() {
-    if (isToggleOpen) refContainer.current.click();
-  }
-
   return (
     <div>
       <div>
         <div
-          onClick={closeToggle}
           style={{ position: "relative", width: "100%" }}
         >
           <video

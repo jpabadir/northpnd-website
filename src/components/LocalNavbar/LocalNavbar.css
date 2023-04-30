@@ -83,6 +83,7 @@ Link:focus::after {
 @media only screen and (max-width: 991px) {
   .Logo {
     height: 60px;
+    margin-left: 0px;
   }
 
   .Navbar {

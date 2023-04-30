@@ -22,6 +22,12 @@
   display: none !important;
 }
 
+.AboutSubtitle {
+  font-size: 28px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 992px) {
   .AboutVideo {
     margin-top: 30px !important;
@@ -39,5 +45,15 @@
 
   .JPHeadshotDesktopParent {
     display: none !important;
+  }
+
+  .AboutCol {
+    margin-bottom: 30px;
+  }
+
+  .AboutSubtitle {
+    font-size: 28px;
+    margin-top: 15px;
+    font-weight: bold;
   }
 }

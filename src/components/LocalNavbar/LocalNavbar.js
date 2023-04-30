@@ -38,7 +38,7 @@ function LocalNavbar(props) {
   }
 
   function getClasses() {
-    return `${myScrollY > scrollAnimationTrigger || isToggleOpen || location.pathname == "/expertise"
+    return `${myScrollY > scrollAnimationTrigger || isToggleOpen
       ? "GreyNavbar"
       : "TransparentNavbar"
       } ${isToggleOpen ? "FullNav" : ""} Navbar`

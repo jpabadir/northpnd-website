@@ -88,7 +88,6 @@ const Main = forwardRef((props, ref) => {
               </div>
             </Element>
           </div>
-          <div className="FirstSeparator" />
           <div
             style={{ width: "100%", justifyContent: "center", display: "flex" }}
           >
@@ -97,18 +96,23 @@ const Main = forwardRef((props, ref) => {
             </Element>
           </div>
           <div>
-            <Container className="element MainElementPadding py-0">
-              <Row style={{ height: '500px' }}>
-                <Col md={6}>
-                  <div style={{ fontSize: '80px', marginTop: '30px', fontWeight: 'bold' }}>Our values</div>
+            <Container className="element pt-5 px-0">
+              <Row className="OurValuesRow">
+                <Col lg={{ span: 6, order: 1 }} style={{ order: 2 }} className="OurValuesColumn">
+                  <div className="OurValues">Our&nbsp;Values</div>
                   <div style={{ fontSize: '20px' }}>
-                    Since 2021, North P&D has been building high-quality custom software for our clients across a variety of industries and verticals such as healthcare, social media, tourism, wellness, and mining. We provide technical advisory, design, and software development services. We are proudly bilingual in English and French, and equally comfortable servicing clients in either language.
+                    Since 2021, North P&D has been building high-quality custom software for our clients across a variety of industries and verticals such as healthcare, social media, tourism, wellness, and mining.
                     <br />
                     <br />
-                    <a href="/jpabadir" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black' }}><div>Meet our founder</div><MdKeyboardArrowRight color="red" style={{ transform: 'translateY(2px)' }} className="ms-3" /></a>
+                    Since 2021, North P&D has been building high-quality custom software for our clients across a variety.
+                    <br />
+                    <br />
+                    <div className="d-flex">
+                      <a href="/jpabadir" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black' }}><div>Meet our founder</div><MdKeyboardArrowRight color="red" style={{ transform: 'translateY(2px)' }} className="ms-3" /></a>
+                    </div>
                   </div>
                 </Col>
-                <Col md={6}><img src={whiteboard} alt="JP Abadir" style={{ height: '500px', width: '50%', objectFit: 'cover', objectPosition: '0px 0px', position: 'absolute', right: '0' }} /></Col>
+                <Col lg={{ span: 6, order: 1 }} className="ImageCol"><img src={whiteboard} alt="JP Abadir" className="WhiteboardImage" /></Col>
               </Row>
             </Container>
           </div>
@@ -117,7 +121,7 @@ const Main = forwardRef((props, ref) => {
           >
             <Element
               name="clients"
-              style={{ width: "100%", background: "#edf1f3" }}
+              style={{ width: "100%", background: "rgb(48, 46, 58, 0.04)" }}
               className="d-flex justify-content-center"
             >
               <div className="element">

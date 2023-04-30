@@ -20,7 +20,7 @@ function Footer() {
             <br />
             <br />
           </Col>
-          <Col xl={6} style={{ display: 'flex', justifyContent: 'right' }}>
+          <Col xl={6} style={{ display: 'flex' }}>
             <div className='FooterLinks'>
               <Row style={{ padding: '3px 0px' }}>
                 <Col xs={6} style={{ paddingLeft: '0px' }}>

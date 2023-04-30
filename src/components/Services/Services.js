@@ -62,9 +62,9 @@ function Services() {
   return (
     <div className="MainElementPadding">
       <Container fluid>
-        <div className="Subtitle">How we can help you</div>
-        <div className='SubSubtitle'>There are two types of clients we work with.</div>
         <Row className="ServicesCardsRow">
+          <div className="Subtitle">How we can help you</div>
+          <div className='SubSubtitle'>There are two types of clients we work with.</div>
           <ServicesCard
             index={1}
             videoSrc={coding}

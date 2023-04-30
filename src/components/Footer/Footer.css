@@ -38,4 +38,12 @@
   .FooterLink {
     margin: 0px 4px;
   }
+
+  .FooterLinks {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
 }

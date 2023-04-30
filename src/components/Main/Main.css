@@ -92,6 +92,52 @@
   font-size: 40px;
 }
 
+.WhiteboardImage {
+  height: 500px;
+  width: 50%;
+  object-fit: cover;
+  object-position: 0px 0px;
+  position: absolute;
+  right: 0;
+}
+
+.OurValuesRow {
+  height: 500px;
+}
+
+.OurValues {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.OurValuesColumn {
+  padding: 0px 24px;
+}
+
+@media only screen and (max-width: 991px) {
+  .WhiteboardImage {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0px 0px;
+    position: static;
+    right: 0;
+  }
+
+  .OurValuesRow {
+    height: auto;
+    margin-bottom: 35px !important;
+  }
+
+  .ImageCol {
+    padding: 0px !important;
+  }
+
+  .OurValues {
+    font-size: 50px;
+  }
+}
+
 @media only screen and (max-width: 576px) {
   .Subtitle {
     font-size: 35px;

@@ -95,7 +95,7 @@ const Main = forwardRef((props, ref) => {
             </Element>
           </div>
           <div>
-            <Container className="element pt-5 px-0">
+            <Container className="element px-0">
               <Row className="OurValuesRow">
                 <Col lg={{ span: 6, order: 1 }} style={{ order: 2 }} className="OurValuesColumn">
                   <div className="d-flex flex-column justify-content-between h-100">

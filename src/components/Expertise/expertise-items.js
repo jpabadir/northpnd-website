@@ -155,12 +155,6 @@ export const items = [
     description: "Built many customer-facing, cross-platform mobile app features on Proximy's mobile app. For instance, we built the \"add as a friend\" feature. This was technically challenging because, in order to ensure the feature worked robustly, we had to handle the case where both users clicked on the \"add as a friend\" button at the same time, which would have resulted in the creation of two separate friend requests, which would have been a forbidden state. To solve this, we utilized Cloud Firestore transactions to ensure that when we handled friend requests, we did so in a way which always resulted in a valid state. In this case, for instance, the two users would become friends. Our client appreciated our attention to detail and concern with quality.",
     tags: ["mobile dev", "serverless", "NoSQL"],
     tech: ["Flutter", "Google Cloud Functions", "Cloud Firestore"]
-  }, {
-    client: "Internal Project",
-    dates: "May 2021 - Ongoing",
-    description: "Currently building this website!",
-    tags: ["frontend web dev"],
-    tech: ["React", "JS", "CSS", "DNS", "GitHub Pages"]
-  },]
+  }]
 
 export const tagColors = { "security": "red", "full-stack web dev": "royalblue", "mobile dev": "orange", "devops": "black", "CI/CD": "green", "automation": "deeppink", "serverless": "grey", "NoSQL": "coral", "quality assurance": "purple", "backend": "darkred", "frontend web dev": "mediumvioletred" }

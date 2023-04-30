@@ -8,8 +8,12 @@ import Services from "../Services/Services";
 import OurClients from "../OurClients/OurClients";
 import TeamSection from "../TeamSection/TeamSection";
 import "../../hamburgers.css";
+import Reviews from '../Reviews/Reviews';
 import homeBackground from "../../assets/home-background.mp4";
 import homeBackgroundPoster from '../../assets/home-background-poster.jpg';
+import { Row, Col, Container } from 'react-bootstrap';
+import whiteboard from "../../assets/people-at-whiteboard.jpg";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 const bodyScrollLock = require("body-scroll-lock");
 const disableBodyScroll = bodyScrollLock.disableBodyScroll;
@@ -92,23 +96,39 @@ const Main = forwardRef((props, ref) => {
               <About />
             </Element>
           </div>
-          {/* <div
-            style={{ width: "100%", justifyContent: "center", display: "flex" }}
-          >
-            <Element name="TeamSection" className="element" style={{ width: "100%" }}>
-              <TeamSection />
-            </Element>
-          </div> */}
+          <div>
+            <Container className="element MainElementPadding py-0">
+              <Row style={{ height: '500px' }}>
+                <Col md={6}>
+                  <div style={{ fontSize: '80px', marginTop: '30px', fontWeight: 'bold' }}>Our values</div>
+                  <div style={{ fontSize: '20px' }}>
+                    Since 2021, North P&D has been building high-quality custom software for our clients across a variety of industries and verticals such as healthcare, social media, tourism, wellness, and mining. We provide technical advisory, design, and software development services. We are proudly bilingual in English and French, and equally comfortable servicing clients in either language.
+                    <br />
+                    <br />
+                    <a href="/jpabadir" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black' }}><div>Meet our founder</div><MdKeyboardArrowRight color="red" style={{ transform: 'translateY(2px)' }} className="ms-3" /></a>
+                  </div>
+                </Col>
+                <Col md={6}><img src={whiteboard} alt="JP Abadir" style={{ height: '500px', width: '50%', objectFit: 'cover', objectPosition: '0px 0px', position: 'absolute', right: '0' }} /></Col>
+              </Row>
+            </Container>
+          </div>
           <div
             style={{ width: "100%", justifyContent: "center", display: "flex" }}
           >
             <Element
               name="clients"
-              className="element"
-              style={{ width: "100%" }}
+              style={{ width: "100%", background: "#edf1f3" }}
+              className="d-flex justify-content-center"
             >
-              <OurClients />
+              <div className="element">
+                <OurClients />
+              </div>
             </Element>
+          </div>
+          <div className="d-flex justify-content-center mb-3">
+            <div className="element">
+              <Reviews />
+            </div>
           </div>
           <div
             style={{
@@ -168,7 +188,7 @@ const Main = forwardRef((props, ref) => {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 });
 

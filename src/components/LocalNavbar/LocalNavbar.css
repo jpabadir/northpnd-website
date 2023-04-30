@@ -1,6 +1,7 @@
 .Navbar {
   font-size: 16px;
   align-content: flex-start;
+  height: 60px;
 }
 
 .GreyNavbar {
@@ -71,11 +72,20 @@ Link:focus::after {
 }
 
 .Logo {
-  height: 100px;
+  height: 75px;
+  margin-left: 50px;
+}
+
+.FullNav {
+  height: 100vh !important;
 }
 
 @media only screen and (max-width: 991px) {
   .Logo {
     height: 60px;
+  }
+
+  .Navbar {
+    height: 80px;
   }
 }

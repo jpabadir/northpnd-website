@@ -3,7 +3,6 @@ import './PastWork.css';
 import { Card } from 'antd';
 import { Row, Col, Container } from 'react-bootstrap';
 import Reviews from '../Reviews/Reviews';
-import { Link } from "react-router-dom";
 
 function WorkCard(props) {
   return (
@@ -51,7 +50,6 @@ function OurClients() {
             subtitle="We assisted Digital Rise in constructing an interactive prototype for their ongoing digital project. Due to their impending user testing requirements, Digital Rise sought expedited development, and our collaboration enabled them to obtain a functional prototype within a week.">
           </WorkCard>
         </Row>
-        <Reviews />
       </Container>
     </div>
   );

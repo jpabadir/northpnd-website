@@ -8,6 +8,7 @@ import Main from "./components/Main/Main";
 import LocalNavbar from "./components/LocalNavbar/LocalNavbar";
 import Article from "./components/Article/Article";
 import Blog from "./components/Blog/Blog";
+import Jpabadir from "./components/Jpabadir/Jpabadir";
 import Proximy from "./components/Client Website/Proximy/Proximy";
 import Midstride from "./components/Client Website/Midstride/Midstride";
 import Tension from "./components/Client Website/Tension/Tension";
@@ -35,6 +36,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Main ref={mainRef} scrollGoal={scrollGoal} />} />
             <Route path="expertise" element={<Expertise />} />
+            <Route path="jpabadir" element={<Jpabadir />} />
             <Route path="clients" element={<div className="StandalonePageParent" style={{ fontSize: '18px' }}><Outlet /></div>}>
               <Route path="proximy" element={<Proximy />} />
               <Route path="midstride" element={<Midstride />} />

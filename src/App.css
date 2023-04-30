@@ -1,5 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
+  font-size: 17px;
 }
 
 .App {
@@ -24,4 +25,8 @@ body {
 .StandalonePageParent {
   padding: 120px 10px;
   min-height: 85vh;
+}
+
+.SubSubtitle {
+  font-size: 25px;
 }

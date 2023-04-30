@@ -1,7 +1,7 @@
 import React from "react";
 import "./LocalNavbar.css";
 import { NavLink, Link, useLocation } from "react-router-dom";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import { useEffect, useRef, useState } from "react";
 import logo from "../../assets/transparentLogo.svg";
 
@@ -38,10 +38,10 @@ function LocalNavbar(props) {
   }
 
   function getClasses() {
-    return `${myScrollY > scrollAnimationTrigger || isToggleOpen || location.pathname == "/expertise" || window.location.pathname.includes("resources") || window.location.pathname.includes("clients")
+    return `${myScrollY > scrollAnimationTrigger || isToggleOpen || location.pathname == "/expertise"
       ? "GreyNavbar"
       : "TransparentNavbar"
-      } ${isToggleOpen ? "FullNav" : "TopNav"} Navbar`
+      } ${isToggleOpen ? "FullNav" : ""} Navbar`
   }
 
   return (
@@ -53,81 +53,81 @@ function LocalNavbar(props) {
         variant="dark"
         fixed="top"
         className={getClasses()}
-        style={{ height: isToggleOpen ? "100vh" : "80px" }}
       >
-        <Navbar.Brand href="/" style={{ fontSize: "25px" }}>
-          <img src={logo} alt="logo" className="Logo" />
-        </Navbar.Brand>
-        <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
-          ref={refContainer}
-          onClick={toggleIsToggleOpen}
-          className="Toggle"
-          id="toggler"
-        >
-          <div
-            className={`hamburger hamburger--slider ${isToggleOpen && "is-active"
-              }`}
+        <Container style={{ maxWidth: '1800px' }}>
+          <Navbar.Brand href="/" style={{ fontSize: "25px" }}>
+            <img src={logo} alt="logo" className="Logo" />
+          </Navbar.Brand>
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            ref={refContainer}
+            onClick={toggleIsToggleOpen}
+            className="Toggle"
+            id="toggler"
           >
-            <div className="hamburger-box">
-              <div className="hamburger-inner"></div>
+            <div
+              className={`hamburger hamburger--slider ${isToggleOpen && "is-active"
+                }`}
+            >
+              <div className="hamburger-box">
+                <div className="hamburger-inner"></div>
+              </div>
             </div>
-          </div>
-        </Navbar.Toggle>
-        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end text-center">
-          <Nav className="ml-auto">
-            <li>
-              <Link
-                to="/"
-                style={{ display: "inline-block", margin: "20px" }}
-                onClick={handleNavLinkClick}
-                className="Link WhiteLink"
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <NavLink
-                className="Link WhiteLink"
-                to="expertise"
-                style={{ display: "inline-block", margin: "20px" }}
-                onClick={handleNavLinkClick}
-                offset={-80}
-              >
-                Expertise
-              </NavLink>
-            </li>
-            <li>
-              <Link
-                to="/"
-                style={{ display: "inline-block", margin: "20px" }}
-                onClick={handleNavLinkClick}
-                className="Link WhiteLink"
-              >
-                Clients
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/"
-                style={{ display: "inline-block", margin: "20px" }}
-                onClick={handleNavLinkClick}
-                className="Link WhiteLink"
-              >
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/"
-                style={{ display: "inline-block", margin: "20px" }}
-                onClick={handleNavLinkClick}
-                className="Link WhiteLink"
-              >
-                Contact
-              </Link>
-            </li>
-            {/* <li>
+          </Navbar.Toggle>
+          <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end text-center">
+            <Nav className="ml-auto">
+              <li>
+                <Link
+                  to="/"
+                  style={{ display: "inline-block", margin: "20px" }}
+                  onClick={handleNavLinkClick}
+                  className="Link WhiteLink"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <NavLink
+                  className="Link WhiteLink"
+                  to="expertise"
+                  style={{ display: "inline-block", margin: "20px" }}
+                  onClick={handleNavLinkClick}
+                  offset={-80}
+                >
+                  Expertise
+                </NavLink>
+              </li>
+              <li>
+                <Link
+                  to="/"
+                  style={{ display: "inline-block", margin: "20px" }}
+                  onClick={handleNavLinkClick}
+                  className="Link WhiteLink"
+                >
+                  Clients
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/"
+                  style={{ display: "inline-block", margin: "20px" }}
+                  onClick={handleNavLinkClick}
+                  className="Link WhiteLink"
+                >
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/"
+                  style={{ display: "inline-block", margin: "20px" }}
+                  onClick={handleNavLinkClick}
+                  className="Link WhiteLink"
+                >
+                  Contact
+                </Link>
+              </li>
+              {/* <li>
               <NavLink
                 className="Link WhiteLink"
                 to="resources"
@@ -138,8 +138,9 @@ function LocalNavbar(props) {
                 Resources
               </NavLink>
             </li> */}
-          </Nav>
-        </Navbar.Collapse>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
       </Navbar >
     </div >
   );

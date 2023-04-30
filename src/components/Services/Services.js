@@ -19,7 +19,7 @@ function ServicesCard(props) {
   }, []);
 
   return (
-    <Col className="ServicesCardCol" lg={4}>
+    <Col className="ServicesCardCol" lg={5}>
       <div className="ServicesVideoGrandParent">
         <div className={`ServicesVideoParent StaticShadow ${isMobile ? '' : 'VideoTransition'}`}>
           <video
@@ -63,7 +63,7 @@ function Services() {
     <div className="MainElementPadding">
       <Container fluid>
         <div className="Subtitle">How we can help you</div>
-        <div style={{ fontSize: '25px' }}>There are two types of clients we work with.</div>
+        <div className='SubSubtitle'>There are two types of clients we work with.</div>
         <Row className="ServicesCardsRow">
           <ServicesCard
             index={1}

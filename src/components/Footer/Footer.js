@@ -10,7 +10,7 @@ function Footer() {
         <Row>
           <Col xl={6} style={{ textAlign: 'left' }}>
             <br />
-            1 Dundas St. W, 25th Floor
+            1 Dundas St. W, Suite 2500
             <br />
             M5G 1Z3
             <br />
@@ -20,7 +20,7 @@ function Footer() {
             <br />
             <br />
           </Col>
-          <Col xl={6} style={{ display: 'flex' }}>
+          <Col xl={6} style={{ display: 'flex', justifyContent: 'right' }}>
             <div className='FooterLinks'>
               <Row style={{ padding: '3px 0px' }}>
                 <Col xs={6} style={{ paddingLeft: '0px' }}>
@@ -46,13 +46,13 @@ function Footer() {
                   </a>
                 </Col>
               </Row>
-              <Row style={{ padding: '3px 0px' }}>
+              {/* <Row style={{ padding: '3px 0px' }}>
                 <Col xs={6} style={{ paddingLeft: '0px' }}>
                   <a href="https://www.northpnd.com/privacy" target="_blank" rel="noreferrer" className="FooterLink">
                     Privacy
                   </a>
                 </Col>
-              </Row>
+              </Row> */}
             </div>
           </Col>
         </Row>

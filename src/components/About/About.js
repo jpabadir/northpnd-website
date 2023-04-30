@@ -3,7 +3,8 @@ import './About.css';
 import { Row, Col, Container } from 'react-bootstrap';
 import flat from "../../assets/flat.webp";
 import flat2 from "../../assets/flat2.webp";
-import flat3 from "../../assets/flat3.webp";
+import workingpeople from "../../assets/working-people.webp";
+// import pipe from "../../assets/pipe.webp";
 
 function About() {
   return (
@@ -23,7 +24,7 @@ function About() {
             Since our launch, we have been guided by our core values of quality and communication. We believe that quality is the most important aspect of any software project, and we strive to deliver the highest quality software to our clients. We also believe that communication is key to the success of any project, and we work closely with our clients to ensure that we are always on the same page.
           </Col>
           <Col md={4} className='AboutCol'>
-            <img src={flat3} alt="JP Abadir" style={{ height: '150px', width: '100%', objectFit: 'cover', objectPosition: '0px 0px' }} />
+            <img src={workingpeople} alt="JP Abadir" style={{ height: '150px', width: '100%', objectFit: 'cover', objectPosition: '0px 0px' }} />
             <div className='AboutSubtitle'>Our process</div>
             <p>
               We work closely with our clients to understand their needs and objectives, and we tailor our process to each client. We are comfortable working with a variety of project management methodologies, including Agile, Waterfall, and Kanban. We offer two types of pricing models: fixed-price, and time and materials, depending on the client's needs.

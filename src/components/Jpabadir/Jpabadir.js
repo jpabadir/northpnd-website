@@ -19,13 +19,15 @@ function Jpabadir() {
         </Row>
         <Row className='d-flex justify-content-center'>
           <Col style={{ maxWidth: '1700px' }}>
-            <a href="/" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black', fontSize: '22px' }} className='my-3'><MdKeyboardArrowLeft color="red" className='me-4' style={{ transform: 'translateY(-1px)' }} />About Us</a>
+            <div className='d-flex'>
+              <a href="/" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black', fontSize: '22px' }} className='my-3'><MdKeyboardArrowLeft color="red" className='me-4' style={{ transform: 'translateY(-1px)' }} />About Us</a>
+            </div>
           </Col>
-          <hr style={{ color: 'lightgrey' }} className='p-0' />
+          <hr style={{ color: 'lightgrey' }} className='p-0 m-0' />
         </Row>
         <div className='d-flex justify-content-center'>
           <Row style={{ maxWidth: '1700px' }} >
-            <Col md={8} >
+            <Col md={{ span: 8, order: 1 }} style={{ order: 2 }}>
               <br />
               After completing software engineering internships at Amazon Web Services and RBC, I established North P&D in May 2021 with the objective of delivering exceptional software development and technology services to businesses.
               Since then, North P&D has grown and we are now a team of two passionate and dedicated developers.
@@ -37,9 +39,9 @@ function Jpabadir() {
               To learn more, you can visit my.
               <br />
               <br />
-              <a href="/expertise" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black', fontSize: '30px', marginTop: '10px' }}><div>Learn about our team's expertise</div><MdKeyboardArrowRight color="red" className='ms-4' style={{ transform: 'translateY(3px)' }} /></a>
+              <a href="/expertise" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black', marginTop: '10px' }} className='ExpertiseLink'><div>Learn about our team's expertise</div><MdKeyboardArrowRight color="red" className='ms-4' style={{ transform: 'translateY(3px)' }} /></a>
             </Col>
-            <Col md={4} className='d-flex justify-content-center align-items-center' ><img src={JP} className='Headshot' /></Col>
+            <Col md={4} className='d-flex justify-content-center align-items-center PictureColumn'><img src={JP} className='Headshot' /></Col>
           </Row>
         </div>
       </Container>

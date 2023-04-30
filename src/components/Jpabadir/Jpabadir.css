@@ -4,10 +4,28 @@
 }
 
 .JpParent {
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 80vh;
-  display: flex;
-  background-size: cover;
   font-size: 20px;
+}
+
+.ExpertiseLink {
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 991px) {
+  .Headshot {
+    width: 300px;
+    height: 300px;
+  }
+
+  .PictureColumn {
+    margin-top: 25px;
+  }
+
+  .ExpertiseLink {
+    font-size: 22px;
+  }
+
+  .JpParent {
+    margin-bottom: 25px;
+  }
 }

@@ -66,8 +66,8 @@ export default function Expertise() {
         <Row className='px-0 py-5 d-flex justify-content-center' style={{ background: '#302E3A', color: 'white' }}>
           <Col style={{ maxWidth: '1700px', paddingTop: '60px' }}>
             <div >
-              <div className='Subtitle' style={{ fontSize: '70px', fontWeight: 600 }}>Expertise</div>
-              <div className='SubSubtitle'>Full Stack Engineering</div>
+              <div className='PageTitle'>Expertise</div>
+              <div className='PageSubtitle'>Our portfolio of successful projects</div>
             </div>
           </Col>
         </Row>

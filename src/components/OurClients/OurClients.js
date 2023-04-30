@@ -20,10 +20,10 @@ function WorkCard(props) {
 
 function OurClients() {
   return (
-    <div className="MainElementPadding">
+    <div className="pt-4">
       <Container fluid>
-        <div className="Subtitle">Our Clients</div>
         <Row className="justify-content-center">
+          <div className="Subtitle">Our Clients</div>
           <WorkCard
             link="proximy.ca"
             title="Proximy"

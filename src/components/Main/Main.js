@@ -99,16 +99,20 @@ const Main = forwardRef((props, ref) => {
             <Container className="element pt-5 px-0">
               <Row className="OurValuesRow">
                 <Col lg={{ span: 6, order: 1 }} style={{ order: 2 }} className="OurValuesColumn">
-                  <div className="OurValues">Our&nbsp;Values</div>
-                  <div style={{ fontSize: '20px' }}>
-                    Since 2021, North P&D has been building high-quality custom software for our clients across a variety of industries and verticals such as healthcare, social media, tourism, wellness, and mining.
-                    <br />
-                    <br />
-                    Since 2021, North P&D has been building high-quality custom software for our clients across a variety.
-                    <br />
-                    <br />
+                  <div className="d-flex flex-column justify-content-between h-100">
+                    <div>
+                      <div className="OurValues">Our&nbsp;Values</div>
+                      <div style={{ fontSize: '20px' }}>
+                        Since 2021, North P&D has been building high-quality custom software for our clients across a variety of industries and verticals such as healthcare, social media, tourism, wellness, and mining.
+                        <br />
+                        <br />
+                        Since 2021, North P&D has been building high-quality custom software for our clients across a variety.
+                        <br />
+                        <br />
+                      </div>
+                    </div>
                     <div className="d-flex">
-                      <a href="/jpabadir" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black' }}><div>Meet our founder</div><MdKeyboardArrowRight color="red" style={{ transform: 'translateY(2px)' }} className="ms-3" /></a>
+                      <a href="/jpabadir" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black', fontSize: '22px' }} className="mb-5"><div>Meet our founder</div><MdKeyboardArrowRight color="red" style={{ transform: 'translateY(2px)' }} className="ms-3" /></a>
                     </div>
                   </div>
                 </Col>
@@ -124,7 +128,7 @@ const Main = forwardRef((props, ref) => {
               style={{ width: "100%", background: "rgb(48, 46, 58, 0.04)" }}
               className="d-flex justify-content-center"
             >
-              <div className="element">
+              <div className="element d-flex justify-content-center">
                 <OurClients />
               </div>
             </Element>

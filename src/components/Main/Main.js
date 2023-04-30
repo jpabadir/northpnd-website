@@ -6,7 +6,6 @@ import Home from "../Home/Home";
 import Contact from "../Contact/Contact";
 import Services from "../Services/Services";
 import OurClients from "../OurClients/OurClients";
-import TeamSection from "../TeamSection/TeamSection";
 import "../../hamburgers.css";
 import Reviews from '../Reviews/Reviews';
 import homeBackground from "../../assets/home-background.mp4";

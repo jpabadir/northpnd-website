@@ -1,8 +1,7 @@
 import React from 'react';
-import './PastWork.css';
+import './OurClients.css';
 import { Card } from 'antd';
 import { Row, Col, Container } from 'react-bootstrap';
-import Reviews from '../Reviews/Reviews';
 
 function WorkCard(props) {
   return (

@@ -121,7 +121,6 @@
 
   .OurValuesRow {
     height: auto;
-    margin-bottom: 35px !important;
     margin-top: 0px !important;
   }
 
@@ -131,6 +130,7 @@
 
   .OurValues {
     font-size: 50px;
+    margin-top: 10px;
   }
 }
 

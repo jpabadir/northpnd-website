@@ -12,8 +12,8 @@ function Jpabadir() {
         <Row className='px-0 py-5 d-flex justify-content-center' style={{ background: '#302E3A', color: 'white' }}>
           <Col style={{ maxWidth: '1700px', paddingTop: '60px' }}>
             <div >
-              <div className='Subtitle' style={{ fontSize: '70px', fontWeight: 600 }}>Jean-Philippe Abadir</div>
-              <div className='SubSubtitle'>Founder and Technical Lead</div>
+              <div className='PageTitle'>Jean-Philippe Abadir</div>
+              <div className='PageSubtitle'>Founder and Technical Lead</div>
             </div>
           </Col>
         </Row>

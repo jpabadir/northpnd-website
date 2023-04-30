@@ -1,11 +1,9 @@
 .Headshot {
-  /* border-radius: 2%; */
   width: 350px;
   height: 350px;
 }
 
 .JpParent {
-  /* margin-top: 60px; */
   background-repeat: no-repeat;
   background-position: center;
   height: 80vh;

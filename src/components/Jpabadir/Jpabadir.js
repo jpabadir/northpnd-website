@@ -20,7 +20,7 @@ function Jpabadir() {
         <Row className='d-flex justify-content-center'>
           <Col style={{ maxWidth: '1700px' }}>
             <div className='d-flex'>
-              <a href="/" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black', fontSize: '22px' }} className='my-3'><MdKeyboardArrowLeft color="red" className='me-4' style={{ transform: 'translateY(-1px)' }} />About us</a>
+              <a href="/" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black', fontSize: '22px' }} className='my-3'><MdKeyboardArrowLeft color="red" className='me-4' />About us</a>
             </div>
           </Col>
           <hr style={{ color: 'lightgrey' }} className='p-0 m-0' />
@@ -39,7 +39,7 @@ function Jpabadir() {
               To learn more, you can visit my.
               <br />
               <br />
-              <a href="/expertise" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black', marginTop: '10px' }} className='ExpertiseLink'><div>Learn about our team's expertise</div><MdKeyboardArrowRight color="red" className='ms-4' style={{ transform: 'translateY(3px)' }} /></a>
+              <a href="/expertise" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black', marginTop: '10px' }} className='ExpertiseLink'><div>Learn about our team's expertise</div><MdKeyboardArrowRight color="red" className='ms-4' style={{ transform: 'translateY(3px)' }} size='35px' /></a>
             </Col>
             <Col md={{ span: 4, order: 2 }} className='d-flex justify-content-center align-items-center PictureColumn'><img src={JP} className='Headshot' /></Col>
           </Row>

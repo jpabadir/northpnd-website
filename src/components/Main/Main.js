@@ -47,6 +47,11 @@ const Main = forwardRef((props, ref) => {
     if (isToggleOpen) refContainer.current.click();
   }
 
+  const videoRef = useRef(null);
+  const [isLPM, setIsLPM] = useState(true);
+  // If the video successfully plays, it's not on low power mode
+  useEffect(() => videoRef.current.play().then(() => {setIsLPM(false)}), []);
+
   return (
     <div>
       <div>
@@ -54,7 +59,9 @@ const Main = forwardRef((props, ref) => {
           onClick={closeToggle}
           style={{ position: "relative", width: "100%" }}
         >
+          {isLPM && <img className="BackgroundVideo Overlay" src={homeBackgroundPoster} />}
           <video
+            ref={videoRef}
             src={homeBackground}
             className="BackgroundVideo Overlay"
             type="video/mov"
@@ -62,6 +69,7 @@ const Main = forwardRef((props, ref) => {
             loop
             autoPlay
             muted
+            style={isLPM ? {display: "none"} : undefined}
             poster={homeBackgroundPoster}
           />
           <div className="Overlay DarkOverlay" />

@@ -23,7 +23,7 @@ function Reviews() {
       "language": "en",
       "profile_photo_url": "https://lh3.googleusercontent.com/a/AEdFTp6lsfDq0k6YBRBfatRKorBipQ_4HFF8stJ6qXJE=s128-c0x00000000-cc-rp-mo",
       "rating": 5,
-      "relative_time_description": "2 months ago",
+      "relative_time_description": "7 months ago",
       "text": "We partnered with North P&D to add capacity to our software development team and have been very pleased. Very thorough, detailed oriented and excellent communication skills. Delivers results on time and continues to be a valuable partner in our operations.",
       "time": 1663282781
     },
@@ -31,9 +31,19 @@ function Reviews() {
       "author_name": "Khody Miller",
       "rating": 5,
       "text": "JP truly cares for properly serving his customers. After our initial consultation, JP went the extra mile and gave me a comprehensive email of valuable recommendations on considerations for my business.",
+    },
+    {
+      "author_name": "Jeremy Goldyn",
+      "author_url": "https://www.google.com/maps/contrib/100441137041776833358/reviews",
+      "language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ACB-R5QegtP1nH7kVS98_cs1sRcSpCFzmgSv0iZqyAKXCA=w75-h75-p-rp-mo-ba2-br100",
+      "rating": 5,
+      "relative_time_description": "4 hours ago",
+      "text": "We work with North P&D for a Webflow project. It was challenging in terms of timeline but the work has been done in only 1 week 🔥 The guys are very efficient, professional and very friendly. Very recommended 👍",
+      //"time": 1663282781
     }
   ];
-  const companies = ["Proximy", "Midstride Technologies", "Khody Miller Enterprises"]
+  const companies = ["Proximy", "Midstride Technologies", "Khody Miller Enterprises", "DigitalRISE"]
 
   // useEffect(() => {
   //   const googleMapsScript = document.createElement('script');

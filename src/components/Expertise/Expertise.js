@@ -10,6 +10,7 @@ import './Expertise.css';
 import { useEffect, useState } from 'react';
 import TableSortLabel from '@mui/material/TableSortLabel';
 import { Row, Col, Container } from 'react-bootstrap'
+import { MdKeyboardArrowLeft } from "react-icons/md";
 
 export default function Expertise() {
   useEffect(() => {
@@ -70,6 +71,14 @@ export default function Expertise() {
               <div className='PageSubtitle'>Our portfolio of successful projects</div>
             </div>
           </Col>
+        </Row>
+        <Row className='d-flex justify-content-center'>
+          <Col style={{ maxWidth: '1700px' }}>
+            <div className='d-flex'>
+              <a href="/" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black', fontSize: '22px' }} className='my-3'><MdKeyboardArrowLeft color="red" className='me-4' style={{ transform: 'translateY(-1px)' }} />About us</a>
+            </div>
+          </Col>
+          <hr style={{ color: 'lightgrey' }} className='p-0 m-0' />
         </Row>
       </Container>
       <div className='d-flex justify-content-center'>

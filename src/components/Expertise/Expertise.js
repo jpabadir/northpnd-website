@@ -68,7 +68,7 @@ export default function Expertise() {
           <Col style={{ maxWidth: '1700px', paddingTop: '60px' }}>
             <div >
               <div className='PageTitle'>Expertise</div>
-              <div className='PageSubtitle'>Our team's capabilities</div>
+              <div className='PageSubtitle'>Successful projects and experiences</div>
             </div>
           </Col>
         </Row>

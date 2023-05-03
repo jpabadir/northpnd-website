@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from 'react';
+import React from 'react';
 import './Jpabadir.css';
 import { Row, Col, Container } from 'react-bootstrap'
 import JP from "../../assets/jp-headshot.jpg";
@@ -31,7 +31,6 @@ function Jpabadir() {
               <br />
               After completing software engineering internships at Amazon Web Services and RBC, I established North P&D in May 2021 with the objective of delivering exceptional software development and technology services to businesses.
               Since then, North P&D has grown and we are now a team of two passionate and dedicated developers.
-              To learn more, you can visit my <a href="github.com/jpabadir" target='_blank' rel="noopener noreferrer">GitHub profile</a>, my <a href="linkedin.com/in/jpabadir" target='_blank' rel="noopener noreferrer">LinkedIn profile</a>, or read about our <a href="/expertise">team's expertise</a>.
               <br />
               <br />
               After completing software engineering internships at Amazon Web Services and RBC, I established North P&D in May 2021 with the objective of delivering exceptional software development and technology services to businesses.

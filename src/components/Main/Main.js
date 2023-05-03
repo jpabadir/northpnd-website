@@ -102,12 +102,7 @@ const Main = forwardRef((props, ref) => {
                     <div>
                       <div className="OurValues">Our&nbsp;Values</div>
                       <div style={{ fontSize: '20px' }}>
-                        Since 2021, North P&D has been building high-quality custom software for our clients across a variety of industries and verticals such as healthcare, social media, tourism, wellness, and mining.
-                        <br />
-                        <br />
-                        Since 2021, North P&D has been building high-quality custom software for our clients across a variety.
-                        <br />
-                        <br />
+                        Since our launch, we have been guided by our core values of quality and communication. We believe that quality is the most important aspect of any software project, and we strive to deliver the highest quality software to our clients. We also believe that transparency is vital to the success of any software development endeavour. Therefore, we maintain close collaboration with our clients to ensure mutual understanding and alignment throughout the project's lifecycle.
                       </div>
                     </div>
                     <div className="d-flex">

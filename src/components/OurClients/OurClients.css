@@ -46,5 +46,5 @@
 
 .TechNuCom {
   background-image: url('../../assets/technucom-logo.png');
-  background-color: #ffa100;
+  border: 2px solid #ffa100;
 }

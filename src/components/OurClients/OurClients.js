@@ -24,6 +24,11 @@ function OurClients() {
         <Row className="justify-content-center">
           <div className="Subtitle">Our Clients</div>
           <WorkCard
+            link="technucom.com"
+            title="TechNuCom"
+            subtitle="We help TechNuCom manage, maintain and secure their backend infrastructure.">
+          </WorkCard>
+          <WorkCard
             link="proximy.ca"
             title="Proximy"
             subtitle="We assisted Proximy in developing their cross-platform mobile application by utilizing a combination of Flutter, Cloud Firestore, and     Google Cloud Functions."
@@ -46,12 +51,7 @@ function OurClients() {
           <WorkCard
             link="digitalrise.be"
             title="Digital Rise"
-            subtitle="We assisted Digital Rise in constructing an interactive prototype for their ongoing digital project. Due to their impending user testing requirements, Digital Rise sought expedited development, and our collaboration enabled them to obtain a functional prototype within a week.">
-          </WorkCard>
-          <WorkCard
-            link="technucom.com"
-            title="TechNuCom"
-            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat est felis, a laoreet eros egestas ac. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi sem nunc, mollis vitae venenatis in, tempor non lacus.">
+            subtitle="We helped Digital Rise build an interactive prototype for their digital project. Our collaboration allowed them to obtain a functional prototype within a week.">
           </WorkCard>
         </Row>
       </Container>

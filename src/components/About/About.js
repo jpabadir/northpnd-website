@@ -32,7 +32,7 @@ function About() {
             <img src={workingpeople} alt="People collaborating" style={{ height: '160px', width: '100%', objectFit: 'cover' }} />
             <div className='AboutSubtitle'>Our process</div>
             <p>
-              We work closely with our clients to understand their needs and objectives, and we tailor our process to each one. If you are a technical client, we adapt our process to your team's workflow for seamless integration. If you are a non-technical client, we will guide you through the process of building software from start to finish, and we will ensure that you are comfortable with each step along the way.
+              We work closely with our clients to understand their needs and objectives, and we tailor our process to each one. If you are a technical client, we adapt our process to your workflows and tech stack. If you are a non-technical client, we will guide you through the process of building software from start to finish, and we will ensure that you are comfortable with each step along the way.
             </p>
           </Col>
           <br />

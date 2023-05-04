@@ -109,6 +109,12 @@
   flex-direction: column;
 }
 
+.OurValuesText {
+  padding-right: 10px;
+  font-size: 20px;
+  text-align: justify;
+}
+
 @media only screen and (max-width: 991px) {
   .WhiteboardImage {
     height: 300px;
@@ -137,5 +143,9 @@
 @media only screen and (max-width: 576px) {
   .Subtitle {
     font-size: 35px;
+  }
+
+  .OurValuesText {
+    padding-right: 0px;
   }
 }

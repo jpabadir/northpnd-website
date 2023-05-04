@@ -101,8 +101,8 @@ const Main = forwardRef((props, ref) => {
                   <div className="d-flex flex-column justify-content-between h-100">
                     <div>
                       <div className="OurValues">Our&nbsp;Values</div>
-                      <div style={{ fontSize: '20px' }}>
-                        Since our launch, we have been guided by our core values of quality and communication. We believe that quality is the most important aspect of any software project, and we strive to deliver the highest quality software to our clients. We also believe that transparency is vital to the success of any software development endeavour. Therefore, we maintain close collaboration with our clients to ensure mutual understanding and alignment throughout the project's lifecycle.
+                      <div className="OurValuesText">
+                        Since our launch, we have been steadfast in upholding our core values of uncompromising quality and excellent communication. We are committed to delivering software that meets the highest standards of excellence for our clients, and are guided by our belief in the importance of transparency and collaboration. We work closely with clients to maintain mutual understanding and alignment at every stage of our parternship.
                       </div>
                     </div>
                     <div className="d-flex">

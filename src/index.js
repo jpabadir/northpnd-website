@@ -5,11 +5,14 @@ import 'antd/dist/antd.min.css';
 import './index.css';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';
+import './translation/i18n';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <React.Suspense fallback="loading">
+      <App />
+    </React.Suspense>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,9 +1,12 @@
 import React from "react";
 import "./LocalNavbar.css";
 import { NavLink, Link, useLocation } from "react-router-dom";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import { useEffect, useRef, useState } from "react";
 import logo from "../../assets/transparentLogo.svg";
+import languages from "../../translation/languages.json";
+import { useTranslation } from "react-i18next";
+import { FaGlobe } from "react-icons/fa";
 
 const bodyScrollLock = require("body-scroll-lock");
 const disableBodyScroll = bodyScrollLock.disableBodyScroll;
@@ -17,6 +20,8 @@ function LocalNavbar(props) {
   const [myScrollY, setMyScrollY] = useState(0);
   const location = useLocation();
 
+  const { t, i18n } = useTranslation("navbar");
+
   useEffect(() => {
     document.addEventListener("scroll", () => {
       setMyScrollY(window.scrollY);
@@ -28,9 +33,9 @@ function LocalNavbar(props) {
     else enableBodyScroll(refContainer.current);
   }, [isToggleOpen]);
 
-  function handleNavLinkClick(e) {
+  function handleNavLinkClick(link) {
     if (isToggleOpen) refContainer.current.click();
-    props.scrollHandler(e.target.innerText.replace(/\s/g, "").toLowerCase());
+    props.scrollHandler(link);
   }
 
   function toggleIsToggleOpen() {
@@ -80,10 +85,10 @@ function LocalNavbar(props) {
                 <Link
                   to="/"
                   style={{ display: "inline-block", margin: "20px" }}
-                  onClick={handleNavLinkClick}
+                  onClick={() => handleNavLinkClick("about")}
                   className="Link WhiteLink"
                 >
-                  About
+                  {t("about")}
                 </Link>
               </li>
               <li>
@@ -91,41 +96,53 @@ function LocalNavbar(props) {
                   className="Link WhiteLink"
                   to="expertise"
                   style={{ display: "inline-block", margin: "20px" }}
-                  onClick={handleNavLinkClick}
+                  onClick={() => handleNavLinkClick("expertise")}
                   offset={-80}
                 >
-                  Expertise
+                  {t("expertise")}
                 </NavLink>
               </li>
               <li>
                 <Link
                   to="/"
                   style={{ display: "inline-block", margin: "20px" }}
-                  onClick={handleNavLinkClick}
+                  onClick={() => handleNavLinkClick("clients")}
                   className="Link WhiteLink"
                 >
-                  Clients
+                  {t("clients")}
                 </Link>
               </li>
               <li>
                 <Link
                   to="/"
                   style={{ display: "inline-block", margin: "20px" }}
-                  onClick={handleNavLinkClick}
+                  onClick={() => handleNavLinkClick("services")}
                   className="Link WhiteLink"
                 >
-                  Services
+                  {t("services")}
                 </Link>
               </li>
               <li>
                 <Link
                   to="/"
                   style={{ display: "inline-block", margin: "20px" }}
-                  onClick={handleNavLinkClick}
+                  onClick={() => handleNavLinkClick("contact")}
                   className="Link WhiteLink"
                 >
-                  Contact
+                  {t("contact")}
                 </Link>
+              </li>
+              <li>
+                <NavDropdown title={<FaGlobe />} className="Dropdown" style={{ display: "inline-block", margin: "15px" }}>
+                  {Object.keys(languages).map(language =>
+                    <NavDropdown.Item key={language}
+                      onClick={() => i18n.changeLanguage(language)}
+                      disabled={i18n.resolvedLanguage === language}
+                    >
+                      {languages[language].nativeName}
+                    </NavDropdown.Item>
+                  )}
+                </NavDropdown>
               </li>
               {/* <li>
               <NavLink

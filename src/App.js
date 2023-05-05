@@ -32,27 +32,25 @@ function App() {
     <div>
       <Router>
         <LocalNavbar scrollHandler={updateScrollPath} />
-        <div className="CentralContent">
-          <Routes>
-            <Route path="/" element={<Main ref={mainRef} scrollGoal={scrollGoal} />} />
-            <Route path="expertise" element={<Expertise />} />
-            <Route path="jpabadir" element={<Jpabadir />} />
-            <Route path="clients" element={<div className="StandalonePageParent" style={{ fontSize: '18px' }}><Outlet /></div>}>
-              <Route path="proximy" element={<Proximy />} />
-              <Route path="midstride" element={<Midstride />} />
-              <Route path="tension" element={<Tension />} />
-              <Route path="minebright" element={<Minebright />} />
-            </Route>
-            <Route path="resources" element={<Blog />} />
-            {blogsData.map((blog) => (
-              <Route
-                key={blog.title}
-                path={`resources/${linkify(blog.title)}`}
-                element={<Article blog={blog} />}
-              />
-            ))}
-          </Routes>
-        </div >
+        <Routes>
+          <Route path="/" element={<Main ref={mainRef} scrollGoal={scrollGoal} />} />
+          <Route path="expertise" element={<Expertise />} />
+          <Route path="jpabadir" element={<Jpabadir />} />
+          <Route path="clients" element={<div className="StandalonePageParent" style={{ fontSize: '18px' }}><Outlet /></div>}>
+            <Route path="proximy" element={<Proximy />} />
+            <Route path="midstride" element={<Midstride />} />
+            <Route path="tension" element={<Tension />} />
+            <Route path="minebright" element={<Minebright />} />
+          </Route>
+          <Route path="resources" element={<Blog />} />
+          {blogsData.map((blog) => (
+            <Route
+              key={blog.title}
+              path={`resources/${linkify(blog.title)}`}
+              element={<Article blog={blog} />}
+            />
+          ))}
+        </Routes>
         <div
           style={{
             width: "100%",

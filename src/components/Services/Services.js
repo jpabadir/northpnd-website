@@ -39,12 +39,11 @@ function ServicesCard(props) {
             poster={props.poster}
           />
         </div>
-        <div className="CardTitle ServicesCardTitle" style={{ fontSize: '17px', paddingTop: '15px' }}>
+        <div className="CardTitle ServicesCardTitle" style={{ fontSize: '20px', paddingTop: '15px' }}>
           {props.title}
         </div>
         <div
           style={{
-            fontSize: '15px',
             opacity: `${props.subtitleDisplay === props.index || isMobile || true ? '0.7' : '0'}`,
             transition: '0.3s',
           }}

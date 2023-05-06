@@ -78,7 +78,7 @@ function Reviews() {
       <div className='ReadOnGoogle pt-4'>
         <a href='https://www.google.com/maps/place/North+P%26D,+Inc./@43.6558696,-79.3841034,17z/data=!3m1!4b1!4m5!3m4!1s0x882b35f52d58bc1d:0x1f2d801c9f15617a!8m2!3d43.6558657!4d-79.3819147/reviews' target="_blank" rel="noopener noreferrer" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', color: 'black', fontWeight: 'bold', fontSize: '17px' }}>
           <div>Read these reviews on Google&nbsp;</div>
-          <MdKeyboardArrowRight color="red" style={{ transform: 'translateY(2px)' }} />
+          <MdKeyboardArrowRight color="red" className='ReviewsArrow'/>
         </a>
       </div>
     </div>

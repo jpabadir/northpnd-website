@@ -2,8 +2,9 @@ import React from 'react';
 import './Jpabadir.css';
 import { Row, Col, Container } from 'react-bootstrap'
 import JP from "../../assets/jp-headshot.jpg";
-import { MdKeyboardArrowRight } from "react-icons/md";
-import { MdKeyboardArrowLeft } from "react-icons/md";
+import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
+import { SiLinkedin, } from "react-icons/si"
+import { AiFillGithub } from "react-icons/ai"
 
 function Jpabadir() {
   return (
@@ -14,6 +15,10 @@ function Jpabadir() {
             <div >
               <div className='PageTitle'>Jean-Philippe Abadir</div>
               <div className='PageSubtitle'>Founder and Technical Lead</div>
+              <div className='mt-3'>
+                <a href="https://linkedin.com/in/jpabadir" style={{ color: 'white' }} target="_blank" rel="noreferrer noopener"><SiLinkedin size={35} /></a>
+                <a href="https://github.com/jpabadir" style={{ color: 'white' }} target="_blank" rel="noreferrer noopener" ><AiFillGithub size={35} className='ms-3' /></a>
+              </div>
             </div>
           </Col>
         </Row>

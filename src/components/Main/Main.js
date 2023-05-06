@@ -102,7 +102,7 @@ const Main = forwardRef((props, ref) => {
                     <div>
                       <div className="OurValues">Our&nbsp;Values</div>
                       <div className="OurValuesText">
-                        Since our launch, we have been steadfast in upholding our core values of uncompromising quality and excellent communication. We are committed to delivering software that meets the highest standards of excellence for our clients, and guided by our belief in the importance of transparency and collaboration. We work closely with our clients to maintain mutual understanding and alignment at every stage of our parternship.
+                        Since our launch, we have been steadfast in upholding our core values of uncompromising quality and excellent communication. We are committed to delivering software that meets the highest standards of excellence, and guided by our belief in the importance of transparency and collaboration. At every stage of our parternship, we ensure to maintain mutual understanding and alignment with our clients.
                       </div>
                     </div>
                     <div className="d-flex">

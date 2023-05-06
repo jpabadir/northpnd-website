@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   margin: 10px 50px;
+  text-align: justify;
 }
 
 .ServicesVideoGrandParent {

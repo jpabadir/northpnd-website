@@ -12,5 +12,9 @@ i18n
     fallbackLng: "en",
     interpolation: {
       escapeValue: false
+    },
+    react: {
+      transSupportBasicHtmlNodes: true,
+      transKeepBasicHtmlNodesFor: ['code', 'a']
     }
   });

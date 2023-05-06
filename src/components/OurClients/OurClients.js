@@ -1,17 +1,21 @@
 import React from 'react';
 import './OurClients.css';
-import { Card } from 'antd';
 import { Row, Col, Container } from 'react-bootstrap';
 
 function WorkCard(props) {
   return (
-    <Col className="PastWorkCol" md={4}>
-      <div style={{ maxWidth: '250px', width: '100%' }}>
-        <a href={`https://${props.link}`} target="_blank" rel="noreferrer">
-          <Card className={`WorkCard ${props.title.replace(/\s/g, '')}`} />
+    <Col className="PastWorkCol" xs={24} md={6} style={{ display: 'flex', alignItems: 'center' }}>
+      <div className="CardFlex" style={{
+        display: 'flex', alignItems: 'center', justifyContent: 'flex-end', width: '100%'}}>
+        <div style={{ maxWidth: '250px', width: '100%', marginRight: '20px' }}>
+          <a href={`https://${props.link}`} target="_blank" rel="noreferrer">
+            <div className={`WorkCard ${props.title.replace(/\s/g, '')}`} />
+          </a>
+        </div>
+        <div style={{ flex: '1', minWidth: '200px' }}>
           <div className="CardTitle">{props.title}</div>
-        </a>
-        <div dangerouslySetInnerHTML={{ __html: props.subtitle }} />
+          <div dangerouslySetInnerHTML={{ __html: props.subtitle }} />
+        </div>
       </div>
     </Col>
   );
@@ -21,8 +25,8 @@ function OurClients() {
   return (
     <div className="pt-4">
       <Container fluid>
+        <div className="Subtitle mt-4">Our Clients</div>
         <Row className="justify-content-center">
-          <div className="Subtitle">Our Clients</div>
           <WorkCard
             link="proximy.ca"
             title="Proximy"
@@ -41,13 +45,13 @@ function OurClients() {
           <WorkCard
             link="minebright.com"
             title="Minebright"
-            subtitle="We provide Minebright with adaptable and premium quality assurance services on an as-needed basis to complement their software development endeavors.">
-          </WorkCard>
+            subtitle="We provide Minebright with adaptable and premium quality assurance services on an as-needed basis to complement their software development endeavors."
+          />
           <WorkCard
             link="digitalrise.be"
             title="Digital Rise"
-            subtitle="We assisted Digital Rise in constructing an interactive prototype for their ongoing digital project. Due to their impending user testing requirements, Digital Rise sought expedited development, and our collaboration enabled them to obtain a functional prototype within a week.">
-          </WorkCard>
+            subtitle="We assisted Digital Rise in constructing an interactive prototype for their ongoing digital project. Due to their impending user testing requirements, Digital Rise sought expedited development, and our collaboration enabled them to obtain a functional prototype within a week."
+          />
         </Row>
       </Container>
     </div>

@@ -29,11 +29,11 @@ function Jpabadir() {
           <Row style={{ maxWidth: '1700px' }} >
             <Col md={{ span: 8, order: 1 }} style={{ order: 2 }}>
               <br />
-              Following my software engineering internships at RBC in Toronto and Amazon Web Services in Vancouver, I founded North P&D in May 2021 with the objective of providing exceptional software development and technology services to businesses. Since then, I have been privileged to expand our team and collaborate with clients from various industries, consistently delivering high-quality solutions to meet their diverse needs.
+              Following my software engineering internships at RBC in Toronto and Amazon Web Services in Vancouver, I founded North P&D in May 2021 with the objective of providing exceptional software development and technology services. Since then, I have had the privilege of expanding our team and collaborating with clients from various industries, consistently delivering high-quality solutions to meet their diverse needs.
               <br />
               <br />
-              I am passionate about building excellent software and committed to providing the best possible experience to our clients. I am a strong believer in the power of technology to transform businesses and excited to help our clients leverage it to achieve their goals. 
-I am meticulous and communicative, and I strive to ensure that every project I work on is delivered to the highest level of satisfaction.
+              I am passionate about building excellent software and committed to offering the best possible experience to our clients. I firmly believe that technology has the power to transform organizations, and excited to help our partners leverage it to achieve their goals.
+              I am meticulous and communicative, and I strive to ensure that every project we work on is delivered to the highest level of satisfaction.
               <br />
               <br />
               I hold a Bachelor of Computer Science from the University of British Columbia.

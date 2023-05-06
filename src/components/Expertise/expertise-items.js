@@ -116,7 +116,7 @@ export const items = [
   }, {
     client: "Midstride Technologies",
     dates: "January 2022 - Ongoing",
-    description: "Currently building many full-stack features (167 pull requests merged to date).",
+    description: "Currently building many full-stack features (178 pull requests merged to date).",
     tags: ["full-stack web dev"],
     tech: ["PHP", "Laravel", "MySQL", "Vue", "JS", "SASS", "Docker"]
   }, {
@@ -128,7 +128,7 @@ export const items = [
   }, {
     client: "Midstride Technologies",
     dates: "January 2022 - Ongoing",
-    description: "Communicated directly with our client's client to get a thorough understanding of their desired requirements on many complex features, such as user \&quot;flagging\&quot; logic, sending text messages to users based on very specific conditions and actions taken by users and admins, or grouping different user orders' repeat dates in the system for efficiency of processing. Then, we took ownership of the design and implementation of the solution. This type of task is where our team's capabilities are most valuable to our client, as our combination of excellent communication skills and deep technical expertise allow us to collaborate with the client's client in almost complete autonomy, alleviating the rest of the team's workload.",
+    description: "Communicated directly with the end-users to get a thorough understanding of their desired requirements on many complex features, such as user \&quot;flagging\&quot; logic, sending text messages to users based on very specific conditions and actions taken by users and admins, or grouping different user orders' repeat dates in the system for efficiency of processing. Then, we took ownership of the design and implementation of the solution. This type of task is where our team's capabilities are most valuable to our client, as our combination of excellent communication skills and deep technical expertise allow us to collaborate with the end-users in almost complete autonomy, alleviating the rest of the team's workload.",
     tags: ["full-stack web dev"],
     tech: ["PHP", "Laravel", "MySQL", "Vue", "JS", "SASS", "Docker"]
   }, {

@@ -61,8 +61,7 @@ function Services() {
   return (
     <Container fluid>
       <Row className="ServicesCardsRow">
-        <div className="Subtitle">How we can help you</div>
-        <div className='SubSubtitle mb-2'>There are two types of clients we work with.</div>
+        <div className="Subtitle">Services</div>
         <ServicesCard
           index={1}
           videoSrc={coding}
@@ -77,7 +76,7 @@ function Services() {
           videoSrc={discussion}
           posterSrc={discussionPoster}
           title="Non-technical businesses"
-          subtitle="We help our clients design, develop and maintain high-quality, customized digital products. We work with them to understand their business and their users, and help them build solutions that are not only functional but also highly enjoyable to use."
+          subtitle="We help our non-technical clients design, develop and maintain high-quality, customized digital products. We work with them to understand their business and their users, and help them build solutions that are not only functional but also highly enjoyable to use."
           subtitleDisplay={subtitleDisplay}
           setSubtitleDisplay={setSubtitleDisplay}
         />

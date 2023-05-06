@@ -31,12 +31,12 @@ function OurClients() {
           <WorkCard
             link="proximy.ca"
             title="Proximy"
-            subtitle="We assisted Proximy in developing their cross-platform mobile application by utilizing a combination of Flutter, Cloud Firestore, and     Google Cloud Functions."
+            subtitle="We assisted Proximy in developing their cross-platform mobile application in Flutter, Cloud Firestore, and Google Cloud Functions."
           />
           <WorkCard
             link="midstride.com"
             title="Midstride Technologies"
-            subtitle="We collaborate closely with Midstride's team by engaging directly with their clients to gain a comprehensive understanding of their requirements, prior to constructing full-stack features for their products."
+            subtitle="We collaborate closely with Midstride's team by engaging directly with their clients to gain a comprehensive understanding of their requirements, prior to constructing full-stack features in their products."
           />
           <WorkCard
             link="wearetension.com"

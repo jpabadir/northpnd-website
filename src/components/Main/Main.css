@@ -115,6 +115,10 @@
   text-align: justify;
 }
 
+.MeetOurFounder {
+  margin-bottom: 40px;
+}
+
 @media only screen and (max-width: 991px) {
   .WhiteboardImage {
     height: 300px;
@@ -147,5 +151,10 @@
 
   .OurValuesText {
     padding-right: 0px;
+  }
+
+  .MeetOurFounder {
+    margin-top: 40px;
+    margin-bottom: 15px;
   }
 }

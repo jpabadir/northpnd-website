@@ -11,6 +11,7 @@ import { useEffect, useState } from 'react';
 import TableSortLabel from '@mui/material/TableSortLabel';
 import { Row, Col, Container } from 'react-bootstrap'
 import { MdKeyboardArrowLeft } from "react-icons/md";
+import { useTranslation } from 'react-i18next';
 
 export default function Expertise() {
   useEffect(() => {
@@ -18,7 +19,8 @@ export default function Expertise() {
   })
 
   const [order, setOrder] = useState('asc');
-  const [orderBy, setOrderBy] = useState('');
+  const [orderBy, setOrderBy] = useState('expertise');
+  const { t, i18n } = useTranslation('expertise');
 
   const handleSortRequest = (property) => {
     const isAsc = orderBy === property && order === 'asc';
@@ -26,7 +28,10 @@ export default function Expertise() {
     setOrderBy(property);
   };
 
-  const sortedItems = [...expertiseItems].sort((a, b) => {
+  const monthAndYear = {val: {year: 'numeric', month: 'long'}};
+  const month = {val: {month: 'long'}};
+
+  const sortedItems = [...expertiseItems].map((item, i) => ({...item, index: i})).sort((a, b) => {
     if (orderBy === 'client') {
       return order === 'asc'
         ? a.client.localeCompare(b.client)
@@ -128,7 +133,7 @@ export default function Expertise() {
               </TableHead>
               <TableBody>
                 {sortedItems.map((row) => (
-                  <TableRow key={row.description} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
+                  <TableRow key={row.index+i18n.resolvedLanguage} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
                     <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Client" className="text-center justify-content-center ClientNameCell">
                       {row.client}
                       {/* <Link to={`/clients/${row['client-id']}`}>{row.client}</Link> */}
@@ -138,7 +143,10 @@ export default function Expertise() {
                         {row.tech ? row.tech.map((tech) => (<span key={tech} className='pill darkpill'>{tech}</span>)) : '-'}
                       </div>
                     </TableCell>
-                    <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Description" dangerouslySetInnerHTML={{ __html: `<div>${row.description}</div>` }}>
+                    <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Description">
+                      <div>
+                        {t(row.index.toString())}
+                      </div>
                     </TableCell>
                     <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Tags" className="text-center justify-content-center">
                       <div className='d-flex justify-content-center' style={{ flexWrap: 'wrap', maxWidth: '200px' }}>
@@ -147,7 +155,16 @@ export default function Expertise() {
                     </TableCell>
                     <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Dates" className="text-center justify-content-center">
                       <div className='d-flex justify-content-center' style={{ flexWrap: 'wrap', maxWidth: '400px' }}>
-                        {row.dates}
+                        {row.startDate === null ?
+                          t('date', {val: row.endDate, formatParams: monthAndYear}) :
+                          (row.endDate === null ?
+                            `${t('date', {val: row.startDate, formatParams: monthAndYear})} - Ongoing` :
+                            (row.startDate.getMonth() === row.endDate.getMonth() ? 
+                              `${t('date', {val: row.startDate, formatParams: month})} - ${t('date', {val: row.endDate, formatParams: monthAndYear})}` :
+                              `${t('date', {val: row.startDate, formatParams: monthAndYear})} - ${t('date', {val: row.endDate, formatParams: monthAndYear})}`
+                            )
+                          )
+                        }
                       </div>
                     </TableCell>
                   </TableRow>

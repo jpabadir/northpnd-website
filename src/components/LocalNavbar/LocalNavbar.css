@@ -94,3 +94,7 @@ Link:focus::after {
 .Dropdown>a {
   color: white;
 }
+
+.dropdown-menu {
+  right: 0
+}

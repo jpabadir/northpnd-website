@@ -66,7 +66,7 @@ export default function Expertise() {
       <Container fluid className='p-0'>
         <Row className='px-0 py-5 d-flex justify-content-center' style={{ background: '#302E3A', color: 'white' }}>
           <Col style={{ maxWidth: '1700px', paddingTop: '60px' }}>
-            <div >
+            <div className='ps-1'>
               <div className='PageTitle'>Expertise</div>
               <div className='PageSubtitle'>Successful projects and experiences</div>
             </div>

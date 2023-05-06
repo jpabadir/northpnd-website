@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.ecb6cd09.css",
+    "main.css": "/static/css/main.e1f1ad62.css",
     "main.js": "/static/js/main.a7110cea.js",
     "static/media/home-background.mp4": "/static/media/home-background.f6e28b1a62bc7cd61404.mp4",
     "static/media/people-at-whiteboard.jpg": "/static/media/people-at-whiteboard.fc68a68bd6060afb1b5d.jpg",
@@ -21,11 +21,11 @@
     "static/media/layered-waves-haikei.svg": "/static/media/layered-waves-haikei.7cecff5e9dc9f50de7b4.svg",
     "static/media/digitalrise-logo.svg": "/static/media/digitalrise-logo.bed95437a20e3596149e.svg",
     "index.html": "/index.html",
-    "main.ecb6cd09.css.map": "/static/css/main.ecb6cd09.css.map",
+    "main.e1f1ad62.css.map": "/static/css/main.e1f1ad62.css.map",
     "main.a7110cea.js.map": "/static/js/main.a7110cea.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecb6cd09.css",
+    "static/css/main.e1f1ad62.css",
     "static/js/main.a7110cea.js"
   ]
 }

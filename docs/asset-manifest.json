@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cd152e06.css",
-    "main.js": "/static/js/main.d2bb8530.js",
+    "main.css": "/static/css/main.b351afd3.css",
+    "main.js": "/static/js/main.de515711.js",
     "static/media/home-background.mp4": "/static/media/home-background.f6e28b1a62bc7cd61404.mp4",
     "static/media/people-at-whiteboard.jpg": "/static/media/people-at-whiteboard.fc68a68bd6060afb1b5d.jpg",
     "static/media/discussion-light.mov": "/static/media/discussion-light.4350386319ae3b602f16.mov",
@@ -21,11 +21,11 @@
     "static/media/layered-waves-haikei.svg": "/static/media/layered-waves-haikei.7cecff5e9dc9f50de7b4.svg",
     "static/media/digitalrise-logo.svg": "/static/media/digitalrise-logo.bed95437a20e3596149e.svg",
     "index.html": "/index.html",
-    "main.cd152e06.css.map": "/static/css/main.cd152e06.css.map",
-    "main.d2bb8530.js.map": "/static/js/main.d2bb8530.js.map"
+    "main.b351afd3.css.map": "/static/css/main.b351afd3.css.map",
+    "main.de515711.js.map": "/static/js/main.de515711.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd152e06.css",
-    "static/js/main.d2bb8530.js"
+    "static/css/main.b351afd3.css",
+    "static/js/main.de515711.js"
   ]
 }

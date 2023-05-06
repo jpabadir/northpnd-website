@@ -26,7 +26,7 @@ function Jpabadir() {
           <hr style={{ color: 'lightgrey' }} className='p-0 m-0' />
         </Row>
         <div className='d-flex justify-content-center'>
-          <Row style={{ maxWidth: '1700px' }} >
+          <Row style={{ maxWidth: '1700px', padding: '0px 12px' }} >
             <Col md={{ span: 8, order: 1 }} style={{ order: 2 }}>
               <br />
               Following my software engineering internships at RBC in Toronto and Amazon Web Services in Vancouver, I founded North P&D in May 2021 with the objective of providing exceptional software development and technology services. Since then, I have had the privilege of expanding our team and collaborating with clients from various industries, consistently delivering high-quality solutions to meet their diverse needs.

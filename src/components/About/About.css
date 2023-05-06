@@ -112,4 +112,8 @@
   .AboutCol:nth-of-type(4) img {
     object-position: 0px -10vw;
   }
+
+  .AboutContainer {
+    font-size: 17px;
+  }
 }

@@ -176,7 +176,7 @@ const Main = forwardRef((props, ref) => {
               >
                 <Element
                   name="contact"
-                  className="element mt-5"
+                  className="element mt-4"
                   style={{
                     display: "flex",
                     justifyContent: "center",

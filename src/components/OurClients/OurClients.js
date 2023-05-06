@@ -51,7 +51,7 @@ function OurClients() {
           <WorkCard
             link="digitalrise.be"
             title="Digital Rise"
-            subtitle="We helped Digital Rise build an interactive and high-fidelity prototype for their software project.">
+            subtitle="We helped Digital Rise build an interactive high-fidelity prototype for their software project.">
           </WorkCard>
         </Row>
       </Container>

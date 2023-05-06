@@ -13,6 +13,7 @@
 .ExpertiseLink {
   font-size: 24px;
   text-align: left;
+  margin-top: 35px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -38,5 +39,9 @@
   .JpParent {
     margin-bottom: 0px;
     font-size: 17px;
+  }
+
+  .ExpertiseLink {
+    margin-top: 20px;
   }
 }

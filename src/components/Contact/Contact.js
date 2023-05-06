@@ -29,7 +29,7 @@ function Contact() {
   return (
     <Container fluid className="ContactContainer py-5">
       <Row className='ContactRow'>
-        <div className="Subtitle">Contact Us</div>
+        <div className="Subtitle">Get in touch</div>
         <Col xl={6} className="ContactCol">
           <div style={{ fontSize: '18px', maxWidth: '750px' }}>
             We're delighted you're interested in working with us! To get in touch, you

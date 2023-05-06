@@ -147,7 +147,7 @@ export default function Expertise() {
                     </TableCell>
                     <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Tags" className="text-center justify-content-center">
                       <div className='d-flex justify-content-center' style={{ flexWrap: 'wrap', maxWidth: '200px' }}>
-                        {row.tags ? row.tags.map((tag) => (<span key={tag} className='pill' style={{ background: tagColors[tag] ?? 'grey' }}>{tag}</span>)) : '-'}
+                        {row.tags ? row.tags.map((tag) => (<span key={tag} className='pill' style={{ background: tagColors[tag] ?? 'grey' }}>{t(tag)}</span>)) : '-'}
                       </div>
                     </TableCell>
                     <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Dates" className="text-center justify-content-center">
@@ -156,7 +156,7 @@ export default function Expertise() {
                           t('date', {val: row.endDate, formatParams: monthAndYear}) :
                           (row.endDate === null ?
                             `${t('date', {val: row.startDate, formatParams: monthAndYear})} - Ongoing` :
-                            (row.startDate.getMonth() === row.endDate.getMonth() ? 
+                            (row.startDate.getYear() === row.endDate.getYear() ? 
                               `${t('date', {val: row.startDate, formatParams: month})} - ${t('date', {val: row.endDate, formatParams: monthAndYear})}` :
                               `${t('date', {val: row.startDate, formatParams: monthAndYear})} - ${t('date', {val: row.endDate, formatParams: monthAndYear})}`
                             )

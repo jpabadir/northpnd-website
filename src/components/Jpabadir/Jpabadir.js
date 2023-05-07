@@ -28,7 +28,7 @@ function Jpabadir() {
               <div className='PageSubtitle'>Founder and Technical Lead</div>
               <div className='mt-3'>
                 <a href="https://linkedin.com/in/jpabadir" style={{ color: 'white' }} target="_blank" rel="noreferrer noopener"><SiLinkedin size={isMobile ? 27 : 35} /></a>
-                <a href="https://github.com/jpabadir" style={{ color: 'white' }} target="_blank" rel="noreferrer noopener" ><AiFillGithub size={isMobile ? 27 : 35} className='ms-3' /></a>
+                <a href="https://github.com/jpabadir" style={{ color: 'white' }} target="_blank" rel="noreferrer noopener" ><AiFillGithub size={isMobile ? 31 : 40} className='ms-3' /></a>
               </div>
             </div>
           </Col>

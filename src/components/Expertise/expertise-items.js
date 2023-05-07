@@ -146,7 +146,7 @@ export const items = [
   }, {
     client: "Proximy",
     dates: "June 2021",
-    description: "Secured Cloud Firestore database by writing security rules. This was quite challenging because the Proximy app stores a lot of personal data which must be protected, but also involves a lot of interaction between users. As a result, we had to write rules that were both secure, but also allowed for users involved in specific interactions to access and update the data relevant to those interaction.",
+    description: "Secured Cloud Firestore database by writing security rules. This was quite challenging because the Proximy app stores a lot of personal data which must be protected, but also involves a lot of interaction between users. As a result, we had to write rules that were very secure, but also allowed for users involved in specific interactions to access and update the data relevant to those interactions.",
     tags: ["security", "NoSQL"],
     tech: ["Cloud Firestore"]
   }, {

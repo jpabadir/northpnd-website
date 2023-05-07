@@ -92,7 +92,7 @@ export const items = [
   }, {
     client: "Midstride Technologies",
     dates: "August 2022",
-    description: "Fixed npm dependency issue affecting admin-facing tools. This involved updating a faulty package and doing the necessary updates in the code to match the new version's syntax and usage.",
+    description: "Fixed an npm dependency issue affecting admin-facing tools. This involved updating a faulty package and doing the necessary updates in the code to match the new version's syntax and usage.",
     tags: ["frontend web dev"],
     tech: ["npm", "Vue", "JS"]
   }, {

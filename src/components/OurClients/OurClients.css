@@ -8,7 +8,7 @@
 
 @media (max-width: 768px) {
   .CardFlex {
-    flex-direction: column; 
+    flex-direction: column;
   }
 }
 
@@ -48,4 +48,9 @@
 .DigitalRise {
   background-image: url('../../assets/digitalrise-logo.svg');
   background-color: #0666c2;
+}
+
+.TechNuCom {
+  background-image: url('../../assets/technucom-logo.png');
+  border: 2px solid #ffa100;
 }

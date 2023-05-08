@@ -6,7 +6,8 @@ function WorkCard(props) {
   return (
     <Col className="PastWorkCol" xs={24} md={6} style={{ display: 'flex', alignItems: 'center' }}>
       <div className="CardFlex" style={{
-        display: 'flex', alignItems: 'center', justifyContent: 'flex-end', width: '100%'}}>
+        display: 'flex', alignItems: 'center', justifyContent: 'flex-end', width: '100%'
+      }}>
         <div style={{ maxWidth: '250px', width: '100%', marginRight: '20px' }}>
           <a href={`https://${props.link}`} target="_blank" rel="noreferrer">
             <div className={`WorkCard ${props.title.replace(/\s/g, '')}`} />
@@ -28,14 +29,19 @@ function OurClients() {
         <div className="Subtitle mt-4">Our Clients</div>
         <Row className="justify-content-center">
           <WorkCard
+            link="technucom.com"
+            title="TechNuCom"
+            subtitle="We help TechNuCom manage, maintain and secure their backend infrastructure.">
+          </WorkCard>
+          <WorkCard
             link="proximy.ca"
             title="Proximy"
-            subtitle="We assisted Proximy in developing their cross-platform mobile application by utilizing a combination of Flutter, Cloud Firestore, and     Google Cloud Functions."
+            subtitle="We assisted Proximy in developing their cross-platform mobile application in Flutter, Cloud Firestore, and Google Cloud Functions."
           />
           <WorkCard
             link="midstride.com"
             title="Midstride Technologies"
-            subtitle="We collaborate closely with Midstride's team by engaging directly with their clients to gain a comprehensive understanding of their requirements, prior to constructing full-stack features for their products."
+            subtitle="We collaborate closely with Midstride's team by engaging directly with their clients to gain a comprehensive understanding of their requirements, prior to constructing full-stack features in their products."
           />
           <WorkCard
             link="wearetension.com"
@@ -45,13 +51,13 @@ function OurClients() {
           <WorkCard
             link="minebright.com"
             title="Minebright"
-            subtitle="We provide Minebright with adaptable and premium quality assurance services on an as-needed basis to complement their software development endeavors."
-          />
+            subtitle="We provide Minebright with adaptable and premium quality assurance services on an as-needed basis to complement their software development endeavors.">
+          </WorkCard>
           <WorkCard
             link="digitalrise.be"
             title="Digital Rise"
-            subtitle="We assisted Digital Rise in constructing an interactive prototype for their ongoing digital project. Due to their impending user testing requirements, Digital Rise sought expedited development, and our collaboration enabled them to obtain a functional prototype within a week."
-          />
+            subtitle="We helped Digital Rise build an interactive high-fidelity prototype for their software project.">
+          </WorkCard>
         </Row>
       </Container>
     </div>

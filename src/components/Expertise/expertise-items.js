@@ -1,5 +1,19 @@
 export const items = [
   {
+    client: "TechNuCom",
+    dates: "May 2023",
+    description: "Helped maintain and secure a Laravel infrastructure.",
+    tags: ["backend", "security"],
+    tech: ["Laravel", "MySQL"]
+  },
+  {
+    client: "TechNuCom",
+    dates: "May 2023",
+    description: "Helped secure a Python API.",
+    tags: ["backend", "security"],
+    tech: ["Python", "MySQL"]
+  },
+  {
     client: "Digital Rise",
     dates: "April 2023",
     description: "Built a mobile application prototype.",

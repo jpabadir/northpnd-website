@@ -2,16 +2,9 @@ export const items = [
   {
     client: "TechNuCom",
     dates: "May 2023",
-    description: "Helped maintain and secure a Laravel infrastructure.",
+    description: "Helped maintain and secure a managed API. This involved updating PHP, Laravel and various dependencies on the production server, as well as taking steps to maximize the security of the Python part of the API.",
     tags: ["backend", "security"],
-    tech: ["Laravel", "MySQL"]
-  },
-  {
-    client: "TechNuCom",
-    dates: "May 2023",
-    description: "Helped secure a Python API.",
-    tags: ["backend", "security"],
-    tech: ["Python", "MySQL"]
+    tech: ["Laravel", "Python", "MySQL"]
   },
   {
     client: "Digital Rise",

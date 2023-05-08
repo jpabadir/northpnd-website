@@ -34,6 +34,11 @@ function OurClients() {
             subtitle="We help TechNuCom manage, maintain and secure their backend infrastructure.">
           </WorkCard>
           <WorkCard
+            link="technucom.com"
+            title="TechNuCom"
+            subtitle="We help TechNuCom manage, maintain and secure their backend infrastructure.">
+          </WorkCard>
+          <WorkCard
             link="proximy.ca"
             title="Proximy"
             subtitle="We assisted Proximy in developing their cross-platform mobile application in Flutter, Cloud Firestore, and Google Cloud Functions."

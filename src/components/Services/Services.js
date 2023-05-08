@@ -39,12 +39,11 @@ function ServicesCard(props) {
             poster={props.poster}
           />
         </div>
-        <div className="CardTitle ServicesCardTitle" style={{ fontSize: '17px', paddingTop: '15px' }}>
+        <div className="CardTitle ServicesCardTitle" style={{ fontSize: '20px', paddingTop: '15px' }}>
           {props.title}
         </div>
         <div
           style={{
-            fontSize: '15px',
             opacity: `${props.subtitleDisplay === props.index || isMobile || true ? '0.7' : '0'}`,
             transition: '0.3s',
           }}
@@ -62,13 +61,12 @@ function Services() {
   return (
     <Container fluid>
       <Row className="ServicesCardsRow">
-        <div className="Subtitle">How we can help you</div>
-        <div className='SubSubtitle mb-2'>There are two types of clients we work with.</div>
+        <div className="Subtitle">Services</div>
         <ServicesCard
           index={1}
           videoSrc={coding}
           posterSrc={codingPoster}
-          title="Technical teams"
+          title="For technical teams"
           subtitle="We provide staff augmentation services to our technical clients. We function as an integral part of their team, working closely with their developers. We emphasize collaboration, communication, and code quality. We pride ourselves in working with a deep sense of ownership towards the outcome of the tech we build and strive to create maintainable, robust, and scalable solutions that exceed expectations."
           subtitleDisplay={subtitleDisplay}
           setSubtitleDisplay={setSubtitleDisplay}
@@ -77,8 +75,8 @@ function Services() {
           index={2}
           videoSrc={discussion}
           posterSrc={discussionPoster}
-          title="Non-technical businesses"
-          subtitle="We help our clients design, develop and maintain high-quality, customized digital products. We work with them to understand their business and their users, and help them build solutions that are not only functional but also highly enjoyable to use."
+          title="For non-technical teams"
+          subtitle="We help our non-technical clients design, develop and maintain high-quality, customized technology solutions. We work with them to understand their business and their users, and help them build solutions that are not only functional but also highly enjoyable to use."
           subtitleDisplay={subtitleDisplay}
           setSubtitleDisplay={setSubtitleDisplay}
         />

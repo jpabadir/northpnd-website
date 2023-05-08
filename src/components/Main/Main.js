@@ -101,17 +101,12 @@ const Main = forwardRef((props, ref) => {
                   <div className="d-flex flex-column justify-content-between h-100">
                     <div>
                       <div className="OurValues">Our&nbsp;Values</div>
-                      <div style={{ fontSize: '20px' }}>
-                        Since 2021, North P&D has been building high-quality custom software for our clients across a variety of industries and verticals such as healthcare, social media, tourism, wellness, and mining.
-                        <br />
-                        <br />
-                        Since 2021, North P&D has been building high-quality custom software for our clients across a variety.
-                        <br />
-                        <br />
+                      <div className="OurValuesText">
+                        Since our launch, we have been steadfast in upholding our core values of uncompromising quality and excellent communication. We are committed to delivering software that meets the highest standards of excellence, and guided by our belief in the importance of transparency and collaboration. At every stage of our parternship, we ensure to maintain mutual understanding and alignment with our clients.
                       </div>
                     </div>
                     <div className="d-flex">
-                      <a href="/jpabadir" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black', fontSize: '25px' }} className="mb-5"><div>Meet our founder</div><MdKeyboardArrowRight color="red" style={{ transform: 'translateY(2px)' }} className="ms-3" /></a>
+                      <a href="/jpabadir" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black' }} className="MeetOurFounder"><div>Meet our founder</div><MdKeyboardArrowRight color="red" style={{ transform: 'translateY(2px)' }} className="ms-3" /></a>
                     </div>
                   </div>
                 </Col>
@@ -181,7 +176,7 @@ const Main = forwardRef((props, ref) => {
               >
                 <Element
                   name="contact"
-                  className="element"
+                  className="element mt-4"
                   style={{
                     display: "flex",
                     justifyContent: "center",

@@ -3,7 +3,6 @@ import './About.css';
 import { Row, Col, Container } from 'react-bootstrap';
 import flat2 from "../../assets/flat2.webp";
 import workingpeople from "../../assets/working-people.webp";
-// import pipe from "../../assets/pipe.webp";
 import whoweworkwith from "../../assets/whoweworkwith.png";
 
 function About() {
@@ -13,21 +12,26 @@ function About() {
         <Row>
           <div className="Subtitle" style={{ marginBottom: '20px' }}>About Us</div>
           <Col md={4} className='AboutCol'>
-            <img src={flat2} alt="JP Abadir" style={{ height: '160px', width: '100%', objectFit: 'cover' }} />
+            <img src={flat2} alt="People at work" style={{ height: '160px', width: '100%', objectFit: 'cover' }} />
             <div className='AboutSubtitle'>What we do</div>
-            Since 2021, North P&D has been building high-quality custom software for our clients across a variety of industries and verticals such as healthcare, social media, tourism, wellness, and mining. We provide technical advisory, design, and software development services. We are proudly bilingual in English and French, and equally comfortable servicing clients in either language.
-            We are physically located in Toronto, and we build all of our clients' software internally, without any outsourcing. Our office is at 1 Dundas St W, Suite 2500. Come visit us!
+            <p>
+              Since 2021, we've delivered custom software solutions to clients from a diverse range of industries, including healthcare, social media, tourism, wellness, and mining. Our services include technical advisory, staff augmentation, design, and development. We build all of our clients' software from our Toronto office at 1 Dundas St W. Feel free to drop by!
+            </p>
           </Col>
           <Col md={4} className='AboutCol'>
-            <img src={whoweworkwith} alt="JP Abadir" style={{ height: '160px', width: '100%', objectFit: 'cover' }} />
+            <img src={whoweworkwith} alt="People chatting" style={{ height: '160px', width: '100%', objectFit: 'cover' }} />
             <div className='AboutSubtitle'>Who we work with</div>
-            Since our launch, we have been guided by our core values of quality and communication. We believe that quality is the most important aspect of any software project, and we strive to deliver the highest quality software to our clients. We also believe that communication is key to the success of any project, and we work closely with our clients to ensure that we are always on the same page.
+            <div>
+              <p>
+                We pride ourselves on being able to serve a diverse range of clients, including both non-technical and technical teams. We welcome working with businesses of all sizes, from startups to large enterprises, as well as non-profit organizations and government agencies. We are proud to be a bilingual team fluent in English and French, and equally comfortable serving clients in either language.
+              </p>
+            </div>
           </Col>
           <Col md={4} className='AboutCol'>
-            <img src={workingpeople} alt="JP Abadir" style={{ height: '160px', width: '100%', objectFit: 'cover' }} />
+            <img src={workingpeople} alt="People collaborating" style={{ height: '160px', width: '100%', objectFit: 'cover' }} />
             <div className='AboutSubtitle'>Our process</div>
             <p>
-              We work closely with our clients to understand their needs and objectives, and we tailor our process to each client. We are comfortable working with a variety of project management methodologies, including Agile, Waterfall, and Kanban. We offer two types of pricing models: fixed-price, and time and materials, depending on the client's needs.
+              By closely partnering with our clients, we gain a comprehensive understanding of their goals and tailor our process to best suit their needs. If you are a technical client, we will adapt our process to your workflows and tech stack. If you are a non-technical client, we will guide you through the process of building software from start to finish, ensuring that you are satisfied with each step along the way.
             </p>
           </Col>
           <br />

@@ -109,6 +109,16 @@
   flex-direction: column;
 }
 
+.OurValuesText {
+  padding-right: 10px;
+  font-size: 19px;
+}
+
+.MeetOurFounder {
+  margin-bottom: 40px;
+  font-size: 25px;
+}
+
 @media only screen and (max-width: 991px) {
   .WhiteboardImage {
     height: 300px;
@@ -137,5 +147,16 @@
 @media only screen and (max-width: 576px) {
   .Subtitle {
     font-size: 35px;
+  }
+
+  .OurValuesText {
+    padding-right: 0px;
+    font-size: 17px;
+  }
+
+  .MeetOurFounder {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 22px;
   }
 }

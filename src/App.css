@@ -8,10 +8,6 @@ body {
   scroll-behavior: smooth;
 }
 
-.CentralContent {
-  min-height: 100vh;
-}
-
 .StandalonePageParent {
   padding: 120px 10px;
   min-height: 85vh;

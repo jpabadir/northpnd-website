@@ -1,15 +1,18 @@
 .Headshot {
   width: 350px;
   height: 350px;
+  object-fit: cover;
 }
 
 .JpParent {
-  font-size: 20px;
+  font-size: 19px;
   padding-bottom: 50px;
 }
 
 .ExpertiseLink {
-  font-size: 30px;
+  font-size: 23px;
+  text-align: left;
+  margin-top: 30px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -23,7 +26,7 @@
   }
 
   .ExpertiseLink {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .JpParent {
@@ -34,5 +37,11 @@
 @media only screen and (max-width: 576px) {
   .JpParent {
     margin-bottom: 0px;
+    padding-bottom: 20px;
+    font-size: 17px;
+  }
+
+  .ExpertiseLink {
+    margin-top: 20px;
   }
 }

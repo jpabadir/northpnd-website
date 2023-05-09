@@ -4,7 +4,6 @@ import { Row, Col, Container } from 'react-bootstrap';
 import flat2 from "../../assets/flat2.webp";
 import workingpeople from "../../assets/working-people.webp";
 import whoweworkwith from "../../assets/whoweworkwith.png";
-import { MdKeyboardArrowRight } from "react-icons/md";
 import { useTranslation } from 'react-i18next';
 
 function About() {

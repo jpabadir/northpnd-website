@@ -1,5 +1,12 @@
 export const items = [
   {
+    client: "TechNuCom",
+    dates: "May 2023",
+    description: "Helped maintain and secure a managed API. This involved updating PHP, Laravel and various dependencies on the production server, as well as taking steps to maximize the security of the Python part of the API.",
+    tags: ["backend", "security"],
+    tech: ["Laravel", "Python", "MySQL"]
+  },
+  {
     client: "Digital Rise",
     dates: "April 2023",
     startDate: null,
@@ -68,7 +75,7 @@ export const items = [
     dates: "November 2022",
     startDate: null,
     endDate: new Date(2022, 10),
-    description: "As the client's project evolved, they decided to spin off a new project in the same industry as their main product. The new project had a different frontend, but shared a lot of its backend with the client's main product. In support of this endeavour, we took full ownership of the design and implementation of a system allowing to differentiate various backend objects (such as users, orders or emails) by their parent project, and to automatically take different actions based on the object's parent project. Among the various actions, we buit support for sending emails from a different email address and domain depending on the parent project. This was technically challenging because it involves updating Laravel's <code>MailgunTransport</code>'s configuration at runtime, which requires creating a new instance of <code>MailgunTransport</code> and binding it into the service container. To build this, we made heavy use of Laravel's Tinker tool to efficiently iterate on our code and test it.",
+    description: "As the client's project evolved, they decided to spin off a new project in the same industry as their main product. The new project had a different frontend, but shared a lot of its backend with the client's main product. In support of this endeavour, we took full ownership of the design and implementation of a system allowing to differentiate various backend objects (such as users, orders or emails) by their parent project, and to automatically take different actions based on the object's parent project. Among the various actions, we built support for sending emails from a different email address and domain depending on the parent project. This was technically challenging because it involves updating Laravel's <code>MailgunTransport</code>'s configuration at runtime, which requires creating a new instance of <code>MailgunTransport</code> and binding it into the service container. To build this, we made heavy use of Laravel's Tinker tool to efficiently iterate on our code and test it.",
     tags: ["full-stack web dev"],
     tech: ["PHP", "Laravel", "MySQL"]
   }, {
@@ -124,7 +131,7 @@ export const items = [
     dates: "August 2022",
     startDate: null,
     endDate: new Date(2022, 7),
-    description: "Fixed npm dependency issue affecting admin-facing tools. This involved updating a faulty package and doing the necessary updates in the code to match the new version's syntax and usage.",
+    description: "Fixed an npm dependency issue affecting admin-facing tools. This involved updating a faulty package and doing the necessary updates in the code to match the new version's syntax and usage.",
     tags: ["frontend web dev"],
     tech: ["npm", "Vue", "JS"]
   }, {
@@ -156,7 +163,7 @@ export const items = [
     dates: "January 2022 - Ongoing",
     startDate: new Date(2022, 0),
     endDate: null,
-    description: "Currently building many full-stack features (167 pull requests merged to date).",
+    description: "Currently building many full-stack features (178 pull requests merged to date).",
     tags: ["full-stack web dev"],
     tech: ["PHP", "Laravel", "MySQL", "Vue", "JS", "SASS", "Docker"]
   }, {
@@ -172,7 +179,7 @@ export const items = [
     dates: "January 2022 - Ongoing",
     startDate: new Date(2022, 0),
     endDate: null,
-    description: "Communicated directly with our client's client to get a thorough understanding of their desired requirements on many complex features, such as user \&quot;flagging\&quot; logic, sending text messages to users based on very specific conditions and actions taken by users and admins, or grouping different user orders' repeat dates in the system for efficiency of processing. Then, we took ownership of the design and implementation of the solution. This type of task is where our team's capabilities are most valuable to our client, as our combination of excellent communication skills and deep technical expertise allow us to collaborate with the client's client in almost complete autonomy, alleviating the rest of the team's workload.",
+    description: "Communicated directly with the end-users to get a thorough understanding of their desired requirements on many complex features, such as user \&quot;flagging\&quot; logic, sending text messages to users based on very specific conditions and actions taken by users and admins, or grouping different user orders' repeat dates in the system for efficiency of processing. Then, took ownership of the design and implementation of the solution. This type of task is where our team's capabilities are most valuable to our client, as our combination of excellent communication skills and deep technical expertise allow us to collaborate with the end-users in almost complete autonomy, alleviating the rest of the team's workload.",
     tags: ["full-stack web dev"],
     tech: ["PHP", "Laravel", "MySQL", "Vue", "JS", "SASS", "Docker"]
   }, {
@@ -196,7 +203,7 @@ export const items = [
     dates: "June 2021",
     startDate: null,
     endDate: new Date(2021, 5),
-    description: "Secured Cloud Firestore database by writing security rules. This was quite challenging because the Proximy app stores a lot of personal data which must be protected, but also involves a lot of interaction between users. As a result, we had to write rules that were both secure, but also allowed for users involved in specific interactions to access and update the data relevant to those interaction.",
+    description: "Secured Cloud Firestore database by writing security rules. This was quite challenging because the Proximy app stores a lot of personal data which must be protected, but also involves a lot of interaction between users. As a result, we had to write rules that were very secure, but also allowed for users involved in specific interactions to access and update the data relevant to those interactions.",
     tags: ["security", "NoSQL"],
     tech: ["Cloud Firestore"]
   }, {
@@ -204,7 +211,7 @@ export const items = [
     dates: "May - December 2021",
     startDate: new Date(2021, 4),
     endDate: new Date(2021, 11),
-    description: "Built many customer-facing, cross-platform mobile app features on Proximy's mobile app. For instance, we built the \"add as a friend\" feature. This was technically challenging because, in order to ensure the feature worked robustly, we had to handle the case where both users clicked on the \"add as a friend\" button at the same time, which would have resulted in the creation of two separate friend requests, which would have been a forbidden state. To solve this, we utilized Cloud Firestore transactions to ensure that when we handled friend requests, we did so in a way which always resulted in a valid state. In this case, for instance, the two users would become friends. Our client appreciated our attention to detail and concern with quality.",
+    description: "Built many customer-facing, cross-platform mobile app features on Proximy's mobile app. For instance, we built the \"add as a friend\" feature. This was technically challenging because, in order to ensure the feature worked robustly, we had to handle the case where both users clicked on the \"add as a friend\" button at the same time, which would have resulted in the creation of two separate friend requests, which would have been a forbidden state. To solve this, we leveraged Cloud Firestore transactions to ensure that we always handled friend requests in a way which results in a valid state. In this case, for instance, the two users would become friends. Our client appreciated our attention to detail and concern with quality.",
     tags: ["mobile dev", "serverless", "NoSQL"],
     tech: ["Flutter", "Google Cloud Functions", "Cloud Firestore"]
   }]

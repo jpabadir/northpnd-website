@@ -108,7 +108,7 @@ const Main = forwardRef((props, ref) => {
                       </div>
                     </div>
                     <div className="d-flex">
-                      <a href="/jpabadir" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black', fontSize: '25px' }} className="mb-5"><div>{t("meet_our_founder")}</div><MdKeyboardArrowRight color="red" style={{ transform: 'translateY(2px)' }} className="ms-3" /></a>
+                      <a href="/jpabadir" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black' }} className="MeetOurFounder"><div>{t("meet_our_founder")}</div><MdKeyboardArrowRight color="red" style={{ transform: 'translateY(2px)' }} className="ms-3" /></a>
                     </div>
                   </div>
                 </Col>
@@ -178,7 +178,7 @@ const Main = forwardRef((props, ref) => {
               >
                 <Element
                   name="contact"
-                  className="element"
+                  className="element mt-4"
                   style={{
                     display: "flex",
                     justifyContent: "center",

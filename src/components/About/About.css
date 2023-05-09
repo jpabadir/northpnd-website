@@ -1,5 +1,5 @@
 .AboutContainer {
-  font-size: 20px;
+  font-size: 19px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -26,10 +26,6 @@
   font-size: 28px;
   margin-top: 30px;
   font-weight: bold;
-}
-
-.AboutCol {
-  text-align: justify;
 }
 
 .AboutCol:nth-of-type(2) img {
@@ -111,5 +107,9 @@
 
   .AboutCol:nth-of-type(4) img {
     object-position: 0px -10vw;
+  }
+
+  .AboutContainer {
+    font-size: 17px;
   }
 }

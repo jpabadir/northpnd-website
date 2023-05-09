@@ -50,6 +50,11 @@ table {
 
 @media only screen and (max-width: 576px) {
     .Expertise {
+        margin-top: 15px;
         margin-bottom: 0px;
+    }
+
+    table {
+        font-size: 17px;
     }
 }

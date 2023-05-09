@@ -8,9 +8,9 @@ function Footer() {
       <hr className="FooterHr" />
       <Container style={{ paddingBottom: '20px' }}>
         <Row>
-          <Col xl={6} style={{ textAlign: 'left' }}>
+          <Col xl={7} style={{ textAlign: 'left' }}>
             <br />
-            1 Dundas St. W, Suite 2500
+            1 Dundas St. W, Suite&nbsp;2500
             <br />
             M5G 1Z3
             <br />
@@ -20,7 +20,7 @@ function Footer() {
             <br />
             <br />
           </Col>
-          <Col xl={6} style={{ display: 'flex' }}>
+          <Col xl={5} style={{ display: 'flex' }}>
             <div className='FooterLinks'>
               <Row style={{ padding: '3px 0px' }}>
                 <Col xs={6} style={{ paddingLeft: '0px' }}>

@@ -31,7 +31,7 @@ function Contact() {
   return (
     <Container fluid className="ContactContainer py-5">
       <Row className='ContactRow'>
-        <div className="Subtitle">Get in touch</div>
+        <div className="Subtitle">{t("subtitle")}</div>
         <Col xl={6} className="ContactCol">
           <div style={{ maxWidth: '750px' }}>
             <Trans t={t} i18nKey="description">

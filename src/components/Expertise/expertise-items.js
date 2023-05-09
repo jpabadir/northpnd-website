@@ -2,6 +2,8 @@ export const items = [
   {
     client: "TechNuCom",
     dates: "May 2023",
+    startDate: null,
+    endDate: new Date(2023, 4),
     description: "Helped maintain and secure a managed API. This involved updating PHP, Laravel and various dependencies on the production server, as well as taking steps to maximize the security of the Python part of the API.",
     tags: ["backend", "security"],
     tech: ["Laravel", "Python", "MySQL"]

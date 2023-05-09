@@ -2,6 +2,7 @@ import React from 'react';
 import './OurClients.css';
 import { Card } from 'antd';
 import { Row, Col, Container } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 
 function WorkCard(props) {
   return (
@@ -18,40 +19,42 @@ function WorkCard(props) {
 }
 
 function OurClients() {
+  const { t } = useTranslation("our_clients");
+
   return (
     <div className="pt-4">
       <Container fluid>
         <Row className="justify-content-center">
-          <div className="Subtitle">Our Clients</div>
+          <div className="Subtitle">{t("subtitle")}</div>
           <WorkCard
             link="technucom.com"
             title="TechNuCom"
-            subtitle="We help TechNuCom manage, maintain and secure their backend infrastructure.">
+            subtitle={t("technucom")}>
           </WorkCard>
           <WorkCard
             link="proximy.ca"
             title="Proximy"
-            subtitle="We assisted Proximy in developing their cross-platform mobile application in Flutter, Cloud Firestore, and Google Cloud Functions."
+            subtitle={t("proximy")}
           />
           <WorkCard
             link="midstride.com"
             title="Midstride Technologies"
-            subtitle="We collaborate closely with Midstride's team by engaging directly with their clients to gain a comprehensive understanding of their requirements, prior to constructing full-stack features in their products."
+            subtitle={t("midstride")}
           />
           <WorkCard
             link="wearetension.com"
             title="Tension Consulting"
-            subtitle="We are currently assisting Tension in constructing a high-quality digital product in accordance with their design specifications."
+            subtitle={t("tension")}
           />
           <WorkCard
             link="minebright.com"
             title="Minebright"
-            subtitle="We provide Minebright with adaptable and premium quality assurance services on an as-needed basis to complement their software development endeavors.">
+            subtitle={t("minebright")}>
           </WorkCard>
           <WorkCard
             link="digitalrise.be"
             title="Digital Rise"
-            subtitle="We helped Digital Rise build an interactive high-fidelity prototype for their software project.">
+            subtitle={t("digital_rise")}>
           </WorkCard>
         </Row>
       </Container>

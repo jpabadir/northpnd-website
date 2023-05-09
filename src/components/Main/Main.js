@@ -13,6 +13,8 @@ import homeBackgroundPoster from '../../assets/home-background-poster.jpg';
 import { Row, Col, Container } from 'react-bootstrap';
 import whiteboard from "../../assets/people-at-whiteboard.jpg";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const bodyScrollLock = require("body-scroll-lock");
 const disableBodyScroll = bodyScrollLock.disableBodyScroll;
@@ -21,6 +23,7 @@ const enableBodyScroll = bodyScrollLock.enableBodyScroll;
 const Main = forwardRef((props, ref) => {
   const refContainer = useRef(null);
   const [isToggleOpen, setIsToggleOpen] = useState(false);
+  const { t } = useTranslation("main");
 
   useImperativeHandle(ref, () => ({
     scrollTo(scrollPath) {
@@ -100,13 +103,13 @@ const Main = forwardRef((props, ref) => {
                 <Col lg={{ span: 6, order: 1 }} style={{ order: 2 }} className="OurValuesColumn">
                   <div className="d-flex flex-column justify-content-between h-100">
                     <div>
-                      <div className="OurValues">Our&nbsp;Values</div>
+                      <div className="OurValues">{t("our_values")}</div>
                       <div className="OurValuesText">
-                        Since our launch, we have been steadfast in upholding our core values of uncompromising quality and excellent communication. We are committed to delivering software that meets the highest standards of excellence, and guided by our belief in the importance of transparency and collaboration. At every stage of our parternship, we ensure to maintain mutual understanding and alignment with our clients.
+                        {t("our_values_desc")}
                       </div>
                     </div>
                     <div className="d-flex">
-                      <a href="/jpabadir" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black' }} className="MeetOurFounder"><div>Meet our founder</div><MdKeyboardArrowRight color="red" style={{ transform: 'translateY(2px)' }} className="ms-3" /></a>
+                      <Link to="/jpabadir" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black' }} className="MeetOurFounder"><div>{t("meet_our_founder")}</div><MdKeyboardArrowRight color="red" style={{ transform: 'translateY(2px)' }} className="ms-3" /></Link>
                     </div>
                   </div>
                 </Col>

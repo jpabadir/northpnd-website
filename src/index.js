@@ -4,12 +4,16 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'antd/dist/antd.min.css';
 import './index.css';
 import App from './App';
+import Spinner from 'react-bootstrap/Spinner';
 // import reportWebVitals from './reportWebVitals';
+import './translation/i18n';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <React.Suspense fallback={<div className="position-fixed w-100 h-100 d-flex justify-content-center align-items-center"><Spinner animation="border" role="status" /></div>}>
+      <App />
+    </React.Suspense>
   </React.StrictMode>,
   document.getElementById('root')
 );

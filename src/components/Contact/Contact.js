@@ -2,8 +2,10 @@ import { Form, Button, Row, Col, Container } from 'react-bootstrap';
 import './Contact.css';
 import { FaArrowRight } from "react-icons/fa";
 import { useEffect, useState } from 'react';
+import { Trans, useTranslation } from 'react-i18next';
 
 function Contact() {
+  const { t } = useTranslation("contact");
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -29,11 +31,13 @@ function Contact() {
   return (
     <Container fluid className="ContactContainer py-5">
       <Row className='ContactRow'>
-        <div className="Subtitle">Get in touch</div>
+        <div className="Subtitle">{t("subtitle")}</div>
         <Col xl={6} className="ContactCol">
           <div style={{ maxWidth: '750px' }}>
-            We're delighted you're interested in working with us! To get in touch, you
-            can book a free consultation using the form {isMobile ? 'below' : 'on the right'}, email us at <a href="mailto:hello@northpnd.com">hello@northpnd.com</a>, or give us a call at <a href='tel:6475767112'>647-576-7112</a>.
+            <Trans t={t} i18nKey="description">
+              We're delighted you're interested in working with us! To get in touch, you
+              can book a free consultation using the form {{direction: isMobile ? 'below' : 'on the right'}}, email us at <a href="mailto:hello@northpnd.com">hello@northpnd.com</a>, or give us a call at <a href='tel:6475767112'>647-576-7112</a>.
+            </Trans>
           </div>
         </Col>
         <Col xl={6} className="FormParent">

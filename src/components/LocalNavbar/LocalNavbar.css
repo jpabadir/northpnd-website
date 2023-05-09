@@ -90,3 +90,11 @@ Link:focus::after {
     height: 80px;
   }
 }
+
+.Dropdown>a {
+  color: white;
+}
+
+.dropdown-menu {
+  right: 0
+}

@@ -2,12 +2,15 @@ import React from 'react';
 import './Home.css';
 import downArrow from '../../assets/down-arrow.png';
 import { scroller } from 'react-scroll';
+import { useTranslation } from 'react-i18next';
 
 function Home() {
+  const { t } = useTranslation("home")
+
   return (
     <div className="HomeMain" style={{ width: `${Math.min(document.documentElement.clientWidth*0.98, 1500)}px` }}>
       <div className="HomeContent">
-        <h1 className="HomeMainTitle">We are a Toronto-based technology consultancy providing high-quality software development services since 2021.</h1>
+        <h1 className="HomeMainTitle">{t("title")}</h1>
         <div className="TellMeMoreParent">
           <div
             className="TellMeMore"
@@ -15,7 +18,7 @@ function Home() {
               scroller.scrollTo('about', { duration: 0, smooth: true, spy: true, offset: -80 });
             }}
           >
-            Learn more
+            {t("learn_more")}
             <br />
             <div style={{ justifyContent: 'center', display: 'flex' }}>
               <img

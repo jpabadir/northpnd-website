@@ -12,11 +12,12 @@ import TableSortLabel from '@mui/material/TableSortLabel';
 import { Row, Col, Container } from 'react-bootstrap'
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 export default function Expertise() {
   useEffect(() => {
     window.scrollTo(0, 0)
-  })
+  }, [])
 
   const [order, setOrder] = useState('asc');
   const [orderBy, setOrderBy] = useState('expertise');
@@ -80,7 +81,7 @@ export default function Expertise() {
         <Row className='d-flex justify-content-center'>
           <Col style={{ maxWidth: '1700px' }}>
             <div className='d-flex'>
-              <a href="/" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black', fontSize: '22px' }} className='my-3'><MdKeyboardArrowLeft color="red" className='me-4' style={{ transform: 'translateY(-1px)' }} />{t("about_us")}</a>
+              <Link to="/" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black', fontSize: '22px' }} className='my-3'><MdKeyboardArrowLeft color="red" className='me-4' style={{ transform: 'translateY(-1px)' }} />{t("about_us")}</Link>
             </div>
           </Col>
           <hr style={{ color: 'lightgrey' }} className='p-0 m-0' />

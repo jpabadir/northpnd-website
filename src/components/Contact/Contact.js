@@ -2,8 +2,10 @@ import { Form, Button, Row, Col, Container } from 'react-bootstrap';
 import './Contact.css';
 import { FaArrowRight } from "react-icons/fa";
 import { useEffect, useState } from 'react';
+import { Trans, useTranslation } from 'react-i18next';
 
 function Contact() {
+  const { t } = useTranslation("contact");
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -32,12 +34,14 @@ function Contact() {
         <div className="Subtitle">Contact Us</div>
         <Col xl={6} className="ContactCol">
           <div style={{ fontSize: '18px' }}>
-            We're delighted you're interested in working with us! To get in touch, you
-            can either book a free consultation using the form {isMobile ? 'below' : 'on the right'}, email us at <a href="mailto:hello@northpnd.com">hello@northpnd.com</a>, or give us a call at <a href='tel:6475767112'>647-576-7112</a>.
+            <Trans t={t} i18nKey="description">
+              We're delighted you're interested in working with us! To get in touch, you
+              can either book a free consultation using the form {{direction: isMobile ? 'below' : 'on the right'}}, email us at <a href="mailto:hello@northpnd.com">hello@northpnd.com</a>, or give us a call at <a href='tel:6475767112'>647-576-7112</a>.
+            </Trans>
           </div>
           <br />
           <div style={{ fontSize: '18px' }}>
-            We look forward to hearing from you!
+            {t("description2")}
           </div>
         </Col>
         <Col xl={6} className="FormParent">

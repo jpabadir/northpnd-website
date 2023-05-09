@@ -1,4 +1,7 @@
 {
+  "page_subtitle": "Successful projects and experiences",
+  "about_us": "About us",
+  "ongoing": "Ongoing",
   "date": "{{val, datetime}}",
   "security": "security",
   "full-stack web dev": "full-stack web dev",
@@ -11,6 +14,7 @@
   "quality assurance": "quality assurance",
   "backend": "backend",
   "frontend web dev": "frontend web dev",
+  "documentation": "documentation",
   "0": "Built a mobile application prototype.",
   "1": "Wrote documentation to help the rest of the team get set up with Xdebug step debugging on VSCode + Docker. This is challenging because it involves publishing the Docker files and doing quite a bit of config to ensure it works properly.",
   "2": "Fixed an issue where users were able to set the database in a state which should have been impossible. After investigating the issue, we found out that users were able to exploit the fact that if they saved the URL of the confirmation page we show at the end of a specific flow and loaded it before the end of the flow, it would prematurely submit the \"completion\" request and set the database in the faulty state. We added extra checks to ensure this couldn't happen.",

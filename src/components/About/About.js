@@ -5,34 +5,37 @@ import flat2 from "../../assets/flat2.webp";
 import workingpeople from "../../assets/working-people.webp";
 import whoweworkwith from "../../assets/whoweworkwith.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { useTranslation } from 'react-i18next';
 
 function About() {
+  const { t } = useTranslation("about");
+
   return (
     <div className="pt-4">
       <Container fluid className="AboutContainer">
         <Row>
-          <div className="Subtitle" style={{ marginBottom: '20px' }}>About Us</div>
+          <div className="Subtitle" style={{ marginBottom: '20px' }}>{t("subtitle")}</div>
           <Col md={4} className='AboutCol'>
             <img src={flat2} alt="People at work" style={{ height: '160px', width: '100%', objectFit: 'cover' }} />
-            <div className='AboutSubtitle'>What we do</div>
+            <div className='AboutSubtitle'>{t("what_we_do")}</div>
             <p>
-              Since 2021, we've delivered custom software solutions to clients from a diverse range of industries, including healthcare, social media, tourism, wellness, and mining. Our services include technical advisory, staff augmentation, design, and development. We build all of our clients' software from our Toronto office at 1 Dundas St W. Feel free to drop by!
+              {t("what_we_do_desc")}
             </p>
           </Col>
           <Col md={4} className='AboutCol'>
             <img src={whoweworkwith} alt="People chatting" style={{ height: '160px', width: '100%', objectFit: 'cover' }} />
-            <div className='AboutSubtitle'>Who we work with</div>
+            <div className='AboutSubtitle'>{t("who_we_work_with")}</div>
             <div>
               <p>
-                We pride ourselves on being able to serve a diverse range of clients, including both non-technical and technical teams. We welcome working with businesses of all sizes, from startups to large enterprises, as well as non-profit organizations and government agencies. We are proud to be a bilingual team fluent in English and French, and equally comfortable serving clients in either language.
+                {t("who_we_work_with_desc")}
               </p>
             </div>
           </Col>
           <Col md={4} className='AboutCol'>
             <img src={workingpeople} alt="People collaborating" style={{ height: '160px', width: '100%', objectFit: 'cover' }} />
-            <div className='AboutSubtitle'>Our process</div>
+            <div className='AboutSubtitle'>{t("our_process")}</div>
             <p>
-              By closely partnering with our clients, we gain a comprehensive understanding of their goals and tailor our process to best suit their needs. If you are a technical client, we adapt our process to your workflows and tech stack. If you are a non-technical client, we will guide you through the process of building software from start to finish, ensuring that you are comfortable with each step along the way.
+              {t("our_process_desc")}
             </p>
           </Col>
           <br />

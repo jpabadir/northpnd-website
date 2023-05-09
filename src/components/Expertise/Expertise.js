@@ -11,7 +11,7 @@ import { useEffect, useState } from 'react';
 import TableSortLabel from '@mui/material/TableSortLabel';
 import { Row, Col, Container } from 'react-bootstrap'
 import { MdKeyboardArrowLeft } from "react-icons/md";
-import { Trans, useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 export default function Expertise() {
   useEffect(() => {
@@ -73,14 +73,14 @@ export default function Expertise() {
           <Col style={{ maxWidth: '1700px', paddingTop: '60px' }}>
             <div >
               <div className='PageTitle'>Expertise</div>
-              <div className='PageSubtitle'>Successful projects and experiences</div>
+              <div className='PageSubtitle'>{t("page_subtitle")}</div>
             </div>
           </Col>
         </Row>
         <Row className='d-flex justify-content-center'>
           <Col style={{ maxWidth: '1700px' }}>
             <div className='d-flex'>
-              <a href="/" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black', fontSize: '22px' }} className='my-3'><MdKeyboardArrowLeft color="red" className='me-4' style={{ transform: 'translateY(-1px)' }} />About us</a>
+              <a href="/" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black', fontSize: '22px' }} className='my-3'><MdKeyboardArrowLeft color="red" className='me-4' style={{ transform: 'translateY(-1px)' }} />{t("about_us")}</a>
             </div>
           </Col>
           <hr style={{ color: 'lightgrey' }} className='p-0 m-0' />
@@ -155,7 +155,7 @@ export default function Expertise() {
                         {row.startDate === null ?
                           t('date', {val: row.endDate, formatParams: monthAndYear}) :
                           (row.endDate === null ?
-                            `${t('date', {val: row.startDate, formatParams: monthAndYear})} - Ongoing` :
+                            `${t('date', {val: row.startDate, formatParams: monthAndYear})} - ${t("ongoing")}` :
                             (row.startDate.getYear() === row.endDate.getYear() ? 
                               `${t('date', {val: row.startDate, formatParams: month})} - ${t('date', {val: row.endDate, formatParams: monthAndYear})}` :
                               `${t('date', {val: row.startDate, formatParams: monthAndYear})} - ${t('date', {val: row.endDate, formatParams: monthAndYear})}`

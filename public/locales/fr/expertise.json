@@ -1,4 +1,7 @@
 {
+  "page_subtitle": "Projets et expériences réussis",
+  "about_us": "À propos de nous",
+  "ongoing": "en cours",
   "date": "{{val, datetime}}",
   "security": "sécurité",
   "full-stack web dev": "dev web full-stack",
@@ -11,6 +14,7 @@
   "quality assurance": "assurance qualité",
   "backend": "dev backend",
   "frontend web dev": "dev web frontend",
+  "documentation": "documentation",
   "0": "Construit un prototype d'application mobile.",
   "1": "Rédigé de la documentation pour aider le reste de l'équipe à configurer le débogage étape par étape avec Xdebug sur VSCode + Docker. Cette tâche est complexe car elle implique la publication des fichiers Docker et nécessite plusieurs configurations pour s'assurer que tout fonctionne correctement.",
   "2": "Corrigé un problème où les utilisateurs étaient en mesure de mettre la base de données dans un état qui aurait dû être impossible. Après avoir examiné le problème, nous avons découvert que les utilisateurs pouvaient exploiter le fait que s'ils enregistraient l'URL de la page de confirmation que nous montrons à la fin d'un flux spécifique et la chargeaient avant la fin du flux, cela soumettait prématurément la demande de \"réalisation\" et mettait la base de données dans l'état défectueux. Nous avons ajouté des vérifications supplémentaires pour éviter que cela ne se produise.",

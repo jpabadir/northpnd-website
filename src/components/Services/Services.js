@@ -5,6 +5,7 @@ import coding from '../../assets/coding-light.mov';
 import discussion from '../../assets/discussion-light.mov';
 import codingPoster from '../../assets/coding-poster.png';
 import discussionPoster from '../../assets/discussion-poster.png';
+import { useTranslation } from 'react-i18next';
 
 function ServicesCard(props) {
   const [isMobile, setIsMobile] = useState(false);
@@ -57,19 +58,20 @@ function ServicesCard(props) {
 }
 
 function Services() {
+  const { t } = useTranslation("services")
   const [subtitleDisplay, setSubtitleDisplay] = useState(-1);
 
   return (
     <Container fluid>
       <Row className="ServicesCardsRow">
-        <div className="Subtitle">How we can help you</div>
-        <div className='SubSubtitle mb-2'>There are two types of clients we work with.</div>
+        <div className="Subtitle">{t("subtitle")}</div>
+        <div className='SubSubtitle mb-2'>{t("subsubtitle")}</div>
         <ServicesCard
           index={1}
           videoSrc={coding}
           posterSrc={codingPoster}
-          title="Technical teams"
-          subtitle="We provide staff augmentation services to our technical clients. We function as an integral part of their team, working closely with their developers. We emphasize collaboration, communication, and code quality. We pride ourselves in working with a deep sense of ownership towards the outcome of the tech we build and strive to create maintainable, robust, and scalable solutions that exceed expectations."
+          title={t("technical")}
+          subtitle={t("technical_desc")}
           subtitleDisplay={subtitleDisplay}
           setSubtitleDisplay={setSubtitleDisplay}
         />
@@ -77,8 +79,8 @@ function Services() {
           index={2}
           videoSrc={discussion}
           posterSrc={discussionPoster}
-          title="Non-technical businesses"
-          subtitle="We help our clients design, develop and maintain high-quality, customized digital products. We work with them to understand their business and their users, and help them build solutions that are not only functional but also highly enjoyable to use."
+          title={t("nontechnical")}
+          subtitle={t("nontechnical_desc")}
           subtitleDisplay={subtitleDisplay}
           setSubtitleDisplay={setSubtitleDisplay}
         />

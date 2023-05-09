@@ -4,8 +4,11 @@ import { withStyles } from '@material-ui/core/styles';
 import { Row, Col } from 'react-bootstrap';
 import Rating from '@material-ui/lab/Rating';
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { useTranslation } from 'react-i18next';
 
 function Reviews() {
+   const { t } = useTranslation("reviews");
+
   const reviews = [
     {
       "author_name": "Brandon Caiza",
@@ -13,7 +16,7 @@ function Reviews() {
       "language": "en",
       "profile_photo_url": "https://lh3.googleusercontent.com/a-/AD5-WCkHLRjS2mVv6rxBVSpob4_c4jpIapdMUonxXBSDcQ=s128-c0x00000000-cc-rp-mo",
       "rating": 5,
-      "relative_time_description": "a year ago",
+      "relative_time_desc": "a year ago",
       "text": "Fantastic service and great final product. Highly recommended because of attention to detail, strong aptitude for programming, and overall great at system design.",
       "time": 1623802829
     },
@@ -23,7 +26,7 @@ function Reviews() {
       "language": "en",
       "profile_photo_url": "https://lh3.googleusercontent.com/a/AEdFTp6lsfDq0k6YBRBfatRKorBipQ_4HFF8stJ6qXJE=s128-c0x00000000-cc-rp-mo",
       "rating": 5,
-      "relative_time_description": "2 months ago",
+      "relative_time_desc": "2 months ago",
       "text": "We partnered with North P&D to add capacity to our software development team and have been very pleased. Very thorough, detailed oriented and excellent communication skills. Delivers results on time and continues to be a valuable partner in our operations.",
       "time": 1663282781
     },
@@ -77,7 +80,7 @@ function Reviews() {
       </Row>
       <div className='ReadOnGoogle pt-4'>
         <a href='https://www.google.com/maps/place/North+P%26D,+Inc./@43.6558696,-79.3841034,17z/data=!3m1!4b1!4m5!3m4!1s0x882b35f52d58bc1d:0x1f2d801c9f15617a!8m2!3d43.6558657!4d-79.3819147/reviews' target="_blank" rel="noopener noreferrer" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', color: 'black', fontWeight: 'bold', fontSize: '17px' }}>
-          <div>Read these reviews on Google&nbsp;</div>
+          <div>{t("read_on_google")}&nbsp;</div>
           <MdKeyboardArrowRight color="red" />
         </a>
       </div>

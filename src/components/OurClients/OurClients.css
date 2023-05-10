@@ -6,6 +6,12 @@
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .CardFlex {
+    flex-direction: column;
+  }
+}
+
 .WorkCard {
   padding: 0px 0px 0px 0px;
   height: 220px;

@@ -1,17 +1,22 @@
 import React from 'react';
 import './OurClients.css';
-import { Card } from 'antd';
 import { Row, Col, Container } from 'react-bootstrap';
 
 function WorkCard(props) {
   return (
-    <Col className="PastWorkCol" md={4}>
-      <div style={{ maxWidth: '250px', width: '100%' }}>
-        <a href={`https://${props.link}`} target="_blank" rel="noreferrer">
-          <Card className={`WorkCard ${props.title.replace(/\s/g, '')}`} />
+    <Col className="PastWorkCol" xs={24} md={6} style={{ display: 'flex', alignItems: 'center' }}>
+      <div className="CardFlex" style={{
+        display: 'flex', alignItems: 'center', justifyContent: 'flex-end', width: '100%'
+      }}>
+        <div style={{ maxWidth: '250px', width: '100%', marginRight: '20px' }}>
+          <a href={`https://${props.link}`} target="_blank" rel="noreferrer">
+            <div className={`WorkCard ${props.title.replace(/\s/g, '')}`} />
+          </a>
+        </div>
+        <div style={{ flex: '1', minWidth: '200px' }}>
           <div className="CardTitle">{props.title}</div>
-        </a>
-        <div dangerouslySetInnerHTML={{ __html: props.subtitle }} />
+          <div dangerouslySetInnerHTML={{ __html: props.subtitle }} />
+        </div>
       </div>
     </Col>
   );
@@ -21,8 +26,8 @@ function OurClients() {
   return (
     <div className="pt-4">
       <Container fluid>
+        <div className="Subtitle mt-4">Our Clients</div>
         <Row className="justify-content-center">
-          <div className="Subtitle">Our Clients</div>
           <WorkCard
             link="technucom.com"
             title="TechNuCom"

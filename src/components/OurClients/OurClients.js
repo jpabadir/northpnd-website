@@ -53,6 +53,11 @@ function OurClients() {
             title="Digital Rise"
             subtitle="We helped Digital Rise build an interactive high-fidelity prototype for their software project.">
           </WorkCard>
+          <WorkCard
+            link="chick-fil-a.ca"
+            title="Chick-fil-A"
+            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel dolor sit amet neque malesuada tempor eget eu enim. Fusce id placerat purus. Integer id."
+          />
         </Row>
       </Container>
     </div>

@@ -24,6 +24,11 @@ function OurClients() {
         <Row className="justify-content-center">
           <div className="Subtitle">Our Clients</div>
           <WorkCard
+            link="chick-fil-a.ca"
+            title="Chick-fil-A Toronto Eaton Centre"
+            subtitle="We are currently helping Chick-fil-A Toronto Eaton Centre build a high-quality custom internal portal for their employees.">
+          </WorkCard>
+          <WorkCard
             link="technucom.com"
             title="TechNuCom"
             subtitle="We help TechNuCom manage, maintain and secure their backend infrastructure.">
@@ -38,11 +43,11 @@ function OurClients() {
             title="Midstride Technologies"
             subtitle="We collaborate closely with Midstride's team by engaging directly with their clients to gain a comprehensive understanding of their requirements, prior to constructing full-stack features in their products."
           />
-          <WorkCard
+          {/* <WorkCard
             link="wearetension.com"
             title="Tension Consulting"
             subtitle="We are currently assisting Tension in constructing a high-quality digital product in accordance with their design specifications."
-          />
+          /> */}
           <WorkCard
             link="minebright.com"
             title="Minebright"
@@ -53,11 +58,6 @@ function OurClients() {
             title="Digital Rise"
             subtitle="We helped Digital Rise build an interactive high-fidelity prototype for their software project.">
           </WorkCard>
-          <WorkCard
-            link="chick-fil-a.ca"
-            title="Chick-fil-A"
-            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel dolor sit amet neque malesuada tempor eget eu enim. Fusce id placerat purus. Integer id."
-          />
         </Row>
       </Container>
     </div>

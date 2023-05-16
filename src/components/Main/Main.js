@@ -11,7 +11,9 @@ import Reviews from '../Reviews/Reviews';
 import homeBackground from "../../assets/home-background.mp4";
 import homeBackgroundPoster from '../../assets/home-background-poster.jpg';
 import { Row, Col, Container } from 'react-bootstrap';
-import whiteboard from "../../assets/people-at-whiteboard.jpg";
+import whiteboard_sm from "../../assets/people-at-whiteboard-sm.jpg";
+import whiteboard_md from "../../assets/people-at-whiteboard-md.jpg";
+import whiteboard_lg from "../../assets/people-at-whiteboard-lg.jpg";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 const bodyScrollLock = require("body-scroll-lock");
@@ -110,7 +112,7 @@ const Main = forwardRef((props, ref) => {
                     </div>
                   </div>
                 </Col>
-                <Col lg={{ span: 6, order: 1 }} className="ImageCol"><img src={whiteboard} alt="JP Abadir" className="WhiteboardImage" /></Col>
+                <Col lg={{ span: 6, order: 1 }} className="ImageCol"><img srcSet={`${whiteboard_sm} 810w, ${whiteboard_md} 1080w, ${whiteboard_lg} 2161w`} sizes="(max-width: 991px) 100vw, 50vw" src={whiteboard_lg} alt="JP Abadir" className="WhiteboardImage" /></Col>
               </Row>
             </Container>
           </div>

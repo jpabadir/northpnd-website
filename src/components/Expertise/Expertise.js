@@ -11,6 +11,12 @@ import { useEffect, useState } from 'react';
 import TableSortLabel from '@mui/material/TableSortLabel';
 import { Row, Col, Container } from 'react-bootstrap'
 import { MdKeyboardArrowLeft } from "react-icons/md";
+import { margin } from '@mui/system';
+import LaravelLogo from '../../assets/laravel-logo.png';
+import ReactLogo from '../../assets/react-logo.png';
+import VueLogo from '../../assets/vue-logo.png';
+import WebflowLogo from '../../assets/webflow-logo.png';
+import AWSLogo from '../../assets/aws-logo.png';
 
 export default function Expertise() {
   useEffect(() => {
@@ -76,6 +82,16 @@ export default function Expertise() {
           <Col style={{ maxWidth: '1700px' }}>
             <div className='d-flex'>
               <a href="/" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black', fontSize: '22px' }} className='my-3'><MdKeyboardArrowLeft color="red" className='me-4' />About us</a>
+            </div>
+            <div>
+              <h2><center>What we're great at</center></h2>
+              <div className='TechLogos'>
+                <img src={LaravelLogo} alt="Laravel" />
+                <img src={ReactLogo} alt="React" />
+                <img src={VueLogo} alt="Vue" />
+                <img src={WebflowLogo} alt="Webflow" />
+                <img src={AWSLogo} alt="AWS" />
+              </div>
             </div>
           </Col>
           <hr style={{ color: 'lightgrey' }} className='p-0 m-0' />
@@ -157,6 +173,6 @@ export default function Expertise() {
           </TableContainer>
         </div>
       </div>
-    </div>
+    </div >
   );
 }

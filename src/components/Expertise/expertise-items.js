@@ -31,12 +31,6 @@ export const items = [
     description: "As a result of their partnership with North P&amp;D, Minebright is able to obtain, without prior notice nor any minimum commitment, help with quality assurance from one of our team members in support of their software development team.",
     tags: ["quality assurance"]
   }, {
-    client: "Tension",
-    dates: "February - Ongoing",
-    description: "We are currently assisting Tension in constructing a high-quality digital product in accordance with their design specifications.",
-    tags: ["frontend web dev"],
-    tech: ["Webflow"]
-  }, {
     client: "Midstride Technologies",
     dates: "February 2023",
     description: "Built a CI/CD pipeline which periodically backs up the project's git repo to AWS S3, always maintaining the latest two backup versions in an S3 bucket. Leveraged AWS IAM to ensure only minimal security permissions were granted to the GitHub Actions runner.",

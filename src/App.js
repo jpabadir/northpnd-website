@@ -11,7 +11,6 @@ import Blog from "./components/Blog/Blog";
 import Jpabadir from "./components/Jpabadir/Jpabadir";
 import Proximy from "./components/Client Website/Proximy/Proximy";
 import Midstride from "./components/Client Website/Midstride/Midstride";
-import Tension from "./components/Client Website/Tension/Tension";
 import Minebright from "./components/Client Website/Minebright/Minebright";
 import blogsData from "./blogs/blogs-headers.json";
 import { linkify } from "./helpers";
@@ -39,7 +38,6 @@ function App() {
           <Route path="clients" element={<div className="StandalonePageParent" style={{ fontSize: '18px' }}><Outlet /></div>}>
             <Route path="proximy" element={<Proximy />} />
             <Route path="midstride" element={<Midstride />} />
-            <Route path="tension" element={<Tension />} />
             <Route path="minebright" element={<Minebright />} />
           </Route>
           <Route path="resources" element={<Blog />} />

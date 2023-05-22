@@ -43,11 +43,6 @@ function OurClients() {
             title="Midstride Technologies"
             subtitle="We collaborate closely with Midstride's team by engaging directly with their clients to gain a comprehensive understanding of their requirements, prior to constructing full-stack features in their products."
           />
-          {/* <WorkCard
-            link="wearetension.com"
-            title="Tension Consulting"
-            subtitle="We are currently assisting Tension in constructing a high-quality digital product in accordance with their design specifications."
-          /> */}
           <WorkCard
             link="minebright.com"
             title="Minebright"

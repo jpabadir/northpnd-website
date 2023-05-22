@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.11bf1e33.css",
-    "main.js": "/static/js/main.082764a9.js",
+    "main.css": "/static/css/main.68a32ca6.css",
+    "main.js": "/static/js/main.1e050a70.js",
     "static/media/home-background.mp4": "/static/media/home-background.f6e28b1a62bc7cd61404.mp4",
     "static/media/people-at-whiteboard.jpg": "/static/media/people-at-whiteboard.fc68a68bd6060afb1b5d.jpg",
     "static/media/discussion-light.mov": "/static/media/discussion-light.4350386319ae3b602f16.mov",
@@ -15,18 +15,17 @@
     "static/media/jp-headshot.jpg": "/static/media/jp-headshot.bff55388aa5854055de4.jpg",
     "static/media/home-background-poster.jpg": "/static/media/home-background-poster.29625206dfdb48e0df6c.jpg",
     "static/media/proximy-logo.png": "/static/media/proximy-logo.485ce016ed99f3abea60.png",
-    "static/media/tension.png": "/static/media/tension.e362216575ffbec03444.png",
     "static/media/technucom-logo.png": "/static/media/technucom-logo.f47d1bdf0ca6489523c8.png",
     "static/media/minebright-logo.png": "/static/media/minebright-logo.c132d4fc4e1eb8dddf71.png",
     "static/media/transparentLogo.svg": "/static/media/transparentLogo.332c5e16dd0717e02bf6e6137a8a58ce.svg",
     "static/media/layered-waves-haikei.svg": "/static/media/layered-waves-haikei.7cecff5e9dc9f50de7b4.svg",
     "static/media/digitalrise-logo.svg": "/static/media/digitalrise-logo.bed95437a20e3596149e.svg",
     "index.html": "/index.html",
-    "main.11bf1e33.css.map": "/static/css/main.11bf1e33.css.map",
-    "main.082764a9.js.map": "/static/js/main.082764a9.js.map"
+    "main.68a32ca6.css.map": "/static/css/main.68a32ca6.css.map",
+    "main.1e050a70.js.map": "/static/js/main.1e050a70.js.map"
   },
   "entrypoints": [
-    "static/css/main.11bf1e33.css",
-    "static/js/main.082764a9.js"
+    "static/css/main.68a32ca6.css",
+    "static/js/main.1e050a70.js"
   ]
 }

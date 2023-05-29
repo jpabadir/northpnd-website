@@ -15,7 +15,7 @@ function About() {
             <img src={flat2} alt="People at work" style={{ height: '160px', width: '100%', objectFit: 'cover' }} />
             <div className='AboutSubtitle'>What we do</div>
             <p>
-              Since 2021, we've delivered custom software solutions to clients from a diverse range of industries, including healthcare, social media, tourism, wellness, and mining. Our services include technical advisory, staff augmentation, design, and development. We build all of our clients' software from our Toronto office at 1 Dundas St W. Feel free to drop by!
+              Since 2021, we've delivered custom software solutions to clients from a diverse range of industries, including healthcare, social media, tourism, wellness, and mining. Our services include technical advisory, staff augmentation, design, and development. We build all of our clients' software from our office at 1 Dundas St W in Toronto. Feel free to drop by!
             </p>
           </Col>
           <Col md={4} className='AboutCol'>

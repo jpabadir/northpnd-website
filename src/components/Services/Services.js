@@ -67,7 +67,7 @@ function Services() {
           videoSrc={coding}
           posterSrc={codingPoster}
           title="For technical teams"
-          subtitle="We provide staff augmentation services to our technical clients. We function as an integral part of their team, working closely with their developers. We emphasize collaboration, communication, and code quality. We pride ourselves in working with a deep sense of ownership towards the outcome of the tech we build and strive to create maintainable, robust, and scalable solutions that exceed expectations."
+          subtitle="We provide staff augmentation services to our technical clients, functioning as an integral part of their team and working closely with their developers. We emphasize collaboration, communication, and code quality. We take pride in our deep sense of ownership towards the outcome of the technology we build and aim to create maintainable, robust, and scalable solutions that exceed expectations."
           subtitleDisplay={subtitleDisplay}
           setSubtitleDisplay={setSubtitleDisplay}
         />
@@ -76,7 +76,7 @@ function Services() {
           videoSrc={discussion}
           posterSrc={discussionPoster}
           title="For non-technical teams"
-          subtitle="We help our non-technical clients design, develop and maintain high-quality, customized technology solutions. We work with them to understand their business and their users, and help them build solutions that are not only functional but also highly enjoyable to use."
+          subtitle="We help our non-technical clients design, develop and maintain high-quality, customized technology solutions. We work closely with them to understand their business and their users, allowing us to build solutions for them that are not only functional but also highly enjoyable to use."
           subtitleDisplay={subtitleDisplay}
           setSubtitleDisplay={setSubtitleDisplay}
         />

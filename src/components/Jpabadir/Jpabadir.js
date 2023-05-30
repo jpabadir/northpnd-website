@@ -1,12 +1,17 @@
-import React, { useState, useLayoutEffect} from 'react';
+import React, { useState, useLayoutEffect, useEffect } from 'react';
 import './Jpabadir.css';
 import { Row, Col, Container } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
 import JP from "../../assets/jp-headshot.jpg";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { SiLinkedin, } from "react-icons/si"
 import { AiFillGithub } from "react-icons/ai"
 
-function Jpabadir() {
+function Jpabadir(props) {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  });
+  
   const [isMobile, setIsMobile] = useState(false);
 
   useLayoutEffect(() => {
@@ -36,7 +41,7 @@ function Jpabadir() {
         <Row className='d-flex justify-content-center'>
           <Col style={{ maxWidth: '1700px' }}>
             <div className='d-flex'>
-              <a href="/" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black', fontSize: '22px' }} className='my-3'><MdKeyboardArrowLeft color="red" className='me-4' />About us</a>
+              <Link to="/" onClick={() => props.scrollHandler("about")} style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black', fontSize: '22px' }} className='my-3'><MdKeyboardArrowLeft color="red" className='me-4' />About us</Link>
             </div>
           </Col>
           <hr style={{ color: 'lightgrey' }} className='p-0 m-0' />
@@ -55,7 +60,7 @@ function Jpabadir() {
               I hold a Bachelor of Computer Science from the University of British Columbia.
               <br />
               <br />
-              <a href="/expertise" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black' }} className='ExpertiseLink'><div>Learn about our team's expertise</div><MdKeyboardArrowRight color="red" className='ms-4' style={{ transform: 'translateY(3px)' }} size='35px' /></a>
+              <Link to="/expertise" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black' }} className='ExpertiseLink'><div>Learn about our team's expertise</div><MdKeyboardArrowRight color="red" className='ms-4' style={{ transform: 'translateY(3px)' }} size='35px' /></Link>
             </Col>
             <Col md={{ span: 4, order: 2 }} className='d-flex justify-content-center align-items-center PictureColumn'><img src={JP} className='Headshot' /></Col>
           </Row>

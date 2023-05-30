@@ -18,9 +18,10 @@ import { linkify } from "./helpers";
 function App() {
   const [scrollGoal, setScrollGoal] = useState("");
   const mainRef = useRef();
+  const otherPages = ["/expertise", "/jpabadir"];
 
   function updateScrollPath(path) {
-    if (window.location.pathname !== "/expertise" && !window.location.pathname.includes("resources")) {
+    if (!otherPages.includes(window.location.pathname) && !window.location.pathname.includes("resources")) {
       mainRef.current.scrollTo(path);
     } else {
       setScrollGoal(path);
@@ -33,8 +34,8 @@ function App() {
         <LocalNavbar scrollHandler={updateScrollPath} />
         <Routes>
           <Route path="/" element={<Main ref={mainRef} scrollGoal={scrollGoal} />} />
-          <Route path="expertise" element={<Expertise />} />
-          <Route path="jpabadir" element={<Jpabadir />} />
+          <Route path="expertise" element={<Expertise scrollHandler={updateScrollPath} />} />
+          <Route path="jpabadir" element={<Jpabadir scrollHandler={updateScrollPath} />} />
           <Route path="clients" element={<div className="StandalonePageParent" style={{ fontSize: '18px' }}><Outlet /></div>}>
             <Route path="proximy" element={<Proximy />} />
             <Route path="midstride" element={<Midstride />} />

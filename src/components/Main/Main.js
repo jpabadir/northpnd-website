@@ -1,5 +1,6 @@
 import "./Main.css";
 import { Element, scroller } from "react-scroll";
+import { Link } from "react-router-dom";
 import { useEffect, useRef, useState, forwardRef, useImperativeHandle } from "react";
 import About from "../About/About";
 import Home from "../Home/Home";
@@ -106,7 +107,7 @@ const Main = forwardRef((props, ref) => {
                       </div>
                     </div>
                     <div className="d-flex">
-                      <a href="/jpabadir" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black' }} className="MeetOurFounder"><div>Meet our founder</div><MdKeyboardArrowRight color="red" style={{ transform: 'translateY(2px)' }} className="ms-3" /></a>
+                      <Link to="/jpabadir" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black' }} className="MeetOurFounder"><div>Meet our founder</div><MdKeyboardArrowRight color="red" style={{ transform: 'translateY(2px)' }} className="ms-3" /></Link>
                     </div>
                   </div>
                 </Col>

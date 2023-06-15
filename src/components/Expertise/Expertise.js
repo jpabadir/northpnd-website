@@ -1,5 +1,6 @@
 import { items as expertiseItems, tagColors } from './expertise-items';
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -12,7 +13,7 @@ import TableSortLabel from '@mui/material/TableSortLabel';
 import { Row, Col, Container } from 'react-bootstrap'
 import { MdKeyboardArrowLeft } from "react-icons/md";
 
-export default function Expertise() {
+export default function Expertise(props) {
   useEffect(() => {
     window.scrollTo(0, 0)
   })
@@ -75,7 +76,7 @@ export default function Expertise() {
         <Row className='d-flex justify-content-center'>
           <Col style={{ maxWidth: '1700px' }}>
             <div className='d-flex'>
-              <a href="/" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black', fontSize: '22px' }} className='my-3'><MdKeyboardArrowLeft color="red" className='me-4' />About us</a>
+              <Link to="/" onClick={() => props.scrollHandler("about")} style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black', fontSize: '22px' }} className='my-3'><MdKeyboardArrowLeft color="red" className='me-4' />About us</Link>
             </div>
           </Col>
           <hr style={{ color: 'lightgrey' }} className='p-0 m-0' />

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.68a32ca6.css",
-    "main.js": "/static/js/main.8e9369ce.js",
+    "main.js": "/static/js/main.31548a24.js",
     "static/media/home-background.mp4": "/static/media/home-background.f6e28b1a62bc7cd61404.mp4",
     "static/media/discussion-light.mov": "/static/media/discussion-light.4350386319ae3b602f16.mov",
     "static/media/discussion-poster.png": "/static/media/discussion-poster.a640fb181399997d1a68.png",
@@ -22,10 +22,10 @@
     "static/media/digitalrise-logo.svg": "/static/media/digitalrise-logo.bed95437a20e3596149e.svg",
     "index.html": "/index.html",
     "main.68a32ca6.css.map": "/static/css/main.68a32ca6.css.map",
-    "main.8e9369ce.js.map": "/static/js/main.8e9369ce.js.map"
+    "main.31548a24.js.map": "/static/js/main.31548a24.js.map"
   },
   "entrypoints": [
     "static/css/main.68a32ca6.css",
-    "static/js/main.8e9369ce.js"
+    "static/js/main.31548a24.js"
   ]
 }

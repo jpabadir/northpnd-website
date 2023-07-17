@@ -26,7 +26,7 @@ function OurClients() {
           <WorkCard
             link="chick-fil-a.ca"
             title="Chick-fil-A Toronto Eaton Centre"
-            subtitle="We are currently helping Chick-fil-A Toronto Eaton Centre build a high-quality custom internal portal for their employees.">
+            subtitle="We built an internal portal for Chick-fil-A Toronto Eaton Centre's team which synchronizes with their project management software.">
           </WorkCard>
           <WorkCard
             link="technucom.com"

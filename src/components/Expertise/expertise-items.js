@@ -11,7 +11,7 @@ export const items = [
     client: "TechNuCom",
     dates: "May 2023 - Ongoing",
     description:
-      "We help TechNuCom manage, maintain and secure their backend infrastructure on an ongoing basis. This means making important security updates, fixing bugs, and adding new features to their backend infrastructure.",
+      "We help TechNuCom manage, maintain and secure their backend infrastructure on an ongoing basis. This means making important security updates, fixing bugs, and adding new features.",
     tags: ["backend", "security"],
     tech: ["Laravel", "Python", "MySQL"],
   },

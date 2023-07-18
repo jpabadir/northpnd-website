@@ -1,3 +1,19 @@
+.LogosContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.LogosContainer a {
+  margin: 10px;
+}
+
+.LogosContainer img {
+  max-width: 200px;
+}
+
 .PastWorkCol {
   padding: 0px 0px 0px 0px;
   border: solid transparent;

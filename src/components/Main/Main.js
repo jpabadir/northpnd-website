@@ -57,7 +57,7 @@ const Main = forwardRef((props, ref) => {
           <video
             src={homeBackground}
             className="BackgroundVideo Overlay"
-            type="video/mov"
+            type="video/mp4"
             playsInline
             loop
             autoPlay

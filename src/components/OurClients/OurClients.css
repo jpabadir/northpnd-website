@@ -3,11 +3,12 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin: 63px 0px;
 }
 
 .LogosContainer a {
-  margin: 10px;
+  /* margin: 10px 20px; */
+  margin: auto;
 }
 
 .LogosContainer img {

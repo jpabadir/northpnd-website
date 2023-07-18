@@ -25,34 +25,22 @@ function OurClients() {
           <div className="Subtitle">Our Clients</div>
           <WorkCard
             link="chick-fil-a.ca"
-            title="Chick-fil-A Toronto Eaton Centre"
-            //subtitle="We are currently helping Chick-fil-A Toronto Eaton Centre build a high-quality custom internal portal for their employees.">
-          </WorkCard>
+          />
           <WorkCard
             link="technucom.com"
-            title="TechNuCom"
-            //subtitle="We help TechNuCom manage, maintain and secure their backend infrastructure.">
-          </WorkCard>
+          />
           <WorkCard
             link="proximy.ca"
-            title="Proximy"
-            //subtitle="We assisted Proximy in developing their cross-platform mobile application in Flutter, Cloud Firestore, and Google Cloud Functions."
           />
           <WorkCard
             link="midstride.com"
-            title="Midstride Technologies"
-            //subtitle="We collaborate closely with Midstride's team by engaging directly with their clients to gain a comprehensive understanding of their requirements, prior to constructing full-stack features in their products."
           />
           <WorkCard
             link="minebright.com"
-            title="Minebright"
-            //subtitle="We provide Minebright with adaptable and premium quality assurance services on an as-needed basis to complement their software development endeavors.">
-          </WorkCard>
+          />
           <WorkCard
             link="digitalrise.be"
-            title="Digital Rise"
-            //subtitle="We helped Digital Rise build an interactive high-fidelity prototype for their software project.">
-          </WorkCard>
+          />
         </Row>
       </Container>
     </div>

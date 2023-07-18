@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.68a32ca6.css",
-    "main.js": "/static/js/main.1e050a70.js",
+    "main.js": "/static/js/main.31548a24.js",
     "static/media/home-background.mp4": "/static/media/home-background.f6e28b1a62bc7cd61404.mp4",
-    "static/media/people-at-whiteboard.jpg": "/static/media/people-at-whiteboard.fc68a68bd6060afb1b5d.jpg",
     "static/media/discussion-light.mov": "/static/media/discussion-light.4350386319ae3b602f16.mov",
     "static/media/discussion-poster.png": "/static/media/discussion-poster.a640fb181399997d1a68.png",
     "static/media/coding-light.mov": "/static/media/coding-light.4a0c2f02d88e984f354d.mov",
     "static/media/coding-poster.png": "/static/media/coding-poster.6d1e8213385b4778e304.png",
     "static/media/whoweworkwith.png": "/static/media/whoweworkwith.d34b3fafbc5aab643254.png",
     "static/media/flat2.webp": "/static/media/flat2.cd998a1e2885d9bc97b3.webp",
+    "static/media/people-at-whiteboard.jpg": "/static/media/people-at-whiteboard.a23d3f86d37676f4aade.jpg",
     "static/media/working-people.webp": "/static/media/working-people.933ba36a6324771f414c.webp",
     "static/media/cfaeatoncentre.png": "/static/media/cfaeatoncentre.49af85cad75c3d30d336.png",
     "static/media/jp-headshot.jpg": "/static/media/jp-headshot.bff55388aa5854055de4.jpg",
@@ -22,10 +22,10 @@
     "static/media/digitalrise-logo.svg": "/static/media/digitalrise-logo.bed95437a20e3596149e.svg",
     "index.html": "/index.html",
     "main.68a32ca6.css.map": "/static/css/main.68a32ca6.css.map",
-    "main.1e050a70.js.map": "/static/js/main.1e050a70.js.map"
+    "main.31548a24.js.map": "/static/js/main.31548a24.js.map"
   },
   "entrypoints": [
     "static/css/main.68a32ca6.css",
-    "static/js/main.1e050a70.js"
+    "static/js/main.31548a24.js"
   ]
 }

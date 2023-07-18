@@ -1,61 +1,67 @@
-import React from 'react';
-import './OurClients.css';
-import { Card } from 'antd';
-import { Row, Col, Container } from 'react-bootstrap';
+import React from "react";
+import "./OurClients.css";
+import { Container, Row } from "react-bootstrap";
 
-function WorkCard(props) {
-  return (
-    <Col className="PastWorkCol" md={4}>
-      <div style={{ maxWidth: '250px', width: '100%' }}>
-        <a href={`https://${props.link}`} target="_blank" rel="noreferrer">
-          <Card className={`WorkCard ${props.title.replace(/\s/g, '')}`} />
-          <div className="CardTitle">{props.title}</div>
-        </a>
-        <div dangerouslySetInnerHTML={{ __html: props.subtitle }} />
-      </div>
-    </Col>
-  );
-}
+import cfaeatoncentre from "../../assets/cfaeatoncentre-transparent.png";
+import technucomLogo from "../../assets/technucom-logo.png";
+import proximyLogo from "../../assets/proximy-logo.png";
+import midstrideLogo from "../../assets/midstride-logo-transparent.png";
+import minebrightLogo from "../../assets/minebright-logo.png";
+import digitalriseLogo from "../../assets/digitalrise-logo-transparent.png";
+import kittyscoLogo from "../../assets/kittysco-logo-transparent.png";
+
+const clients = [
+  {
+    imgName: cfaeatoncentre,
+    webLink: "https://chick-fil-a.ca",
+    alt: "Chick-fil-A Toronto Eaton Centre",
+  },
+  {
+    imgName: technucomLogo,
+    webLink: "https://technucom.com",
+    alt: "TechNuCom",
+  },
+  {
+    imgName: proximyLogo,
+    webLink: "https://technucom.com",
+    alt: "Proximy",
+  },
+  {
+    imgName: midstrideLogo,
+    webLink: "https://midstride.com",
+    alt: "Midstride",
+  },
+  {
+    imgName: minebrightLogo,
+    webLink: "https://minebright.com",
+    alt: "Minebright",
+  },
+  {
+    imgName: digitalriseLogo,
+    webLink: "https://digitalrise.be",
+    alt: "Digital Rise",
+  },
+  {
+    imgName: kittyscoLogo,
+    webLink: "https://kittys.co",
+    alt: "Kittys Co",
+  },
+];
 
 function OurClients() {
   return (
-    <div className="pt-4">
-      <Container fluid>
-        <Row className="justify-content-center">
-          <div className="Subtitle">Our Clients</div>
-          <WorkCard
-            link="chick-fil-a.ca"
-            title="Chick-fil-A Toronto Eaton Centre"
-            subtitle="We built an internal portal for Chick-fil-A Toronto Eaton Centre's team which synchronizes with their project management software.">
-          </WorkCard>
-          <WorkCard
-            link="technucom.com"
-            title="TechNuCom"
-            subtitle="We help TechNuCom manage, maintain and secure their backend infrastructure.">
-          </WorkCard>
-          <WorkCard
-            link="proximy.ca"
-            title="Proximy"
-            subtitle="We assisted Proximy in developing their cross-platform mobile application in Flutter, Cloud Firestore, and Google Cloud Functions."
-          />
-          <WorkCard
-            link="midstride.com"
-            title="Midstride Technologies"
-            subtitle="We collaborate closely with Midstride's team by engaging directly with their clients to gain a comprehensive understanding of their requirements, prior to constructing full-stack features in their products."
-          />
-          <WorkCard
-            link="minebright.com"
-            title="Minebright"
-            subtitle="We provide Minebright with adaptable and premium quality assurance services on an as-needed basis to complement their software development endeavors.">
-          </WorkCard>
-          <WorkCard
-            link="digitalrise.be"
-            title="Digital Rise"
-            subtitle="We helped Digital Rise build an interactive high-fidelity prototype for their software project.">
-          </WorkCard>
-        </Row>
-      </Container>
-    </div>
+    <Container fluid>
+      <Row>
+        <div className="Subtitle pt-4">Our Clients</div>
+        <div className="LogosContainer">
+          {clients.map((client) => (
+            <a href={client.webLink} target="_blank" rel="noreferrer" key={client.alt}>
+              <img src={client.imgName} alt={client.alt}></img>
+            </a>
+          ))}
+        </div>
+      </Row>
+    </Container>
   );
 }
 

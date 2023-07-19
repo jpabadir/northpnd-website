@@ -17,19 +17,9 @@ const clients = [
     alt: "Chick-fil-A Toronto Eaton Centre",
   },
   {
-    imgName: technucomLogo,
-    webLink: "https://technucom.com",
-    alt: "TechNuCom",
-  },
-  {
-    imgName: proximyLogo,
-    webLink: "https://technucom.com",
-    alt: "Proximy",
-  },
-  {
-    imgName: midstrideLogo,
-    webLink: "https://midstride.com",
-    alt: "Midstride",
+    imgName: kittyscoLogo,
+    webLink: "https://kittys.co",
+    alt: "Kittys Co",
   },
   {
     imgName: minebrightLogo,
@@ -37,14 +27,24 @@ const clients = [
     alt: "Minebright",
   },
   {
+    imgName: midstrideLogo,
+    webLink: "https://midstride.com",
+    alt: "Midstride",
+  },
+  {
+    imgName: proximyLogo,
+    webLink: "https://proximy.ca",
+    alt: "Proximy",
+  },
+  {
+    imgName: technucomLogo,
+    webLink: "https://technucom.com",
+    alt: "TechNuCom",
+  },
+  {
     imgName: digitalriseLogo,
     webLink: "https://digitalrise.be",
     alt: "Digital Rise",
-  },
-  {
-    imgName: kittyscoLogo,
-    webLink: "https://kittys.co",
-    alt: "Kittys Co",
   },
 ];
 
@@ -55,7 +55,12 @@ function OurClients() {
         <div className="Subtitle pt-4">Our Clients</div>
         <div className="LogosContainer">
           {clients.map((client) => (
-            <a href={client.webLink} target="_blank" rel="noreferrer" key={client.alt}>
+            <a
+              href={client.webLink}
+              target="_blank"
+              rel="noreferrer"
+              key={client.alt}
+            >
               <img src={client.imgName} alt={client.alt}></img>
             </a>
           ))}

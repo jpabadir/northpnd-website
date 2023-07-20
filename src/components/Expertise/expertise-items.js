@@ -3,9 +3,17 @@ export const items = [
     client: "Kitty's Co.",
     dates: "June 2023 - Ongoing",
     description:
-      "We are currently building a full-stack web application for Kitty's Co. While we can't go into details about what we're building, this involves customer-facing features, complex business-logic, and a lot of interaction with third-party services such as AWS SES, AWS S3, and BigQuery.",
+      "We are currently building a full-stack custom Shopify web application for Kitty's Co. While we can't go into details about what we're building, this involves customer-facing features, complex business-logic, and a lot of interaction with third-party services such as AWS SES, AWS S3, and BigQuery.",
     tags: ["full-stack web dev"],
-    tech: ["Node.js", "React", "SQLite", "AWS SES", "AWS S3", "BigQuery"],
+    tech: [
+      "Shopify",
+      "Node.js",
+      "React",
+      "SQLite",
+      "AWS SES",
+      "AWS S3",
+      "BigQuery",
+    ],
   },
   {
     client: "TechNuCom",

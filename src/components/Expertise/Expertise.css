@@ -58,3 +58,23 @@ table {
         font-size: 17px;
     }
 }
+
+.unselected-button {
+    background-color: 001240;
+    color: rgb(46, 46, 46);
+    margin: 5px;
+    border: 2px solid darkgray;
+    padding: 8px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.selected-button {
+    background-color: #798fc5;
+    color: white;
+    margin: 5px;
+    border: 2px solid #4b5c88;
+    padding: 8px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+}

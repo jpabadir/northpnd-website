@@ -78,3 +78,42 @@ table {
     border-radius: 15px;
     font-size: 14px;
 }
+
+button.unselected-button:hover {
+    background-color: white;
+}
+
+button.selected-button:hover {
+    background-color: #abb6d4;
+}
+
+.fade-in {
+    animation: fade-in-animation 1s;
+}
+
+@keyframes fade-in-animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.filter-button {
+    color: black;
+    font-family: "Helvetica";
+}
+
+.float-parent {
+    border: 3px solid #fff;
+    padding: 0px;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    margin: 0px;
+    border: 2px solid black;
+}  

@@ -104,16 +104,3 @@ button.selected-button:hover {
     color: black;
     font-family: "Helvetica";
 }
-
-.float-parent {
-    border: 3px solid #fff;
-    padding: 0px;
-}
-
-.float-child {
-    width: 50%;
-    float: left;
-    padding: 20px;
-    margin: 0px;
-    border: 2px solid black;
-}  

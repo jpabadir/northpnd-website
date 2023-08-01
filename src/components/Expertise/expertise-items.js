@@ -46,14 +46,14 @@ export const items = [
     tags: ["documentation"],
     tech: ["PHP", "Laravel", "Docker"],
   },
-  {
-    client: "Midstride Technologies",
-    dates: "March 2023",
-    description:
-      'We fixed an issue where users were able to set the database in a state which should have been impossible. After investigating the issue, we found out that users were able to exploit the fact that if they saved the URL of the confirmation page we show at the end of a specific flow and loaded it before the end of the flow, it would prematurely submit the "completion" request and set the database in the faulty state. We added extra checks to ensure this couldn\'t happen.',
-    tags: ["backend"],
-    tech: ["PHP", "Laravel", "MySQL"],
-  },
+  // {
+  //   client: "Midstride Technologies",
+  //   dates: "March 2023",
+  //   description:
+  //     'We fixed an issue where users were able to set the database in a state which should have been impossible. After investigating the issue, we found out that users were able to exploit the fact that if they saved the URL of the confirmation page we show at the end of a specific flow and loaded it before the end of the flow, it would prematurely submit the "completion" request and set the database in the faulty state. We added extra checks to ensure this couldn\'t happen.',
+  //   tags: ["backend"],
+  //   tech: ["PHP", "Laravel", "MySQL"],
+  // },
   {
     client: "Minebright",
     dates: "February 2023 - Ongoing",
@@ -125,14 +125,14 @@ export const items = [
     tags: ["automation"],
     tech: ["Bash"],
   },
-  {
-    client: "Midstride Technologies",
-    dates: "August 2022",
-    description:
-      "We identified and fixed a major stored XSS vulnerability which could have resulted in unauthorized access to administrator accounts.",
-    tags: ["security", "full-stack web dev"],
-    tech: ["PHP", "Laravel", "MySQL", "Vue", "JS"],
-  },
+  // {
+  //   client: "Midstride Technologies",
+  //   dates: "August 2022",
+  //   description:
+  //     "We identified and fixed a major stored XSS vulnerability which could have resulted in unauthorized access to administrator accounts.",
+  //   tags: ["security", "full-stack web dev"],
+  //   tech: ["PHP", "Laravel", "MySQL", "Vue", "JS"],
+  // },
   {
     client: "Midstride Technologies",
     dates: "August 2022",

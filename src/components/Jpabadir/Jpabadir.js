@@ -49,7 +49,7 @@ function Jpabadir() {
               <br />
               <br />
               I am passionate about building excellent software and committed to offering the best possible experience to our clients. I firmly believe in the power of technology to transform organizations, and am enthusiastic about helping our partners leverage it to achieve their goals.
-              I am meticulous and communicative, and I strive to ensure that every project we work on is delivered to the highest level of satisfaction.
+              I am meticulous and communicative, and strive to ensure that every project we work on is delivered to the highest level of satisfaction.
               <br />
               <br />
               I hold a Bachelor of Computer Science from the University of British Columbia.

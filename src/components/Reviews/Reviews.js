@@ -32,11 +32,6 @@ function Reviews() {
       time: 1663282781,
     },
     {
-      author_name: "Khody Miller",
-      rating: 5,
-      text: "JP truly cares for properly serving his customers. After our initial consultation, JP went the extra mile and gave me a comprehensive email of valuable recommendations on considerations for my business.",
-    },
-    {
       author_name: "Jeremy Goldyn",
       rating: 5,
       text: "We work with North P&D for a Webflow project. \
@@ -48,6 +43,11 @@ function Reviews() {
       author_name: "Demetrius Michael",
       rating: 5,
       text: "JP cares about doing a good job and it shows in the work. Never had a project he said no to. Excited to grow together.",
+    },
+    {
+      author_name: "Renato Cudicio",
+      rating: 5,
+      text: "We asked North P&D to perform updates and security fixes on three of our Laravel applications. Everything was completed on time and on budget. Good job Made in Canada!",
     },
   ];
 
@@ -108,7 +108,7 @@ function Reviews() {
             fontSize: "17px",
           }}
         >
-          <div>Read these reviews on Google&nbsp;</div>
+          <div>Read all our reviews on Google&nbsp;</div>
           <MdKeyboardArrowRight color="red" className="ReviewsArrow" />
         </a>
       </div>

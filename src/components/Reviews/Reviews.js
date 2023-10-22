@@ -57,6 +57,7 @@ function Reviews() {
     "Khody Miller Enterprises",
     "Digital Rise",
     "Kitty's",
+    "TechNuCom"
   ];
 
   // useEffect(() => {

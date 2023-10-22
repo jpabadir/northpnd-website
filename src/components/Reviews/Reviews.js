@@ -54,7 +54,6 @@ function Reviews() {
   const companies = [
     "Proximy",
     "Midstride Technologies",
-    "Khody Miller Enterprises",
     "Digital Rise",
     "Kitty's",
     "TechNuCom"

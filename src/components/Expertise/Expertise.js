@@ -11,11 +11,22 @@ import { useEffect, useState } from 'react';
 import TableSortLabel from '@mui/material/TableSortLabel';
 import { Row, Col, Container } from 'react-bootstrap'
 import { MdKeyboardArrowLeft } from "react-icons/md";
+import checkmark from "../../assets/tick.png";
+import upArrow from "../../assets/angle-up-solid.svg";
+import downArrow from "../../assets/angle-down-solid.svg";
+import person from "../../assets/person-outline.png";
+import techIcon from "../../assets/programming-language.png";
 
-export default function Expertise() {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  })
+const clients = [
+  "Chick-fil-A Eaton Center", "Kitty's Co.", "TechNuCom", "Digital Rise", "Midstride Technologies", "Minebright", "Proximy" 
+];
+
+const techStacks= [
+  "Laravel", "Python", "MySQL", "SQLite", "Webflow", "PHP", "Docker", "GitHub Actions", "AWS IAM", "AWS S3", "AWS CLI", "AWS SES",
+  "Bash", "Vue", "JS", "npm", "SASS", "Markdown", "Cloud Firestore", "Flutter", "Google Cloud Functions", "Shopify", "BigQuery"
+];
+
+export default function Expertise() {  
 
   const [order, setOrder] = useState('asc');
   const [orderBy, setOrderBy] = useState('');
@@ -61,6 +72,83 @@ export default function Expertise() {
     return 0;
   });
 
+
+  const [showFilterCategories, setShowFilterCategories] = useState(false);
+  const [selectedTech, setSelectedTech] = useState([]);
+  const [showTechMenu, setShowTechMenu] = useState(false);
+  const [selectedClient, setSelectedClient] = useState([]);
+  const [showClientMenu, setShowClientMenu] = useState(false);
+  const [filteredItems, setFilteredItems] = useState([...expertiseItems]);
+  const [isFadingOut, setIsFadingOut] = useState(true);
+
+  function filterClick() {
+    setShowFilterCategories(!showFilterCategories);
+  }
+
+  function filterClientClick() {
+    setShowTechMenu(false);
+    setShowClientMenu(!showClientMenu);
+  }
+
+  function handleClientSelection(client) {
+    if (selectedClient.includes(client)) {
+      setSelectedClient(selectedClient.filter((item) => item !== client));
+    }
+    else {
+      setSelectedClient([...selectedClient, client]);
+    }
+    setFilteredItems(showProjects(sortedItems, true));
+    setIsFadingOut(false);
+  }
+
+  function filterTechClick() {
+    setShowTechMenu(!showTechMenu);
+  }
+
+  function handleTechSelection(tech) {
+    if (selectedTech.includes(tech)) {
+      setSelectedTech(selectedTech.filter((item) => item !== tech));
+    }
+    else {
+      setSelectedTech([...selectedTech, tech]);
+    }
+    setFilteredItems(showProjects(sortedItems, true));
+    setIsFadingOut(false);
+  }
+  
+  function showProjects(rows) {
+    if (selectedTech.length === 0 && selectedClient.length === 0)
+      return rows;
+    else {
+      return rows.filter((row) => {
+        const hasSelectedClient = selectedClient.length === 0 || selectedClient.includes(row.client);
+        const hasSelectedTech = selectedTech.length === 0 || (row.tech && row.tech.some((tech) => selectedTech.includes(tech)));
+        return hasSelectedClient && hasSelectedTech;
+      });
+    }
+  }
+  
+  useEffect(() => {
+    setTimeout(() => {
+      setIsFadingOut(true);
+    });
+
+    const expertiseElement = document.querySelector('.Expertise');
+
+    if (isFadingOut)
+      expertiseElement.classList.add('fade-in');
+    else
+      setFilteredItems(showProjects(sortedItems, false));
+    
+    const fadeOutTimeout = setTimeout(() => {
+      expertiseElement.classList.remove('fade-in');
+    }, 300);
+
+    return () => {
+      clearTimeout(fadeOutTimeout);
+    };
+  }, [isFadingOut]);
+
   return (
     <div>
       <Container fluid className='p-0'>
@@ -77,6 +165,71 @@ export default function Expertise() {
             <div className='d-flex'>
               <a href="/" style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold', color: 'black', fontSize: '22px' }} className='my-3'><MdKeyboardArrowLeft color="red" className='me-4' />About us</a>
             </div>
+              <div style={{marginLeft: 38, marginTop: 10, marginBottom: 10, maxWidth: '1200px'}}>
+                <button class='filter-button' onClick={() => filterClick()} style={{backgroundColor: 'transparent', border: 0, fontSize: 18, fontWeight: 'bold', marginBottom: '3px'}}>
+                  Filter
+                  {showFilterCategories ? (
+                    <img src={upArrow} alt="up arrow" style={{width: '20px', marginLeft: '8px'}}/>
+                  ) : (
+                    <img src={downArrow} alt="down arrow" style={{width: '20px', marginLeft: '8px'}}/>
+                  )}
+                </button>
+                {showFilterCategories && (
+                  <div>
+                    <div>
+                      <button class='filter-button' onClick={() => filterClientClick()} style={{backgroundColor: 'transparent', border: 0, fontSize: 18}}>
+                      <img src={person} alt='person icon' style={{width: '20px', marginRight: '10px'}}/>
+                      Client
+                      {showClientMenu ? (
+                        <img src={upArrow} alt="up arrow" style={{width: '20px', marginLeft: '8px'}}/>
+                      ) : (
+                        <img src={downArrow} alt="down arrow" style={{width: '20px', marginLeft: '8px'}}/>
+                      )}
+                      </button>
+                      {showClientMenu && (
+                        <div>
+                          {clients.map((client) => (
+                            <button 
+                              className={`client ${selectedClient.includes(client) ? 'selected-button' : 'unselected-button'}`} 
+                              onClick={() => handleClientSelection(client)}
+                            >
+                              {selectedClient.includes(client) && (
+                              <img src={checkmark} alt="checkmark" style={{marginRight: '8px'}}/> )}
+                              {client}
+                            </button>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                    
+                  <div>
+                    <button class='filter-button' onClick={() => filterTechClick()} style={{backgroundColor: 'transparent', border: 0, fontSize: 18}}>
+                      <img src={techIcon} alt='tech language icon' style={{width: '25px', marginRight: '7px'}}/>
+                      Tech Stack
+                      {showTechMenu ? (
+                        <img src={upArrow} alt="up arrow" style={{width: '20px', marginLeft: '8px'}}/>
+                      ) : (
+                        <img src={downArrow} alt="down arrow" style={{width: '20px', marginLeft: '8px'}}/>
+                      )}
+                      </button>
+                    {showTechMenu && (
+                      <div>
+                        {techStacks.map((techStack) => (
+                          <button 
+                            className={`techStackButton ${selectedTech.includes(techStack) ? 'selected-button' : 'unselected-button'}`} 
+                            onClick={() => handleTechSelection(techStack)}
+                          >
+                            {selectedTech.includes(techStack) && (
+                            <img src={checkmark} alt="checkmark" style={{marginRight: '8px'}}/> )}
+                            {techStack}
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}              
+            </div>
           </Col>
           <hr style={{ color: 'lightgrey' }} className='p-0 m-0' />
         </Row>
@@ -86,7 +239,7 @@ export default function Expertise() {
           <TableContainer>
             <Table aria-label="simple table">
               <TableHead>
-                <TableRow>
+                <TableRow >
                   <TableCell className="text-center" sx={{ color: 'inherit', fontSize: 'inherit', fontWeight: 'bold' }}>
                     <TableSortLabel
                       active={orderBy === 'client'}
@@ -127,7 +280,7 @@ export default function Expertise() {
                 </TableRow>
               </TableHead>
               <TableBody>
-                {sortedItems.map((row) => (
+                {filteredItems.map((row) => (
                   <TableRow key={row.description} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
                     <TableCell sx={{ color: 'inherit', fontSize: 'inherit' }} label="Client" className="text-center justify-content-center ClientNameCell">
                       {row.client}
